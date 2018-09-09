@@ -170,8 +170,36 @@ nav {
     color: $primaryColour;
 }
 
+h1.highlight-text {
+  font-size: 2.6em;
+}
+
 .recent-video {
     height: 220px;
+}
+
+.sticky-offset {
+  top: 80px;
+}
+
+#sidebar-container {
+  margin: 30px;
+  margin-top: 120px;
+  background-color: white;
+  margin-left: 60px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#main-content-container {
+  margin: 30px;
+  margin-top: 120px;
+  background-color: white;
+  margin-left: 30px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.bg-highlight {
+  background-color: #F7F7F7;
 }
 
 @media (min-width: 768px) {
