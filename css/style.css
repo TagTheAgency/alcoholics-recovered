@@ -20,6 +20,9 @@ h2 {
   font-size: 1.4em;
   font-weight: 400; }
 
+.material-icons, #sidebar-container ul li.completed:after {
+  vertical-align: middle; }
+
 nav {
   position: fixed;
   width: 100%;
@@ -136,12 +139,72 @@ h1.highlight-text {
 .sticky-offset {
   top: 80px; }
 
+.bg-ar-secondary {
+  background-color: #725FD9; }
+
+.bg-ar-secondary-light {
+  background-color: #C6BEEF; }
+
+.bg-ar-primary {
+  background-color: #17D1AC; }
+
+.progress {
+  height: 0.3rem; }
+
+.material-icons, #sidebar-container ul li.completed:after {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased; }
+
+.inset {
+  padding-left: 40px;
+  padding-right: 40px; }
+
 #sidebar-container {
   margin: 30px;
   margin-top: 120px;
   background-color: white;
   margin-left: 60px;
-  border-radius: 10px 10px 10px 10px; }
+  border-radius: 10px 10px 10px 10px;
+  padding-left: 0px;
+  padding-right: 0px; }
+  #sidebar-container ul {
+    list-style-type: none; }
+    #sidebar-container ul li {
+      padding: 10px 40px;
+      color: grey; }
+      #sidebar-container ul li:after {
+        content: "";
+        float: right;
+        margin-right: 20px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: grey; }
+      #sidebar-container ul li.completed {
+        color: #17D1AC; }
+        #sidebar-container ul li.completed:after {
+          content: 'check';
+          background-color: #17D1AC;
+          color: white;
+          vertical-align: middle;
+          font-size: 20px;
+          font-weight: bold; }
+      #sidebar-container ul li.active {
+        background-color: #17D1AC;
+        color: white; }
+        #sidebar-container ul li.active:after {
+          background-color: white; }
 
 #main-content-container {
   margin: 30px;

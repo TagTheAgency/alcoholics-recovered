@@ -1,6 +1,6 @@
 $primaryColour: #17D1AC;
 $secondaryColor: #725FD9;
-
+$lightSecondaryColor: #C6BEEF;
 
 * {
   margin: 0;
@@ -26,6 +26,9 @@ img {
 h2 {
     font-size: 1.4em;
     font-weight: 400;
+}
+.material-icons {
+  vertical-align: middle;
 }
 
 // Nav Start
@@ -182,12 +185,86 @@ h1.highlight-text {
   top: 80px;
 }
 
+.bg-ar-secondary {
+  background-color: $secondaryColor;
+}
+.bg-ar-secondary-light {
+  background-color: $lightSecondaryColor;
+}
+.bg-ar-primary {
+  background-color: $primaryColour;
+}
+.progress {
+  height: 0.3rem;
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.inset {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 #sidebar-container {
   margin: 30px;
   margin-top: 120px;
   background-color: white;
   margin-left: 60px;
   border-radius: 10px 10px 10px 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      padding: 10px 40px;
+      color: grey;
+
+      &:after {
+        content: "";
+        float: right;
+        margin-right: 20px;
+        width:20px;
+        height:20px;
+        border-radius: 50%;
+        background-color: grey;
+      }
+
+      &.completed {
+        color: $primaryColour;
+        &:after {
+          @extend .material-icons;
+          content: 'check';
+          background-color: $primaryColour;
+          color: white;
+          vertical-align: middle;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+      &.active {
+        background-color: $primaryColour;
+        color: white;
+        &:after {
+          background-color: white;
+        }
+      }
+    }
+  }
 }
 
 #main-content-container {
