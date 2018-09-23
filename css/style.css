@@ -139,7 +139,18 @@ h1.highlight-text {
 .sticky-offset {
   top: 80px; }
 
-.bg-ar-secondary {
+.btn-ar-primary {
+  border: 3px solid #17D1AC;
+  background-color: white;
+  color: #17D1AC; }
+  .btn-ar-primary:hover {
+    background-color: #17D1AC;
+    color: white; }
+
+.btn-ar-secondary {
+  border: 3px solid #725FD9; }
+
+.bg-ar-secondary, .btn-ar-secondary {
   background-color: #725FD9; }
 
 .bg-ar-secondary-light {
@@ -182,15 +193,18 @@ h1.highlight-text {
     list-style-type: none; }
     #sidebar-container ul li {
       padding: 10px 40px;
-      color: grey; }
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: rgba(30, 30, 30, 0.2); }
       #sidebar-container ul li:after {
         content: "";
         float: right;
         margin-right: 20px;
+        margin-top: 6px;
         width: 20px;
         height: 20px;
         border-radius: 50%;
-        background-color: grey; }
+        background-color: rgba(30, 30, 30, 0.2); }
       #sidebar-container ul li.completed {
         color: #17D1AC; }
         #sidebar-container ul li.completed:after {

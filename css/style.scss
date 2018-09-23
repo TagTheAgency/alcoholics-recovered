@@ -185,7 +185,21 @@ h1.highlight-text {
   top: 80px;
 }
 
-.bg-ar-secondary {
+.btn-ar-primary {
+  border: 3px solid $primaryColour;
+  background-color: white;
+  color: $primaryColour;
+
+
+  &:hover {
+    background-color: $primaryColour;
+    color: white;
+  }
+}
+.btn-ar-secondary {
+  border: 3px solid $secondaryColor;
+}
+.bg-ar-secondary, .btn-ar-secondary {
   background-color: $secondaryColor;
 }
 .bg-ar-secondary-light {
@@ -232,16 +246,19 @@ h1.highlight-text {
 
     li {
       padding: 10px 40px;
-      color: grey;
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: rgba(30,30,30,.2);
 
       &:after {
         content: "";
         float: right;
         margin-right: 20px;
+        margin-top: 6px;
         width:20px;
         height:20px;
         border-radius: 50%;
-        background-color: grey;
+        background-color: rgba(30,30,30,.2);
       }
 
       &.completed {
