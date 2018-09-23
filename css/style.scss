@@ -290,6 +290,16 @@ h1.highlight-text {
   background-color: white;
   margin-left: 30px;
   border-radius: 10px 10px 10px 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  .btn {
+    font-size: 1.3rem;
+    margin-top: 20px;
+  }
+}
+#nextButton {
+  float: right;
 }
 
 .bg-highlight {
