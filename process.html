@@ -66,6 +66,7 @@
 	    <div id="main-content-container" class="col">
 				<div id="video-container">
 					<video controls
+								 controlsList="nodownload"
 					       src="/video/Beach.webm"
 					       width="600"
 					       height="400">
@@ -104,26 +105,18 @@
 					"The Process" is an inside out program.</p>
 					<p>Please just tick the completed box that you have read and agreed to the above</p>
 					<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
+  <input class="form-check-input" type="checkbox" value="" id="agreeCheck">
+  <label class="form-check-label" for="agreeCheck">
     I have read and agreed to the above
   </label>
 </div>
 <button class="btn btn-ar-primary previous">
 Previous question</button>
-<button class="btn btn-ar-secondary next disabled">
+<button class="btn btn-ar-secondary next disabled" id="nextButton">
 Next question</button>
 
 
-					<p>Lorem ipsum</p>
-					<p>Lorem ipsum</p>
-					<p>Lorem ipsum</p>
-					<p>Lorem ipsum</p>
-					<p>Lorem ipsum</p>
-					<p>Lorem ipsum</p>
-					<p>Lorem ipsum</p>
-					<p>Lorem ipsum</p>
-					<p>Lorem ipsum</p>
+				
 	    </div>
 	</div>
 
@@ -135,6 +128,16 @@ Next question</button>
  	</footer>
 	<script src="./node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
 	<script src="./js/script.js" charset="utf-8"></script>
+	<script>
+	$('#agreeCheck').click(function() {
+		if ($('#agreeCheck').is(':checked')) {
+			$('#nextButton').removeClass('disabled');
+		} else {
+			$('#nextButton').addClass('disabled');
+
+		}
+	});
+	</script>
  </div>
 </body>
 </html>

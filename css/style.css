@@ -74,7 +74,8 @@ nav {
   z-index: 1;
   color: #fff;
   width: 80%;
-  margin: auto auto; }
+  margin: auto auto;
+  background-color: rgba(23, 209, 172, 0.6); }
 
 .hero-container-overlay {
   width: 100%;
@@ -107,20 +108,21 @@ nav {
 .feature-section-container {
   margin: 4em auto;
   text-align: center; }
-  .feature-section-container .btn {
-    background-color: #17D1AC;
-    color: #fff; }
-  .feature-section-container h2 {
-    text-align: center; }
+
+.feature-section-container .btn {
+  background-color: #17D1AC;
+  color: #fff; }
+
+.feature-section-container h2 {
+  text-align: center; }
 
 .feature-item {
   text-align: center; }
 
 .section-video-container {
   width: 100%;
-  height: 250px;
-  background-color: rgba(255, 255, 255, 0.38);
-  margin-bottom: 2em; }
+  height: 450px;
+  background-color: rgba(255, 255, 255, 0.38); }
 
 .text-section {
   text-align: center; }
@@ -143,9 +145,10 @@ h1.highlight-text {
   border: 3px solid #17D1AC;
   background-color: white;
   color: #17D1AC; }
-  .btn-ar-primary:hover {
-    background-color: #17D1AC;
-    color: white; }
+
+.btn-ar-primary:hover {
+  background-color: #17D1AC;
+  color: white; }
 
 .btn-ar-secondary {
   border: 3px solid #725FD9; }
@@ -189,43 +192,59 @@ h1.highlight-text {
   border-radius: 10px 10px 10px 10px;
   padding-left: 0px;
   padding-right: 0px; }
-  #sidebar-container ul {
-    list-style-type: none; }
-    #sidebar-container ul li {
-      padding: 10px 40px;
-      font-size: 1.4rem;
-      font-weight: bold;
-      color: rgba(30, 30, 30, 0.2); }
-      #sidebar-container ul li:after {
-        content: "";
-        float: right;
-        margin-right: 20px;
-        margin-top: 6px;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: rgba(30, 30, 30, 0.2); }
-      #sidebar-container ul li.completed {
-        color: #17D1AC; }
-        #sidebar-container ul li.completed:after {
-          content: 'check';
-          background-color: #17D1AC;
-          color: white;
-          vertical-align: middle;
-          font-size: 20px;
-          font-weight: bold; }
-      #sidebar-container ul li.active {
-        background-color: #17D1AC;
-        color: white; }
-        #sidebar-container ul li.active:after {
-          background-color: white; }
+
+#sidebar-container ul {
+  list-style-type: none; }
+
+#sidebar-container ul li {
+  padding: 10px 40px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: rgba(30, 30, 30, 0.2); }
+
+#sidebar-container ul li:after {
+  content: "";
+  float: right;
+  margin-right: 20px;
+  margin-top: 6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(30, 30, 30, 0.2); }
+
+#sidebar-container ul li.completed {
+  color: #17D1AC; }
+
+#sidebar-container ul li.completed:after {
+  content: 'check';
+  background-color: #17D1AC;
+  color: white;
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: bold; }
+
+#sidebar-container ul li.active {
+  background-color: #17D1AC;
+  color: white; }
+
+#sidebar-container ul li.active:after {
+  background-color: white; }
 
 #main-content-container {
   margin: 30px;
   margin-top: 120px;
   background-color: white;
   margin-left: 30px;
-  border-radius: 10px 10px 10px 10px; }
+  border-radius: 10px 10px 10px 10px;
+  padding-left: 50px;
+  padding-right: 50px; }
+
+#main-content-container .btn {
+  font-size: 1.3rem;
+  margin-top: 20px; }
+
+#nextButton {
+  float: right; }
 
 .bg-highlight {
   background-color: #F7F7F7; }
@@ -235,25 +254,19 @@ h1.highlight-text {
     background-color: #fff;
     color: #17D1AC;
     margin-left: 1em; }
-
   nav .btn {
     padding: 0.3em 1.2em;
     font-size: 0.7em;
     border: 2px solid #17D1AC; }
-
   .nav-items {
     margin: 0; }
-    .nav-items li {
-      display: inline-block;
-      font-size: 0.7em; }
-
+  .nav-items li {
+    display: inline-block;
+    font-size: 0.7em; }
   .hero-container {
     height: 450px; }
-
   .hero-text-container {
     margin: 0;
     padding: 2em 4em 2em 4em;
     width: 500px;
-    background-color: #17D1AC; } }
-
-/*# sourceMappingURL=style.css.map */
+    background-color: rgba(23, 209, 172, 0.6); } }
