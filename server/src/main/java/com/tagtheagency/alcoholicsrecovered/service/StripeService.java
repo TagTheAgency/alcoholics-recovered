@@ -26,12 +26,14 @@ public class StripeService {
 		Stripe.apiKey = secretKey;
 	}
 	
-	public void createCharge(int cents, String currency, String description) throws StripeException {
+	public void createCharge(int cents, String currency, String description, String token) throws StripeException {
+		System.out.println("Using secret key "+secretKey);
+		Stripe.apiKey = secretKey;
 		Map<String, Object> chargeParams = new HashMap<>();
-		chargeParams.put("amount", 2000);
-		chargeParams.put("currency", "nzd");
-		chargeParams.put("description", "Charge for jenny.rosen@example.com");
-		chargeParams.put("source", "tok_visa");
+		chargeParams.put("amount", cents);
+		chargeParams.put("currency", currency);
+		chargeParams.put("description", description);
+		chargeParams.put("source", token);
 		// ^ obtained with Stripe.js
 
 		RequestOptions options = RequestOptions
@@ -39,7 +41,8 @@ public class StripeService {
 		  .setIdempotencyKey("XDchK16FSfixIONW")
 		  .build();
 
-		Charge.create(chargeParams, options);
+		Charge charge = Charge.create(chargeParams);//, options);
+		System.out.println("Charge created, status "+charge.getStatus());
 	}
 	
 }

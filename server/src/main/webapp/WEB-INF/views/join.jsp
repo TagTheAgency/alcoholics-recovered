@@ -13,7 +13,8 @@
         <div class="card card-signin my-5">
           <div class="card-body">
             <h5 class="card-title text-center">Sign In</h5>
-            <form class="form-signin" name="f" action="charge" method="POST">
+            <form class="form-signin" name="f" action="${pageContext.servletContext.contextPath}/join/process" method="POST">
+            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
   <script
     src="https://checkout.stripe.com/checkout.js"
     class="stripe-button"
