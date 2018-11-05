@@ -1,4 +1,4 @@
-package com.tagtheagency.alcoholicsrecovered.persistence;
+package com.tagtheagency.alcoholicsrecovered.service;
 
 import java.util.Collection;
 import java.util.Collections;

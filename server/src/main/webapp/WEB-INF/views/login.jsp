@@ -14,6 +14,7 @@
           <div class="card-body">
             <h5 class="card-title text-center">Sign In</h5>
             <form class="form-signin" name="f" action="perform_login" method="POST">
+			  <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
               <div class="form-label-group">
                 <input type="text" id="inputEmail" class="form-control" name="username" placeholder="Email address" required autofocus>
                 <label for="inputEmail">Email address</label>
