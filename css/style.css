@@ -23,6 +23,12 @@ h2 {
 .material-icons, #sidebar-container ul li.completed:after {
   vertical-align: middle; }
 
+a {
+  color: #3E3E3E; }
+
+a :hover {
+  color: black; }
+
 nav {
   position: fixed;
   width: 100%;
@@ -266,18 +272,28 @@ h1.highlight-text {
       padding-left: 5px;
       color: #17D1AC; }
 
-#footer-container .footer {
-  color: blue; }
-#footer-container .footer-subscribe-container {
-  padding-left: 6rem;
-  padding-right: 6rem;
-  margin-bottom: 3rem; }
-#footer-container .footer-menu-container > div dl {
-  font-size: 0.8em; }
-  #footer-container .footer-menu-container > div dl dt {
-    margin-bottom: .5rem; }
-  #footer-container .footer-menu-container > div dl dd {
-    margin-bottom: 0; }
+#footer-container {
+  background-color: rgba(23, 209, 172, 0.3); }
+  #footer-container .footer {
+    color: #17D1AC; }
+  #footer-container .footer-subscribe-container {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    margin-bottom: 3rem; }
+    #footer-container .footer-subscribe-container #subscribe-form {
+      border: none;
+      border-bottom: solid #17D1AC 4px;
+      background-color: rgba(30, 30, 30, 0); }
+    #footer-container .footer-subscribe-container #subscribe-btn {
+      padding: 0.3em 1.3em; }
+  #footer-container .footer-menu-container > div dl {
+    font-size: 0.8em; }
+    #footer-container .footer-menu-container > div dl dt {
+      margin-bottom: .5rem; }
+    #footer-container .footer-menu-container > div dl dd {
+      margin-bottom: 0; }
+  #footer-container .footer-socmed-icon {
+    float: right; }
 
 @media (min-width: 768px) {
   #sign-up-btn {
