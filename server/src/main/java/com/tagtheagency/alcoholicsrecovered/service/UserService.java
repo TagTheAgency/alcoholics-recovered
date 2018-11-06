@@ -100,4 +100,10 @@ public class UserService implements UserDetailsService {
 		}
 		
 	}
+
+
+	public void purge(User user) {
+		userDao.delete(user);
+		
+	}
 }

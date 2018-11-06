@@ -26,7 +26,7 @@ public class StripeService {
 		Stripe.apiKey = secretKey;
 	}
 	
-	public void createCharge(int cents, String currency, String description, String token) throws StripeException {
+	public Charge createCharge(int cents, String currency, String description, String token) throws StripeException {
 		System.out.println("Using secret key "+secretKey);
 		Stripe.apiKey = secretKey;
 		Map<String, Object> chargeParams = new HashMap<>();
@@ -42,7 +42,8 @@ public class StripeService {
 		  .build();
 
 		Charge charge = Charge.create(chargeParams);//, options);
-		System.out.println("Charge created, status "+charge.getStatus());
+		return charge;
+//		System.out.println("Charge created, status "+charge.getStatus());
 	}
 	
 }

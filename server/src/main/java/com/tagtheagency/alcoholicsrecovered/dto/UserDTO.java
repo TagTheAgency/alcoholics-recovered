@@ -31,6 +31,14 @@ public class UserDTO {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	public static UserDTO from(String firstName, String lastName, String email, String password) {
+		UserDTO dto = new UserDTO();
+		dto.firstName = firstName;
+		dto.lastName = lastName;
+		dto.email = email;
+		dto.password = password;
+		return dto;
+	}
 	
 	
 	
