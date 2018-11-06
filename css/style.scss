@@ -157,6 +157,16 @@ nav {
     text-align: center;
 }
 
+.feature-icon {
+    width: 75%;
+    margin-bottom: 20%;
+}
+
+.feature-header {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
 .section-video-container {
     width: 100%;
     height: 450px;
@@ -306,6 +316,75 @@ h1.highlight-text {
   background-color: #F7F7F7;
 }
 
+
+// Call now section
+
+.call-now-container {
+    margin: 4em auto;
+
+    .call-now-heading {
+        h2 {
+            text-align: center;
+            font-size: 1.7em
+        }
+        h1 {
+            text-align: center;
+            font-size: 4em;
+            font-weight: 800;
+            color: $primaryColour;
+        }
+    }
+
+    .call-now-numbers {
+        display: flex;
+
+        .call-now-nz {
+            padding-left: 5px;
+            margin-right: 5%;
+            color: $primaryColour;
+            // border-left: solid #17D1AC 6px;
+        }
+        .call-now-aus {
+            padding-left: 5px;
+            color: $primaryColour;
+            
+                h4 {
+                    // border-left: solid #17D1AC 6px;
+                }
+                h3 {
+                    // border-left: solid #17D1AC 6px;
+                }
+        }
+    }
+}
+
+
+// Footer
+
+#footer-container {
+
+    .footer {
+        color: blue
+    }
+    .footer-subscribe-container {
+        padding-left: 6rem;
+        padding-right: 6rem;
+        margin-bottom: 3rem;
+    }
+
+    .footer-menu-container > div {
+        dl {
+            font-size: 0.8em;
+            dt {
+                margin-bottom: .5rem;
+            }
+            dd {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
 @media (min-width: 768px) {
 
     #sign-up-btn {
@@ -339,4 +418,16 @@ h1.highlight-text {
         width: 500px;
         background-color: rgba(23, 209, 172, 0.6);
     }
+
+    .call-now-heading  {
+        h2 {
+            text-align: right;
+        }
+    }
+    .call-now-numbers {
+        display: block;
+    }
 }
+
+
+
