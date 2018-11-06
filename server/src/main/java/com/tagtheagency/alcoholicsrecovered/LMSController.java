@@ -107,4 +107,9 @@ public class LMSController {
 		
 		return "welcome";
 	}
+	
+	@GetMapping(path="/welcome")
+	public String getWelcomePage() {
+		return "welcome";
+	}
 }

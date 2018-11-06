@@ -47,59 +47,15 @@ public class UserService implements UserDetailsService {
 	
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		User user = userDao.findByUsername(username).stream().findFirst().orElseThrow();
+		System.out.println("Trying to load a user by username "+username);
+		User user = userDao.findByEmail(username).stream().findFirst().orElseThrow();
 
 		
 		return new ARUserDetails(user);
 	}
 	
 	
-	class ARUserDetails implements UserDetails {
-
-		private String username;
-		private String password;
-		
-		public ARUserDetails(User user) {
-			this.username = user.getUsername();
-			this.password = user.getPassword();
-		}
-		
-		@Override
-		public Collection<? extends GrantedAuthority> getAuthorities() {
-			return Collections.emptyList();
-		}
-
-		@Override
-		public String getPassword() {
-			return password;
-		}
-
-		@Override
-		public String getUsername() {
-			return username;
-		}
-
-		@Override
-		public boolean isAccountNonExpired() {
-			return true;
-		}
-
-		@Override
-		public boolean isAccountNonLocked() {
-			return true;
-		}
-
-		@Override
-		public boolean isCredentialsNonExpired() {
-			return true;
-		}
-
-		@Override
-		public boolean isEnabled() {
-			return true;
-		}
-		
-	}
+	
 
 
 	public void purge(User user) {

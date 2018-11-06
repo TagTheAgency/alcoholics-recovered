@@ -4,6 +4,6 @@
 <html>
 <body>
 <h1>Welcome</h1>
-<p>Hi ${principal.username}</p>
+<p>Hi ${principal.firstName}</p>
 </body>
 </html>
