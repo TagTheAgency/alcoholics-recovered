@@ -83,6 +83,7 @@ public class LMSController {
 		
 		try {
 			Charge charge = stripe.createCharge(49990, "nzd", "test transaction", stripeToken);
+			users.addCharge(user, charge);
 			//TODO store the charge against the customer.
 			
 		} catch (StripeException e) {

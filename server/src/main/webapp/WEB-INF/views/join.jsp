@@ -42,7 +42,7 @@
               </div>
 
               <div class="form-label-group">
-                <input type="text" id="inputLastname" class="form-control" placeholder="Last name" required name="firstName" autofocus value="${lastName }">
+                <input type="text" id="inputLastname" class="form-control" placeholder="Last name" required name="lastName" autofocus value="${lastName }">
               
                 <label for="inputLastname">Last name</label>
               </div>

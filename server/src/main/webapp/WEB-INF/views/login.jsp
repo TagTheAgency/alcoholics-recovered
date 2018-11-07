@@ -1,3 +1,4 @@
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,6 +16,11 @@
             <h5 class="card-title text-center">Sign In</h5>
             <form class="form-signin" name="f" action="perform_login" method="POST">
 			  <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+			  	<c:if test="${not empty param.error}">
+		            <div class="alert alert-danger" role="alert">
+		  				Invalid username or password. You can <a class="alert-link" href="join/account">create a new account</a> or use the <a class="alert-link" href="forgotPassword">forgot password page</a>.
+					</div>
+		         </c:if>
               <div class="form-label-group">
                 <input type="text" id="inputEmail" class="form-control" name="username" placeholder="Email address" required autofocus>
                 <label for="inputEmail">Email address</label>

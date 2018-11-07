@@ -22,7 +22,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		http
 			.authorizeRequests()
 				.antMatchers("/login*").anonymous()
-				.antMatchers("/join/**").permitAll()  
+				.antMatchers("/join/**").anonymous()  
 				.antMatchers("/css/**").permitAll()  
 				.antMatchers("/img/**").permitAll()  
 				.anyRequest().authenticated()
@@ -31,10 +31,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 					.loginPage("/login")
 					.loginProcessingUrl("/perform_login")
 					.defaultSuccessUrl("/welcome")
-					.failureUrl("/login.html?error=true")
+					.failureUrl("/login?error=true")
 			.and()
 				.logout()
-					.logoutSuccessUrl("/login.html");
+					.logoutSuccessUrl("/login");
 	}
 	
 	@Autowired
