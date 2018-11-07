@@ -1,18 +1,18 @@
 package com.tagtheagency.alcoholicsrecovered.service;
 
-import java.util.Collection;
-import java.util.Collections;
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import com.stripe.model.Charge;
 import com.tagtheagency.alcoholicsrecovered.dto.UserDTO;
 import com.tagtheagency.alcoholicsrecovered.model.User;
+import com.tagtheagency.alcoholicsrecovered.persistence.ChargeDAO;
 import com.tagtheagency.alcoholicsrecovered.persistence.UserDAO;
 import com.tagtheagency.alcoholicsrecovered.service.exception.EmailExistsException;
 
@@ -21,6 +21,9 @@ public class UserService implements UserDetailsService {
 
 	@Autowired 
 	private UserDAO userDao;
+	
+	@Autowired
+	private ChargeDAO chargeDao;
 	
 	@Autowired
 	private PasswordEncoder passwordEncoder;
@@ -55,7 +58,16 @@ public class UserService implements UserDetailsService {
 	}
 	
 	
-	
+	public void addCharge(User user, Charge charge) {
+		com.tagtheagency.alcoholicsrecovered.model.Charge internalCharge = new com.tagtheagency.alcoholicsrecovered.model.Charge();
+		internalCharge.setUser(user);
+		internalCharge.setAmount(charge.getAmount());
+		internalCharge.setDateEntered(new Date());
+		internalCharge.setStripeId(charge.getId());
+		internalCharge.setStatus(charge.getStatus());
+		chargeDao.save(internalCharge);
+		
+	}
 
 
 	public void purge(User user) {
