@@ -47,7 +47,7 @@ public class UserService implements UserDetailsService {
 	
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		User user = userDao.findByUsername(username).stream().findFirst().orElseThrow();
+		User user = userDao.findByUsername(username).stream().findFirst().orElseThrow(() -> new UsernameNotFoundException("No user found with username " + username));
 
 		
 		return new ARUserDetails(user);
