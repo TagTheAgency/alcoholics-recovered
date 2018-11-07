@@ -1,18 +1,18 @@
 package com.tagtheagency.alcoholicsrecovered.service;
 
-import java.util.Collection;
-import java.util.Collections;
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import com.stripe.model.Charge;
 import com.tagtheagency.alcoholicsrecovered.dto.UserDTO;
 import com.tagtheagency.alcoholicsrecovered.model.User;
+import com.tagtheagency.alcoholicsrecovered.persistence.ChargeDAO;
 import com.tagtheagency.alcoholicsrecovered.persistence.UserDAO;
 import com.tagtheagency.alcoholicsrecovered.service.exception.EmailExistsException;
 
@@ -21,6 +21,9 @@ public class UserService implements UserDetailsService {
 
 	@Autowired 
 	private UserDAO userDao;
+	
+	@Autowired
+	private ChargeDAO chargeDao;
 	
 	@Autowired
 	private PasswordEncoder passwordEncoder;
@@ -47,57 +50,25 @@ public class UserService implements UserDetailsService {
 	
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		User user = userDao.findByUsername(username).stream().findFirst().orElseThrow(() -> new UsernameNotFoundException("No user found with username " + username));
-
-		
+		User user = userDao.findByEmail(username).stream().findFirst().orElseThrow(() -> new UsernameNotFoundException("No user found with username " + username));
 		return new ARUserDetails(user);
 	}
 	
 	
-	class ARUserDetails implements UserDetails {
-
-		private String username;
-		private String password;
+	public void addCharge(User user, Charge charge) {
+		com.tagtheagency.alcoholicsrecovered.model.Charge internalCharge = new com.tagtheagency.alcoholicsrecovered.model.Charge();
+		internalCharge.setUser(user);
+		internalCharge.setAmount(charge.getAmount());
+		internalCharge.setDateEntered(new Date());
+		internalCharge.setStripeId(charge.getId());
+		internalCharge.setStatus(charge.getStatus());
+		chargeDao.save(internalCharge);
 		
-		public ARUserDetails(User user) {
-			this.username = user.getUsername();
-			this.password = user.getPassword();
-		}
-		
-		@Override
-		public Collection<? extends GrantedAuthority> getAuthorities() {
-			return Collections.emptyList();
-		}
+	}
 
-		@Override
-		public String getPassword() {
-			return password;
-		}
 
-		@Override
-		public String getUsername() {
-			return username;
-		}
-
-		@Override
-		public boolean isAccountNonExpired() {
-			return true;
-		}
-
-		@Override
-		public boolean isAccountNonLocked() {
-			return true;
-		}
-
-		@Override
-		public boolean isCredentialsNonExpired() {
-			return true;
-		}
-
-		@Override
-		public boolean isEnabled() {
-			return true;
-		}
+	public void purge(User user) {
+		userDao.delete(user);
 		
 	}
 }

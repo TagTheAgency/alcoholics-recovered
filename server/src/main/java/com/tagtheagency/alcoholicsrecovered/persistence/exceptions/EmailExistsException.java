@@ -1,4 +1,4 @@
-package com.tagtheagency.alcoholicsrecovered.persistence;
+package com.tagtheagency.alcoholicsrecovered.persistence.exceptions;
 
 public class EmailExistsException extends Exception {
 
