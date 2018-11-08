@@ -1,5 +1,6 @@
 package com.tagtheagency.alcoholicsrecovered;
 
+import java.security.Principal;
 import java.util.Collections;
 import java.util.Map;
 
@@ -23,7 +24,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.stripe.exception.StripeException;
 import com.stripe.model.Charge;
 import com.tagtheagency.alcoholicsrecovered.dto.UserDTO;
+import com.tagtheagency.alcoholicsrecovered.model.ProcessPhase;
+import com.tagtheagency.alcoholicsrecovered.model.ProcessStep;
 import com.tagtheagency.alcoholicsrecovered.model.User;
+import com.tagtheagency.alcoholicsrecovered.service.ARUserDetails;
 import com.tagtheagency.alcoholicsrecovered.service.StripeService;
 import com.tagtheagency.alcoholicsrecovered.service.UserService;
 import com.tagtheagency.alcoholicsrecovered.service.exception.EmailExistsException;
@@ -112,5 +116,31 @@ public class LMSController {
 	@GetMapping(path="/welcome")
 	public String getWelcomePage() {
 		return "welcome";
+	}
+	
+	@GetMapping(path="/theProcess")
+	public String getCurrentStepOfTheProcess(Model model, Principal principal) {
+		User user = getUserFromPrincipal(principal);
+		
+		ProcessStep currentStep = users.getCurrentStep(user);
+		ProcessPhase currentPhase = currentStep.getPhase();
+		
+		int totalSteps = users.getStepCount(currentPhase);
+		
+		model.addAttribute("stepCount", totalSteps);
+		model.addAttribute("currentStep", currentStep);
+		model.addAttribute("currentPhase", currentPhase);
+		
+		return "process";
+		
+	}
+	
+	private User getUserFromPrincipal(Principal principal) {
+		if (principal instanceof UsernamePasswordAuthenticationToken) {
+			UsernamePasswordAuthenticationToken token = (UsernamePasswordAuthenticationToken) principal;
+			ARUserDetails user = (ARUserDetails) token.getPrincipal();
+			return users.getUser(user.getUsername());
+		}
+		return null;
 	}
 }
