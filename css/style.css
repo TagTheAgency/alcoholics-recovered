@@ -75,6 +75,15 @@ nav {
   background-position: center;
   background-size: cover; }
 
+.hero-login-container {
+  padding-top: 140px;
+  height: 50em;
+  position: relative;
+  overflow: hidden;
+  background-image: url("../img/grass-sky-bg-cyan.jpg");
+  background-position: center;
+  background-size: cover; }
+
 .hero-text-container {
   position: relative;
   z-index: 1;
@@ -330,6 +339,31 @@ h1.highlight-text {
 #about-main-text {
   padding-top: 4%;
   padding-bottom: 8%; }
+
+#login-container {
+  background-color: rgba(69, 155, 159, 0.4);
+  border-radius: 10px;
+  border: solid rgba(69, 155, 159, 0.3);
+  padding-top: 4em;
+  padding-bottom: 4em; }
+  #login-container p, #login-container a {
+    color: #fff; }
+  #login-container .login-form input::placeholder {
+    color: #fff; }
+  #login-container .login-form input {
+    background-color: rgba(30, 30, 30, 0);
+    color: #fff;
+    border: solid #fff 2px;
+    border-radius: 10;
+    margin-bottom: 12px; }
+
+#register-btn {
+  margin-top: 12px;
+  background-color: #fff;
+  padding-left: 5em;
+  padding-right: 5em;
+  color: #17D1AC;
+  font-size: 1.2em; }
 
 @media (min-width: 768px) {
   #sign-up-btn {

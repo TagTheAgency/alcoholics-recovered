@@ -100,6 +100,16 @@ nav {
 	background-size: cover;
 }
 
+.hero-login-container {
+	padding-top: 140px;
+	height: 50em;
+	position: relative;
+	overflow: hidden;
+    background-image: url("../img/grass-sky-bg-cyan.jpg");
+    background-position: center;
+	background-size: cover;
+}
+
 .hero-text-container {
 	position: relative;
 	z-index: 1;
@@ -396,13 +406,6 @@ h1.highlight-text {
         .call-now-aus {
             padding-left: 5px;
             color: $primaryColour;
-            
-                h4 {
-                    // border-left: solid #17D1AC 6px;
-                }
-                h3 {
-                    // border-left: solid #17D1AC 6px;
-                }
         }
     }
 }
@@ -450,13 +453,55 @@ h1.highlight-text {
 }
 
 
-// About Section
+// About Page
 
 #about-main-text {
     padding-top: 4%;
     padding-bottom: 8%;
 }
 
+
+// Login & Sign up Page
+
+#login-container {
+    background-color: rgba(69, 155, 159, 0.4);
+    border-radius: 10px;
+    border: solid rgba(69, 155, 159, 0.3);
+    padding-top: 4em;
+    padding-bottom: 4em;
+
+    p, a {
+        color: #fff;
+    }
+
+    .login-form {
+        input::placeholder {
+            color: #fff;
+        }
+
+            input {
+            background-color: rgba(30,30,30,0);
+            color: #fff;
+            border: solid #fff 2px;
+            border-radius: 10;
+            margin-bottom: 12px;
+        }
+    }
+}
+
+#register-btn {
+    margin-top: 12px;
+    background-color: #fff;
+    padding-left: 5em;
+    padding-right: 5em;
+    color: $primaryColour;
+    font-size: 1.2em;
+}
+
+
+
+
+// Media queries
 
 @media (min-width: 768px) {
 
@@ -501,6 +546,3 @@ h1.highlight-text {
         display: block
     }
 }
-
-
-
