@@ -20,3 +20,19 @@
 .StripeElement--webkit-autofill {
   background-color: #fefde5 !important;
 }
+
+#card-number {
+  width: 100%;
+}
+
+#card-expiry {
+  width: 50%
+}
+
+#card-cvc {
+  width: 50%
+}
+
+.form-container {
+  padding: 50px
+}

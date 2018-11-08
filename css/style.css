@@ -76,7 +76,7 @@ nav {
   background-size: cover; }
 
 .hero-login-container {
-  padding-top: 140px;
+  padding-top: 80px;
   height: 50em;
   position: relative;
   overflow: hidden;
@@ -350,12 +350,17 @@ h1.highlight-text {
     color: #fff; }
   #login-container .login-form input::placeholder {
     color: #fff; }
-  #login-container .login-form input {
+  #login-container .login-form .login-form-input {
     background-color: rgba(30, 30, 30, 0);
+    box-shadow: 0 0 black;
     color: #fff;
     border: solid #fff 2px;
     border-radius: 10;
     margin-bottom: 12px; }
+  #login-container .login-form #card-expiry {
+    width: 50%; }
+  #login-container .login-form #card-cvc {
+    width: 50%; }
 
 #register-btn {
   margin-top: 12px;
@@ -364,6 +369,25 @@ h1.highlight-text {
   padding-right: 5em;
   color: #17D1AC;
   font-size: 1.2em; }
+
+.StripeElement {
+  background-color: white;
+  height: 40px;
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease; }
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df; }
+
+.StripeElement--invalid {
+  border-color: #fa755a; }
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important; }
 
 @media (min-width: 768px) {
   #sign-up-btn {

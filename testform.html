@@ -4,31 +4,48 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://js.stripe.com/v3/"></script>
 	<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" href="./css/style.css"> -->
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/testform.css">
 	<title>Alcoholics Recovered</title>
 </head>
 <body>
-  
-  <form action="/charge" method="post" id="payment-form">
-    <div class="form-row">
-      <label for="card-element">
-        Credit or debit card
-      </label>
-      <div id="card-element">
-        
-        <!-- A Stripe Element will be inserted here. -->
+  <div class="form-container">
+    
+    <form action="/charge" method="post" id="payment-form">
+      
+      <div class="form-row">
+        <label for="card-number">
+          Credit or debit card
+        </label>
+        <div id="card-number"></div>
+        <div id="card-errors" role="alert"></div>
       </div>
       
-      <!-- Used to display form errors. -->
+      <div class="form-row">
+        <label for="card-expiry">
+          Credit or debit card
+        </label>            
+        <div id="card-expiry"></div>
+        <div id="card-errors" role="alert"></div>
+      </div>
+      
+      <div class="form-row">
+        <label for="card-cvc">
+          Credit or debit card
+        </label>
+        <div id="card-cvc"></div>
+        <div id="card-errors" role="alert"></div>
+      </div>
+      
       <div id="card-errors" role="alert"></div>
     </div>
     
     <button>Submit Payment</button>
   </form>
+</div>
+  <script src="https://js.stripe.com/v3/"></script>
   <script src="./testform.js"></script>
 </body>
