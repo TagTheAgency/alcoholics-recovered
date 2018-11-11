@@ -23,6 +23,12 @@ h2 {
 .material-icons, #sidebar-container ul li.completed:after {
   vertical-align: middle; }
 
+a {
+  color: #3E3E3E; }
+
+a :hover {
+  color: black; }
+
 nav {
   position: fixed;
   width: 100%;
@@ -69,12 +75,22 @@ nav {
   background-position: center;
   background-size: cover; }
 
+.hero-login-container {
+  padding-top: 80px;
+  height: 50em;
+  position: relative;
+  overflow: hidden;
+  background-image: url("../img/grass-sky-bg-cyan.jpg");
+  background-position: center;
+  background-size: cover; }
+
 .hero-text-container {
   position: relative;
   z-index: 1;
   color: #fff;
   width: 80%;
-  margin: auto auto; }
+  margin: auto auto;
+  background-color: rgba(23, 209, 172, 0.6); }
 
 .hero-container-overlay {
   width: 100%;
@@ -100,6 +116,22 @@ nav {
 .header-text {
   font-size: 1.9em; }
 
+.page-title-container {
+  padding-top: 180px;
+  height: 350px;
+  position: relative;
+  overflow: hidden; }
+
+.page-title-text-container {
+  width: 80%;
+  margin: auto;
+  text-align: center; }
+
+.page-title-text {
+  font-size: 2.2em;
+  font-weight: 900;
+  color: #17D1AC; }
+
 .page-section {
   width: 80%;
   margin: auto; }
@@ -116,11 +148,28 @@ nav {
 .feature-item {
   text-align: center; }
 
+.feature-icon {
+  width: 75%;
+  margin-bottom: 20%; }
+
+.feature-header {
+  font-size: 1.2em;
+  font-weight: 700; }
+
 .section-video-container {
   width: 100%;
-  height: 250px;
-  background-color: rgba(255, 255, 255, 0.38);
-  margin-bottom: 2em; }
+  height: 450px;
+  background-color: rgba(255, 255, 255, 0.38); }
+
+.section-text-container-right {
+  margin-top: 15%;
+  margin-bottom: 15%; }
+
+.section-text-container-left {
+  margin-top: 15%;
+  margin-bottom: 15%;
+  padding-left: 4rem;
+  padding-right: 3rem; }
 
 .text-section {
   text-align: center; }
@@ -132,6 +181,12 @@ nav {
 
 h1.highlight-text {
   font-size: 2.6em; }
+
+.feature-text-medium {
+  font-size: 1.6em;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  text-align: justify; }
 
 .recent-video {
   height: 220px; }
@@ -238,6 +293,102 @@ h1.highlight-text {
 .bg-highlight {
   background-color: #F7F7F7; }
 
+.call-now-container {
+  margin: 4em auto; }
+  .call-now-container .call-now-heading h2 {
+    text-align: center;
+    font-size: 1.7em; }
+  .call-now-container .call-now-heading h1 {
+    text-align: center;
+    font-size: 4em;
+    font-weight: 800;
+    color: #17D1AC; }
+  .call-now-container .call-now-numbers {
+    display: flex; }
+    .call-now-container .call-now-numbers .call-now-nz {
+      padding-left: 5px;
+      margin-right: 5%;
+      color: #17D1AC; }
+    .call-now-container .call-now-numbers .call-now-aus {
+      padding-left: 5px;
+      color: #17D1AC; }
+
+#footer-container {
+  background-color: rgba(23, 209, 172, 0.3); }
+  #footer-container .footer {
+    color: #17D1AC; }
+  #footer-container .footer-subscribe-container {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    margin-bottom: 3rem; }
+    #footer-container .footer-subscribe-container #subscribe-form {
+      border: none;
+      border-bottom: solid #17D1AC 4px;
+      background-color: rgba(30, 30, 30, 0); }
+    #footer-container .footer-subscribe-container #subscribe-btn {
+      padding: 0.3em 1.3em; }
+  #footer-container .footer-menu-container > div dl {
+    font-size: 0.8em; }
+    #footer-container .footer-menu-container > div dl dt {
+      margin-bottom: .5rem; }
+    #footer-container .footer-menu-container > div dl dd {
+      margin-bottom: 0; }
+  #footer-container .footer-socmed-icon {
+    float: right; }
+
+#about-main-text {
+  padding-top: 4%;
+  padding-bottom: 8%; }
+
+#login-container {
+  background-color: rgba(69, 155, 159, 0.4);
+  border-radius: 10px;
+  border: solid rgba(69, 155, 159, 0.3);
+  padding-top: 4em;
+  padding-bottom: 4em; }
+  #login-container p, #login-container a {
+    color: #fff; }
+  #login-container .login-form input::placeholder {
+    color: #fff; }
+  #login-container .login-form .login-form-input {
+    background-color: rgba(30, 30, 30, 0);
+    box-shadow: 0 0 black;
+    color: #fff;
+    border: solid #fff 2px;
+    border-radius: 10;
+    margin-bottom: 12px; }
+  #login-container .login-form #card-expiry {
+    width: 50%; }
+  #login-container .login-form #card-cvc {
+    width: 50%; }
+
+#register-btn {
+  margin-top: 12px;
+  background-color: #fff;
+  padding-left: 5em;
+  padding-right: 5em;
+  color: #17D1AC;
+  font-size: 1.2em; }
+
+.StripeElement {
+  background-color: white;
+  height: 40px;
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease; }
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df; }
+
+.StripeElement--invalid {
+  border-color: #fa755a; }
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important; }
+
 @media (min-width: 768px) {
   #sign-up-btn {
     background-color: #fff;
@@ -262,6 +413,10 @@ h1.highlight-text {
     margin: 0;
     padding: 2em 4em 2em 4em;
     width: 500px;
-    background-color: #17D1AC; } }
+    background-color: rgba(23, 209, 172, 0.6); }
 
-/*# sourceMappingURL=style.css.map */
+  .call-now-heading h2 {
+    text-align: right; }
+
+  .call-now-numbers {
+    display: block; } }

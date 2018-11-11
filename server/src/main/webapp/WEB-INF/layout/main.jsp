@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="${pageContext.servletContext.contextPath}/css/bootstrap.4.1.3.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="${pageContext.servletContext.contextPath}/css/style.css">
-	<link rel="stylesheet" href="${pageContext.servletContext.contextPath}/css/register.css">
+	<!-- link rel="stylesheet" href="${pageContext.servletContext.contextPath}/css/register.css" -->
 	<script src="https://js.stripe.com/v3/"></script>
 	<title>Alcoholics Recovered</title>
 </head>
