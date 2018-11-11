@@ -100,6 +100,16 @@ nav {
 	background-size: cover;
 }
 
+.hero-login-container {
+	padding-top: 80px;
+	height: 50em;
+	position: relative;
+	overflow: hidden;
+    background-image: url("../img/grass-sky-bg-cyan.jpg");
+    background-position: center;
+	background-size: cover;
+}
+
 .hero-text-container {
 	position: relative;
 	z-index: 1;
@@ -396,13 +406,6 @@ h1.highlight-text {
         .call-now-aus {
             padding-left: 5px;
             color: $primaryColour;
-            
-                h4 {
-                    // border-left: solid #17D1AC 6px;
-                }
-                h3 {
-                    // border-left: solid #17D1AC 6px;
-                }
         }
     }
 }
@@ -450,13 +453,90 @@ h1.highlight-text {
 }
 
 
-// About Section
+// About Page
 
 #about-main-text {
     padding-top: 4%;
     padding-bottom: 8%;
 }
 
+
+// Login & Sign up Page
+
+#login-container {
+    background-color: rgba(69, 155, 159, 0.4);
+    border-radius: 10px;
+    border: solid rgba(69, 155, 159, 0.3);
+    padding-top: 4em;
+    padding-bottom: 4em;
+
+    p, a {
+        color: #fff;
+    }
+
+    .login-form {
+        input::placeholder {
+            color: #fff;
+        }
+
+        .login-form-input {
+        background-color: rgba(30,30,30,0);
+        box-shadow: 0 0 black;
+        color: #fff;
+        border: solid #fff 2px;
+        border-radius: 10;
+        margin-bottom: 12px;
+        }
+
+        #card-expiry {
+            width: 50%
+          }
+          
+          #card-cvc {
+            width: 50%
+          }
+    }
+}
+
+#register-btn {
+    margin-top: 12px;
+    background-color: #fff;
+    padding-left: 5em;
+    padding-right: 5em;
+    color: $primaryColour;
+    font-size: 1.2em;
+}
+
+
+    // Stripe Elements
+
+    .StripeElement {
+        background-color: white;
+        height: 40px;
+        padding: 10px 12px;
+        border-radius: 4px;
+        border: 1px solid transparent;
+        box-shadow: 0 1px 3px 0 #e6ebf1;
+        -webkit-transition: box-shadow 150ms ease;
+        transition: box-shadow 150ms ease;
+      }
+      
+      .StripeElement--focus {
+        box-shadow: 0 1px 3px 0 #cfd7df;
+      }
+      
+      .StripeElement--invalid {
+        border-color: #fa755a;
+      }
+      
+      .StripeElement--webkit-autofill {
+        background-color: #fefde5 !important;
+      }
+      
+
+
+
+// Media queries
 
 @media (min-width: 768px) {
 
@@ -501,6 +581,3 @@ h1.highlight-text {
         display: block
     }
 }
-
-
-
