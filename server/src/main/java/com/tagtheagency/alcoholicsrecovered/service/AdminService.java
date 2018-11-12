@@ -34,6 +34,11 @@ public class AdminService {
 	public ProcessStep getStep(int id) {
 		return processStepDAO.getOne(id);
 	}
+
+	public void updateStep(ProcessStep step) {
+		processStepDAO.save(step);
+		
+	}
 	
 	
 }

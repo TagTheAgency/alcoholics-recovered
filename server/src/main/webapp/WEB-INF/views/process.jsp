@@ -30,13 +30,13 @@
 	    <div id="sidebar-container" class="sidebar-expanded col-2 d-none d-md-block">
 					<div class="sticky-top sticky-offset">
 						<div class="inset">
-							<h1 class="highlight-text my-3">This is a large title</h1>
+							<h1 class="highlight-text my-3">${currentStep.title }</h1>
 
 							<p><i class="material-icons">schedule</i> estimated 20-25mins</p>
 							<div class="progress bg-ar-secondary-light">
 	  						<div class="progress-bar bg-ar-secondary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
-							<p>Step 2 of 5</p>
+							<p>Step ${currentStep.stepNumber } of ${stepCount }</p>
 							<hr class="bg-ar-primary"/>
 						</div>
 						<ul class="list-group">
@@ -60,6 +60,7 @@
 					</video>
 				</div>
 				<hr class="bg-ar-primary"/>
+				${currentStep.html }
 				<p>Alcoholics are only unique by merit of their symptoms. The origin of our problem is the same as that of any other obsessive abuser of substance orbehaviour. Resentment, anger and fear &mdash; plain and simple.
 					Once free of resentment, anger and fear the alcoholic's obsession to drink just falls away. We can managr our behaviour and resume a normal life.
 				</p>

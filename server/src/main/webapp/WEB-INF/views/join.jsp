@@ -67,7 +67,7 @@ var style = {
 };
 
 // Create an instance of the card Element.
-var cardNumber = elements.create('cardNumber', {style: style});
+var cardNumber = elements.create('cardNumber', {style: style, placeholder: 'Placeholder'});
 cardNumber.mount('#card-number');
 
 var cardExpiry = elements.create('cardExpiry', {style:style});
