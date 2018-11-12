@@ -25,9 +25,7 @@
 	<sec:authorize access="isFullyAuthenticated()">
 	<tiles:insertAttribute name="headerAuthenticated" />
 	</sec:authorize>
-	<div style="padding-top: 50px">
 	<tiles:insertAttribute name="body" />
-	</div>
 	<tiles:insertAttribute name="footer" />
    	</div>
 	

@@ -11,6 +11,6 @@ import com.tagtheagency.alcoholicsrecovered.model.ProcessPhase;
 public interface ProcessPhaseDAO extends JpaRepository<ProcessPhase, Integer>{
 
 	
-	@Query(value="SELECT count(*) FROM ProcessStep s WHERE (s.phase) = (:phaseId)", nativeQuery=true)
+	@Query(value="SELECT count(*) FROM process_step s WHERE phase_id = (:phaseId)", nativeQuery=true)
     public int getStepCount(@Param("phaseId") int phaseId);
 }
