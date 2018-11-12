@@ -420,8 +420,8 @@ h1.highlight-text {
         color: $primaryColour
     }
     .footer-subscribe-container {
-        padding-left: 6rem;
-        padding-right: 6rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
         margin-bottom: 3rem;
 
             #subscribe-form {
@@ -432,6 +432,8 @@ h1.highlight-text {
 
             #subscribe-btn {
                 padding: 0.3em 1.3em;
+                margin-top: 1em;
+                width: 66%;
             }
     }
 
@@ -447,10 +449,24 @@ h1.highlight-text {
         }
     }
 
-    .footer-socmed-icon {
-        float: right;
+    .footer-menu-contact {
+        display: none
     }
+
 }
+
+    .footer-socmed {
+
+    }
+        .footer-socmed-icon {
+            width: 10%;
+            min-width: 30px;
+            margin: 10px
+        }
+        
+        .footer-spacer {
+            display: none
+        }
 
 
 // About Page
@@ -485,6 +501,7 @@ h1.highlight-text {
         color: #fff;
         border: solid #fff 2px;
         border-radius: 10;
+        margin: 0 auto;
         margin-bottom: 12px;
         }
 
@@ -579,5 +596,22 @@ h1.highlight-text {
     }
     .call-now-numbers {
         display: block
+    }
+
+    .footer-spacer {
+        display: flex
+    }
+
+    .footer-subscribe-container {
+        padding-left: 6rem;
+        padding-right: 6rem;
+
+        #subscribe-btn {
+            width: auto;
+        }
+    }
+
+    .footer-menu-contact {
+        display: flex
     }
 }
