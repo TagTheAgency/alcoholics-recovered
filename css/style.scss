@@ -6,6 +6,7 @@ $lightSecondaryColor: #C6BEEF;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+//   border: solid red 1px;
 }
 
 body {
@@ -37,6 +38,10 @@ a {
 
 a :hover {
     color: black
+}
+
+.row {
+    margin-right: 0;
 }
 
 // Nav Start
@@ -171,6 +176,12 @@ nav {
 
 
 // Page Section
+
+.page-section-container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .page-section {
     width: 80%;
@@ -395,18 +406,8 @@ h1.highlight-text {
     }
 
     .call-now-numbers {
-        display: flex;
-
-        .call-now-nz {
-            padding-left: 5px;
-            margin-right: 5%;
-            color: $primaryColour;
-            // border-left: solid #17D1AC 6px;
-        }
-        .call-now-aus {
-            padding-left: 5px;
-            color: $primaryColour;
-        }
+        width: max-content;
+        color: $primaryColour;
     }
 }
 
@@ -425,6 +426,7 @@ h1.highlight-text {
         margin-bottom: 3rem;
 
             #subscribe-form {
+                width: 100%;
                 border: none;
                 border-bottom: solid #17D1AC 4px;
                 background-color: rgba(30,30,30,0)
@@ -433,9 +435,11 @@ h1.highlight-text {
             #subscribe-btn {
                 padding: 0.3em 1.3em;
                 margin-top: 1em;
-                width: 66%;
+                width: 100%;
             }
     }
+
+    .footer-menu-container {}
 
     .footer-menu-container > div {
         dl {
@@ -518,8 +522,8 @@ h1.highlight-text {
 #register-btn {
     margin-top: 12px;
     background-color: #fff;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 20%;
+    padding-right: 20%;
     color: $primaryColour;
     font-size: 1.2em;
 }
@@ -555,6 +559,10 @@ h1.highlight-text {
 
 // Media queries
 
+@media (min-width: 576px) {
+
+}
+
 @media (min-width: 768px) {
 
     #sign-up-btn {
@@ -589,29 +597,56 @@ h1.highlight-text {
         background-color: rgba(23, 209, 172, 0.6);
     }
 
+.recent-videos-container {
+    display: flex;
+}
+
     .call-now-heading  {
         h2 {
             text-align: right;
         }
     }
-    .call-now-numbers {
-        display: block
+    .call-now-container {
+
+        .call-now-numbers {
+            display: block
+        }
     }
 
     .footer-spacer {
         display: flex
     }
 
-    .footer-subscribe-container {
-        padding-left: 6rem;
-        padding-right: 6rem;
+    #footer-container {
 
-        #subscribe-btn {
-            width: auto;
+        .footer-subscribe-container {
+            
+            #subscribe-btn {
+                width: 66%;
+            }
+        }
+
+        .footer-menu-contact {
+            display: flex
         }
     }
+}
 
-    .footer-menu-contact {
-        display: flex
+@media (min-width: 946px) {
+    
+    #footer-container {
+    
+        .footer-subscribe-container {
+            padding-left: 6rem;
+            padding-right: 6rem;
+
+            .form-inline {
+                flex-flow: inherit;
+            }
+            
+            #subscribe-btn {
+                width: auto;
+            }
+        }
     }
 }

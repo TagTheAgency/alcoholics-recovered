@@ -29,6 +29,9 @@ a {
 a :hover {
   color: black; }
 
+.row {
+  margin-right: 0; }
+
 nav {
   position: fixed;
   width: 100%;
@@ -131,6 +134,11 @@ nav {
   font-size: 2.2em;
   font-weight: 900;
   color: #17D1AC; }
+
+.page-section-container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto; }
 
 .page-section {
   width: 80%;
@@ -304,14 +312,8 @@ h1.highlight-text {
     font-weight: 800;
     color: #17D1AC; }
   .call-now-container .call-now-numbers {
-    display: flex; }
-    .call-now-container .call-now-numbers .call-now-nz {
-      padding-left: 5px;
-      margin-right: 5%;
-      color: #17D1AC; }
-    .call-now-container .call-now-numbers .call-now-aus {
-      padding-left: 5px;
-      color: #17D1AC; }
+    width: max-content;
+    color: #17D1AC; }
 
 #footer-container {
   background-color: rgba(23, 209, 172, 0.3); }
@@ -322,13 +324,14 @@ h1.highlight-text {
     padding-right: 4rem;
     margin-bottom: 3rem; }
     #footer-container .footer-subscribe-container #subscribe-form {
+      width: 100%;
       border: none;
       border-bottom: solid #17D1AC 4px;
       background-color: rgba(30, 30, 30, 0); }
     #footer-container .footer-subscribe-container #subscribe-btn {
       padding: 0.3em 1.3em;
       margin-top: 1em;
-      width: 66%; }
+      width: 100%; }
   #footer-container .footer-menu-container > div dl {
     font-size: 0.8em; }
     #footer-container .footer-menu-container > div dl dt {
@@ -376,8 +379,8 @@ h1.highlight-text {
 #register-btn {
   margin-top: 12px;
   background-color: #fff;
-  padding-left: 5em;
-  padding-right: 5em;
+  padding-left: 20%;
+  padding-right: 20%;
   color: #17D1AC;
   font-size: 1.2em; }
 
@@ -426,22 +429,29 @@ h1.highlight-text {
     width: 500px;
     background-color: rgba(23, 209, 172, 0.6); }
 
+  .recent-videos-container {
+    display: flex; }
+
   .call-now-heading h2 {
     text-align: right; }
 
-  .call-now-numbers {
+  .call-now-container .call-now-numbers {
     display: block; }
 
   .footer-spacer {
     display: flex; }
 
-  .footer-subscribe-container {
+  #footer-container .footer-subscribe-container #subscribe-btn {
+    width: 66%; }
+  #footer-container .footer-menu-contact {
+    display: flex; } }
+@media (min-width: 946px) {
+  #footer-container .footer-subscribe-container {
     padding-left: 6rem;
     padding-right: 6rem; }
-    .footer-subscribe-container #subscribe-btn {
-      width: auto; }
-
-  .footer-menu-contact {
-    display: flex; } }
+    #footer-container .footer-subscribe-container .form-inline {
+      flex-flow: inherit; }
+    #footer-container .footer-subscribe-container #subscribe-btn {
+      width: auto; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -18,13 +18,17 @@ var style = {
     }
   },
   invalid: {
-    color: '#fa755a',
-    iconColor: '#fa755a'
+    color: '#fff',
+    iconColor: '#fff',
+    justifyContent: 'center',
+    display: 'block'
   }
 };
 
+var placeholder = "Card Number";
+
 // Create an instance of the card Element.
-var cardNumber = elements.create('cardNumber', {style: style});
+var cardNumber = elements.create('cardNumber', {style: style, placeholder:placeholder},);
 cardNumber.mount('#card-number');
 
 var cardExpiry = elements.create('cardExpiry', {style:style});
@@ -35,7 +39,7 @@ cardCvc.mount('#card-cvc')
 
 // Handle real-time validation errors from the card Element.
 cardNumber.addEventListener('change', function(event) {
-  var displayError = document.getElementById('card-errors');
+  var displayError = document.getElementById('card-errors', {style:style});
   if (event.error) {
     displayError.textContent = event.error.message;
   } else {
@@ -51,7 +55,7 @@ form.addEventListener('submit', function(event) {
   stripe.createToken(cardNumber).then(function(result) {
     if (result.error) {
       // Inform the user if there was an error.
-      var errorElement = document.getElementById('card-errors');
+      var errorElement = document.getElementById('card-errors', {style:style});
       errorElement.textContent = result.error.message;
     } else {
       // Send the token to your server.
