@@ -224,6 +224,12 @@ nav {
     background-color: rgba(#ffffff, 0.38);
 }
 
+.section-img-container {
+    width: 100%;
+    background-color: rgba(#ffffff, 0.38);
+    padding: 0
+}
+
 .section-text-container-right {
     margin-top: 15%;
     margin-bottom: 15%;
@@ -232,7 +238,7 @@ nav {
 .section-text-container-left {
     margin-top: 15%;
     margin-bottom: 15%;
-    padding-left: 4rem;
+    padding-left: 3rem;
     padding-right: 3rem;
 }
 
@@ -251,9 +257,6 @@ h1.highlight-text {
 }
 
 .feature-text-medium {
-    font-size: 1.6em;
-    padding-left: 8rem;
-    padding-right: 8rem;
     text-align: justify;
 }
 
@@ -439,8 +442,6 @@ h1.highlight-text {
             }
     }
 
-    .footer-menu-container {}
-
     .footer-menu-container > div {
         dl {
             font-size: 0.8em;
@@ -479,6 +480,8 @@ h1.highlight-text {
     padding-top: 4%;
     padding-bottom: 8%;
 }
+
+
 
 
 // Login & Sign up Page
@@ -560,7 +563,9 @@ h1.highlight-text {
 // Media queries
 
 @media (min-width: 576px) {
-
+    // #about-main-img {
+    //     min-width: 370px
+    // }
 }
 
 @media (min-width: 768px) {
@@ -630,7 +635,15 @@ h1.highlight-text {
             display: flex
         }
     }
+
+    .feature-text-medium {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        font-size: 1.6em
+    }
 }
+
+
 
 @media (min-width: 946px) {
     
