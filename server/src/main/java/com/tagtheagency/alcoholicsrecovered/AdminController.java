@@ -65,14 +65,25 @@ public class AdminController {
 	@GetMapping(path="/step/{id}")
 	@ResponseBody
 	public ProcessStepDTO getStep(@PathVariable int id) {
-		
+		System.out.println("Reading step "+id);
+
 		return ProcessStepDTO.from(adminService.getStep(id));
 	}
 	
+	@PostMapping(path="/step")
+	@ResponseBody
+	public ProcessStepDTO createStep(@RequestParam int phase, @RequestParam String title) {
+		ProcessStep step = new ProcessStep();
+		step.setPhase(adminService.getProcessPhase(phase));
+		step.setTitle(title);
+		step = adminService.createStep(step);
+		return ProcessStepDTO.from(step);
+	}
 	
 	@PostMapping(path="/step/{id}")
 	@ResponseBody
 	public ProcessStepDTO updateStep(@PathVariable int id, @RequestParam String html, @RequestParam String title) {
+		System.out.println("Updating step "+id);
 		ProcessStep step = adminService.getStep(id);
 		step.setHtml(html);
 		step.setTitle(title);

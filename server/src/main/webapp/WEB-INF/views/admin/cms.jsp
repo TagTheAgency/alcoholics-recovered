@@ -3,13 +3,20 @@
 <h3>Steps</h3>
 
 <c:forEach items="${steps}" var="step">
-	<a class="stepLoader" data-id="${step.stepNumber }" href="#" id="showStep${step.stepNumber }" >${step.stepNumber } ${step.title }</a>	
+	<a class="stepLoader" data-id="${step.id }" href="#" id="showStep${step.stepNumber }" >${step.stepNumber } ${step.title }</a>	
 </c:forEach>
 
-<button id="createStep">Create a new step</button>
+<form id="newForm">
+<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" id=""/>
+<label>Title</label><input id="newStepTitle" name="title"/>
+<label>Phase</label><input name="phase"/>
+
+<input id="createStep" type="button" value="Create a new step"/>
+</form>
+
 
 <form id="stepForm">
-<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+
 <p>Title: <input type="text" name="title" id="title"/></p>
 <p>Body</p>
 <textarea id="html" name="html" style="display:block;min-width:1000px;height:500px"></textarea>
@@ -30,12 +37,6 @@ document.addEventListener("DOMContentLoaded", function() {
 		if (id === "-1") {
 			return;
 		}
-		/*var data = {
-			id: id,
-			html: document.getElementById('html').value,
-			title: document.getElementById('title').value,
-			${_csrf.parameterName}: ${_csrf.token}
-		}*/
 		
 		var formData = new FormData();
 		formData.append('html', document.getElementById('html').value);
@@ -44,17 +45,11 @@ document.addEventListener("DOMContentLoaded", function() {
 		
 		
 		$("#stepForm").ajaxSubmit({url: 'step/'+id, type: 'post'});
-		
-/*		fetch('step/'+id, {
-			method: "POST",
-			headers: {
-	            //"Content-Type": "application/json; charset=utf-8",
-	             "Content-Type": "application/x-www-form-urlencoded"
-	        },
-	        body: formData
-		})
-		.then(response => response.json())
-		.then(x => console.log(x)); */
+
+	});
+	
+	document.getElementById('createStep').addEventListener('click', evt => {
+		$("#newForm").ajaxSubmit({url: 'step', type: 'post'});
 	});
 	
 });

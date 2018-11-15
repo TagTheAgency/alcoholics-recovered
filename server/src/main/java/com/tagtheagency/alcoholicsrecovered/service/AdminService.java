@@ -39,6 +39,11 @@ public class AdminService {
 		processStepDAO.save(step);
 		
 	}
+
+	public ProcessStep createStep(ProcessStep step) {
+		processStepDAO.save(step);
+		return step;
+	}
 	
 	
 }
