@@ -29,6 +29,9 @@ a {
 a :hover {
   color: black; }
 
+.row {
+  margin-right: 0; }
+
 nav {
   position: fixed;
   width: 100%;
@@ -132,6 +135,11 @@ nav {
   font-weight: 900;
   color: #17D1AC; }
 
+.page-section-container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto; }
+
 .page-section {
   width: 80%;
   margin: auto; }
@@ -161,6 +169,11 @@ nav {
   height: 450px;
   background-color: rgba(255, 255, 255, 0.38); }
 
+.section-img-container {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.38);
+  padding: 0; }
+
 .section-text-container-right {
   margin-top: 15%;
   margin-bottom: 15%; }
@@ -168,7 +181,7 @@ nav {
 .section-text-container-left {
   margin-top: 15%;
   margin-bottom: 15%;
-  padding-left: 4rem;
+  padding-left: 3rem;
   padding-right: 3rem; }
 
 .text-section {
@@ -183,9 +196,6 @@ h1.highlight-text {
   font-size: 2.6em; }
 
 .feature-text-medium {
-  font-size: 1.6em;
-  padding-left: 8rem;
-  padding-right: 8rem;
   text-align: justify; }
 
 .recent-video {
@@ -304,37 +314,42 @@ h1.highlight-text {
     font-weight: 800;
     color: #17D1AC; }
   .call-now-container .call-now-numbers {
-    display: flex; }
-    .call-now-container .call-now-numbers .call-now-nz {
-      padding-left: 5px;
-      margin-right: 5%;
-      color: #17D1AC; }
-    .call-now-container .call-now-numbers .call-now-aus {
-      padding-left: 5px;
-      color: #17D1AC; }
+    width: max-content;
+    color: #17D1AC; }
 
 #footer-container {
   background-color: rgba(23, 209, 172, 0.3); }
   #footer-container .footer {
     color: #17D1AC; }
   #footer-container .footer-subscribe-container {
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     margin-bottom: 3rem; }
     #footer-container .footer-subscribe-container #subscribe-form {
+      width: 100%;
       border: none;
       border-bottom: solid #17D1AC 4px;
       background-color: rgba(30, 30, 30, 0); }
     #footer-container .footer-subscribe-container #subscribe-btn {
-      padding: 0.3em 1.3em; }
+      padding: 0.3em 1.3em;
+      margin-top: 1em;
+      width: 100%; }
   #footer-container .footer-menu-container > div dl {
     font-size: 0.8em; }
     #footer-container .footer-menu-container > div dl dt {
       margin-bottom: .5rem; }
     #footer-container .footer-menu-container > div dl dd {
       margin-bottom: 0; }
-  #footer-container .footer-socmed-icon {
-    float: right; }
+  #footer-container .footer-menu-contact {
+    display: none; }
+
+.footer-socmed-icon {
+  width: 10%;
+  min-width: 30px;
+  margin: 10px; }
+
+.footer-spacer {
+  display: none; }
 
 #about-main-text {
   padding-top: 4%;
@@ -356,6 +371,7 @@ h1.highlight-text {
     color: #fff;
     border: solid #fff 2px;
     border-radius: 10;
+    margin: 0 auto;
     margin-bottom: 12px; }
   #login-container .login-form #card-expiry {
     width: 50%; }
@@ -365,8 +381,8 @@ h1.highlight-text {
 #register-btn {
   margin-top: 12px;
   background-color: #fff;
-  padding-left: 5em;
-  padding-right: 5em;
+  padding-left: 20%;
+  padding-right: 20%;
   color: #17D1AC;
   font-size: 1.2em; }
 
@@ -415,10 +431,34 @@ h1.highlight-text {
     width: 500px;
     background-color: rgba(23, 209, 172, 0.6); }
 
+  .recent-videos-container {
+    display: flex; }
+
   .call-now-heading h2 {
     text-align: right; }
 
-  .call-now-numbers {
-    display: block; } }
+  .call-now-container .call-now-numbers {
+    display: block; }
+
+  .footer-spacer {
+    display: flex; }
+
+  #footer-container .footer-subscribe-container #subscribe-btn {
+    width: 66%; }
+  #footer-container .footer-menu-contact {
+    display: flex; }
+
+  .feature-text-medium {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-size: 1.6em; } }
+@media (min-width: 946px) {
+  #footer-container .footer-subscribe-container {
+    padding-left: 6rem;
+    padding-right: 6rem; }
+    #footer-container .footer-subscribe-container .form-inline {
+      flex-flow: inherit; }
+    #footer-container .footer-subscribe-container #subscribe-btn {
+      width: auto; } }
 
 /*# sourceMappingURL=style.css.map */
