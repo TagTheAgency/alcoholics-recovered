@@ -20,7 +20,7 @@ h2 {
   font-size: 1.4em;
   font-weight: 400; }
 
-.material-icons, #sidebar-container ul li.completed:after {
+.material-icons, #sidebar-container ul li.completed:after, #sidebar-overlay ul li.completed:after {
   vertical-align: middle; }
 
 a {
@@ -227,7 +227,7 @@ h1.highlight-text {
 .progress {
   height: 0.3rem; }
 
-.material-icons, #sidebar-container ul li.completed:after {
+.material-icons, #sidebar-container ul li.completed:after, #sidebar-overlay ul li.completed:after {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -355,6 +355,83 @@ h1.highlight-text {
   padding-top: 4%;
   padding-bottom: 8%; }
 
+.process-main-text {
+  text-align: justify; }
+
+#sidebar-title {
+  display: none; }
+
+#sidebar-icon {
+  display: block; }
+
+#sidebar-hamburger-icon-container {
+  margin-left: 1.3rem;
+  margin-top: -1rem;
+  position: fixed;
+  z-index: 1;
+  width: 60px; }
+
+#sidebar-overlay {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 80px;
+  /* Stay at the top */
+  left: 0;
+  background-color: rgba(247, 247, 247, 0.9);
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 10px;
+  /* Place content 60px from the top */
+  transition: 0.5s; }
+  #sidebar-overlay ul {
+    list-style-type: none; }
+    #sidebar-overlay ul li {
+      padding: 10px 40px;
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: rgba(30, 30, 30, 0.2); }
+      #sidebar-overlay ul li:after {
+        content: "";
+        float: right;
+        margin-right: 20px;
+        margin-top: 6px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: rgba(30, 30, 30, 0.2); }
+      #sidebar-overlay ul li.completed {
+        color: #17D1AC; }
+        #sidebar-overlay ul li.completed:after {
+          content: 'check';
+          background-color: #17D1AC;
+          color: white;
+          vertical-align: middle;
+          font-size: 20px;
+          font-weight: bold; }
+      #sidebar-overlay ul li.active {
+        background-color: #17D1AC;
+        color: white; }
+        #sidebar-overlay ul li.active:after {
+          background-color: white; }
+  #sidebar-overlay a {
+    text-decoration: none; }
+  #sidebar-overlay .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px; }
+
+#main-content-container {
+  transition: margin-left .5s;
+  padding: 20px; }
+
 #login-container {
   background-color: rgba(69, 155, 159, 0.4);
   border-radius: 10px;
@@ -451,7 +528,10 @@ h1.highlight-text {
   .feature-text-medium {
     padding-left: 4rem;
     padding-right: 4rem;
-    font-size: 1.6em; } }
+    font-size: 1.6em; }
+
+  #sidebar-hamburger-icon {
+    display: none; } }
 @media (min-width: 946px) {
   #footer-container .footer-subscribe-container {
     padding-left: 6rem;
@@ -459,6 +539,12 @@ h1.highlight-text {
     #footer-container .footer-subscribe-container .form-inline {
       flex-flow: inherit; }
     #footer-container .footer-subscribe-container #subscribe-btn {
-      width: auto; } }
+      width: auto; }
+
+  #sidebar-title {
+    display: block; }
+
+  #sidebar-icon {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
