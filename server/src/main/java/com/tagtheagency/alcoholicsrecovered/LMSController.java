@@ -2,9 +2,12 @@ package com.tagtheagency.alcoholicsrecovered;
 
 import java.security.Principal;
 import java.util.Collections;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import javax.annotation.security.PermitAll;
+import javax.websocket.server.PathParam;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -17,6 +20,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -125,11 +129,44 @@ public class LMSController {
 		ProcessStep currentStep = users.getCurrentStep(user);
 		ProcessPhase currentPhase = currentStep.getPhase();
 		
+		//List<String> steps = currentPhase.getSteps().stream().map(ProcessStep::getTitle).collect(Collectors.toList());
+		
 		int totalSteps = users.getStepCount(currentPhase);
 		
 		model.addAttribute("stepCount", totalSteps);
 		model.addAttribute("currentStep", currentStep);
 		model.addAttribute("currentPhase", currentPhase);
+		model.addAttribute("steps", currentPhase.getSteps());
+		
+		return "process";
+		
+	}
+	
+	@GetMapping(path="/theProcess/{phase}/{step}")
+	public String getCurrentStepOfTheProcess(Model model, Principal principal, @PathVariable int phase, @PathVariable int step) {
+		User user = getUserFromPrincipal(principal);
+		
+		ProcessStep currentStep = users.getCurrentStep(user);
+		ProcessPhase currentPhase = currentStep.getPhase();
+
+		if (phase > currentPhase.getPhaseNumber()) {
+			return "redirect:/theProcess";//getCurrentStepOfTheProcess(model, principal);
+		}
+		if (phase == currentPhase.getPhaseNumber() && step > currentStep.getStepNumber()) {
+			return "redirect:/theProcess";//getCurrentStepOfTheProcess(model, principal);
+		}
+		
+		ProcessPhase viewPhase = users.getPhaseByNumber(phase);
+		ProcessStep viewStep = users.getStepByNumber(step, phase);
+		
+		//List<String> steps = currentPhase.getSteps().stream().map(ProcessStep::getTitle).collect(Collectors.toList());
+		
+		int totalSteps = users.getStepCount(viewPhase);
+		
+		model.addAttribute("stepCount", totalSteps);
+		model.addAttribute("currentStep", viewStep);
+		model.addAttribute("currentPhase", viewPhase);
+		model.addAttribute("steps", viewPhase.getSteps());
 		
 		return "process";
 		

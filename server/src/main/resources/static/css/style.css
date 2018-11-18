@@ -217,7 +217,7 @@ h1.highlight-text {
 .progress {
   height: 0.3rem; }
 
-.material-icons, #sidebar-container ul li.completed:after {
+.material-icons, #sidebar-container ul li.completed:after, #sidebar-container ul li.completed:after  {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -260,7 +260,7 @@ h1.highlight-text {
         height: 20px;
         border-radius: 50%;
         background-color: rgba(30, 30, 30, 0.2); }
-      #sidebar-container ul li.completed {
+	#sidebar-container ul li.completed a {
         color: #17D1AC; }
         #sidebar-container ul li.completed:after {
           content: 'check';

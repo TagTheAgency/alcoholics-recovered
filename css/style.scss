@@ -344,18 +344,19 @@ h1.highlight-text {
         background-color: rgba(30,30,30,.2);
       }
 
-      &.completed {
+      &.completed a {
         color: $primaryColour;
-        &:after {
-          @extend .material-icons;
-          content: 'check';
-          background-color: $primaryColour;
-          color: white;
-          vertical-align: middle;
-          font-size: 20px;
-          font-weight: bold;
-        }
       }
+      &.completed:after {
+        @extend .material-icons;
+        content: 'check';
+        background-color: $primaryColour;
+        color: white;
+        vertical-align: middle;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
       &.active {
         background-color: $primaryColour;
         color: white;
@@ -468,7 +469,7 @@ h1.highlight-text {
             min-width: 30px;
             margin: 10px
         }
-        
+
         .footer-spacer {
             display: none
         }
@@ -515,7 +516,7 @@ h1.highlight-text {
         #card-expiry {
             width: 50%
           }
-          
+
           #card-cvc {
             width: 50%
           }
@@ -544,19 +545,19 @@ h1.highlight-text {
         -webkit-transition: box-shadow 150ms ease;
         transition: box-shadow 150ms ease;
       }
-      
+
       .StripeElement--focus {
         box-shadow: 0 1px 3px 0 #cfd7df;
       }
-      
+
       .StripeElement--invalid {
         border-color: #fa755a;
       }
-      
+
       .StripeElement--webkit-autofill {
         background-color: #fefde5 !important;
       }
-      
+
 
 
 
@@ -625,7 +626,7 @@ h1.highlight-text {
     #footer-container {
 
         .footer-subscribe-container {
-            
+
             #subscribe-btn {
                 width: 66%;
             }
@@ -646,9 +647,9 @@ h1.highlight-text {
 
 
 @media (min-width: 946px) {
-    
+
     #footer-container {
-    
+
         .footer-subscribe-container {
             padding-left: 6rem;
             padding-right: 6rem;
@@ -656,7 +657,7 @@ h1.highlight-text {
             .form-inline {
                 flex-flow: inherit;
             }
-            
+
             #subscribe-btn {
                 width: auto;
             }

@@ -16,7 +16,7 @@
 
 
 <form id="stepForm">
-
+<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 <p>Title: <input type="text" name="title" id="title"/></p>
 <p>Body</p>
 <textarea id="html" name="html" style="display:block;min-width:1000px;height:500px"></textarea>
@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		formData.append('html', document.getElementById('html').value);
 		formData.append('title', document.getElementById('title').value);
 		formData.append('${_csrf.parameterName}', '${_csrf.token}');
+		console.log(formData);
 		
 		
 		$("#stepForm").ajaxSubmit({url: 'step/'+id, type: 'post'});

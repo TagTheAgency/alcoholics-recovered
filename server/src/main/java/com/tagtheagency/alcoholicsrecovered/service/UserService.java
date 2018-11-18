@@ -1,6 +1,7 @@
 package com.tagtheagency.alcoholicsrecovered.service;
 
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -120,4 +121,28 @@ public class UserService implements UserDetailsService {
 		
 		
 	}
+
+	public List<ProcessStep> getPhaseSteps(ProcessPhase currentPhase) {
+		return currentPhase.getSteps();
+	}
+
+	/**
+	 * Get a phase by its number
+	 * @param phase
+	 * @return
+	 */
+	public ProcessPhase getPhaseByNumber(int phase) {
+		return processPhaseDao.findByPhaseNumber(phase).get(0);
+	}
+
+	/**
+	 * Get a step by its number and phase number
+	 * @param phase
+	 * @return
+	 */
+	public ProcessStep getStepByNumber(int step, int phase) {
+		return processStepDao.findByStepNumberAndPhase_PhaseNumber(step, phase).get(0);
+	}
+
+
 }
