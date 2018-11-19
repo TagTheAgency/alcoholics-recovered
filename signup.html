@@ -33,8 +33,23 @@
                   <div id="login-btn" class="btn btn-prm"><a href="./login.html">Login</a></div>
                   <div id="sign-up-btn" class="btn btn-prm"><a href="./signup.html">Sign Up</a></div>
               </div>
-              <div id="hamburger-menu" class="d-md-none">
-                <i class="fas fa-bars"></i>
+              <div id="top-nav-container">
+                  <span onclick="openTopNav()">
+                    <div id="hamburger-menu" class="d-md-none">
+                      <i class="fas fa-bars"></i>
+                    </div>
+                  </span>
+                    <div id="top-nav" class="overlay justify-content-center">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeTopNav()">&times;</a>
+                      <div class="overlay-content">
+                        <a href="./index.html">Home</a>
+                        <a href="./about.html">About</a>
+                        <a href="./process.html">Process</a>
+                        <a href="./contact.html">Contact</a>
+                        <a href="./login.html">Login</a>
+                        <a href="./signup.html">Sign Up</a>
+                      </div>
+                    </div>
               </div>
             </div>
            </nav>
@@ -137,6 +152,7 @@
          </footer>
       <script src="./node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
       <script src="./js/script.js" charset="utf-8"></script>
+      <script src="./navBarOverlay.js"></script>
       <script src="https://js.stripe.com/v3/"></script>
       <script src="./signupPayment.js"></script>
   </div>
