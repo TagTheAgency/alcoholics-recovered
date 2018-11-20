@@ -270,15 +270,15 @@ h1.highlight-text {
         height: 20px;
         border-radius: 50%;
         background-color: rgba(30, 30, 30, 0.2); }
-      #sidebar-container ul li.completed {
+      #sidebar-container ul li.completed a {
         color: #17D1AC; }
-        #sidebar-container ul li.completed:after {
-          content: 'check';
-          background-color: #17D1AC;
-          color: white;
-          vertical-align: middle;
-          font-size: 20px;
-          font-weight: bold; }
+      #sidebar-container ul li.completed:after {
+        content: 'check';
+        background-color: #17D1AC;
+        color: white;
+        vertical-align: middle;
+        font-size: 20px;
+        font-weight: bold; }
       #sidebar-container ul li.active {
         background-color: #17D1AC;
         color: white; }
@@ -539,12 +539,6 @@ h1.highlight-text {
     #footer-container .footer-subscribe-container .form-inline {
       flex-flow: inherit; }
     #footer-container .footer-subscribe-container #subscribe-btn {
-      width: auto; }
-
-  #sidebar-title {
-    display: block; }
-
-  #sidebar-icon {
-    display: none; } }
+      width: auto; } }
 
 /*# sourceMappingURL=style.css.map */

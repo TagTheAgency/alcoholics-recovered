@@ -44,11 +44,14 @@
 						<ul class="list-group">
 							<c:forEach items="${steps }" var="step">
 								<c:choose>
-									<c:when test="${step.stepNumber < currentStep.stepNumber}">
-										<li class="completed"><a href="theProcess/${step.phase.phaseNumber }/${step.stepNumber}">${step.title }</a></li>
-									</c:when>
-									<c:when test="${step.stepNumber == currentStep.stepNumber}">
+									<c:when test="${helper.active(step)}">
 										<li class="active">${step.title }</li>
+									</c:when>
+									<c:when test="${helper.viewable(step)}">
+										<li class="completed"><a href="${pageContext.request.contextPath}/theProcess/${step.phase.phaseNumber }/${step.stepNumber}">${step.title }</a></li>
+									</c:when>
+									<c:when test="${helper.current(step)}">
+										<li class="completed notick"><a href="${pageContext.request.contextPath}/theProcess/${step.phase.phaseNumber }/${step.stepNumber}">${step.title }</a></li>
 									</c:when>
 									<c:otherwise>
 										<li>${step.title }
@@ -56,10 +59,6 @@
 								</c:choose>
 							</c:forEach>
 						
-							<!-- li class="completed">First slide</li>
-							<li class="active">Second slide</li>
-							<li>Third slide</li>
-							<li>Fourth slide</li -->
 
 						</ul>
 					</div>
@@ -68,7 +67,7 @@
 	    <div id="main-content-container" class="col">
 				<div id="video-container">
 					<video controls
-								 controlsList="nodownload"
+							controlsList="nodownload"
 					       src="/video/Beach.webm"
 					       width="600"
 					       height="400">
@@ -77,7 +76,7 @@
 				</div>
 				<hr class="bg-ar-primary"/>
 				${currentStep.html }
-				<c:if test="currentStep.needsOkay">
+				<c:if test="${currentStep.needsOkay}">
 					<p>Please just tick the completed box that you have read and agreed to the above</p>
 					<div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="agreeCheck">
@@ -87,12 +86,11 @@
 </div>
 </c:if>
 <button class="btn btn-ar-primary previous">
-Previous question</button>
-<button class="btn btn-ar-secondary next disabled" id="nextButton">
-Next question</button>
+Previous slide</button>
+<button class="btn btn-ar-secondary next ${currentStep.needsOkay ? "disabled" : "" }" id="nextButton">
 
+Next slide</button>
 
-				
 	    </div>
 	</div>
 
@@ -102,9 +100,11 @@ Next question</button>
 
 		</div>
  	</footer>
-	<script src="./node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
-	<script src="./js/script.js" charset="utf-8"></script>
+
 	<script>
+	document.addEventListener("DOMContentLoaded", function(event) { 
+
+	<c:if test="${currentStep.needsOkay}">
 	$('#agreeCheck').click(function() {
 		if ($('#agreeCheck').is(':checked')) {
 			$('#nextButton').removeClass('disabled');
@@ -112,6 +112,8 @@ Next question</button>
 			$('#nextButton').addClass('disabled');
 
 		}
+	});
+	</c:if>
 	});
 	</script>
  </div>

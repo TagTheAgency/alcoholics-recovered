@@ -35,6 +35,7 @@ import com.tagtheagency.alcoholicsrecovered.service.ARUserDetails;
 import com.tagtheagency.alcoholicsrecovered.service.StripeService;
 import com.tagtheagency.alcoholicsrecovered.service.UserService;
 import com.tagtheagency.alcoholicsrecovered.service.exception.EmailExistsException;
+import com.tagtheagency.alcoholicsrecovered.view.ProcessViewHelper;
 
 @Controller
 @PropertySource(value= {"classpath:secret.properties"})
@@ -129,26 +130,34 @@ public class LMSController {
 		ProcessStep currentStep = users.getCurrentStep(user);
 		ProcessPhase currentPhase = currentStep.getPhase();
 		
+		int processedCurrentStep = getUniqueOrder(currentStep);
+		
 		//List<String> steps = currentPhase.getSteps().stream().map(ProcessStep::getTitle).collect(Collectors.toList());
 		
 		int totalSteps = users.getStepCount(currentPhase);
 		
+
+		List<ProcessStep> sortedSteps = currentPhase.getSteps();
+		sortedSteps.sort((i1,i2) -> i1.getStepNumber() - i2.getStepNumber());
+		
 		model.addAttribute("stepCount", totalSteps);
 		model.addAttribute("currentStep", currentStep);
+		model.addAttribute("phaseAndStep", processedCurrentStep);
 		model.addAttribute("currentPhase", currentPhase);
-		model.addAttribute("steps", currentPhase.getSteps());
+		model.addAttribute("steps", sortedSteps);
 		
 		return "process";
 		
 	}
 	
 	@GetMapping(path="/theProcess/{phase}/{step}")
-	public String getCurrentStepOfTheProcess(Model model, Principal principal, @PathVariable int phase, @PathVariable int step) {
+	public String getSpecificStepOfTheProcess(Model model, Principal principal, @PathVariable int phase, @PathVariable int step) {
 		User user = getUserFromPrincipal(principal);
 		
 		ProcessStep currentStep = users.getCurrentStep(user);
 		ProcessPhase currentPhase = currentStep.getPhase();
-
+		int processedCurrentStep = getUniqueOrder(currentStep);
+		
 		if (phase > currentPhase.getPhaseNumber()) {
 			return "redirect:/theProcess";//getCurrentStepOfTheProcess(model, principal);
 		}
@@ -159,15 +168,59 @@ public class LMSController {
 		ProcessPhase viewPhase = users.getPhaseByNumber(phase);
 		ProcessStep viewStep = users.getStepByNumber(step, phase);
 		
+		ProcessViewHelper helper = new ProcessViewHelper(currentStep, viewStep);
+		
+		int totalSteps = users.getStepCount(viewPhase);
+		
+		List<ProcessStep> sortedSteps = viewPhase.getSteps();
+		sortedSteps.sort((i1,i2) -> i1.getStepNumber() - i2.getStepNumber());
+		
+		model.addAttribute("stepCount", totalSteps);
+		model.addAttribute("currentStep", viewStep);
+		model.addAttribute("phaseAndStep", processedCurrentStep);
+		model.addAttribute("currentPhase", viewPhase);
+		model.addAttribute("steps", sortedSteps);
+		model.addAttribute("helper", helper);
+		
+		return "process";
+		
+	}
+	
+	@PostMapping(path="/theProcess/{phase}/{step}/next")
+	public String gotoNextStep(Model model, Principal principal, @PathVariable int phase, @PathVariable int step) {
+		User user = getUserFromPrincipal(principal);
+		
+		ProcessStep currentStep = users.getCurrentStep(user);
+		ProcessPhase currentPhase = currentStep.getPhase();
+		int processedCurrentStep = getUniqueOrder(currentStep);
+		
+		if (phase > currentPhase.getPhaseNumber()) {
+			return "redirect:/theProcess";//getCurrentStepOfTheProcess(model, principal);
+		}
+		if (phase == currentPhase.getPhaseNumber() && step > currentStep.getStepNumber()) {
+			return "redirect:/theProcess";//getCurrentStepOfTheProcess(model, principal);
+		}
+
+		
+		ProcessPhase viewPhase = users.getPhaseByNumber(phase);
+		ProcessStep viewStep = users.getStepByNumber(step, phase);
+
+		ProcessViewHelper helper = new ProcessViewHelper(currentStep, viewStep);
+		
 		//List<String> steps = currentPhase.getSteps().stream().map(ProcessStep::getTitle).collect(Collectors.toList());
 		
 		int totalSteps = users.getStepCount(viewPhase);
 		
+		List<ProcessStep> sortedSteps = viewPhase.getSteps();
+		sortedSteps.sort((i1,i2) -> i1.getStepNumber() - i2.getStepNumber());
+		
 		model.addAttribute("stepCount", totalSteps);
 		model.addAttribute("currentStep", viewStep);
+		model.addAttribute("phaseAndStep", processedCurrentStep);
 		model.addAttribute("currentPhase", viewPhase);
-		model.addAttribute("steps", viewPhase.getSteps());
-		
+		model.addAttribute("steps", sortedSteps);
+		model.addAttribute("helper", helper);
+
 		return "process";
 		
 	}
@@ -179,5 +232,13 @@ public class LMSController {
 			return users.getUser(user.getUsername());
 		}
 		return null;
+	}
+	
+	private int getUniqueOrder(ProcessStep step) {
+		return getUniqueOrder(step, step.getPhase());
+	}
+	
+	private int getUniqueOrder(ProcessStep step, ProcessPhase phase) {
+		return (phase.getPhaseNumber() * 1000) + step.getStepNumber();
 	}
 }
