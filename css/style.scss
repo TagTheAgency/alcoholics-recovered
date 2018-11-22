@@ -1,4 +1,4 @@
-$primaryColour: #17D1AC;
+$primaryColour: #75CEDE;
 $secondaryColor: #725FD9;
 $lightSecondaryColor: #C6BEEF;
 
@@ -121,7 +121,7 @@ nav {
 	color: #fff;
 	width: 80%;
     margin: auto auto;
-    background-color: rgba(23, 209, 172, 0.6);
+    background-color: rgba(117, 206, 222, 0.6);
 }
 
 .hero-container-overlay {
@@ -130,7 +130,7 @@ nav {
 	position: absolute;
 	left: 0;
 	top: 0;
-	background-color: #17d1ac;
+	background-color: #75CEDE;
 	opacity: 0.8;
 }
 
@@ -419,7 +419,7 @@ h1.highlight-text {
 // Footer
 
 #footer-container {
-    background-color: rgba(23, 209, 172, 0.3);
+    background-color: rgba(117, 206, 222, 0.3);
 
     .footer {
         color: $primaryColour
@@ -432,7 +432,7 @@ h1.highlight-text {
             #subscribe-form {
                 width: 100%;
                 border: none;
-                border-bottom: solid #17D1AC 4px;
+                border-bottom: solid #75CEDE 4px;
                 background-color: rgba(30,30,30,0)
             }
 
@@ -692,7 +692,7 @@ h1.highlight-text {
         margin: 0;
         padding: 2em 4em 2em 4em;
         width: 500px;
-        background-color: rgba(23, 209, 172, 0.6);
+        background-color: rgba(117, 206, 222, 0.6);
     }
 
 .recent-videos-container {
