@@ -32,6 +32,15 @@ public class ProcessStep {
 	@Column 
 	private boolean needsOkay;
 	
+	@Column(name="tick_box_text")
+	private String tickBoxText;
+	
+	@Column
+	private String download;
+	
+	@Column
+	private String video;
+	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "phase_id", nullable = false)
 	private ProcessPhase phase;
@@ -82,6 +91,30 @@ public class ProcessStep {
 	
 	public void setPhase(ProcessPhase phase) {
 		this.phase = phase;
+	}
+	
+	public String getDownload() {
+		return download;
+	}
+	
+	public void setDownload(String download) {
+		this.download = download;
+	}
+	
+	public String getTickBoxText() {
+		return tickBoxText;
+	}
+	
+	public void setTickBoxText(String tickBoxText) {
+		this.tickBoxText = tickBoxText;
+	}
+	
+	public String getVideo() {
+		return video;
+	}
+	
+	public void setVideo(String video) {
+		this.video = video;
 	}
 	
 	
