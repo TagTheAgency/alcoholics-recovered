@@ -125,24 +125,25 @@ public class LMSController {
 		ProcessStep currentStep = users.getCurrentStep(user);
 		ProcessPhase currentPhase = currentStep.getPhase();
 		
-		int processedCurrentStep = getUniqueOrder(currentStep);
-		
-		//List<String> steps = currentPhase.getSteps().stream().map(ProcessStep::getTitle).collect(Collectors.toList());
-		
-		int totalSteps = users.getStepCount(currentPhase);
-		
-
-		List<ProcessStep> sortedSteps = currentPhase.getSteps();
-		sortedSteps.sort((i1,i2) -> i1.getStepNumber() - i2.getStepNumber());
-		
-		model.addAttribute("stepCount", totalSteps);
-		model.addAttribute("currentStep", currentStep);
-		model.addAttribute("phaseAndStep", processedCurrentStep);
-		model.addAttribute("currentPhase", currentPhase);
-		model.addAttribute("steps", sortedSteps);
+		setProcessPage(model, currentStep, currentStep);
 		
 		return "process";
 		
+	}
+	
+	private void setProcessPage(Model model, ProcessStep viewingStep, ProcessStep currentStep) {
+		ProcessViewHelper helper = new ProcessViewHelper(currentStep, viewingStep);
+		ProcessPhase viewPhase = viewingStep.getPhase();
+		int totalSteps = users.getStepCount(viewPhase);
+		
+		List<ProcessStep> sortedSteps = viewPhase.getSteps();
+		sortedSteps.sort((i1,i2) -> i1.getStepNumber() - i2.getStepNumber());
+		
+		model.addAttribute("stepCount", totalSteps);
+		model.addAttribute("currentStep", viewingStep);
+		model.addAttribute("currentPhase", viewPhase);
+		model.addAttribute("steps", sortedSteps);
+		model.addAttribute("helper", helper);
 	}
 	
 	@GetMapping(path="/theProcess/{phase}/{step}")
@@ -151,7 +152,6 @@ public class LMSController {
 		
 		ProcessStep currentStep = users.getCurrentStep(user);
 		ProcessPhase currentPhase = currentStep.getPhase();
-		int processedCurrentStep = getUniqueOrder(currentStep);
 		
 		if (phase > currentPhase.getPhaseNumber()) {
 			return "redirect:/theProcess";//getCurrentStepOfTheProcess(model, principal);
@@ -160,23 +160,10 @@ public class LMSController {
 			return "redirect:/theProcess";//getCurrentStepOfTheProcess(model, principal);
 		}
 		
-		ProcessPhase viewPhase = users.getPhaseByNumber(phase);
 		ProcessStep viewStep = users.getStepByNumber(step, phase);
 		
-		ProcessViewHelper helper = new ProcessViewHelper(currentStep, viewStep);
-		
-		int totalSteps = users.getStepCount(viewPhase);
-		
-		List<ProcessStep> sortedSteps = viewPhase.getSteps();
-		sortedSteps.sort((i1,i2) -> i1.getStepNumber() - i2.getStepNumber());
-		
-		model.addAttribute("stepCount", totalSteps);
-		model.addAttribute("currentStep", viewStep);
-		model.addAttribute("phaseAndStep", processedCurrentStep);
-		model.addAttribute("currentPhase", viewPhase);
-		model.addAttribute("steps", sortedSteps);
-		model.addAttribute("helper", helper);
-		
+		setProcessPage(model, viewStep, currentStep);
+
 		return "process";
 		
 	}
