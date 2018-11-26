@@ -6,7 +6,7 @@
 			  <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 			  	<c:if test="${not empty param.error}">
 		            <div class="alert alert-danger" role="alert">
-		  				Invalid username or password. You can <a class="alert-link" href="join/account">create a new account</a> or use the <a class="alert-link" href="forgotPassword">forgot password page</a>.
+		  				Invalid username or password. You can <a class="alert-link" href="${pageContext.request.contextPath}/join/account">create a new account</a> or use the <a class="alert-link" href="forgotPassword">forgot password page</a>.
 					</div>
 		         </c:if>
               <div class="form-label-group">
@@ -23,7 +23,7 @@
               </div>
               <div class="col-8 mx-auto">
                 <button class="btn" id="register-btn" type="submit">Sign in</button>
-                <p class="mt-3">Don't have an account? <a href="">Sign up here.</a></p>  
+                <p class="mt-3">Don't have an account? <a href="${pageContext.request.contextPath}/join/account">Sign up here.</a></p>  
               </div>
             </form>
     </div>

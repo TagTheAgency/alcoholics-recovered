@@ -51,20 +51,21 @@
 				</div>
 				<hr class="bg-ar-primary"/>
 				${currentStep.html }
+<form method="post" action="${pageContext.request.contextPath}/theProcess/${currentPhase.phaseNumber }/${currentStep.stepNumber }/next" >
 				<c:if test="${currentStep.needsOkay}">
 					<p>Please just tick the completed box that you have read and agreed to the above</p>
 					<div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="agreeCheck">
   <label class="form-check-label" for="agreeCheck">
-    I have read and agreed to the above
+	${currentStep.tickBoxText }
   </label>
 </div>
 </c:if>
-<button class="btn btn-ar-primary previous">
-Previous slide</button>
-<button class="btn btn-ar-secondary next ${currentStep.needsOkay ? "disabled" : "" }" id="nextButton">
-
+<a class="btn btn-ar-primary previous"  href="${pageContext.request.contextPath}/theProcess/${currentPhase.phaseNumber }/${currentStep.stepNumber }/previous">Previous slide</a>
+<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+<button class="btn btn-ar-secondary next ${currentStep.needsOkay ? "disabled" : "" }" id="nextButton" type="submit" ${currentStep.needsOkay ? "disabled=\"disabled\"" : "" }>
 Next slide</button>
+</form>
 
 	    </div>
 	</div>
@@ -83,8 +84,10 @@ Next slide</button>
 	$('#agreeCheck').click(function() {
 		if ($('#agreeCheck').is(':checked')) {
 			$('#nextButton').removeClass('disabled');
+			$('#nextButton').removeAttr('disabled');
 		} else {
 			$('#nextButton').addClass('disabled');
+			$('#nextButton').attr("disabled", "disabled");
 
 		}
 	});

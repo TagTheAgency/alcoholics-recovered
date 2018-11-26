@@ -17,4 +17,5 @@ public interface ProcessPhaseDAO extends JpaRepository<ProcessPhase, Integer>{
     public int getStepCount(@Param("phaseId") int phaseId);
 	
 	List<ProcessPhase> findByPhaseNumber(int phaseNumber);
+
 }

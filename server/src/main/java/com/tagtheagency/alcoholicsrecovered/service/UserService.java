@@ -106,21 +106,21 @@ public class UserService implements UserDetailsService {
 	}
 
 	public ProcessStep getCurrentStep(User user) {
-		int stepId = user.getCurrentStep();
-		return processStepDao.getOne(stepId);
-		
+		Integer stepId = user.getCurrentStep();
+		if (stepId == null) {
+			return getFirstStepOfTheProcess();
+		}
+		try {
+			return processStepDao.getOne(stepId);
+		} catch (javax.persistence.EntityNotFoundException e) {
+			return getFirstStepOfTheProcess();
+		}
 	}
 
 	public int getStepCount(ProcessPhase currentPhase) {
 		return processPhaseDao.getStepCount(currentPhase.getId());
 	}
-	
-	public ProcessStep getNextStep(ProcessStep currentStep) {
-		//TODO 
-		return null;
-		
-		
-	}
+
 
 	public List<ProcessStep> getPhaseSteps(ProcessPhase currentPhase) {
 		return currentPhase.getSteps();
@@ -150,4 +150,41 @@ public class UserService implements UserDetailsService {
 		userDao.save(user);
 	}
 
+	public ProcessStep getFirstStepOfTheProcess() {
+		return processStepDao.findByStepNumberAndPhase_PhaseNumber(1, 1).get(0);
+	}
+
+	public ProcessStep getPreceedingStep(ProcessStep currentStep) {
+		int stepNumber = currentStep.getStepNumber() - 1;
+		if (stepNumber >= 1) {
+			return getStepByNumber(stepNumber, currentStep.getPhase().getPhaseNumber());
+		}
+		//first step, have to go back a phase.
+		int phaseNumber = currentStep.getPhase().getPhaseNumber() - 1;
+		if (phaseNumber >= 1) {
+			ProcessPhase preceedingPhase = processPhaseDao.findByPhaseNumber(phaseNumber).get(0);
+			int lastStep = preceedingPhase.steps.stream().mapToInt(ProcessStep::getStepNumber).max().getAsInt();
+			return getStepByNumber(lastStep, phaseNumber);
+		}
+		return getFirstStepOfTheProcess();
+	}
+	
+	
+	public ProcessStep getNextStep(ProcessStep currentStep) {
+		int stepNumber = currentStep.getStepNumber() + 1;
+
+		List<ProcessStep> stepPlusOne = processStepDao.findByStepNumberAndPhase_PhaseNumber(stepNumber, currentStep.getPhase().getPhaseNumber());
+		if (stepPlusOne.size() > 0) {
+			return stepPlusOne.get(0);
+		}
+		//increment phase
+		List<ProcessPhase> phasePlusOne = processPhaseDao.findByPhaseNumber(currentStep.getPhase().getPhaseNumber() + 1);
+		if (phasePlusOne.isEmpty()) {
+			//TODO handle finished.
+			return null;
+		}
+		return getStepByNumber(1, phasePlusOne.get(0).getPhaseNumber());
+	}
+
+	
 }

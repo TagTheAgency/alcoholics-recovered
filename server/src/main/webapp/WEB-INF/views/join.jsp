@@ -33,7 +33,7 @@
          <div id="card-errors" role="alert"></div>
          <div class="col-8 mx-auto">
        <button id="register-btn" class="btn">Register</button>
-       <p class="mt-3">Already have an account? <a href="./login.html">Login here.</a></p>
+       <p class="mt-3">Already have an account? <a href="${pageContext.request.contextPath}/login">Login here.</a></p>
        </div>
      </form>
      </div>

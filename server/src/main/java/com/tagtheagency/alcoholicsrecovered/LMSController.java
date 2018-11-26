@@ -123,7 +123,9 @@ public class LMSController {
 		User user = getUserFromPrincipal(principal);
 		
 		ProcessStep currentStep = users.getCurrentStep(user);
-		ProcessPhase currentPhase = currentStep.getPhase();
+		if (currentStep == null) {
+			currentStep = users.getFirstStepOfTheProcess();
+		}
 		
 		setProcessPage(model, currentStep, currentStep);
 		
@@ -168,8 +170,16 @@ public class LMSController {
 		
 	}
 	
+	@GetMapping(path="/theProcess/{phase}/{step}/previous")
+	public String gotoPreviousStep(Model model, Principal principal, @PathVariable int phase, @PathVariable int step) {
+		ProcessStep currentStep = users.getStepByNumber(step, phase);
+		ProcessStep requestedStep = users.getPreceedingStep(currentStep);
+		
+		return getSpecificStepOfTheProcess(model, principal, requestedStep.getPhase().getPhaseNumber(), requestedStep.getStepNumber());
+	}
+	
 	@PostMapping(path="/theProcess/{phase}/{step}/next")
-	public String gotoNextStep(Model model, Principal principal, @PathVariable int phase, @PathVariable int step) {
+	public String gotoNextStep(Model model, Principal principal, @PathVariable int phase, @PathVariable int step, @RequestParam(required=false) boolean agreeChecked) {
 		User user = getUserFromPrincipal(principal);
 		
 		ProcessStep currentStep = users.getCurrentStep(user);
@@ -183,27 +193,26 @@ public class LMSController {
 			return "redirect:/theProcess";//getCurrentStepOfTheProcess(model, principal);
 		}
 
-		
 		ProcessPhase viewPhase = users.getPhaseByNumber(phase);
 		ProcessStep viewStep = users.getStepByNumber(step, phase);
 
-		ProcessViewHelper helper = new ProcessViewHelper(currentStep, viewStep);
 		
-		//List<String> steps = currentPhase.getSteps().stream().map(ProcessStep::getTitle).collect(Collectors.toList());
+		if (getUniqueOrder(viewStep) == getUniqueOrder(currentStep) && currentStep.isNeedsOkay() && !agreeChecked) {
+			System.out.println("At last step but not agreeChecked");
+			return getCurrentStepOfTheProcess(model, principal);
+		}
 		
-		int totalSteps = users.getStepCount(viewPhase);
+		ProcessStep requestedStep = users.getNextStep(viewStep);
+		System.out.println("Requested next step is "+requestedStep);
 		
-		List<ProcessStep> sortedSteps = viewPhase.getSteps();
-		sortedSteps.sort((i1,i2) -> i1.getStepNumber() - i2.getStepNumber());
 		
-		model.addAttribute("stepCount", totalSteps);
-		model.addAttribute("currentStep", viewStep);
-		model.addAttribute("phaseAndStep", processedCurrentStep);
-		model.addAttribute("currentPhase", viewPhase);
-		model.addAttribute("steps", sortedSteps);
-		model.addAttribute("helper", helper);
+		if (getUniqueOrder(viewStep) == getUniqueOrder(currentStep)) {
+			users.setStep(user, requestedStep, requestedStep.getPhase());
+			return "redirect:/theProcess";
+		}
+		
+		return getSpecificStepOfTheProcess(model, principal, requestedStep.getPhase().getPhaseNumber(), requestedStep.getStepNumber());
 
-		return "process";
 		
 	}
 	

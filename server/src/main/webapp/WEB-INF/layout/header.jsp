@@ -12,8 +12,8 @@
 				</ul>
 			</div>
 			<div class="nav-acc-items-container d-none d-md-block">
-					<div id="login-btn" class="btn btn-prm"><a href="./login.html">Login</a></div>
-					<div id="sign-up-btn" class="btn btn-prm"><a href="./signup.html">Sign Up</a></div>
+					<div id="login-btn" class="btn btn-prm"><a href="${pageContext.request.contextPath}/login">Login</a></div>
+					<div id="sign-up-btn" class="btn btn-prm"><a href="${pageContext.request.contextPath}/join/account">Sign Up</a></div>
 			</div>
 			<div id="hamburger-menu" class="d-md-none">
 				<i class="fas fa-bars"></i>
