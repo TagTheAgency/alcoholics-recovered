@@ -2,8 +2,11 @@ package com.tagtheagency.alcoholicsrecovered.service;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -106,12 +109,17 @@ public class UserService implements UserDetailsService {
 	}
 
 	public ProcessStep getCurrentStep(User user) {
-		Integer stepId = user.getCurrentStep();
-		if (stepId == null) {
-			return getFirstStepOfTheProcess();
-		}
 		try {
-			return processStepDao.getOne(stepId);
+			Integer stepId = user.getCurrentStep();
+			System.out.println("Get current step returning id "+stepId);
+			if (stepId == null) {
+				return getFirstStepOfTheProcess();
+			}
+			
+			Optional<ProcessStep> found = processStepDao.findById(stepId);
+			System.out.println("Done a search by example, have a result "+found.isPresent());
+			
+			return found.orElseGet(this::getFirstStepOfTheProcess);
 		} catch (javax.persistence.EntityNotFoundException e) {
 			return getFirstStepOfTheProcess();
 		}
@@ -151,6 +159,11 @@ public class UserService implements UserDetailsService {
 	}
 
 	public ProcessStep getFirstStepOfTheProcess() {
+		System.out.println("Getting first step of the process");
+		System.out.println(processStepDao.findByStepNumberAndPhase_PhaseNumber(1, 1));
+		System.out.println(processStepDao.findByStepNumberAndPhase_PhaseNumber(1, 1).get(0));
+		System.out.println(processStepDao.findByStepNumberAndPhase_PhaseNumber(1, 1).get(0).getPhase());
+		
 		return processStepDao.findByStepNumberAndPhase_PhaseNumber(1, 1).get(0);
 	}
 

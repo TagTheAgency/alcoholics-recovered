@@ -123,6 +123,8 @@ public class LMSController {
 		User user = getUserFromPrincipal(principal);
 		
 		ProcessStep currentStep = users.getCurrentStep(user);
+		System.out.println("Getting current step of the process");
+		System.out.println("Found: "+currentStep.getStepNumber());
 		if (currentStep == null) {
 			currentStep = users.getFirstStepOfTheProcess();
 		}
@@ -153,6 +155,7 @@ public class LMSController {
 		User user = getUserFromPrincipal(principal);
 		
 		ProcessStep currentStep = users.getCurrentStep(user);
+		System.out.println("Current step is "+currentStep);
 		ProcessPhase currentPhase = currentStep.getPhase();
 		
 		if (phase > currentPhase.getPhaseNumber()) {
@@ -179,7 +182,7 @@ public class LMSController {
 	}
 	
 	@PostMapping(path="/theProcess/{phase}/{step}/next")
-	public String gotoNextStep(Model model, Principal principal, @PathVariable int phase, @PathVariable int step, @RequestParam(required=false) boolean agreeChecked) {
+	public String gotoNextStep(Model model, Principal principal, @PathVariable int phase, @PathVariable int step, @RequestParam(required=false) String agreeCheck) {
 		User user = getUserFromPrincipal(principal);
 		
 		ProcessStep currentStep = users.getCurrentStep(user);
@@ -197,16 +200,18 @@ public class LMSController {
 		ProcessStep viewStep = users.getStepByNumber(step, phase);
 
 		
-		if (getUniqueOrder(viewStep) == getUniqueOrder(currentStep) && currentStep.isNeedsOkay() && !agreeChecked) {
+		if (getUniqueOrder(viewStep) == getUniqueOrder(currentStep) && currentStep.isNeedsOkay() && agreeCheck != null) {
 			System.out.println("At last step but not agreeChecked");
 			return getCurrentStepOfTheProcess(model, principal);
 		}
 		
 		ProcessStep requestedStep = users.getNextStep(viewStep);
 		System.out.println("Requested next step is "+requestedStep);
+		System.out.println("Requested next step is "+requestedStep.getStepNumber());
 		
 		
 		if (getUniqueOrder(viewStep) == getUniqueOrder(currentStep)) {
+			System.out.println("View is equal to current");
 			users.setStep(user, requestedStep, requestedStep.getPhase());
 			return "redirect:/theProcess";
 		}
