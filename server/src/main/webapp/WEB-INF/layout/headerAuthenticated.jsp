@@ -11,7 +11,7 @@
 			<li class="mr-3">Home</li>
 			<li class="mr-3">About</li>
 			<li class="mr-3">Contact</li>
-			<li>Process</li>
+			<li><a href="${pageContext.request.contextPath}/theProcess">Process</a></li>
 		</ul>
 	</div>
 	<div class="nav-acc-items-container d-none d-md-block">

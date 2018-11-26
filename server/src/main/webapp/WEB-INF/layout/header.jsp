@@ -8,7 +8,7 @@
 					<li class="mr-3"><a href="./index.html">Home</a></li>
 					<li class="mr-3"><a href="./about.html">About</a></li>
 					<li class="mr-3">Contact</li>
-					<li><a href="./process.html">Process</a></li>
+					<li><a href="${pageContext.request.contextPath}/theProcess">Process</a></li>
 				</ul>
 			</div>
 			<div class="nav-acc-items-container d-none d-md-block">
