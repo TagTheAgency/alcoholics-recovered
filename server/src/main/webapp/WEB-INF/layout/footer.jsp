@@ -56,9 +56,9 @@
       </div>
       <!-- <div class="col-lg-6 footer-spacer"></div> -->
       <div class="col-auto float-right" style="max-width:200px">
-        <img class="footer-socmed-icon" src="${pageContext.request.contextPath}/resources/static/img/fb-white.png" alt="F"/>
-        <img class="footer-socmed-icon" src="${pageContext.request.contextPath}/resources/static/img/in-white.png" alt="I"/>
-        <img class="footer-socmed-icon" src="${pageContext.request.contextPath}/resources/static/img/tw-white.png" alt="T"/>
+        <img class="footer-socmed-icon" src="${pageContext.request.contextPath}/img/fb-white.png" alt="F"/>
+        <img class="footer-socmed-icon" src="${pageContext.request.contextPath}/img/in-white.png" alt="I"/>
+        <img class="footer-socmed-icon" src="${pageContext.request.contextPath}/img/tw-white.png" alt="T"/>
       </div>
     </div>
   </div>

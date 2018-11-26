@@ -62,6 +62,12 @@ public class LMSController {
 	public String getLoginPage() {
 		return "login";
 	}
+
+	@GetMapping(path="/forgotPassword")
+	public String getForgotPasswordPage() {
+		return "forgotPassword";
+	}
+
 	
 	@GetMapping(path="/join/account")
 	public String getJoinPage(Model model) {
