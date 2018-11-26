@@ -10,7 +10,6 @@ import com.tagtheagency.alcoholicsrecovered.model.ProcessStep;
 @Repository
 public interface ProcessStepDAO extends JpaRepository<ProcessStep, Integer>{
 
-
 	List<ProcessStep> findByStepNumberAndPhase_PhaseNumber(int stepNumber, int phaseNumber);
 	
 }

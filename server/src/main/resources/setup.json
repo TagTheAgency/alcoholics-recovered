@@ -1,0 +1,138 @@
+[
+	{
+		"title": "Welcome",
+		"phaseId": 1,
+		"stepNumber": 1,
+		"html": "<p>Alcoholics are only unique by merit of their symptoms. The origin of our problem is the same as for any other
+obsessive abuser of substance or behaviour, <strong>resentment, anger</strong> and <strong>fear</strong> –– plain and simple. Once free of these
+harmful emotions, the alcoholic&#39;s obsession to drink falls away, and a well-managed, alcohol free life can be
+resumed.</p>",
+		"needsOkay": false
+	},
+	{
+		"title":"Acceptance",
+		"phaseId":1,
+		"stepNumber": 2,
+		"html": "<h1>PROGRAM RULES AND CONDITIONS </h1>
+<p>Thank you for your commitment to being sober through The Process. You have chosen a life changing program that will enable you to live a happy and contented life free from the desire for alcohol. </p>
+<p>Here are a few house rules that you need to agree to: </p>
+<ul>
+<li>You have read and agreed to these conditions.
+<li>You are willing to take responsibility for your sobriety and actions - from this point.
+<li>You will complete The Process worksheets quickly and honestly – you won’t leave any information out! The Process will only work with your complete honesty.
+<li>Please understand that The Process does not have an opinion on religion, atheism, agnosticism or any spiritual (or otherwise) views. This is your business alone.
+<li>The Process programme is not based, nor does it give direction, on any spiritual belief system; our only desire is to help you to lead a happy and contented life free from alcohol.  (Although, after some members have worked through The Process, they have reported some form of a ‘spiritual awakening’ or a major shift in themselves.
+<li>You understand the importance of honesty - with yourself and with the information you write.
+<li>Please do not leave any information out no matter how serious, sick, embarrassing or private.
+<li>You accept that alcohol is causing problems in your life and when you drink you do not have control over alcohol. Because alcoholism is so powerful we do not give any guarantee on your sobriety or your outcomes.
+<li>You accept that your sobriety is your sole responsibility and that, although we deliver The Process to you, it is your responsibility to follow it thoroughly.
+</ul>
+<p>The miracle of The Process is that it teaches individuals to analyse and understand themselves, and, by following the programme and doing the work - learn how to handle situations that would have once baffled them.  </p>
+<p>The Process is an inside out program. </p>
+",
+		"needsOkay":true,
+		"tickBoxText": "Please tick the box after you have read and agreed to the above rules and conditions."
+	},
+	{
+		"title":"The Cause",
+		"phaseId":1,
+		"stepNumber":3,
+		"html": "<p>Before you start, let’s explain and clarify some key points that will help you work through the worksheets. </p>
+<p>We know that resentment, anger, hate and fear are the main cause of all our problems – we understand that alcohol abuse is a symptom of our problems.  </p>
+<p>Once we clear our past from resentment, anger, hate and fear - and have addressed those we have hurt, we stop being selfish, dishonest, fearful and inconsiderate. Being free from the primary damaging emotions, resentment, anger and fear is life-long work that we will learn to do. (Use Dr. Pete as an example). </p>
+<p>
+We’ll have a look at these primary harmful emotions, but first, let’s explain how we end up with long-held resentments.
+</p>
+<p>The following slides will show: </p>
+<ol>
+<li>The pathway to resentment: This overview will show where resentment begins, and the stages it takes until the end   stage, which is havoc. </li>
+<li>Blaming others needs to stop – I will talk briefly about this. </li>
+<li>There are 7 basic instincts we all have - understanding these will help you</li>
+understand yourself, and learn how the instincts can become unbalanced.
+</li><li>There are 5-character defects – understanding and recognising these show us where we need to make a positive adjustment. </li>
+",
+		"needsOkay" : false
+	},
+	{
+		"title":"The 4 Emotions",
+		"phaseId":1,
+		"stepNumber": 4,
+		"html": "<p>The pathway to Resentment.  (When you memorise these emotions, you will begin to recognise them throughout your day and will, through The Process, be able to address them before they can build to resentment.) </p>
+<p>Resentment initially starts by us first becoming:</p>
+<ul>
+<li><strong>Irritated</strong>&mdash; Something or someone’s actions and/or behaviour start to irritate us. Although these irritants may seem trivial - we become &hellip;</li>
+<li><strong>Annoyed</strong>&mdash;  Something or someone has annoyed us. If we don’t recognise it or ignore it - we bury it a bit deeper and this leads us into becoming &hellip;</li>
+<li><strong>Angry</strong>&mdash; When we get angry we either push it down inside, or we attack people verbally, mentally, emotionally or physically which leads to &hellip;</li>
+<li> Resentment! </li>
+<p>
+Together, anger and resentment create most of our problems beginning with the first step; irritation. We may feel justified being angry and resentful because it was someone or something else’s fault. We seldom think we are to blame or have played a part in the resulting feeling of resentment. </p>",
+		"needsOkay" : false,
+		"tickBoxText" : "Do you understand how resentment can build?"
+	},
+	{
+		"title":"A resentment story",
+		"phaseId": 1,
+		"stepNumber" : 5,
+		"html" : "
+<p>It’s morning, I’m at work and still have not had coffee. Already someone has done something to irritate me – only a small thing. I can’t exactly
+‘put my finger on why’, but now I feel slightly uncomfortable, a discomfort like an itch I cannot scratch, however, I carry on and superficially
+forget that ‘irritant’ moment. But it is still there, deep underneath, like a circling shark. </p>
+<p>Maybe a few hours pass, and then somebody else does something I find annoying (‘How many times must I tell them not to stack the boxes like that!’
+or, ‘Why can’t they just put the toilet seat down!’, or&hellip; [insert annoyance here]) but I frown and shake it off and continue with the day. But it is
+still there; underneath, the shark is joined by another. </p>
+<p>Seemingly trivial irritants continue (a friend cancels golf at the last minute; the sun is too bright; a partner doesn’t answer a text; a co-worker
+takes yet ‘another’ smoke break; someone snaps their gum too loudly; a car cuts in front of yours; someone else’s child is screaming; it’s raining) &mdash; I
+push the irritation I feel down, because that’s what I have always done. The sharks gather, the water boils. </p>
+<p>Then &mdash; I answer my mobile. My partner asks me when I will be home, why I am late again, didn’t I remember they had to go out! I hear the
+kids yelling in the background. I snap back at them and push the phone roughly into my jacket pocket. I resent my partner for being unreasonable and
+demanding but I finish up and leave work and slam the door on my way out. On the drive home, the motorway traffic is heavier, the drivers are more
+stupid than usual. I sound the horn as I pass them (idiots!), my foot pressing on the accelerator. I don’t realise until I park the car, how tightly
+I had gripped the steering wheel.  </p>
+<p>Imagine &mdash; what would a life time of constant irritations, that continually build to annoyance, anger and resentment, look like? &mdash; A
+festering open wound delivering a slow poison: a cacophony of damaging chemicals that are the body’s natural response to harmful emotion. The discomfort
+and psychological, physical and emotional pain caused by this poison are intolerable, but you don’t know how to make it go away. </p>
+<p>What is it up until now, that has either, temporarily relieved the pressure, or, allowed us to explode, vent, or otherwise, go ballistic?  We have a
+drink; alcohol has always been our fix.  </p>
+<p>But it is temporary, and it does not, will not and cannot ever — address the underlying issue. </p>
+<p>This is what The Process does. </p>
+<p>The Process provide the tools with which to work through the underlying issues. </p>
+		",
+		"needsOkay":true,
+		"tickBoxText":"YES! I understand how irritation and annoyance lead to anger and resentment"
+	},
+	{
+		"title": "Blame",
+		"phaseId": 1,
+		"stepNumber" : 6,
+		"html" : "<p>The Process shows &mdash; by using the precisely designed tools of the programme &mdash; how to take responsibility for your life and stop blaming others; nothing will change until then. </p>
+<p>Please think about and write down on a piece of paper or on your computer all of the people you have blamed in your life and why you have blamed them.</p>
+",
+		"needsOkay" : true,
+		"tickBoxText" :"PLEASE TICK WHEN COMPLETED"
+	},
+	{
+		"title" : "The seven basic instincts",
+		"phaseId" : 1,
+		"stepNumber" : 7,
+		"html" : "<p>All humans have seven basic instincts, that for most, are generally balanced. However, for those with alcoholism, or problems with alcohol, these instincts are not stable.  </p>
+<p>Please memorise these or print them to keep close. You can then review when you feel harmful emotions coming up.  </p>
+<h3>THE SEVEN BASIC INSTINCTS </h3>
+<p>Every human being has these 7 instincts: </p>
+<ul>
+	<li><strong>Self Esteem</strong> &mdash; how I think and feel about myself.   </li>
+	<li><strong>Pride</strong> &mdash; What I think other people say or think about me.   </li>
+	<li><strong>Emotional Security</strong> &mdash; A general sense of well-being and emotional stability.</li>
+	<li><strong>Financial</strong> &mdash; A desire for money, property and possessions.   </li>
+	<li><strong>Ambitions</strong> &mdash; Personal plans, dreams and goals for the future. </li>
+	<li><strong>Personal Relationships</strong> &mdash; Relationships with people. </li>
+	<li><strong>Sex Relations</strong> &mdash; A desire for sexual intimacy. </li>
+</ul>
+",
+		"needsOkay" : true,
+		"tickBoxText" : "LEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
+		"download" : "sevenInstincts.pdf"
+
+	}
+
+
+]

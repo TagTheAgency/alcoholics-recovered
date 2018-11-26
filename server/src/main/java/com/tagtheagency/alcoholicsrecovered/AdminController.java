@@ -1,5 +1,6 @@
 package com.tagtheagency.alcoholicsrecovered;
 
+import java.io.IOException;
 import java.security.Principal;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.tagtheagency.alcoholicsrecovered.dto.ProcessPhaseDTO;
 import com.tagtheagency.alcoholicsrecovered.dto.ProcessStepDTO;
 import com.tagtheagency.alcoholicsrecovered.model.ProcessStep;
@@ -100,4 +103,11 @@ public class AdminController {
 		}
 		return null;
 	}
+	
+	@GetMapping(path="/init")
+	@ResponseBody
+	public void init() throws JsonParseException, JsonMappingException, IOException {
+		adminService.init();
+	}
+	
 }

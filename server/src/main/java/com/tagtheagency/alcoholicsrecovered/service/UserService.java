@@ -144,5 +144,10 @@ public class UserService implements UserDetailsService {
 		return processStepDao.findByStepNumberAndPhase_PhaseNumber(step, phase).get(0);
 	}
 
+	public void setStep(User user, ProcessStep step, ProcessPhase phase) {
+		user.setCurrentPhase(phase.getId());
+		user.setCurrentStep(step.getId());
+		userDao.save(user);
+	}
 
 }
