@@ -45,7 +45,7 @@ nav {
   width: 130px; }
 
 .bg-prm {
-  background-color: #17D1AC;
+  background-color: #75CEDE;
   color: #fff; }
 
 .btn {
@@ -58,10 +58,10 @@ nav {
 
 .btn-white {
   background-color: #fff;
-  color: #17D1AC; }
+  color: #75CEDE; }
 
 .btn-prm {
-  background-color: #17D1AC; }
+  background-color: #75CEDE; }
 
 .btn-scnd {
   background-color: #725FD9; }
@@ -90,7 +90,7 @@ nav {
   color: #fff;
   width: 80%;
   margin: auto auto;
-  background-color: rgba(23, 209, 172, 0.6); }
+  background-color: rgba(117, 206, 222, 0.6); }
 
 .hero-container-overlay {
   width: 100%;
@@ -98,12 +98,12 @@ nav {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #17d1ac;
+  background-color: #75CEDE;
   opacity: 0.8; }
 
 #hero-btn {
   background-color: #fff;
-  color: #17D1AC;
+  color: #75CEDE;
   font-size: 0.8em; }
 
 .small-header {
@@ -130,7 +130,7 @@ nav {
 .page-title-text {
   font-size: 2.2em;
   font-weight: 900;
-  color: #17D1AC; }
+  color: #75CEDE; }
 
 .page-section {
   width: 80%;
@@ -140,7 +140,7 @@ nav {
   margin: 4em auto;
   text-align: center; }
   .feature-section-container .btn {
-    background-color: #17D1AC;
+    background-color: #75CEDE;
     color: #fff; }
   .feature-section-container h2 {
     text-align: center; }
@@ -177,7 +177,7 @@ nav {
 .highlight-text {
   font-size: 1.6em;
   font-weight: 700;
-  color: #17D1AC; }
+  color: #75CEDE; }
 
 h1.highlight-text {
   font-size: 2.6em; }
@@ -195,11 +195,11 @@ h1.highlight-text {
   top: 80px; }
 
 .btn-ar-primary {
-  border: 3px solid #17D1AC;
+  border: 3px solid #75CEDE;
   background-color: white;
-  color: #17D1AC; }
+  color: #75CEDE; }
   .btn-ar-primary:hover {
-    background-color: #17D1AC;
+    background-color: #75CEDE;
     color: white; }
 
 .btn-ar-secondary {
@@ -212,7 +212,7 @@ h1.highlight-text {
   background-color: #C6BEEF; }
 
 .bg-ar-primary {
-  background-color: #17D1AC; }
+  background-color: #75CEDE; }
 
 .progress {
   height: 0.3rem; }
@@ -261,16 +261,16 @@ h1.highlight-text {
         border-radius: 50%;
         background-color: rgba(30, 30, 30, 0.2); }
 	#sidebar-container ul li.completed a {
-        color: #17D1AC; }
+        color: #75CEDE; }
         #sidebar-container ul li.completed:after {
           content: 'check';
-          background-color: #17D1AC;
+          background-color: #75CEDE;
           color: white;
           vertical-align: middle;
           font-size: 20px;
           font-weight: bold; }
       #sidebar-container ul li.active {
-        background-color: #17D1AC;
+        background-color: #75CEDE;
         color: white; }
         #sidebar-container ul li.active:after {
           background-color: white; }
@@ -302,39 +302,47 @@ h1.highlight-text {
     text-align: center;
     font-size: 4em;
     font-weight: 800;
-    color: #17D1AC; }
+    color: #75CEDE; }
   .call-now-container .call-now-numbers {
     display: flex; }
     .call-now-container .call-now-numbers .call-now-nz {
       padding-left: 5px;
       margin-right: 5%;
-      color: #17D1AC; }
+      color: #75CEDE; }
     .call-now-container .call-now-numbers .call-now-aus {
       padding-left: 5px;
-      color: #17D1AC; }
+      color: #75CEDE; }
 
 #footer-container {
-  background-color: rgba(23, 209, 172, 0.3); }
+  background-color: rgba(117, 206, 222, 0.3); }
   #footer-container .footer {
-    color: #17D1AC; }
+    color: #75CEDE; }
   #footer-container .footer-subscribe-container {
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     margin-bottom: 3rem; }
     #footer-container .footer-subscribe-container #subscribe-form {
+      width: 100%;
       border: none;
-      border-bottom: solid #17D1AC 4px;
+      border-bottom: solid #75CEDE 4px;
       background-color: rgba(30, 30, 30, 0); }
     #footer-container .footer-subscribe-container #subscribe-btn {
-      padding: 0.3em 1.3em; }
+      padding: 0.3em 1.3em;
+    margin-top: 1em;
+  width: 100%; }
   #footer-container .footer-menu-container > div dl {
     font-size: 0.8em; }
     #footer-container .footer-menu-container > div dl dt {
       margin-bottom: .5rem; }
     #footer-container .footer-menu-container > div dl dd {
       margin-bottom: 0; }
-  #footer-container .footer-socmed-icon {
-    float: right; }
+  #footer-container .footer-socmed .footer-socmed-icon {
+    width: 10%;
+    min-width: 30px;
+    margin: 10px; }
+  #footer-container .footer-socmed .footer-spacer {
+    display: none;
+  }
 
 #about-main-text {
   padding-top: 4%;
@@ -344,8 +352,7 @@ h1.highlight-text {
   background-color: rgba(69, 155, 159, 0.4);
   border-radius: 10px;
   border: solid rgba(69, 155, 159, 0.3);
-  padding-top: 4em;
-  padding-bottom: 4em; }
+  padding-top: 4em; }
   #login-container p, #login-container a {
     color: #fff; }
   #login-container .login-form input::placeholder {
@@ -356,18 +363,24 @@ h1.highlight-text {
     color: #fff;
     border: solid #fff 2px;
     border-radius: 10;
-    margin-bottom: 12px; }
+    margin: auto;
+    margin-bottom: 12px;
+    width: 80%; }
   #login-container .login-form #card-expiry {
     width: 50%; }
   #login-container .login-form #card-cvc {
     width: 50%; }
+  .form-label-group {
+    width: 100%; }
+  .alert-link {
+    color: #491217; }
 
 #register-btn {
   margin-top: 12px;
   background-color: #fff;
-  padding-left: 5em;
-  padding-right: 5em;
-  color: #17D1AC;
+  padding-left: 20%;
+  padding-right: 20%;
+  color: #75CEDE;
   font-size: 1.2em; }
 
 .StripeElement {
@@ -392,13 +405,13 @@ h1.highlight-text {
 @media (min-width: 768px) {
   #sign-up-btn {
     background-color: #fff;
-    color: #17D1AC;
+    color: #75CEDE;
     margin-left: 1em; }
 
   nav .btn {
     padding: 0.3em 1.2em;
     font-size: 0.7em;
-    border: 2px solid #17D1AC; }
+    border: 2px solid #75CEDE; }
 
   .nav-items {
     margin: 0; }
@@ -413,10 +426,31 @@ h1.highlight-text {
     margin: 0;
     padding: 2em 4em 2em 4em;
     width: 500px;
-    background-color: rgba(23, 209, 172, 0.6); }
+    background-color: rgba(117, 206, 222, 0.6); }
 
   .call-now-heading h2 {
     text-align: right; }
 
   .call-now-numbers {
-    display: block; } }
+    display: block; } 
+  
+    .footer-spacer {
+      display: flex; }
+    
+    #footer-container .footer-subscribe-container #subscribe-btn {
+      width: 66%; }
+    #footer-container .footer-menu-contact {
+      display: flex; }
+  }
+
+  @media (min-width: 946px) {
+
+    #footer-container .footer-subscribe-container {
+            padding-left: 6rem;
+            padding-right: 6rem; }
+    #footer-container .form-inline {
+                flex-flow: inherit; }
+    #footer-container #subscribe-btn {
+                width: auto; }
+  }
+

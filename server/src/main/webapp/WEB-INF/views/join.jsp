@@ -15,14 +15,14 @@
 			</div>
           </c:if>
        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-       <input type="text" class="form-control login-form-input col-8 mr-2" placeholder="First name" name="firstName" required autofocus value="${firstName }" autocomplete="false">
-       <input type="text" class="form-control login-form-input col-8 mr-2" placeholder="Last name" name="lastName" required value="${lastName }" autocomplete="false">
-       <input type="email" class="form-control login-form-input col-8 mr-2" placeholder="Email Address" required name="email" value="${email }" autocomplete="false">
-       <input type="password" class="form-control login-form-input col-8 mr-2" placeholder="Password" name="password">
+       <input type="text" class="form-control login-form-input col-8" placeholder="First name" name="firstName" required autofocus value="${firstName }" autocomplete="false">
+       <input type="text" class="form-control login-form-input col-8" placeholder="Last name" name="lastName" required value="${lastName }" autocomplete="false">
+       <input type="email" class="form-control login-form-input col-8" placeholder="Email Address" required name="email" value="${email }" autocomplete="false">
+       <input type="password" class="form-control login-form-input col-8" placeholder="Password" name="password">
        
-       <div id="card-number" class="form-control login-form-input col-8 mr-2"></div>
+       <div id="card-number" class="form-control login-form-input col-8 mb-2"></div>
          <div id="card-errors" role="alert"></div>
-       <div class="col-8 mr-2 justify-content-start" style="display:flex; padding:0">
+       <div class="col-8 mx-auto" style="display:flex; padding:0;">
          <div id="card-expiry" class="form-control login-form-input" style="margin-right: 10px"></div>
          <div id="card-errors" role="alert"></div>
          <div id="card-cvc" class="form-control login-form-input"></div>
@@ -31,13 +31,12 @@
          
          
          <div id="card-errors" role="alert"></div>
-         <div class="col-8 mr-2">
+         <div class="col-8 mx-auto">
        <button id="register-btn" class="btn">Register</button>
        <p class="mt-3">Already have an account? <a href="./login.html">Login here.</a></p>
        </div>
      </form>
      </div>
- <div class="hero-container-overlay d-md-none"></div>
 </div>
 
 
