@@ -129,10 +129,721 @@ drink; alcohol has always been our fix.  </p>
 </ul>
 ",
 		"needsOkay" : true,
-		"tickBoxText" : "LEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
 		"download" : "sevenInstincts.pdf"
 
-	}
+	},
+	{
+		"title" : "In and Out of Balance",
+		"phaseId" : 1,
+		"stepNumber" : 8,
+		"html" : "<p>We will discuss how these seven instincts work in our lives and how we can use them to see when they are out of balance.  
+		These instincts are natural (some people say God given). They are part of what makes us human.</p> 
+		<p>However, if we have a problem with alcohol, or are alcoholic, these instincts are out of balance.  
+		I will demonstrate how. </p>",
+		"needsOkay" : true,
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+	},
+	{
+		"title" : "Defects of Character",
+		"phaseId" : 1,
+		"stepNumber" : 9,
+		"html" : "<p> veryone has character defects, they are a natural part of being human. There are many types of them, but these (below) are our core defects and when any are combined — they can produce envy, greed, jealously and many other negative qualities. It’s a bit like mixing different combinations of red, yellow, and blue to create many different colours.</p>
+		<h3>Defects of Character</h3>
+		<p>A person acting on the 5 basic character defects would appear to be:</p>
+		<ul>
+			<li><strong>Selfish </strong>&mdash; Lacking consideration for other people; concerned chiefly with one's own personal profit or pleasure.</li>
+			<li><strong>Dishonest </strong>&mdash; Having lost the ability to be honest, with self and/or others.</li>
+			<li><strong>Self-Seeking </strong>&mdash; Concern for oneself before others. ‘It’s all about me’.</li>
+			<li><strong>Frightened </strong>&mdash; Afraid and/or anxious.</li>
+			<li><strong>Inconsiderate </strong>&mdash; Acting without consideration; Thoughtless; Rash; Not taking into account or trying to understand another person's situation.</li>
+		</ul>
+		<p>These traits are part of being human, to varying degrees, but to those who have problems with alcohol or are alcoholic, the traits can overtake and stop them being who they really want to be.</p>
+		<p>When we have been relieved of these defects we will have a void which must be filled, and we hope that you can then fill the void by learning and practicing how to be</p>
+		<ul>
+			<li>Selfless/li>
+			<li>Honest</li>
+			<li>Interested in others' well-being</li>
+			<li>Courageous</li>
+			<li>Fearless</li>
+			<li>Considerate</li>
+			",
+			"needsOkay" : true,
+			"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+	},
+	{
+		"title" : "Review",
+		"phaseId" : 1,
+		"stepNumber" : 10,
+		"html" : "<p>Let's review the slides we have covered.</p>
+		<ol>
+			<li>The 4 emotions leading to resentment</li>
+			<li>The 7 basic instinct of all human beings, and</li>
+			<li>Our 5 defects of character</li>
+		</ol>
+		<p>These are important to understand and memorize, to make easier for practice in everyday life. Only then, awareness of them will become second nature.</p>",
+		"needsOkay" : true,
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+	},
+	{
+		"title" : "Into Action",
+		"phaseId" : 1,
+		"stepNumber" : 11,
+		"html" : "<p>We are now moving into the action part of The Process where we act and immerse ourselves in the following work. </p>
+		<p>We work quickly and honestly, and do not hesitate! We move swiftly through to completion. </p>
+		<p>While doing the work, we remain focused on key areas - *not our long-winded life story – (this only builds up resentment, anger and self-pity). </p>
+		<p>*Our long-winded life story holds us back. TALK TO THIS </p>",
+		"needsOkay" : true,
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+	},
+	{
+		"title" : "Working through Resentment and Anger",
+		"phaseId" : 2,
+		"stepNumber" : 1,
+		"html" : "<p>*Please print the Resentment and Anger Prompt-sheet-Worksheet 1 and my example worksheet 1. You will work through that next. </p>
+		<p>On the example worksheet I have provided 7 examples for you to follow, these are real life examples from people who have worked through “The Process”.</p>
+		<h3>YOUR ACTION</h3>
+		<p>With worksheet 1 in front of you, thoughtfully and honestly -put a ‘tick’ next to the people, institutions and/or principles -you feel resentment, anger, hate or feel hurt or threatened by.</p>
+		<p>To do without delay:  </p>
+		<p>Check list </p>
+		<ul>
+			<li>work from your earliest memory</li>
+			<li>No matter how major or minor your resentments are, just tick the boxes.</li>
+			<li>Even those you feel you may have forgiven. </li>
+			<li>Disclose everything.  </li>
+			<li>Remember; You benefit most from the work, so, hold yourself accountable for your truth. </li>
+		</ul>
+		<p>Please leave no information out, no matter how minor or how serious. While some memories may be difficult — The Process will help you confront, resolve and release them, along with the inherent damaging emotions.  </p>",
+		"needsOkay" : true,
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+	},
+	{
+		"title" : "Working through Resentment and Anger",
+		"phaseId" : 2,
+		"stepNumber" : 2,
+		"html" : "<p>HAVE YOU COMPLETED the Prompt-sheet WORKSHEET 1- Anger and Resentment?  </p>
+		<p>If you are confident every resentment &/or anger is checked on WORKSHEET 1 — it is time to begin WORKSHEET 2! </p>
+		<br/>
+		<h3>YOUR ACTION - PRINT THE RESENTMENT and ANGER SHEET- Worksheet 2 </h3>
+		<p>Before you take any action, I will be presenting to you, 7 real life examples, demonstrating how to fill in the worksheet. </p>
+		<p><strong>Note:</strong> The people who provided these examples have completed “The Process” and are sober, content and happy today. </p>
+		<p>Please just follow my directions, this is crucial.</p>
+		<h3>YOUR ACTION</h3>
+		<p>Transfer the names, institutions and principles from your worksheet 1 into Column 1 of worksheet 2.</p>
+		<p>Please follow the example worksheet.</p>",
+		"needsOkay" : true,
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+	},
+	{
+		"title" : "Working through Resentment and Anger",
+		"phaseId" : 2,
+		"stepNumber" : 3,
+		"html" : "<p>I am now going to give a brief review of the following key points.</p>
+		<p>PLEASE UNDERSTAND THAT OUR ANGER, RESENTMENT AND HATES ARE CAUSED BY OUR BASIC INSTINCTS BEING OUT OF BALANCE OR THREATENED. I will explain the importance of this in more detail in phase 3 of “The Process”</p>
+		<br/>
+		<p>IT IS CRITICAL TO WATCH AND LISTEN CAREFULLY. </p>
+		<p>Before we start, the following worksheets should be in front of you: </p>
+		<ul>
+			<li>1) Pathway to Resentment. </li>
+			<li>2) The 7 Basic Instincts. </li>
+			<li>3) The Defects of Character. </li>
+		</ul>",
+		"needsOkay" : true,
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+	},
+	{
+		"title" : "Working through Resentment and Anger",
+		"phaseId" : 2,
+		"stepNumber" : 4,
+		"html" : "<h3>Reminder sheets</h3>
+		<p><strong>Pathway to Resentment</strong></p>
+		<p>We create our resentment, by first becoming: </p>
+		<ul>
+			<li>Irritated – Something or someone’s actions and/or behaviour start to irritate us. Although these irritants may seem trivial - we become … </li>
+			<li>Annoyed – Something or someone has annoyed us. If we don’t recognise it - we bury it a bit deeper and this leads us into becoming …</li>
+			<li>Angry – When we get angry we either push it down inside, or we attack people verbally, mentally, emotionally or physically which leads to …  </li>
+			<li>Resentment and Hate<li>
+		</ul>
+		<strong><p>The 7 Basic Instincts</p>
+		<p>Every human being has these 7 instincts: </p></strong>
+			<li>Self Esteem - How I think and feel about myself.  </li>
+			<li>Pride - What I think other people say or think about me. </li>
+			<li>Emotional Security – A general sense of well-being and emotional stability. </li>
+			<li>Financial - A desire for money, property and possessions. </li>
+			<li>Ambitions - Personal plans, dreams and goals for the future. </li>
+			<li>Personal Relationships - Relationships with people. </li>
+			<li>Sex Relations - A desire for sexual intimacy.</li>
+		</ul>
+		<strong><p>The 5 Core Defects of Character</p>
+		<p>Defects of Character</p></strong>
+		<p>We are now going to look at the 5 basic defects of character all humans can have, every human being has these to some effect but for those of us who have problems with alcohol or are alcoholic these defects are so strong they are stopping us from being who we really would want to be.</p>
+		<p>These defects are</p>
+		<ul>
+			<li><strong>Selfish </strong>- lacking consideration for other people; concerned chiefly with one's own personal profit or pleasure.</li>
+			<li><strong>Dishonest </strong>- We have lost the ability to be totally honest with ourselves or others and when we are, we usually hurt             other people or ourselves, usually by opening our mouths.</li>
+			<li><strong>Self-seeking </strong>- concern for oneself before others. It’s all about me.</li>
+			<li><strong>Frightened </strong>- afraid or anxious.</li>
+			<li><strong>Inconsiderate </strong>- acting without consideration; thoughtless; rash.</li>
+		</ul>
+		<p>We have many types of character defects and the ones above are our core basic defects. They are like the basic colours red, yellow, blue and when you mix these together you can create an infinite number of colours. This exactly like our defects of character, when we mix the above character defects together we create envy, greed, jealously and many, other character defects. Please understand that everyone has character defects, they are natural.</p>",
+		"needsOkay" : false
+	},
+	{
+		"title" : "Working through Resentment and Anger",
+		"phaseId" : 2,
+		"stepNumber" : 5,
+		"html" : "<h3>Column 2 - THE CAUSE </h3>
+		<p>Watch as I write the reasons I feel anger, resentment, hurt &/or am threatened by; &/or feel general ill-will toward them. I will be specific. </p>
+		<p>Remember, long-winded stories block us from our truth; on the other hand, being specific will help us pinpoint and allow us to find precise reasons for our anger, resentment, hate, feeling hurt or threatened by, or feel ill will toward people, institutions &/or principles.  </p>
+		<p>I will describe each story with you and then pinpoint exactly why I am angry, resentful, feel hurt or threatened by or I feel ill will toward these people, institutions or principles. </p>
+		
+		<p>REASONS FOR ANGER — EACH WILL BE EXPLAINED   </p>
+		<ul>
+			<li>Father - Bernard- he was an alcoholic and wasn’t supportive of me.</li>
+			<li>Mother - Pauline- she died when I was a teenager </li>
+			<li>Friend - Vernon- He bullied me. </li>
+			<li>Financial Advisor - Steve- He lost my money. </li>
+			<li>God – He took my mother from me.</li>
+			<li>Employer – Mr. Talbot- He fired me. </li>
+			<li>Uncle – Selwyn– he sexually abused me. </li>
+		</ul>
+		<p>As I have done, be clear about the reasons for your anger, resentment, hurt and feelings of threat. Write them in Column 2. Be specific. </p>
+		<h3>YOUR ACTION</h3>
+		<p>You now fill in Column 2 of your worksheet.</p>",
+		"needsOkay" : true,
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED"
+	}, 
+	{
+		"title" : "Working through Resentment and Anger",
+		"phaseId" : 2,
+		"stepNumber" : 6,
+		"html" : "<h3>COLUMN 3 – WHICH BASIC INSTINCTS WERE AFFECTED? </h3>
+		<p>I am now going to present examples for you to study and follow.</p>
+		<p>As I go through my affected Basic Instincts in the example worksheet you will see the reasons why the basic instincts, were affected. </p>
+		<strong>My father – Bernard: </strong>
+		<ol>
+			<li><p>Self Esteem – How I think and feel about myself. </p>
+			<p>Dad didn’t come to my games – I’d feel dejected and unloved. I saw the other kids’ parents there which made me feel bad about myself, and I knew dad was going to the hotel to drink.  </p></li>
+			<li><p>Pride – How I think others see me. </p>
+			<p>When dad dropped me off I would imagine when other parents and kids looked at me and think I wasn’t very good or that my father didn’t like or love me.</p>  </li>
+			<li><p>Emotional Security – General sense of wellbeing, feeling emotionally stable and happy with myself.</p> 
+			<p>This was affected because I didn’t feel emotionally stable and I wasn’t happy about my dad going to the pub instead of watching my game. This affected my emotions greatly.</p></li>
+			<li><p>Financial – Basic desire for money, property and possessions.</p>
+			<p>I wanted people to respect and love me. I wanted success.</p></li>
+			<li><p>Ambitions – My plans, dreams and goals for the future.</p>
+			<p>No, if anything it made more determined.</p></li>
+			<li><p>Personal Relations</p>
+			<p>My relationship with my father was affected because his drinking was more important than spending time with me; also, he didn’t communicate with me.</p></li>
+			<li><p>Sex Relations.</p>
+			<p>Because of dad’s inability to show me attention and love I went looking for other relationships with women and gangs etc.</p></li>
+		<ul> 
+		<p><strong>Note:</strong> Shown in my example are how my Basic Instincts were affected by my father’s behaviour. (Basic Instincts can sometimes be positive e.g. My father triggering my ‘Financial’ Instinct made me determined to succeed financially.)</p>
+		<p>However, for this sheet, we are practicing awareness of how our Basic Instincts are affected negatively, or harmfully. </p>
+		<br/>
+		<br/>
+		<strong>Mother – Pauline </strong>
+		<ul>
+			<li><p>Self Esteem – How I think and feel about myself. </p>
+			<p>When my mother died I thought I was alone, and I had to be strong. I put up many barriers to keep people out. I didn’t feel or think much about myself, I felt lonely and scared because I didn’t know what to do.</p><li> 
+			<li><p>Pride – How I think other people view or feel about me.</p>
+			<p>No. Not affected.</p></li>
+			<li><p>Emotional security – General sense of wellbeing, feeling emotionally stable with myself. 
+			<p>When my mother died I was emotionally distraught and felt my world had crashed around me. My emotions were all over the place for a long time. </p></li>
+			<li><p>Financial </p>
+			<p>No. Not affected. </p></li>
+			<li><p>Ambitions – our plans, dreams and goals for the future. </p>
+			<p>When my mother died, my anchor was taken away, I was lost, and my ambitions disappeared. </p></li>
+			<li><p>Personal Relations – our relationships with other people. </p>
+			<p>No. Not affected. </p></li>
+			<li><p>Sex Relations. </p>
+			<p>No. Not affected. </p></li>
+		</ul>
+		<br/>
+		<br/>
+		<strong>My friend – Vernon</strong>
+		<ul>
+			<li><p>Self Esteem – How I feel about myself. </p>
+			<p>He’d bully me in front of our friends which made me feel inferior, weak and embarrassed. </p></li>
+			<li><p>Pride – How I think other people view or feel about me</p>
+			<p>I felt they viewed me as weak and incapable of being able to look after myself.  </p></li>
+			<li><p>Emotional Security – General sense of wellbeing, feeling emotionally stable with myself. Being comfortable and at ease, not nervous with self.</p>   
+			<p>His bullying made me scared and nervous around him. I was not at ease. </p></li>
+			<li><p>Financial – basic desire for money, property and possessions. </p>
+			<p>No. Not affected. </p></li>
+			<li><p>Ambitions. </p>
+			<p>No. Not affected. </p></li>
+			<li><p>Personal relations – Our relationships with other people. </p>
+			<p>I thought Vernon was a friend, sometimes he was awesome but then he would get angry and bully me and others. </p></li>
+			<li><p>Sex relations. </p>
+			<p>No. Not affected. </p></li>
+		</ul>
+		<br/>
+		<br/>
+		
+		<strong>Finncial advisor – Steve</strong>
+			<li><p>Self-esteem.  </p>
+			<p>I thought I was clever and understood investing, but Steve took all the money I had invested in something he said was a good investment. </p></li>
+			<li><p>Pride</p>
+			<p>My wife thought I was stupid and so did a few friends because I ignored their advice to investigate it. </p></li>
+			<li><p>Emotional Security. 
+			When I realised I had lost all our money I felt unwell, I wasn’t emotionally stable. I was angry, full of self-pity and remorse. 
+			<li><p>Financial. </p>
+			<p>I lost all our money. </p></li>
+			<li><p>Ambitions. </p>
+			<p>My plans were destroyed. </p></li>
+			<li><p>Personal relationships </p>
+			<p>Being around my wife and some friends was like walking on broken glass. I didn’t like Steve anymore. </p></li>
+			<li><p>Sex relations. </p>
+			<p>My wife wouldn’t sleep with me. She didn’t want anything to do with me. </p></li>
+		</ul>
+		<br/>
+		<br/>
+			
+		<strong>God</strong>
+			<li><p>Self- esteem. </p>
+			<p>When my mother died I felt lonely, my self-esteem was very low. </p></li>
+			<li><p>Pride</p>
+			<p>No. Not affected. </p></li>
+			<li><p>Emotional Security</p>
+			<p>My emotions were all over the place. I was sad, lonely, angry, pissed off and confused. </p></li>
+			<li><p>Ambitions. </p>
+			<p>I didn’t have my best friend to talk to; I didn’t know what to do. </p></li>
+			<li><p>Personal relationships. </p>
+			<p>I was angry with people and started fighting. </p></li>
+			<li><p>Sexual relations. </p>
+			<p>No. Not affected. </p></li>
+		</ul>
+		<br/>
+		<br/>
+		
+		<strong>Employer – Mr Talbot </strong>
+			<li><p>Self-Esteem. </p>
+			<p>I still felt good about myself because I knew I had been a good employee. </p></li>
+			<li><p>Pride</p>
+			<p>I thought they believed I was not good enough for them. </p></li>
+			<li><p>Emotional stability.</p>
+			<p>No. Not affected. </p></li>
+			<li><p>Financial. </p>
+			<p>I was without a job and had to keep paying the bills to support my family. </p></li>
+			<li><p>Personal relationships. </p>
+			<p>No. Not affected. </p></li>
+			<li><p>Sex Relations. </p>
+			<p>No. Not affected. </p></li>
+		</ul>
+		<br/>
+		<br/>
+		
+		<strong>Uncle Selwyn. </strong>
+			<li><p>Self-Esteem. </p>
+			<p>I was hurt and would not trust anyone. I felt sick and ashamed. </p></li>
+			<li><p>Pride</p>
+			<p>Although no-one knew, I felt people knew this had happened to me. I became more paranoid and scared. </p></li>
+			<li><p>Emotional Security. 
+			No. Not affected. 
+			<li><p>Financial. </p>
+			<p>No. Not affected. </p></li>
+			<li><p>Personal relationships. </p>
+			<p>I was wary of relatives and older men, I didn’t trust them especially if I found myself alone with one. </p></li>
+			<li><p>Sexual relations. </p>
+			<p>No. Not affected. </p></li>
+		</ul>
+		<br/>
+		<p><strong>Note:</strong> Physical, Mental, Emotional and Sexual abuse can affect everyone. We cannot change what has happened, but we can hopefully change how we see abuse and how it has stopped us growing into the person we want to be.</p>
+		
+		
+		
+		
+		<h3>YOUR ACTION</h3>
+		<ul>
+			<li>Review the BASIC INSTINCTS example worksheet.  </li>
+			<li>Which of the Basic Instinct corresponds with each resentment on your WORKSHEET? </li>
+			<li>How were such Basic Instincts threatened by the another’s actions? </li>
+			<li>We tick the instincts we believe were affected by the actions of others.  </li>
+		</ul>
+		<p><strong>Note:</strong> This is not a box ticking exercise. The Process is a lifelong practice (if you choose) — think carefully and diligently and you will begin to see a clear pattern of your behaviour.</p> 
+		<p><strong>IMPORTANT</strong> - When we have anger, resentment, hate etc, towards people we won’t be able to be relieved of it until we address which of our basic instincts have been hurt or threatened.</p>",
+		"needsOkay" : true,
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"	
+	},
+	{
+		"title" : "Working through Resentment and Anger",
+		"phaseId" : 2,
+		"stepNumber" : 7,
+		"html" : "<h3>COLUMN 4 - THIS IS THE MOST CRUICAL AND FREEING COLUMN</h3>
+		<strong>My Part:   </strong>
+		<ul>
+			<li>Where was I to Blame?</li>
+			<li>What was my part in this? </li>
+			<li>What was the exact nature of my wrongs to this person, institution or principle?</li>
+		</ul>
+		<p>In this column you focus only on the part you played (we do not blame others).  <p>
+		<p>Column 4 is where we stop blaming others for our resentments, anger, hurt and/or feelings of being threatened & general ill will toward people, institutions and principles. </p>
+		<p><strong>THIS IS WHERE WE GET TO THE ROOT CAUSES</strong></p>
+		<p><strong>CRUCIAL READING</strong></p>
+		<p>Remember, we are willing to go to every length to free ourselves from harmful emotions; it is only then we can release our addictions.  </p>
+		<p>It is not possible to change others, but we can change ourselves, so it is crucial to find the part we played in each held resentment, no matter what. This is agreed to in the ‘rule’ section: *You accept that your sobriety is your sole responsibility and that, although we deliver The Process to you, it is your responsibility to follow it thoroughly. We investigate ourselves truthfully even when we think we’re innocent. This does not take away what people have done to us. </p>
+		<p>Accept that we have no power over others and what they did to us, but we do have the power over what we do from here and into the future. </p>
+		<p>We have blamed these people — but like us, they have been spiritually, emotionally and mentally unwell. They will carry this burden by themselves, sometimes to the grave.  </p>
+		<p>I include the character defect - INCONSIDERATE - in the next column to help you define how I considered I was to blame, the part I played, and the exact nature of my wrong. (If we can see we were inconsiderate, then this will set you free from resentment.) </p>
+		<p>Now we’ll focus only on our part. The following are examples and descriptions on how to forgive. To forgive is a choice. To forgive is a powerful step in resolving anger and resentment. Moving through the work quickly and thoughtfully. </p>
+		<strong>INSERT EXAMPLE WORKSHEET AND I WILL DISCUSS HOW WE DO THIS, THESE ARE REAL EXAMPLES AND THIS COLUMN IS SO CRITICAL TO FREEDOM BECAUSE IT GIVES US THE ABILITY TO FORGIVE </strong>
+		<p>When you are positive you fully understand and accept/acknowledge your part in each situation, and you honestly look at what your part is, in relation to each of these — you are on the highway to freedom.  </p>
+		<p>Below again I have provided the examples of MY PART to assist you to find your part.</p>
+
+		<input type='checkbox'><strong> PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND<strong>
+		
+		<p>Please study these carefully. Before moving forward. </p>
+		
+		<p><strong>Father – Bernard </strong></p>
+		<p>I realised my father was an alcoholic and he did not understand he had a problem. If he did, he did not know what to do about it. I am sure he didn’t like his how his drinking controlled him. Dad was powerless over his drinking. He was a kind and generous man.</p><br/>
+		 
+		<p><strong>Mother — Pauline </strong></p>
+		<p>I realised that mum didn’t want to die. Cancer took her, we were both powerless over cancer. It took her away from everyone. It wasn’t her fault.</p><br/>
+		<p><strong>Friend – Vernon </strong></p>
+		<p>Vernon had a violent father and older brother who both bullied him. They would beat him up. He was scared and defensive. He was angry, and his only avenue was to bully me and others. When we grew bigger he stopped. </p><br/>
+		<p><strong>Financial advisor – Steve </strong></p>
+		<p>I should have listened to my wife and friends. I should have done the research on the company and known what they were investing my money in.  </p><br/>
+		<p><strong>God </strong></p>
+		<p>God didn’t take my mother; cancer did. I realised I just needed someone to blame. </p><br/>
+		<p><strong>Employer – Mr Talbot </strong></p>
+		<p>I realised another person misinformed him about me, but I wanted to blame someone. I didn’t like working there. </p><br/>
+		<p><strong>Uncle Selwyn </strong></p>
+		<p>I realise he was a very sick man, mentally and emotionally. I also discovered he had been abused as a child by his teachers. He had never told anyone this until he was dying. I realised he had carried the burden of being abused and being an abuser himself. I realised Uncle Selwyn had been in a living hell all his life, although it didn’t stop him from abusing me, I found space in my heart to forgive him. I wished him peace as I would anyone who was sick. </p><br/>
+		<input type='checkbox'><strong> PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND<strong>
+		 
+		<h3>YOUR ACTION</h3>
+		<p>Now start filling in your worksheet with </p>
+		<ul>
+			<li>Where was I to blame?</li>
+			<li>What was my part in this? </li>
+			<li>What were the nature of my wrongs? </li>
+		</ul>
+		<p>You can write it out like I have and then transfer this to your worksheet in a shortened form. It is imperative and crucial that you understand and acknowledge your part in this.</p>
+		",
+		"nextOkay" : true,
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+	},
+	{
+		"title" : "Working through Resentment and Anger",
+		"phaseId" : 2,
+		"stepNumber" : 8,
+		"html" : "<h3>Column 5 -What were my defects? </h3>
+		<p>As discussed in the last slide, you can now understand your default defects relative to each resentment you have held. </p>
+		<p>Read carefully below.  </p>
+		<p>You may hold on to deep resentment and anger toward people and situations where you were clearly not at fault — that is natural. But you still have resentment. You need to let go of this residual resentment for a happy and contented life.  </p>
+		<p>The last slide described how and when to use the INCONSIDERATE defect. I showed how the people who harmed you, were SPIRITUALLY, MENTALLY and EMOTIONALLY UNWELL. Knowing this allows us to understand we have fallen in to the default – INCONSIDERATE.  This will free us and allow us to begin to forgive and heal. And to forgive and heal means freedom. </p>
+		<p>Look at the remaining defects and start to understand our default defect relative to each resentment. It is not a box ticking exercise; consider carefully the answers. </p>
+		<br/> 
+		<p>I’ll demonstrate on my worksheet: </p>
+		<strong>Father – Bernard </strong>
+		<p>My defects: I am</p>
+		<p>INCONSIDERATE- I didn’t recognise alcoholism as an illness and that he was spiritually sick. </p>
+		<p>SELFISH- I blamed him %100. </p>
+		<p>SELF-SEEKING- I made it all about me; I didn’t care about him.  </p>
+		<p>I tick:  </p>
+		<ul>
+		<li>INCONSIDERATE </li>
+		<li>SELFISH </li>
+		<li>SELF-SEEKING </li>
+		</ul>
+		<br/>
+		<br/>
+		<strong>Mother – Pauline</strong>
+		<p>My defects: I am</p>
+		<p>SELFISH-because I knew she didn’t want to die. </p>
+		<p>SELF-SEEKING because I made it all about me. </p>
+		<p>FRIGHTENED-because I knew she was going to die. </p>
+		<p>I Tick: </p>
+		<ul>
+		<li>SELFISH </li>
+		<li>SELF-SEEKING </li>
+		<li>FRIGHTENED </li>
+		</ul>
+		<br/>
+		<br/>
+		<strong>Friend – Vernon </strong>
+		<p>My defects: I am</p>
+		<p>INCONSIDERATE-because he was not well because he was physically abused at home. </p>
+		<p>FRIGHTENED-I was scared. </p>
+		<p>SELF-SEEKING-I didn’t care about what he was going through. </p>
+		<p>I Tick: </p>
+		<ul>
+		<li>INCONSIDERATE </li>
+		<li>FRIGHTENED </li>
+		<li>SELF-SEEKING </li>
+		</ul>
+		<br/>
+		<br/>
+		<strong>Financial Advisor – Steve</strong>
+		<p>My defects-I am</p>
+		<p>SELFISH-because I didn’t take notice of anyone, my wife or friends.</p>
+		<p>DISHONEST- I didn’t do any research on the company or the people.</p>
+		<p>SELF-SEEKING- I thought I knew it all, I was a know all. </p>
+		<p>I Tick:  </p>
+		<li>Selfish</li>
+		<li>Dishonest</li>
+		<li>Self-seeking</li>
+		</ul>
+		<br/>
+		<br/>
+		<strong>God</strong>
+		<p>My defects: I am</p>
+		<p>SELFISH- He didn’t take my mother away cancer did. </p>
+		<p>SELF-SEEKING- I was only thinking about me.</p>
+		<p>FRIGHTENED- I lost my best friend and mentor. </p>
+		<p>I Tick: </p>
+		<li>Selfish</li>
+		<li>Self-seeking</li>
+		<li>Frightened</li>
+		</ul>
+		<br/>
+		<br/>
+		
+		<strong>Employer – Mr Talbot</strong>
+		<p>My defects-I am</p>
+		<p>FRIGHTENED- I was scared of standing up for myself.</p>
+		<p>DISHONEST- I didn’t want to work there anyway.</p>
+		<p>Tick</p>
+		<ul>
+		<li>Frightened</li>
+		<li>Dishonest</li>
+		<strong>Uncle Selwyn –  </strong>
+		<p>My defects: I am</p>
+		<p>SELFISH- I carried this burden and it hurt me, no one else. </p>
+		<p>DISHONEST- I never told anyone.</p>
+		<p>FRIGHTENED- I was scared of what others would think of me. </p>
+		<p>INCONSIDERATE- I didn’t realise how much pain he must have been in from having been sexually abused himself and then sexually abusing me.</p>
+		<p>Tick</p>
+		<ul>
+		<li>Selfish</li>
+		<li>Dishonest</li>
+		<li>Frightened</li>
+		<li>Inconsiderate</li>
+		</ul>
+		<br/>
+		<strong>YOUR ACTION</strong>
+		<p>Now start completing your column 5 by following the examples</p>
+		<p>Once you have completed this worksheet you know more about yourself than before and you may be feeling a new freedom already, please do not stop here as we have more actions to complete.</p>
+		",
+		"nextOkay" : true,
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+	}, 
+	{
+		"title" : "Summary: Resentment and Anger",
+		"phaseId" : 2,
+		"stepNumber" : 9,
+		"html" : "<strong><p>PLEASE STUDY THE FOLLOWING PARAGRAPHS CAREFULLY.</p>
+		<p>IF YOU ARE CONFUSED AT ANY STAGE PLEASE GO BACK TO THE EXAMPLES I HAVE PREVIOUSLY GIVEN YOU. </p>
+		<p>WHEN YOU SEEM TO BE STUCK JUST KEEP MOVING FORWARD, THIS IS NOT ABOUT PERFECTION IT IS ABOUT MOMENTUM AND ACTION. </p></strong>
+		<p>Once you have completed your sheets on resentment and anger and are certain that you have covered all people, institutions and principles that you have resented, were angry at, hated, felt hurt or threatened by or felt ill will toward then you should now see how these resentments have had control over you and your life. </p>
+		<p>To summarise the resentment and anger sheet. Even when something is not our fault and sometimes it is not. Someone may have done something unprovoked, we still have a way to deal with it. Even when we cannot find where we were at fault, we can find where our REACTION was at fault. </p>
+		<p>Maybe we feel we have been offended and this may have caused us to be fearful, but in this program, we have learnt that we have an inner resource that allows us not to react in a fearful way to negative actions that come our way. </p>
+		<p>As we start to see when our basic instincts are out of alignment we are instinctively aware which of the instincts are out of alignment and we can now adjust our reaction and actions, so they do not have control over us. Some of you will pray for guidance, some of you will meditate, others may contemplate, and others may just go and talk with a friend, but we must not think that we are the centre of the universe. </p>
+		<p>Once sheet 2 is completed you will have a process of working through for the rest of your life, yes, we have more work to complete but you have had a good look at yourself and how your anger and resentment has affected you and your life. Now you can start a fresh and this was the beginning. We are now going to address our fears in a similar way as to how we addressed our resentments and anger </p>
+		",
+		"nextOkay" : true,
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE"
+	},
+	{
+		"title" : "Fear Overview",
+		"phaseId" : 2,
+		"stepNumber" : 10,
+		"html" : "<h3>Column 1- What am I Afraid Of?</h3>
+		
+		<p>We all have fears some are natural, and we need these. Then there are fears that we just don’t know where they come from and they can paralyse us into inaction. Fear steals from us and stops us growing into the person we really want to be.</p>
+		<h3>UNDERSTANDING FEAR AND ANXIETY  </h3>
+		<p>Fear starts with us becoming </p>
+		<ol>
+			<li>nervous about something or someone and then moves up the scale for us to become </li>
+			<li>Anxious about someone, something or we feel something could happen and then it moves into </li>
+			<li>Fear, and we become frightened that something bad is going to happen to us or someone else. </li>
+		</ol>
+		<br/>
+		<p>Procrastination is another form of fear where we just keep putting things off until they cause us major problems, or we reluctantly address the problem and then wonder why we made it so hard for ourselves.  </p>
+		<p>Many of you will have experienced the above emotions many times in your life and many of us have gone off to the Doctors and we are given some type of pill. Sometimes this is necessary, and it can be helpful, but what I see is many people staying on the prescribed pill and not coming off them. The fear or problem has not been addressed it has been cloaked over, so the fear or anxiety is still there. </p>
+		<p>I will give you an example- I have a friend who has a bad hip and It occasionally causes him much pain. He sometimes takes an off the shelf pain killer and this relieves the pain for a period of time. The pain has been taken away, but the problem is still there waiting to cause him more problems, that is why we address resentment, anger and fear in The Process because you will be able to see where this comes from and how to remedy it, if you choose. </p>
+		<p>Before you start I will again supply examples for you to follow and you can start filling in the fears prompt sheet. </p>
+		
+		<p><strong>YOUR ACTION</strong> - Please print the FEARS PROMPT SHEET-SHEET 3 - <strong>COLUMN 1</strong></p>
+		<ul>
+			<ul>Just like the resentment and anger prompt sheet we tick the boxes WITH the fear we have.</ul>
+		
+			<ul>Before we start transferring your fears from prompt sheet 3 we double check we have not only ticked our fears but also the things we are anxious and nervous about.</ul>
+		
+		
+			<ul>Once we have done this we then transfer these into <strong>column 1</strong> WHAT I AM AFRAID OF?  On worksheet 4.</ul>
+			
+			<ul>Start transferring your fears and anxieties into <strong>COLUMN 1</strong> on worksheet 4.</ul>",
+			"nextOkay" : true,
+			"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+	},
+{
+	"title" : "Working through Fear",
+	"phaseId" : 2,
+	"stepNumber" : 11,
+	"html" : "<h3>Column 2- Why do I Have the Fear</h3>
+
+	<p>As in the resentment and Anger prompt sheet I am going to write a small overview as to why I have these fears.</p>
+	<p>You saw in the resentment and anger pages that by writing a little paragraph on each topic. This allows you to have a better understanding of the fear and will allow me to be condense this into a few words for the worksheet.</p>
+	<p>The importance again is for YOU to understand nobody else, just you.</p>
+	<p>Let us begin</p>
+	<p><strong>Rejection </strong>- When I was we grew up in a predominately protestant community and we were catholic, and I attended the local catholic school. I wanted to go to a protestant school like my other mates, so I would be accepted. I thought that by going to a catholic school I was scared and felt that I was not like them and they would reject me.</p>
+	<p><strong>Loneliness </strong>- Again when growing up I wanted for everyone to like me and I wanted to fit in with all the guys. I wanted to have friends. Also, my head told me lots of things.</p>
+	<p><strong>Failure </strong>- Scared of not being good enough, when I was with people I wanted them to think I was smart or clever or good at things and this made me anxious as well.</p>
+	<p><strong>Disapproval </strong>- Not being seen as being able to do things well. Being seen as not reliable or able to do things.</p>
+	<p><strong>Poverty </strong>- We grew up poor and I hated not being to have new clothes, a nice car, to go on holidays, having no pocket money, watching mum and dad struggle. This also drove me to succeed.</p>
+	<p><strong>Financial </strong>- I am scared of not being able to earn money and I did not want to be like my parents.</p>
+	<p><strong>Procrastination </strong>- When I was young I was scared to do some things because I thought I wasn’t good enough and other people thought I wasn’t good enough. I always thought people who had more than me or were better than me at different things, that this made them better people than me. I wasn’t confident in my abilities. This has been with me most of my life and has stopped me performing to my real ability.</p>
+	<h3> YOUR ACTION-</h3>
+	<p>Now you can write your small overview for each of your fears and once you have completed these you can transfer a condensed version of these into <strong>COLUMN 2 </strong>- WHY DO I HAVE THE FEAR.</p>
+	<p>Please use my example as to how I have condensed the information into column 2.</p>
+	<p>Now we take our paragraph and review each one to ensure we feel comfortable that we have the right words to describe each situation</p>
+	<p>Once we are happy with the reason of why we have the fear, anxiety or nervousness we then move onto column 3.</p>
+	<p>REMEMBER- This is for YOUR benefit, it allows you to see and understand why you have the fear, once you understand why you have the fear it starts to have less control over you.</p>
+	",
+	"nextOkay" : true,
+	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE"
+},
+{
+	"title" : "Working through Fear",
+	"phaseId" : 2,
+	"stepNumber" : 12,
+	"html" : "<h3>Column 3- Which Part of Self Has Failed Me?</h3>
+	<p><strong>PLEASE STUDY AND UNDERSTAND EACH OF THE  3 SELF’S,</strong> this is critically important to understand as you will see and start to understand how you can address your fears, anxiety and nervousness.</p> 
+	<p>These are</p>
+	<p><strong>Self-reliance</strong> - Reliance on ones, own capabilities, abilities, judgement, own power and resources rather than those of others.</p>
+	<p><strong>Self-confidence</strong> - Trust in our ability and skills to achieve our goals, believing and knowing what we are capable of and what we are not capable of.</p>
+	<p><strong>Self-discipline</strong> - The ability to control our feelings and emotions and overcome our weaknesses. To stick at a task or tasks. To see projects through to completion no matter how hard they become or what problems arise.</p>
+	<p>Because I wrote a brief overview of why I have the fear, I can now see where  </p>
+	<ul>
+		<li>Self-reliance</li>
+		<li>Self-confidence and </li>
+		<li>Self-discipline failed me,</li>
+		<li>It becomes simple when you have your overview, so let’s have a look at what I do in my example in column 3.</li>
+	<p><strong>Rejection </strong>- I wanted to be accepted by others.</p>
+	<p>So what part of self, failed me, I ticked</p>
+	<p><strong>Self-Reliance </strong>- because I didn’t believe in my own capabilities and didn’t know what they were, also I did not have many positive or experienced mentors</p>
+	<p><strong>Self Confidence </strong>- Because I didn’t know my own capabilities I didn’t know or have self-confidence.</p>
+	<p><strong>Loneliness </strong>- I wanted to be popular and liked by people. </p>
+	<p>So, what part of self, failed me-I ticked</p>
+	<p><strong>Self-Reliance </strong>- Again I didn’t believe in my own capabilities as I didn’t know what they were, and again not being mentored or guided.</p>
+	<p><strong>Self Confidence </strong>- Again because I didn’t know my own capabilities and skills and be confident to communicate with people. </p>
+	<p><strong>Failure </strong>- Was scared of not being good enough</p>
+	<p>So, what part of self, failed me-I ticked</p>
+	<p><strong>Self-Reliance </strong>- I didn’t have the belief or knowledge of my own capabilities and didn’t trust my judgement.</p>
+	<p><strong>Self Confidence </strong>- Because I didn’t know my abilities or how good they were I wasn’t confident to use my abilities, so I would not take risks because of becoming a failure.</p>
+	<p><strong>Self-Discipline </strong>- I did try certain things because I knew I wasn’t disciplined and knew I would have to stick at it and I couldn’t be bothered because I thought it was too hard. </p>
+	<p><strong>Disapproval </strong>- I wanted to be liked and thought of well.</p>
+	<p>So, what part of self, failed me- I ticked</p>
+	<p><strong>Self Confidence </strong>- I was not sure of my abilities so I would not push myself and if I did it would be under false confidence. I didn’t like being told off for doing the wrong thing.</p>
+	<p><strong>Poverty </strong>- Being poor</p>
+	<p>So, what part of self, failed me- I ticked</p>
+	<p><strong>Self Confidence </strong>- Not trusting my own abilities and again not thinking I was good enough</p>
+	<p><strong>Self-Discipline </strong>- Not having the ability to see through and focus on skills that I needed, also not realising that study would help me.</p>
+	<p><strong>Financial </strong>- Not having enough money</p>
+	<p>So, what part of self, failed me?</p>
+	<p><strong>Self-Reliance </strong>- I was not sure or positive about my skills, knowledge or my own power. I felt like an imposter.</p>
+	<p><strong>Self Confidence </strong>- I didn’t fully trust my skill or my own abilities.</p>
+	<p><strong>Self-Discipline </strong>- I definitely didn’t have the ability to control my feelings and to stick at the task.</p>
+	<p><strong>Procrastination </strong>- Because I might fail.</p>
+	<p><strong>Self -Reliance </strong>- I was scared to rely on my own capabilities and power.</p>
+	<p><strong>Self Confidence </strong>- I didn’t believe in my own capabilities all the time and didn’t understand or realise of what I was or could be capable of.</p>
+	<p><strong>Self-Discipline </strong>- I didn’t have the discipline to stick to a task.</p>
+	<p>(<strong>NOTE - I strongly recommend </strong> that you do this as it gives much more clarity and allows you to start making changes in how you react to your fears, because you now understand why you have the fear and how it affects you, it allows you to plan how you will go forward so that the fear is eventually reduced or removed, the fear does not affect you because you understand it)</p>
+	<h3>YOUR ACTION – </h3>
+	<p>Just like I have done above, write down </p>
+	<ol>
+		<li>Your Fear</li>
+		<li>Why you have the Fear and</li>
+		<li>Just like I did with, Which Part of Self has Failed, write down the reasons.</li>
+	</ol>
+	<p>I suggest that you place the definition I have provided on Self-Reliance, Self Confidence and Self-Discipline in front of you. As you go through this exercise you will start to see core reasons for the Fear developing.</p>
+	<p>Once you have completed this exercise you will tick the relevant boxes in column 3. </p>
+	",
+	"nextOkay" : true,
+	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE"
+},
+{
+	"title" : "Working with Fear",
+	"phaseId" : 2,
+	"stepNumber" : 13,
+	"html" : "<h3>Column 4 - Which of the Basic Instincts do these Fears affect?</h3>
+	<p>Now, we are going to review which of the Basic Instincts do these fears affect.</p>
+	<p>Since you have already gone through this exercise when we worked through Resentments and Anger, we just follow that same process.</p>
+	<p>Again, I am going to present my examples first and then have you complete yours.</p>
+	<p>Example</p>
+	<p><strong>Rejection </strong>- Affects my, (and why)</p>
+	<ul>
+	<li>Self-esteem- because I didn’t feel equal with others.</li>
+	<li>Pride- because I felt they didn’t treat me as one of them because I was catholic. </li>
+	<li>Emotional security-I didn’t feel good enough.</li>
+	<li>Personal relations- I was scared my friends wouldn’t accept me and treat me as an equal because of being catholic.</li>
+	</ul>
+	<p><strong>Loneliness </strong>-Affects my, (and why)</p>
+	<ul>
+	<li>Self-esteem- I wanted to be like them and didn’t feel I was.</li>
+	<li>Pride- I felt as if they saw me differently.</li>
+	<li>Emotional security- No one liking me because I was different.</li>
+	<li>Personal relations- My friends wouldn’t like me because I was not like them or I was different.</li>
+	</ul>
+	<p><strong>Failure </strong>-Affects my, (and why)</p>
+	<ul>
+	<li>Self-esteem- If I fail I won’t feel good about myself</li>
+	<li>Pride- Other people will think less of me.</li>
+	<li>Emotional security- I will get upset emotionally.</li>
+	<li>Personal relations- I will let my family and others down.</li>
+	</ul>
+	<p><strong>Financial </strong>- Affects my, (and why)</p>
+	<ul>
+	<li>Self-esteem- Because I don’t want to be poor</li>
+	<li>Pride- People won’t respect me.</li>
+	<li>Emotional security- I will feel worthless.</li>
+	<li>Financial- I won’t have money or assets.</li>
+	<li>Ambitions- It could stop me achieving my dreams.</li>
+	</ul>
+	<p>I haven’t included examples of all the fears as I know you will be gaining a better understanding of how this works.</p>
+	<strong>NOTE - AGAIN I SUGGEST STRONGLY</strong> that you follow my example and write out why you think, your basic instincts are affected. This is again a powerful process as by thinking and writing it down gives you clarity and power, as you are going through this process you will find the fear and anxiety having less power over you. It starts leaving you.
+	<h3>YOUR ACTION</h3>
+	Once you have completed the above exercise you can place a tick/ticks into the appropriate box/boxes.
+	",
+	"nextOkay" : true,
+	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE"
+},
+{
+	"title" : "Working through Fear",
+	"phaseId" : 2,
+	"stepNumber" : 14,
+	"html" : "<h3>Column 5 - What are my defects of character?</h3>
+	For each fear we search within ourselves to see where we were selfish, dishonest, self-seeking, frightened or inconsiderate. 
+	Again, I will write out each fear and write a small reason as to why I was one or more of the above defects. Once you feel you understand then you can start writing yours out.
+	Was I selfish, dishonest, self-seeking, frightened or inconsiderate.
+	
+	Rejection- I was
+	Self-seeking-I was only concerned with what people were thinking of me.
+	Dishonest-because this was actually not true.
+	Frightened-because I was afraid I was different and wouldn’t be accepted or liked.
+	
+	Loneliness- I was
+	Selfish because I put expectations on other people.
+	Dishonest- my friends actually did like me.
+	Frightened- I thought people wouldn’t like me.
+	
+	Failure-I was
+	Selfish- I was lazy because I wouldn’t work or study hard.
+	Frightened- I was scared of being myself.
+	
+	Disapproval- I was
+	Selfish- I would not try things 
+	Dishonest- I was good enough
+	Frightened- I didn’t want to be told off.
+	
+	Poverty-I was
+	Selfish- I blamed my parents.
+	Frightened- my parents were poor, I believed I could be to.
+	Inconsiderate- My parents did their best to give us what they could, and they went without.
+	"
+}
+
 
 
 ]
