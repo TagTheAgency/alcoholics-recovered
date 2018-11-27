@@ -8,7 +8,7 @@
 
 							<p><i class="material-icons">schedule</i> estimated 20-25mins</p>
 							<div class="progress bg-ar-secondary-light">
-	  						<div class="progress-bar bg-ar-secondary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+	  						<div class="progress-bar bg-ar-secondary" role="progressbar" style="width: ${currentStep.stepNumber / stepCount * 100}%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
 							<p>Step ${currentStep.stepNumber } of ${stepCount }</p>
 							<hr class="bg-ar-primary"/>
