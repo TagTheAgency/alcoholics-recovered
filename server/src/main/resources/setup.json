@@ -814,36 +814,380 @@ drink; alcohol has always been our fix.  </p>
 	"phaseId" : 2,
 	"stepNumber" : 14,
 	"html" : "<h3>Column 5 - What are my defects of character?</h3>
-	For each fear we search within ourselves to see where we were selfish, dishonest, self-seeking, frightened or inconsiderate. 
-	Again, I will write out each fear and write a small reason as to why I was one or more of the above defects. Once you feel you understand then you can start writing yours out.
-	Was I selfish, dishonest, self-seeking, frightened or inconsiderate.
+	<p>For each fear we search within ourselves to see where we were selfish, dishonest, self-seeking, frightened or inconsiderate. </p>
+	<p>Again, I will write out each fear and write a small reason as to why I was one or more of the above defects. Once you feel you understand then you can start writing yours out.</p>
+	<p>Was I selfish, dishonest, self-seeking, frightened or inconsiderate.</p>
 	
-	Rejection- I was
-	Self-seeking-I was only concerned with what people were thinking of me.
-	Dishonest-because this was actually not true.
-	Frightened-because I was afraid I was different and wouldn’t be accepted or liked.
+	<p><strong>Rejection </strong>- I was</p>
+	<ul>
+		<li>Self-seeking- I was only concerned with what people were thinking of me.</li>
+		<li>Dishonest- because this was actually not true.</li>
+		<li>Frightened- because I was afraid I was different and wouldn’t be accepted or liked.</li>
+	</ul>
 	
-	Loneliness- I was
-	Selfish because I put expectations on other people.
-	Dishonest- my friends actually did like me.
-	Frightened- I thought people wouldn’t like me.
+	<p><strong>Loneliness </strong>- I was</p>
+	<ul>
+		<li>Selfish because I put expectations on other people.</li>
+		<li>Dishonest- my friends actually did like me.</li>
+		<li>Frightened- I thought people wouldn’t like me.</li>
+	</ul>
 	
-	Failure-I was
-	Selfish- I was lazy because I wouldn’t work or study hard.
-	Frightened- I was scared of being myself.
+	<p><strong>Failure </strong>- I was</p>
+	<ul>
+		<li>Selfish- I was lazy because I wouldn’t work or study hard.</li>
+		<li>Frightened- I was scared of being myself.</li>
+	</ul>
+
+	<p><strong>Disapproval </strong>- I was</p>
+	<ul>
+		<li>Selfish- I would not try things </li>
+		<li>Dishonest- I was good enough</li>
+		<li>Frightened- I didn’t want to be told off.</li>
+	</ul>
+	<p><strong>Poverty </strong>- I was</p>
+	<ul>
+		<li>Selfish- I blamed my parents.</li>
+		<li>Frightened- my parents were poor, I believed I could be to.</li>
+		<li>Inconsiderate- My parents did their best to give us what they could, and they went without.</li>
+	</ul>
+	",
+	"nextOkay" : false,
+},
+{
+	"title" : "Working through Fear",
+	"phaseId" : 2,
+	"stepNumber" : 15,
+	"html" : "<h3>Column 5 continued - What are my defects of character?</h3>
+
+	<p><strong>Financial </strong>- I was</p>
+	<ul>
+		<li>Dishonest-I didn’t realise I could be financially successful.</li>
+		<li>Frightened- Not being able to make lots of money.</li>
+	</ul>
+	<p><strong>Procrastination </strong>- I was</p>
+	<ul>
+		<li>Selfish- Not realising that I could do anything.</li>
+		<li>Frightened- I didn’t think I was good enough.</li>
+	</ul>
+	<br/>
 	
-	Disapproval- I was
-	Selfish- I would not try things 
-	Dishonest- I was good enough
-	Frightened- I didn’t want to be told off.
+	<h3YOUR ACTION</h3>
+	<p>You can now start writing which of the character defects caused you to do what you did or caused you to hold onto the old fear.</p>
+	<p>The analysing of your fears will give you your own understanding of where they have come from and why you are still holding onto them. It is now time to work to let them go and stop them having control over you.</p>
+	<p>Now tick the boxes that have the defect next to them. Just follow my example.</p>
+	<p><strong>NOTE </strong>- There is no right or wrong answers, this is for you to write what you believe what the reasons are for your fears, anxieties. Take action and please think carefully why you have these fears.</p>
+	<br/>
+	<p>Now we are going to move onto our Harms Done to Others and our Sex Behaviour.</p>
+	<p>AGAIN, WE MUST BE ABSOLUTELY HONEST WITH OURSELVES.</p>
+	<p><strong>PLEASE READ</strong></p>
+	<p>“TO BE FREE FROM A PROBLEM I HAVE TO FIRSTLY, OWN IT and SECONDLY ONCE I OWN IT I THEN HAVE A CHOICE”.</p>
+	<p><strong>NOTE </strong>- REMEMBER WHEN I HAVE AN EMOTIONAL PROBLEM, IT ALWAYS COMES FROM OUR INSTINCTS BEING OUT OF ALIGNMENT. </p>
+	",
+	"nextOkay" : true,
+	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE"
+},
+{
+	"title" : "Harms and Hurts to Other People",
+	"phaseId" : 2,
+	"stepNumber" : 16,
+	"html" : "<h3>Harms and Hurts to other people including our Sex conduct.</h3>
+	<p>Again, I will provide examples of people we have hurt and how to work the worksheet. This is a very straight forward process but needs to be done honestly and again, please do not leave any one off the list who you know you have hurt by your actions. We are not concerned with their behaviour, as this is not our business. We are seeing only who we have hurt.</p>
+	<strong>Column 1 - WHO DID I HURT</strong>
 	
-	Poverty-I was
-	Selfish- I blamed my parents.
-	Frightened- my parents were poor, I believed I could be to.
-	Inconsiderate- My parents did their best to give us what they could, and they went without.
+	<ul>
+		<li>Friend - Carl</li>
+		<li>Mum</li>
+		<li>Coca-Cola</li>
+		<li>Girlfriends</li>
+		<li>Employer</li>
+	</ul>
+	<br/>
+	<strong>Column 2 - List each thing I did to hurt them.</strong>
+	<ul>
+		<li>Friend Carl - I beat him up</li>
+		<li>Mum - I stole money from her.</li>
+		<li>Coca-Cola - I stole product from them.</li>
+		<li>Girlfriends -I had other relationships when I was still with them.</li>
+		<li>Employer - Tom - I took time off work pretending I was sick when I wasn’t. </li>
+	</ul>
+	<br/>
+	<strong>Column 3 - Which of the Basic Instincts is affected</strong>
+	<ul>
+		<li><p><strong>Carl - I beat him up</strong></p>
+		<p>Self-esteem - I didn’t feel good about myself for doing it.</p>
+		<p>Pride - I thought people thought I was a bully.</p>
+		<p>Personal relations - Carl was one of my best mates.</p></li>
+		<li><p><strong>Mum - I stole money from her</strong></p>
+		<p>Self-esteem - I felt bad for doing because mum and dad didn’t have much money.</p>
+		<p>Pride - I felt they saw me as a thief (which I was)</p>
+		<p>Emotional security - My emotions of shame and guilt were strong.</p>
+		<p>Personal relations - I let my mum and dad done and hurt them.</p></li>
+		<li><p><strong>Coca-Cola - I stole boxes of coke.</strong></p>
+		<p>Emotional security - I felt bad for doing it.</p></li>
+		<li><p><strong>Girlfriends -I played around on them.</strong></p>
+		<p>Self-esteem - When I played around on them I always felt bad after.</p>
+		<p>Emotional security - Again after I had been with another women, my emotions of guilt and shame would arise.</p>
+		<p>Personal relations - I would become distant to my current partner at the time and not communicate.</p>
+		<p>Sex relations - When I had been with another person I would not be intimate with my partner.</p></li>
+	</ul>
+	<br/>
+	<strong>Column 5 - What should I have done instead?</strong>
+		<li>Carl - I should have let him go first instead of pushing in and then beating him up.</li>
+		<li>Mum - I should have not taken her money. I could have got a job or even asked for it.</li>
+		<li>Coca-Cola —I should have asked if I could have some Coke.</li>
+		<li>Girlfriends - I should have been faithful.</li>
+		<li>Employer -I should have found another job.</li>
+	<p><strong>NOTE</strong> - SEX - We are not here to judge your sex behaviour, that is your business. When we review our past sex behaviours we look at where we had been selfish, self-seeking, dishonest or inconsiderate, and who we had hurt. We review and ask ourselves what I should have done. Sometimes we seek out counselling if sex is still a problem, but if we are honest about our past behaviours and we are wanting to change we stop being selfish and start thinking of other people’s needs.</p>
+	
+	<strong>Reviewing what we have just achieved </strong>
+	<p>You have now completed the first part of phase 2, you should be proud of yourself as you have accomplished what most people never do in an entire lifetime. </p>
+	<p>You now know, our defects affect other people and they react. If we can remove our defects of character, SELFISHNESS, SELF SEEKING, DISHONESTY, FEAR AND LACK OF CONSIDERATION our basic instincts will be healthy especially when you replace those defects with healthy ones, selfless, putting others before ourselves, honesty, courage and being considerate of others.</p>
+	<p>Now we have more work to complete.</p>
+	",
+	"nextOkay" : true,
+	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE"
+},
+{
+	"title" : "Transference",
+	"phaseId" : 2,
+	"stepNumber" : 17,
+	"html" : "<h3>Transference</h3>
+	<p>Transference is critical in us being free from the past. This is the stage where we unburden our minds by sharing with a trusted person or agent.</p>
+	<p>Choosing the right person is critical so here I will make some suggestions.</p>
+	<ul>
+		<li>Clergy</li>
+		<li>Lawyer </li>
+		<li>Doctor</li>
+		<li>Councillor</li>
+		<li>Psychologist</li>
+		<li>Psychiatrist, or</li>
+		<li>Person we Trust and is tight lipped </li>
+	</ul>
+	<p>A person you totally trust - <strong>Note</strong> - We do not recommend sharing your information with family.</p>
+	<p>Please choose very carefully and we strongly suggest you only go to a person who will treat your information with total and the utmost confidentiality.</p>
+	<p>This is a very critical part of “The Process” and if not carried out quickly or not carried out at all because you have some fear or trepidation, please trust me when I say that YOU are the one who will benefit from this immensely.</p>
+	<h3>Guidelines for transference</h3>
+	<p>Once you have chosen who your trusted source will be, you go to them and explain that you are working a program that will help you be free from alcohol and that this is a critical, as if we do not do this we may drink again.</p>
+	<p>Explain that this is a life and death task.</p>
+	<p>We must clean up the past, it is absolutely necessary, if you don’t you may drink again.</p>
+	<p>You request that  </p>
+	<ol>
+		<li>They listen only.</li>
+		<li>They do not comment.</li>
+		</ol>
+	<p>Once we are ready to share with them, we must not hold back any information, as this could lead us back to drinking.</p>
+	<p>When we have completed this phase of the program we will feel a new freedom, our fears and resentment will seem to fall away. It may feel that you have been relieved of your drinking problem.</p>
+	<p>You may feel that you have had a spiritual awakening, in other words your spirit has been restored.</p>
+	",
+	"nextOkay" : true,
+	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE"
+},
+{
+	"title" : "Review",
+	"phaseId" : 2,
+	"stepNumber" : 18,
+	"html" : "<h3>Reviewing</h3>
+	<p>Once we have finished sharing our information with our trusted associate we find a quiet and private spot we can sit for an hour to review what we have just accomplished.</p>
+	<p>We go over our worksheets thoroughly and ensure that we have left no information out. If we are honest with ourselves and we know we have left no information out.</p>
+	<p>We just sit quietly and be grateful that we no longer have to hold onto our secrets and that we have reviewed our life thoroughly.</p>
+	<p>We know and are grateful we are on the right path.</p>
+	<p><strong>NOTE</strong></p>
+	<p>If you are religious or spiritual, you may want to say a prayer of gratitude that you have been given a new way of living and that you may never drink alcohol again</p>
+	<p>If you are agnostic or atheist, you may just want to be present and grateful with yourself and the universe.</p>
+	<p>This is about being grateful and humble with oneself and also recognising that we are no longer the centre of the universe.</p>
+	",
+	"nextOkay" : true,
+	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE"
+},
+{
+	"title" : "Making Amends",
+	"phaseId" : 2,
+	"stepNumber" : 19,
+	"html" : "<h3>Amends - compensate or make up for a wrongdoing.</h3>
+	<p><strong>NOTE- We must complete this phase, or we will not be free and there is a high chance we may drink again.<strong></p>
+	<p><strong>Part 1- Reviewing you lists and choosing who you need to make amends to.<strong></p>
+	<p>This is the last part of phase two and consists of two parts</p>
+	<ol>
+		<li>I want you to go through your lists again and on a piece of paper write down the names first of the people, institutions or principles you need to make amends to.</li>
+		<li>Next you write next to each name the amends you are making.</li>
+		<li>Not everyone we have written down in our worksheets receives an amends and I will explain this to you as I go through the examples.</li>
+		<li>You next put a plus (+) or minus (-) sign next to each name on your list. The plus (+) means that you are willing and happy to make the amends and the minus (-) is that you are not yet ready to make the amends just yet but will when the time feels right. This does not give you a reason just to not do the amends, you must do all your amends, it is critical.</li>
+	</ol>
+	<p>I will give you my examples from the worksheets- I put my worksheets in front of me and I transfer each name I will be making an amends onto my amends worksheet</p>
+	<table>
+		<tr><th>People I need to make amends to.</th>	<th>What is, the amends I need to make?</th></tr>
+		<tr><td>My Dad- Bernard (plus) +</td> 	<td>My dad was a good man and I am sure he did not want or even know he had a problem with alcohol, he tried his best for us and he was a kind and generous person and I judged him wrongly.</td></tr>
+		<tr><td>Mother- Pauline (plus) +</td> 	<td>She didn’t want to die and was a wonderful, kind and loving person, I was selfish. I also owe her amends for stealing from her when she was trying to save money, I hurt her.</td></tr>
+		<tr><td>My friend-Vernon (plus) +</td> 	<td>I judged him badly and I knew he got beaten up at home by his father and brother, I know he didn’t want to be a bully. I judged him when he was in much more pain than me.</td></tr>
+		<tr><td>Financial Advisor Steve (plus) +</td>  <td>	He was doing his job and I made the bad decision and blamed him for my decision.</td></tr>
+		<tr><td>God +</td> 	<td>This has nothing to do with God, it is not the fault of God</td></tr>
+		<tr><td>Employer-Mr Talbot (plus) +</td> 	<td>He was a good boss and I was not happy working there and I didn’t discuss it with him.</td></tr>
+		<tr><td>Uncle Selwyn (plus and minus) + -</td> 	<td>I don’t owe him an amends at all. He is a very sick man. I am willing to try and forgive him because he is sick, and he suffered a lot of sexual abuse when he was a kid. We may choose to go to him to say we forgive him for his actions, this takes great courage. This is your decision.</td></tr>
+		<tr><td>Friend-Carl (plus) +</td> 	<td>I hurt him physically, I embarrassed and humiliated him in front of others. I hurt his self-esteem, pride, emotional security and personal relationships.</td></tr>
+		<tr><td>Coca-Cola (plus and minus) + -</td> 	<td>I am willing to make the amends to them, but if I do they may lay charges of theft with the police and I may be charged and lose my current job. If this happens I cannot provide for my family and this would hurt them and maybe split the family up. I will go and pay them or a charity the money I owe them. </td></tr>
+		<tr><td>Girlfriends (plus and minus) + -</td>  <td>I am willing to make amends to all my ex-girlfriends. I need to be careful as most are now married with children and I could hurt them by going to see them to make my amends. I decide that if they are married with children, I won’t go and see them, but I am willing to make amends to them. Those that are not in a relationship I will go and make my amends to them. When I make my amends, I won’t tell them I went with other women when I was in the relationship with them because this could hurt them more, so I will make my amends for my behaviour while we were in the relationship and explain that I was selfish, self-seeking and dishonest.</td></tr>
+		<tr><td>Employer- Tom (plus) +</td> 	<td>I will approach Tom and make my amends to him for stealing time from his company.</td></tr>
+	</table>
+	<br/>
+	<br/>
+	
+	<h3>Guidelines for Making the Amends</h3>
+	<p>This is the last part of phase 2 but it is the most powerful as we become totally free from the past.</p>
+	<p>We have taken ownership of our defects, our hurts, resentments, fears and our actions.</p>
+	<p>We realise how much damage we have done to others and how our actions have hurt ourselves.</p>
+	<p>Before we go to these people to make our amends we ask ourselves the following questions </p>
+	<ol>
+		<li>Why am I making the amends?</li>
+		<li>Will this amends in anyway hurt the people I am making the amends to?</li>
+		<li>Will my family be hurt in anyway if I make these amends?</li>
+		<li>If the amends will hurt anyone, what else can I do to put the situation right?</li>
+		<li>If a person we owe an amends to still feels aggrieved by our actions, we may choose to postpone this action.</li>
+		<li>We will be sincere in our desire to set things right with people a simple sorry is not an amends.</li>
+		<li>As with the Uncle Selwyn resentment- You may choose to go and forgive him in person, this is your choice.</li>
+		<li>When we do go to a person who has harmed us, it takes great courage, but it benefits us greatly.</li>
+		<li>We are only looking at our faults we are not looking at their faults.</li>
+		<li>We are cleaning our side of the street, not theirs.</li>
+		<li>If we owe money we either pay it back or come to some arrangement.</li>
+	</ol>
+	<p>These guidelines are exactly that and if you honest and open you will know a new freedom.</p>
+	<p>Once you have finished making you amends you will have completed Phase 2 of “The Process”</p>
+	<p>When you make your first amends you will need to move directly onto Phase 3 of “The Process”</p>
+	",
+	"nextOkay" : true,
+	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE"
+},
+{
+	"title" : "Continuing to Grow",
+	"phaseId" : 3,
+	"stepNumber" : 1,
+	"html" : "<h3>PHASE 3- Continuing to grow and understand both ourselves and others </h3>
+	<p>I will now show you how to use “The Process” on a daily basis. Assuming you are making your amends to the people on your list </p>
+	<p>Now that you are making your amends you will want to continue to grow and flourish with this new way of living, we will need to continue taking our inventory on a daily basis and watch out for selfishness, self-seeking, dishonesty, fear and being inconsiderate. </p>
+	<p>I will provide you an example of how you can quickly analyse yourself immediately on a daily basis and when you become irritated, annoyed, angry, resentful, fearful or I have hurt/harmed someone.</p>
+	<p><strong>Anger and resentment </strong>- I can quickly go through “The Process” quickly and see where my basic instincts were out of alignment, what was my part in this (where was I to blame) and what were my defects and I now know what action I need to take. I can then make an amends as quickly as possible.</p>
+	<p><strong>Fear </strong>- Why I had the fear, what part of self, failed me and what basic instincts the fear affected and what were my defects of character and then I can take action to correct this immediately.</p>
+	<p><strong>Harms done to others </strong>- I can see who I hurt and what I did, I can see which of the basic instincts were affected and I can correct my behaviour. Then I can make an amends as quickly as possible.</p>
+	<p>-I can now see my part in each situation very quickly and I can take action quickly, if you follow “The Process” directions you will live a life that is exciting, amazing and be free.</p>
+	<p>-As we practice this way of living it actually becomes so natural and freeing. </p>
+	<p><strong>-BUT WE MUST PRACTICE THIS WAY OF LIVING EACH AND EVERY DAY TO THE BEST OF OUR ABILITY. </strong></p>
+	<p><strong>-DO NOT LET IRRITATION BUILD INTO RESENTMENT.</strong></p>
+	<p><strong>-DON’T LET FEAR CONTROL YOU OR DON’T LET NERVOUSNESS, ANXIETY MOVE INTO FEAR. </strong></p>
+	<p><strong>-WHEN WE HURT SOMEONE, OR PEOPLE RETALIATE FIX IT UP QUICKLY AND MAKE THE AMENDS FOR YOUR PART.</strong></p>
+	<br/>
+	<h3>NEW ACTIONS AND NEW BEHAVIOUR NEEDED.</h3>
+	<p>We will need and want to start repairing the damage we have created through our drinking. The first place we start with is with ourselves in the way we act and behave and below is a short list of the people we may have upset, damaged, hurt, and I am sure there are a few more words you could add.</p>
+	<ol>	
+		<li>Parents/Grandparents</li>
+		<li>Wife or partner</li>
+		<li>Children</li>
+		<li>Brothers and sisters</li>
+		<li>Uncles and aunties.</li>
+		<li>Friends</li>
+		<li>Work</li>
+		<li>Work colleagues</li>
+	</ol>
+	<p>You can add other names, but the bottom line is that we now have to start practicing this new way of living.</p>
+	<p><strong>NOTE </strong> - We will be measured by our <strong>ACTIONS</strong> not by our INTENTIONS.</p>
+	<p>We have a long road to recovery and repairing the damage we have caused, but this actually does not take long if we are honest and sincere with what we are trying to achieve.</p>
+	<p><strong>NOTE </strong>- After a short period of sobriety we will notice the changes in ourselves and we may notice that the people closest to us still have their old behaviour, this is normal, even if they treat us in their old ways we do not react like we used to, be are tolerant and loving towards all people and we are there to be of service. We are no longer are judging everyone and just because we are sober that does not give us the right to say to everyone, look at me, I got sober for these people they treat me so badly, this will definitely lead us back to the drink.</p>
+	<br/>
+	<h3>CRITICAL</h3>
+	<strong>The 3 reasons someone drinks again are</strong>
+	<ol>
+		<li>You get resentful and hold onto the resentment- In other words you stop practicing “The Process”.</li>
+		<li>You have held onto something you should have written down and shared. “YOUR SECRET”</li>
+		<li>You are either still selfish and self-seeking, dishonest, frightened or inconsiderate and while things have gotten better you still make everything about you and when you are helpful to others you treat it as a notch on your belt and have some expectation that someone owes you something in return.</li>
+	<strong>NOTE - These are the only reasons people drink again.</strong>
+	",
+	"nextOkay" : true,
+	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE"
+},
+{
+	"title" : "Daily Practice",
+	"phaseId" : 3,
+	"stepNumber" : 2,
+	"html" : " 
+	<p>These are the directions for living on a daily basis, it starts when we first awaken, not when we get up and have a coffee, or after our shower, or after we talk with our wife. IT STARTS WHEN OUR EYES OPEN so here are the directions for you to live on a daily basis.</p>
+	<h3>WHEN WE AWAKEN</h3>
+	<p>When you wake up you mentally start planning your day, but before you start planning you make a decision to be caring, self-less, honest, courageous and considerate and you also will plan to be free from self-pity.</p>
+	<p>Now you start planning your day mentally, outlining your actions, plans, meetings, and the outcomes you are planning.</p>
+	<p>Once, this is done you may decide to meditate, pray or just contemplate your day for a while. This action helps us to have clarity and also it helps stop the mind wandering.</p>
+	<p>We arise and get on with daily life.</p>
+	
+	<h3>AS WE ARE GOING THROUGH THE DAY<h3>
+	<p>As we go through the day we see where we can add value to people’s lives in a positive way, we try to be of use and helpful to all those we interact with, we are selfless and interested in other people. </p>
+	<p>When we become annoyed or irritated, or anxious we pause for a while and review which of our basic instincts have been affected and we ask ourselves why this has happened, because you now have worked “The Process” you now know how to address this quickly.</p>
+	<p>During the day you may find yourself being unsure of what actions to take, our suggestion here is to just stop and take it easy, we relax, and the answers will come.</p>
+	<p>As you practice this on a daily basis you will find yourself at ease with people and the world about you. You will be living life on life’s terms. You will be free.</p>
+	
+	<h3>WHEN WE RETIRE AT NIGHT</h3>
+	<p>Just before we go to sleep, we review our day mentally and we go thoroughly over the day and ask ourselves the following questions</p>
+	<ul>
+		<li>Have I been annoyed, irritated, angry or resentful with anyone?</li>
+		<li>Have I been anxious or fearful?</li>
+		<li>Have I harmed been rude or blunt to anyone?</li>
+		<li>Have my plans been disrupted or interfered with?</li>
+		<li>Do I owe anyone any amends?</li>
+	
+	<p>If the answer is no then that is great, you have had a great day without alcohol and are now living life free.</p>
+	<p>If the answer is yes then you write it down and attend to it the next day, if you see that you need to make an amends to someone then put their name down on paper and attend to that as soon as possible on the next day.</p>
+	",
+	"nextOkay" : true,
+	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE"
+},
+{
+	"title" : "Summary",
+	"phaseId" : 3,
+	"stepNumber" : 3,
+	"html" : "<h3>We have now completed “The Process”</h3>
+	<p>We have cleaned up our past and we have learnt a new way of living, the desire to drink has most probably been removed and if it has not then it will eventually just leave you.</p>
+	<p>You now have choices in how you want your life to be and you have started an amazing journey that you will not regret. I wish you all the best on your journey of discovery and growth</p>
+	<p>It is important to keep being of service to our fellow people and to keep practicing “The Process” everyday as you have been shown, very quickly it will become integrated into your mind and it will be so natural that you will be amazed at who you have become. You won’t forget your past as this has held the key to your future and will allow you to help others, which I will show you very soon.</p>
+	<p>You now have the tools for a new way of living, and we have created an on-line community that will ensure that we have a support network for us to tap into and also to be able to help others, in the next video I am going to explain how the community works and how it benefits you and your fellow community members.</p>
+	<p><strong>NOTE - REMEMBER THIS IS A LIFELONG PROCESS AND WE NEED SUPPORT FROM PEOPLE WHO HAVE BEEN WHERE WE HAVE BEEN</strong></p>
+	",
+	"nextOkay" : true,
+	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE"
+},
+{
+	"title" : "Our Anonymous Online Community",
+	"phaseId" : 3,
+	"stepNumber" : 4,
+	"html" : "<h3>An Introduction to the Recovered Community and the Benefits to YOU. </h3>
+	<p>The online <strong>RECOVERED COMMUNITY</strong> is an anonymous community that allows people who have been through “The Process” to be able to seek support, knowledge and friendship in a private online environment without having to go off to meetings, or to councillors, psychologist’s but have a place where they can firstly use “The Process” and then if still having problems they can share their problem with the community anonymously and without judgement</p>
+	<br/>
+	<strong>Benefits</strong>
+	<ul>
+		<li>A community who understand and have empathy with where we all have been</li>
+		<li>No judgement</li>
+		<li>You are Anonymous</li>
+		<li>Private community</li>
+		<li>Seek help anytime anywhere</li>
+		<li>No meetings to attend</li>
+		<li>Ability to help and be helped by the community</li>
+	</ul>
+	<br/>
+	<br/>
+	<h3>Guidelines for being a member in the online community.</h3>
+	<ul>
+		<li>No negative talk to others – We may share a story and it may have negative content- that is ok as this is usual when someone is going through troubling times, we are all here to help and support each other.</li>
+		<br/>
+		<li>We can only bring a story to the community after we have worked through “The Process” and you feel you want to share your experience, or you are looking for more guidance, you also just might want to share it as a positive experience.</li>
+		<br/>
+		<li>When dealing with other people’s problems we do not try and become the analyst or councillor, the reason for this is that each person who is in the community has had their experience and each person’s experience is special and unique to them and we do not want this to change.</li>
+		<br/>
+		<li>Where we can be of benefit is when we see where they may be stuck- for example- their part in a resentment or they are having trouble with an area within fear, this is where we can help them through this.</li>
+		<br/>
+		<li>We do not bring or discuss any religion or beliefs we may have.</li>
+		<br/>
+		<li>We are all dealing with each other’s lives and we need to be loving, understanding and patients.</li>
+		<br/>
+		<li>We must be practicing “The Process” on a daily basis as this is how we grow and when we grow we can share our experience to help and inspire others.</li>
+		<br/>
+		<li>This is a TOTALLY PRIVATE COMMUNITY and is open ONLY TO MEMBERS WHO HAVE BEEN THROUGH THE PROCESS.</li>
+	</ul>
 	"
 }
-
 
 
 ]
