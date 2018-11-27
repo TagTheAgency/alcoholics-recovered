@@ -454,3 +454,6 @@ h1.highlight-text {
                 width: auto; }
   }
 
+.content {
+	padding: 100px 20px 20px 20px;
+}

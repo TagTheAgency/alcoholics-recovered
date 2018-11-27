@@ -1,10 +1,7 @@
 <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 
-<div id="master-container">
- 	
-
 	<div class="row bg-highlight">
-	    <div id="sidebar-container" class="sidebar-expanded col-2 d-none d-md-block">
+	    <div id="sidebar-container" class="sidebar-expanded col-3 d-none d-md-block">
 					<div class="sticky-top sticky-offset">
 						<div class="inset">
 							<h1 class="highlight-text my-3">${currentStep.title }</h1>
@@ -69,13 +66,6 @@ Next slide</button>
 
 	    </div>
 	</div>
-
-
- 	<footer>
-		<div id="footer-container" class="bg-prm py-5 mt-5">
-
-		</div>
- 	</footer>
 
 	<script>
 	document.addEventListener("DOMContentLoaded", function(event) { 

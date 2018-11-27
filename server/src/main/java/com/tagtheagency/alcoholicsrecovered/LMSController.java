@@ -120,7 +120,9 @@ public class LMSController {
 	}
 	
 	@GetMapping(path="/welcome")
-	public String getWelcomePage() {
+	public String getWelcomePage(Model model, Principal principal) {
+		User user = getUserFromPrincipal(principal);
+		model.addAttribute("user", user);
 		return "welcome";
 	}
 	
