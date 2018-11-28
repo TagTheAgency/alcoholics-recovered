@@ -33,7 +33,7 @@ nav {
   position: fixed;
   width: 100%;
   background-color: #fff;
-  z-index: 1000;
+  z-index: 3000;
   box-shadow: 1px 0 4px rgba(0, 0, 0, 0.2); }
 
 .nav-container {
@@ -401,6 +401,46 @@ h1.highlight-text {
 
 .StripeElement--webkit-autofill {
   background-color: #fefde5 !important; }
+
+  .process-main-content p {
+  text-align: justify;
+  font-size: 18px; }
+  .process-tick-box {
+    font-weight: 700;
+    color: #725FD9; }
+  .process-extra-tickbox {
+    font-weight: 700;
+    color: #725FD9; }
+  .process-quote {
+    padding-left: 4%;
+    padding-right: 4%;
+    font-style: italic;
+    font-weight: 200 }
+  .process-main-content ol {
+    padding-left: 5%;
+    list-style: none;
+    counter-reset: process-counter; }
+  .process-main-content ol li {
+    counter-increment: process-counter;
+    padding: 5px; }
+  .process-main-content ol li::before {
+    content: counter(process-counter) ". ";
+    color: #725FD9;
+    font-weight: 200;
+    font-size: 18px
+   }
+  .process-main-content ul {
+    list-style-image: url('../img/blue-bullet-point.png');
+    padding-left: 5%; }
+    .process-main-content ul li {
+      padding: 5px; } 
+  .process-table-column-1 {
+    width: 30%;
+    font-weight: bold; }
+  .process-table-2nd-row {
+    background-color: #C6BEEF
+  }
+
 
 @media (min-width: 768px) {
   #sign-up-btn {

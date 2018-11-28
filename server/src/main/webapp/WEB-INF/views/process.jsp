@@ -47,13 +47,14 @@
 					</video>
 				</div>
 				<hr class="bg-ar-primary"/>
-				${currentStep.html }
+				<div class="process-main-content">
+					${currentStep.html }
+				</div>
 <form method="post" action="${pageContext.request.contextPath}/theProcess/${currentPhase.phaseNumber }/${currentStep.stepNumber }/next" >
 				<c:if test="${currentStep.needsOkay}">
-					<p>Please just tick the completed box that you have read and agreed to the above</p>
 					<div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="agreeCheck">
-  <label class="form-check-label" for="agreeCheck">
+  <label class="form-check-label process-tick-box" for="agreeCheck">
 	${currentStep.tickBoxText }
   </label>
 </div>
