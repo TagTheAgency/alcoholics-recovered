@@ -72,7 +72,7 @@ Together, anger and resentment create most of our problems beginning with the fi
 		"tickBoxText" : "Do you understand how resentment can build?"
 	},
 	{
-		"title":"A Resentment Story",
+		"title":"A Story of Resentment",
 		"phaseId": 1,
 		"stepNumber" : 5,
 		"html" : "
@@ -112,7 +112,7 @@ drink; alcohol has always been our fix.  </p>
 		"tickBoxText" :"PLEASE TICK WHEN COMPLETED"
 	},
 	{
-		"title" : "The seven basic instincts",
+		"title" : "The 7 Basic Instincts",
 		"phaseId" : 1,
 		"stepNumber" : 7,
 		"html" : "<p>All humans have seven basic instincts, that for most, are generally balanced. However, for those with alcoholism, or problems with alcohol, these instincts are not stable.  </p>
@@ -199,7 +199,7 @@ drink; alcohol has always been our fix.  </p>
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
 	},
 	{
-		"title" : "Working through Resentment and Anger Pt 1",
+		"title" : "Resentment and Anger Part 1",
 		"phaseId" : 2,
 		"stepNumber" : 1,
 		"html" : "<p>*Please print the <u>Resentment and Anger Prompt-sheet-Worksheet 1</u> and my <u>example worksheet 1</u>. You will work through that next. </p>
@@ -220,7 +220,7 @@ drink; alcohol has always been our fix.  </p>
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
 	},
 	{
-		"title" : "Working through Resentment and Anger Pt 2",
+		"title" : "Resentment and Anger Part 2",
 		"phaseId" : 2,
 		"stepNumber" : 2,
 		"html" : "<p><strong>Have you completed the <u>Prompt-sheet Worksheet 1 - Anger and Resentment?</u> </strong> </p>
@@ -237,7 +237,7 @@ drink; alcohol has always been our fix.  </p>
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
 	},
 	{
-		"title" : "Working through Resentment and Anger Pt 3",
+		"title" : "Resentment and Anger Part 3",
 		"phaseId" : 2,
 		"stepNumber" : 3,
 		"html" : "<p>I am now going to give a brief review of the following key points.</p>
@@ -254,7 +254,7 @@ drink; alcohol has always been our fix.  </p>
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
 	},
 	{
-		"title" : "Working through Resentment and Anger Pt 4",
+		"title" : "Resentment and Anger Part 4",
 		"phaseId" : 2,
 		"stepNumber" : 4,
 		"html" : "<h3>Reminder sheets</h3>
@@ -293,7 +293,7 @@ drink; alcohol has always been our fix.  </p>
 		"needsOkay" : false
 	},
 	{
-		"title" : "Working through Resentment and Anger Pt 5",
+		"title" : "Resentment and Anger Part 5",
 		"phaseId" : 2,
 		"stepNumber" : 5,
 		"html" : "<h3>Column 2 - THE CAUSE </h3>
@@ -318,7 +318,7 @@ drink; alcohol has always been our fix.  </p>
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED"
 	},
 	{
-		"title" : "Working through Resentment and Anger Pt 6",
+		"title" : "Resentment and Anger Part 6",
 		"phaseId" : 2,
 		"stepNumber" : 6,
 		"html" : "<h3>Column 3 &mdash; Which Basic Instincts were affected? </h3>
@@ -474,7 +474,7 @@ drink; alcohol has always been our fix.  </p>
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
 	},
 	{
-		"title" : "Working through Resentment and Anger Pt 7",
+		"title" : "Resentment and Anger Part 7",
 		"phaseId" : 2,
 		"stepNumber" : 7,
 		"html" : "<h3>Column 4 &mdash; This is the most crucial and freeing column</h3>
@@ -532,7 +532,7 @@ drink; alcohol has always been our fix.  </p>
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
 	},
 	{
-		"title" : "Working through Resentment and Anger Pt 8",
+		"title" : "Resentment and Anger Part 8",
 		"phaseId" : 2,
 		"stepNumber" : 8,
 		"html" : "<h3>Column 5 - What were my defects? </h3>

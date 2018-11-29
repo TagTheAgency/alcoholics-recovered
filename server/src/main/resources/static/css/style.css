@@ -222,6 +222,14 @@ h1.highlight-text {
   padding-right: 8rem;
   text-align: justify; }
 
+.feature-text-med-quote {
+  font-size: 1.6em;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  text-align: justify;
+  font-weight: 200;
+  font-style: italic; }
+
 .recent-video {
   height: 220px; }
 
