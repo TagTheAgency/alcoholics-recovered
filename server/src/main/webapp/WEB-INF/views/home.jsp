@@ -13,7 +13,7 @@
     <div class="feature-section-container page-section mb-5">
       <h2 class="mb-4">It's time to stop drinking. Here's how I can help</h2>
       <ol>
-        <li><strong>Acceptance</strong> – The first and hardest step, accept that you have a drinking
+        <li><strong>Acceptance</strong> - The first and hardest step, accept that you have a drinking
             problem</li>
         <li><strong>Accountability</strong> – we are here to help, but you need to put in the work</li>
         <li><strong>Awareness</strong> – become aware of the true pain you are causing</li>
@@ -56,12 +56,12 @@
       <div class="row bg-prm mb-5">
           <div class="section-text-container-left">
             <h3 class="small-header">The Process</h3>
-            <h2>We&#39;ve been where you are right now.</h2> 
+            <h2>We've been where you are right now.</h2> 
             <p>The loss of control of
-                your life and the loss of control in yourself. You know you&#39;re in trouble –
+                your life and the loss of control in yourself. You know you're in trouble –
                 you feel it every day, people you love are being hurt because of it – yet
-                you lie to yourself.  &quot;It&#39;s not that bad, I&#39;ll be more aware next time.&quot; The
-                trouble is you won&#39;t. You don&#39;t know when or how to stop... but you can&#39;t
+                you lie to yourself.  "It's not that bad, I'll be more aware next time." The
+                trouble is you won't. You don't know when or how to stop... but you can't
                 stop!
             </p>
             <p>

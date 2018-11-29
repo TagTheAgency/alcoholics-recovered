@@ -1,7 +1,49 @@
 <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 
 	<div class="row bg-highlight">
-	    <div id="sidebar-container" class="sidebar-expanded col-3 d-none d-md-block">
+		<div id="sidenav-overlay" class="sidenav-overlay">
+				<span id="sidebar-hamburger-icon-container" onclick="openNav()"><img class="my-3" id="sidebar-hamburger-icon" src="${pageContext.request.contextPath}/img/hamburger-text-menu-blue.png" alt="--MENU--"></span>
+				<a href="javascript:void(0)" class="sidenav-closebtn" onclick="closeNav()">&times;</a>
+				<div class="inset">
+					<h1 class="highlight-text my-3">${currentStep.title }</h1>
+
+					<p><i class="material-icons">schedule</i> estimated 20-25mins</p>
+					<div class="progress bg-ar-secondary-light">
+						<div class="progress-bar bg-ar-secondary" role="progressbar" style="width: ${currentStep.stepNumber / stepCount * 100}%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+					<p>Step ${currentStep.stepNumber } of ${stepCount }</p>
+					<hr class="bg-ar-primary"/>
+				</div>
+				<ul class="list-group">
+					<c:forEach items="${steps }" var="step">
+						<c:choose>
+							<c:when test="${helper.active(step)}">
+								<li class="active">${step.title }</li>
+							</c:when>
+							<c:when test="${helper.viewable(step)}">
+								<li class="completed"><a href="${pageContext.request.contextPath}/theProcess/${step.phase.phaseNumber }/${step.stepNumber}">${step.title }</a></li>
+							</c:when>
+							<c:when test="${helper.current(step)}">
+								<li class="completed notick"><a href="${pageContext.request.contextPath}/theProcess/${step.phase.phaseNumber }/${step.stepNumber}">${step.title }</a></li>
+							</c:when>
+							<c:otherwise>
+								<li>${step.title }
+							</c:otherwise>
+						</c:choose>
+					</c:forEach>
+				</ul>
+				<script>
+					function openNav() {
+						document.getElementById("sidenav-overlay").style.width = "250px";
+						document.getElementById("sidebar-hamburger-icon").style.display = "none";
+					}
+					function closeNav() {
+						document.getElementById("sidenav-overlay").style.width = "0";
+						document.getElementById("sidebar-hamburger-icon").style.display = "block";
+					}
+</script>
+			</div>
+	    <div id="sidebar-container" class="sidebar-expanded col-3">
 					<div class="sticky-top sticky-offset">
 						<div class="inset">
 							<h1 class="highlight-text my-3">${currentStep.title }</h1>
@@ -30,8 +72,6 @@
 									</c:otherwise>
 								</c:choose>
 							</c:forEach>
-						
-
 						</ul>
 					</div>
 

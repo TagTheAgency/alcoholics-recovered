@@ -615,8 +615,8 @@ drink; alcohol has always been our fix.  </p>
 		<p>DISHONEST – I didn’t want to work there anyway.</p>
 		<p>I Tick:</p>
 		<ul>
-		<li>Frightened</li>
-		<li>Dishonest</li>
+		<li>FRIGHTENED</li>
+		<li>DISHONEST</li>
 		</ul>
 		<br/>
 		<br/>
@@ -628,10 +628,10 @@ drink; alcohol has always been our fix.  </p>
 		<p>INCONSIDERATE – I didn’t realise how much pain he must have been in from having been sexually abused himself and then sexually abusing me.</p>
 		<p>I Tick:</p>
 		<ul>
-		<li>Selfish</li>
-		<li>Dishonest</li>
-		<li>Frightened</li>
-		<li>Inconsiderate</li>
+		<li>SELFISH</li>
+		<li>DISHONEST</li>
+		<li>FRIGHTENED</li>
+		<li>INCONSIDERATE</li>
 		</ul>
 		<br/>
 		<h3>YOUR ACTION</h3>
@@ -658,7 +658,7 @@ drink; alcohol has always been our fix.  </p>
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE"
 	},
 	{
-		"title" : "Working through Fear Pt 1",
+		"title" : "Working through Fear Part 1",
 		"phaseId" : 2,
 		"stepNumber" : 10,
 		"html" : "<h3>Column 1 - What am I Afraid Of?</h3>
@@ -689,7 +689,7 @@ drink; alcohol has always been our fix.  </p>
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
 	},
 {
-	"title" : "Working through Fear Pt 2",
+	"title" : "Working through Fear Part 2",
 	"phaseId" : 2,
 	"stepNumber" : 11,
 	"html" : "<h3>Column 2 - Why do I Have the Fear?</h3>
@@ -716,7 +716,7 @@ drink; alcohol has always been our fix.  </p>
 	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE"
 },
 {
-	"title" : "Working through Fear Pt 3",
+	"title" : "Working through Fear Part 3",
 	"phaseId" : 2,
 	"stepNumber" : 12,
 	"html" : "<h3>Column 3 - Which Part of Self Has Failed Me?</h3>
@@ -793,7 +793,7 @@ drink; alcohol has always been our fix.  </p>
 	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE"
 },
 {
-	"title" : "Working through Fear Pt 4",
+	"title" : "Working through Fear Part 4",
 	"phaseId" : 2,
 	"stepNumber" : 13,
 	"html" : "<h3>Column 4 - Which of the Basic Instincts do these Fears affect?</h3>
@@ -839,7 +839,7 @@ drink; alcohol has always been our fix.  </p>
 	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE"
 },
 {
-	"title" : "Working through Fear Pt 5.1",
+	"title" : "Working through Fear Part 5.1",
 	"phaseId" : 2,
 	"stepNumber" : 14,
 	"html" : "<h3>Column 5 - What are my Defects of Character?</h3>
@@ -883,7 +883,7 @@ drink; alcohol has always been our fix.  </p>
 	"needsOkay" : false
 },
 {
-	"title" : "Working through Fear Pt 5.2",
+	"title" : "Working through Fear Part 5.2",
 	"phaseId" : 2,
 	"stepNumber" : 15,
 	"html" : "<h3>Column 5 continued - What are my defects of character?</h3>
@@ -1055,9 +1055,9 @@ drink; alcohol has always been our fix.  </p>
 		<tr class='process-table-2nd-row'><td class='process-table-column-1'>Employer-Mr Talbot (plus) +</td> 	<td>He was a good boss and I was not happy working there and I didn’t discuss it with him.</td></tr>
 		<tr><td class='process-table-column-1'>Uncle Selwyn (plus and minus) + -</td> 	<td>I don’t owe him an amends at all. He is a very sick man. I am willing to try and forgive him because he is sick, and he suffered a lot of sexual abuse when he was a kid. We may choose to go to him to say we forgive him for his actions, this takes great courage. This is your decision.</td></tr>
 		<tr class='process-table-2nd-row'><td class='process-table-column-1'>Friend-Carl (plus) +</td> 	<td>I hurt him physically, I embarrassed and humiliated him in front of others. I hurt his self-esteem, pride, emotional security and personal relationships.</td></tr>
-		<tr class='process-table-2nd-row'><td class='process-table-column-1'>Coca-Cola (plus and minus) + -</td> 	<td>I am willing to make the amends to them, but if I do they may lay charges of theft with the police and I may be charged and lose my current job. If this happens I cannot provide for my family and this would hurt them and maybe split the family up. I will go and pay them or a charity the money I owe them. </td></tr>
-		<tr><td class='process-table-column-1'>Girlfriends (plus and minus) + -</td>  <td>I am willing to make amends to all my ex-girlfriends. I need to be careful as most are now married with children and I could hurt them by going to see them to make my amends. I decide that if they are married with children, I won’t go and see them, but I am willing to make amends to them. Those that are not in a relationship I will go and make my amends to them. When I make my amends, I won’t tell them I went with other women when I was in the relationship with them because this could hurt them more, so I will make my amends for my behaviour while we were in the relationship and explain that I was selfish, self-seeking and dishonest.</td></tr>
-		<tr class='process-table-2nd-row'><td class='process-table-column-1'>Employer - Tom (plus) +</td> 	<td>I will approach Tom and make my amends to him for stealing time from his company.</td></tr>
+		<tr><td class='process-table-column-1'>Coca-Cola (plus and minus) + -</td> 	<td>I am willing to make the amends to them, but if I do they may lay charges of theft with the police and I may be charged and lose my current job. If this happens I cannot provide for my family and this would hurt them and maybe split the family up. I will go and pay them or a charity the money I owe them. </td></tr>
+		<trclass='process-table-2nd-row'><td class='process-table-column-1'>Girlfriends (plus and minus) + -</td>  <td>I am willing to make amends to all my ex-girlfriends. I need to be careful as most are now married with children and I could hurt them by going to see them to make my amends. I decide that if they are married with children, I won’t go and see them, but I am willing to make amends to them. Those that are not in a relationship I will go and make my amends to them. When I make my amends, I won’t tell them I went with other women when I was in the relationship with them because this could hurt them more, so I will make my amends for my behaviour while we were in the relationship and explain that I was selfish, self-seeking and dishonest.</td></tr>
+		<tr><td class='process-table-column-1'>Employer - Tom (plus) +</td> 	<td>I will approach Tom and make my amends to him for stealing time from his company.</td></tr>
 	</table>
 	<br/>
 	<br/>
