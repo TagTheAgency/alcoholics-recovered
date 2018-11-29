@@ -8,9 +8,9 @@
 		</div>
 		<div class="nav-items-container d-none d-md-block">
 			<ul class="nav-items">
-				<li class="mr-3">Home</li>
-				<li class="mr-3">About</li>
-				<li class="mr-3">Contact</li>
+				<li class="mr-3"><a href="${pageContext.request.contextPath}/">Home</a></li>
+				<li class="mr-3"><a href="${pageContext.request.contextPath}/public/about">About</a></li>
+				<li class="mr-3"><a href="${pageContext.request.contextPath}/public/contact">Contact</a></li>
 				<li><a href="${pageContext.request.contextPath}/theProcess">Process</a></li>
 			</ul>
 		</div>
@@ -29,11 +29,14 @@
 					<div id="top-nav" class="overlay justify-content-center">
 						<a href="javascript:void(0)" class="closebtn" onclick="closeTopNav()">&times;</a>
 						<div class="overlay-content">
-							<a href="">Home</a>
-							<a href="">About</a>
-							<a href="">Process</a>
-							<a href="">Contact</a>
-							<a href="">Logout</a>
+							<a href="${pageContext.request.contextPath}/">Home</a>
+							<a href="${pageContext.request.contextPath}/public/about">About</a>
+							<a href="${pageContext.request.contextPath}/theProcess">Process</a>
+							<a href="${pageContext.request.contextPath}/public/contact">Contact</a>
+							<form method="post" action="${pageContext.servletContext.contextPath}/logout">
+								<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+								<button type="submit" class="btn btn-prm">Logout</button>
+							</form>
 						</div>
 					</div>
 		</div>

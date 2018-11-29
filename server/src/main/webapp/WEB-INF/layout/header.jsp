@@ -5,9 +5,9 @@
 		</div>
 		<div class="nav-items-container d-none d-md-block">
 			<ul class="nav-items">
-				<li class="mr-3"><a href="./index.html">Home</a></li>
-				<li class="mr-3"><a href="./about.html">About</a></li>
-				<li class="mr-3">Contact</li>
+				<li class="mr-3"><a href="${pageContext.request.contextPath}/">Home</a></li>
+				<li class="mr-3"><a href="${pageContext.request.contextPath}/public/about">About</a></li>
+				<li class="mr-3"><a href="${pageContext.request.contextPath}/public/contact">Contact</a></li>
 				<li><a href="${pageContext.request.contextPath}/theProcess">Process</a></li>
 			</ul>
 		</div>
@@ -24,12 +24,12 @@
 					<div id="top-nav" class="overlay justify-content-center">
 						<a href="javascript:void(0)" class="closebtn" onclick="closeTopNav()">&times;</a>
 						<div class="overlay-content">
-							<a href="../views/home.jsp">Home</a>
-							<a href="./about.html">About</a>
-							<a href="./process.html">Process</a>
-							<a href="./contact.html">Contact</a>
-							<a href="./login.html">Login</a>
-							<a href="./signup.html">Sign Up</a>
+							<a href="${pageContext.request.contextPath}/">Home</a>
+							<a href="${pageContext.request.contextPath}/public/about">About</a>
+							<a href="${pageContext.request.contextPath}/theProcess">Process</a>
+							<a href="${pageContext.request.contextPath}/public/contact">Contact</a>
+							<a href="${pageContext.request.contextPath}/login">Login</a>
+							<a href="${pageContext.request.contextPath}/join/account">Sign Up</a>
 						</div>
 					</div>
 		</div>

@@ -50,6 +50,25 @@ public class LMSController {
 	@Value("${stripe.api.key}")
 	private String apiKey;
 	
+	@GetMapping("/")
+	public String getHomepage() {
+		return "home";
+	}
+	
+	@GetMapping("/public/about")
+	public String showAbout() {
+		return "about";
+	}
+	
+	@GetMapping("/public/contact")
+	public String showContact() {
+		return "contact";
+	}
+	
+	@GetMapping("/public/privacy")
+	public String showPrivacyPolicy() {
+		return "privacy";
+	}
 	
 	@GetMapping(path="/test")
 	@ResponseBody
