@@ -41,8 +41,8 @@
 					<video controls
 							controlsList="nodownload"
 					       src="/video/Beach.webm"
-					       width="600"
-					       height="400">
+					       width="100%"
+					       height="100%">
 					    Sorry, your browser doesn't support embedded videos.
 					</video>
 				</div>

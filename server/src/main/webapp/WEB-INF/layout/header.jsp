@@ -24,7 +24,7 @@
 					<div id="top-nav" class="overlay justify-content-center">
 						<a href="javascript:void(0)" class="closebtn" onclick="closeTopNav()">&times;</a>
 						<div class="overlay-content">
-							<a href="./index.html">Home</a>
+							<a href="../views/home.jsp">Home</a>
 							<a href="./about.html">About</a>
 							<a href="./process.html">Process</a>
 							<a href="./contact.html">Contact</a>

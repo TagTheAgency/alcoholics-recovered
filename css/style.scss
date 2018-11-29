@@ -232,6 +232,9 @@ nav {
 .feature-section-container {
     margin: 4em auto;
     text-align: center;
+.feature-section-container ol li {
+    text-align: left;
+}
 
     .btn {
         background-color: $primaryColour;
@@ -303,6 +306,20 @@ h1.highlight-text {
     font-weight: 200;
     font-style: italic;
     text-align: justify; 
+}
+
+#homepage-blue-feature {
+    background: linear-gradient(
+        rgba(20,20,20, .5), 
+        rgba(20,20,20, .5)),
+        url("../img/paulius-dragunas.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#homepage-blue-feature > * {
+    text-align: center;
+    letter-spacing: 0.1em;
 }
 
 .recent-video {
@@ -444,7 +461,7 @@ h1.highlight-text {
     .call-now-heading {
         h2 {
             text-align: center;
-            font-size: 1.7em
+            font-size: 2.5em
         }
         h1 {
             text-align: center;

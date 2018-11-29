@@ -181,6 +181,8 @@ nav {
 .feature-section-container {
   margin: 4em auto;
   text-align: center; }
+  .feature-section-container .feature-section-container ol li {
+    text-align: left; }
   .feature-section-container .btn {
     background-color: #75CEDE;
     color: #fff; }
@@ -236,6 +238,15 @@ h1.highlight-text {
   font-weight: 200;
   font-style: italic;
   text-align: justify; }
+
+#homepage-blue-feature {
+  background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url("../img/paulius-dragunas.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#homepage-blue-feature > * {
+  text-align: center;
+  letter-spacing: 0.1em; }
 
 .recent-video {
   height: 220px; }
@@ -346,7 +357,7 @@ h1.highlight-text {
   margin: 4em auto; }
   .call-now-container .call-now-heading h2 {
     text-align: center;
-    font-size: 1.7em; }
+    font-size: 2.5em; }
   .call-now-container .call-now-heading h1 {
     text-align: center;
     font-size: 4em;

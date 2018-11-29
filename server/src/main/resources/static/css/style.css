@@ -230,6 +230,19 @@ h1.highlight-text {
   font-weight: 200;
   font-style: italic; }
 
+#homepage-blue-feature {
+    background: linear-gradient(
+        rgba(20,20,20, .5), 
+        rgba(20,20,20, .5)),
+        url("../img/paulius-dragunas.jpg");
+    background-size: 100%;
+}
+
+#homepage-blue-feature > * {
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
 .recent-video {
   height: 220px; }
 
@@ -292,7 +305,9 @@ h1.highlight-text {
       padding: 10px 40px;
       font-size: 1.4rem;
       font-weight: bold;
-      color: rgba(30, 30, 30, 0.2); }
+      color: rgba(30, 30, 30, 0.2);
+      position: relative;
+      padding-right: 65px }
       #sidebar-container ul li:after {
         content: "";
         float: right;
@@ -301,7 +316,11 @@ h1.highlight-text {
         width: 20px;
         height: 20px;
         border-radius: 50%;
-        background-color: rgba(30, 30, 30, 0.2); }
+        background-color: rgba(30, 30, 30, 0.2);
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);  }
 	#sidebar-container ul li.completed a {
         color: #75CEDE; }
         #sidebar-container ul li.completed:after {
@@ -339,7 +358,7 @@ h1.highlight-text {
   margin: 4em auto; }
   .call-now-container .call-now-heading h2 {
     text-align: center;
-    font-size: 1.7em; }
+    font-size: 2.5em; }
   .call-now-container .call-now-heading h1 {
     text-align: center;
     font-size: 4em;
@@ -482,6 +501,8 @@ h1.highlight-text {
   .process-table-2nd-row {
     background-color: #C6BEEF
   }
+  #video-container {
+    max-width: 800%; }
 
 
 @media (min-width: 768px) {
