@@ -20,8 +20,31 @@
 				<button type="submit" class="btn btn-prm">Logout</button>
 			</form>
 		</div>
-		<div id="hamburger-menu" class="d-md-none">
-			<i class="fas fa-bars"></i>
+		<div id="top-nav-container">
+				<span onclick="openTopNav()">
+					<div id="hamburger-menu" class="d-md-none">
+						<i class="fas fa-bars"></i>
+					</div>
+				</span>
+					<div id="top-nav" class="overlay justify-content-center">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeTopNav()">&times;</a>
+						<div class="overlay-content">
+							<a href="">Home</a>
+							<a href="">About</a>
+							<a href="">Process</a>
+							<a href="">Contact</a>
+							<a href="">Logout</a>
+						</div>
+					</div>
 		</div>
 	</div>
+	<script>function openTopNav() {
+			document.getElementById("top-nav").style.height = "60%";
+		}
+		
+		
+		function closeTopNav() {
+			document.getElementById("top-nav").style.height = "0";
+		}
+</script>
 </nav>

@@ -44,6 +44,40 @@ nav {
 .nav-logo-wrapper {
   width: 130px; }
 
+  .overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 200; 
+    left: 0;
+    top: 0;
+    background-color: rgba(242, 239, 243, 0.9);
+    overflow-x: hidden; 
+    transition: 0.5s; }
+
+.overlay-content {
+    position: relative;
+    top: 10%;
+    width: 30%;
+    margin: auto;
+    text-align: center; }
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #725FD9;
+    display: block;
+    transition: 0.3s; }
+
+.overlay a:hover, .overlay a:focus {
+    color: #C6BEEF; }
+
+.overlay .closebtn {
+    position: absolute;
+    right: 45px;
+    font-size: 60px; }
+
 .bg-prm {
   background-color: #75CEDE;
   color: #fff; }
