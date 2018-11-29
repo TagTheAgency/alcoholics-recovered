@@ -9,6 +9,11 @@
 		  				Invalid username or password. You can <a class="alert-link" href="${pageContext.request.contextPath}/join/account">create a new account</a> or use the <a class="alert-link" href="forgotPassword">forgot password page</a>.
 					</div>
 		         </c:if>
+		         <c:if test="${not empty param.message}">
+		            <div class="alert alert-danger" role="alert">
+		  				${param.message }
+					</div>
+		         </c:if>
               <div class="form-label-group">
                 <input type="text" id="inputEmail" class="form-control login-form-input col-8" name="username" placeholder="Email address" required autofocus>
               </div>

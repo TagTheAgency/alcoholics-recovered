@@ -1,12 +1,23 @@
 package com.tagtheagency.alcoholicsrecovered.service;
 
+import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.ExampleMatcher;
+import org.springframework.mail.MailSender;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -15,16 +26,19 @@ import org.springframework.stereotype.Service;
 
 import com.stripe.model.Charge;
 import com.tagtheagency.alcoholicsrecovered.dto.UserDTO;
+import com.tagtheagency.alcoholicsrecovered.model.PasswordResetToken;
 import com.tagtheagency.alcoholicsrecovered.model.ProcessPhase;
 import com.tagtheagency.alcoholicsrecovered.model.ProcessStep;
 import com.tagtheagency.alcoholicsrecovered.model.User;
 import com.tagtheagency.alcoholicsrecovered.persistence.ChargeDAO;
+import com.tagtheagency.alcoholicsrecovered.persistence.PasswordResetTokenDAO;
 import com.tagtheagency.alcoholicsrecovered.persistence.ProcessPhaseDAO;
 import com.tagtheagency.alcoholicsrecovered.persistence.ProcessStepDAO;
 import com.tagtheagency.alcoholicsrecovered.persistence.UserDAO;
 import com.tagtheagency.alcoholicsrecovered.service.exception.EmailExistsException;
 
 @Service
+@PropertySource(value= {"classpath:application.properties"})
 public class UserService implements UserDetailsService {
 
 	@Autowired 
@@ -38,9 +52,18 @@ public class UserService implements UserDetailsService {
 	
 	@Autowired
 	private ProcessPhaseDAO processPhaseDao;
+
+	@Autowired
+	private PasswordResetTokenDAO passwordResetDao;
 	
 	@Autowired
 	private PasswordEncoder passwordEncoder;
+	
+	@Autowired
+	private MailSender mailSender;
+	
+	@Value("${support.email}")
+	private String serviceEmail;
 	 
 	public User registerNewUserAccount(UserDTO accountDto) throws EmailExistsException {
 	    if (emailExists(accountDto.getEmail())) {
@@ -159,11 +182,6 @@ public class UserService implements UserDetailsService {
 	}
 
 	public ProcessStep getFirstStepOfTheProcess() {
-		System.out.println("Getting first step of the process");
-		System.out.println(processStepDao.findByStepNumberAndPhase_PhaseNumber(1, 1));
-		System.out.println(processStepDao.findByStepNumberAndPhase_PhaseNumber(1, 1).get(0));
-		System.out.println(processStepDao.findByStepNumberAndPhase_PhaseNumber(1, 1).get(0).getPhase());
-		
 		return processStepDao.findByStepNumberAndPhase_PhaseNumber(1, 1).get(0);
 	}
 
@@ -197,6 +215,60 @@ public class UserService implements UserDetailsService {
 			return null;
 		}
 		return getStepByNumber(1, phasePlusOne.get(0).getPhaseNumber());
+	}
+
+	public void createPasswordResetTokenForUser(User user, String token) {
+		passwordResetDao.deleteByUser(user);
+	    PasswordResetToken dbToken = new PasswordResetToken();
+	    dbToken.setUser(user);
+	    dbToken.setToken(token);
+	    dbToken.setExpiryDate(new Date(new Date().getTime() + (60 * 60 * 24 * 1000)));
+	    passwordResetDao.save(dbToken);
+	    
+	}
+	
+	private SimpleMailMessage constructResetTokenEmail(String contextPath, String token, User user) {
+	    String url = contextPath + "/user/changePassword?key=" + user.getId() + "&token=" + token;
+	    String message = "Somebody (hopefully you) has requested to reset your password for the Recovered Group. Please follow the link below";
+	    return constructEmail("Reset Password", message + " \r\n" + url, user);
+	}
+	 
+	private SimpleMailMessage constructEmail(String subject, String body, User user) {
+	    SimpleMailMessage email = new SimpleMailMessage();
+	    email.setSubject(subject);
+	    email.setText(body);
+	    email.setTo(user.getEmail());
+	    email.setFrom(serviceEmail);
+	    return email;
+	}
+
+	public void sendResetEmail(String applicationURL, User user, String token) {
+		mailSender.send(constructResetTokenEmail(applicationURL, token, user));
+	}
+
+	public String validatePasswordResetToken(long id, String token) {
+	    PasswordResetToken passToken = passwordResetDao.findByToken(token);
+	    if ((passToken == null) || (passToken.getUser().getId() != id)) {
+	        return "invalidToken";
+	    }
+	 
+	    Calendar cal = Calendar.getInstance();
+	    if ((passToken.getExpiryDate().getTime() - cal.getTime().getTime()) <= 0) {
+	    	System.out.println("Date from db is "+passToken.getExpiryDate());
+	    	System.out.println("And mine is     "+cal.getTime());
+	    	System.out.println("Which gives a difference of "+(passToken.getExpiryDate().getTime() - cal.getTime().getTime()));
+	        return "expired";
+	    }
+	 
+	    User user = passToken.getUser();
+	    Authentication auth = new UsernamePasswordAuthenticationToken(user, null, Arrays.asList(new SimpleGrantedAuthority("CHANGE_PASSWORD_PRIVILEGE")));
+	    SecurityContextHolder.getContext().setAuthentication(auth);
+	    return null;
+	}
+
+	public void changeUserPassword(User user, String newPassword) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	

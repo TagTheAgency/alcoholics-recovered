@@ -4,6 +4,10 @@ import java.security.Principal;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -22,6 +26,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.stripe.exception.StripeException;
 import com.stripe.model.Charge;
+import com.tagtheagency.alcoholicsrecovered.dto.GenericResponse;
+import com.tagtheagency.alcoholicsrecovered.dto.PasswordDTO;
 import com.tagtheagency.alcoholicsrecovered.dto.UserDTO;
 import com.tagtheagency.alcoholicsrecovered.model.ProcessPhase;
 import com.tagtheagency.alcoholicsrecovered.model.ProcessStep;
@@ -30,6 +36,7 @@ import com.tagtheagency.alcoholicsrecovered.service.ARUserDetails;
 import com.tagtheagency.alcoholicsrecovered.service.StripeService;
 import com.tagtheagency.alcoholicsrecovered.service.UserService;
 import com.tagtheagency.alcoholicsrecovered.service.exception.EmailExistsException;
+import com.tagtheagency.alcoholicsrecovered.service.exception.UserNotFoundException;
 import com.tagtheagency.alcoholicsrecovered.view.ProcessViewHelper;
 
 @Controller
@@ -59,7 +66,7 @@ public class LMSController {
 	
 	
 	@GetMapping(path="/login")
-	public String getLoginPage() {
+	public String getLoginPage(Model model) {
 		return "login";
 	}
 
@@ -232,8 +239,10 @@ public class LMSController {
 	private User getUserFromPrincipal(Principal principal) {
 		if (principal instanceof UsernamePasswordAuthenticationToken) {
 			UsernamePasswordAuthenticationToken token = (UsernamePasswordAuthenticationToken) principal;
-			ARUserDetails user = (ARUserDetails) token.getPrincipal();
-			return users.getUser(user.getUsername());
+			if (token.getPrincipal() instanceof ARUserDetails) {
+				ARUserDetails user = (ARUserDetails) token.getPrincipal();
+				return users.getUser(user.getUsername());
+			}
 		}
 		return null;
 	}
@@ -244,5 +253,58 @@ public class LMSController {
 	
 	private int getUniqueOrder(ProcessStep step, ProcessPhase phase) {
 		return (phase.getPhaseNumber() * 1000) + step.getStepNumber();
+	}
+
+
+	@PostMapping(value = "/forgotPassword")
+	@ResponseBody
+	public GenericResponse resetPassword(HttpServletRequest request, @RequestParam("email") String userEmail) throws UserNotFoundException {
+		User user = users.getUser(userEmail);
+		if (user == null) {
+			throw new UserNotFoundException();
+		}
+		String token = UUID.randomUUID().toString();
+		users.createPasswordResetTokenForUser(user, token);
+		users.sendResetEmail(getAppUrl(request), user, token);
+		return new GenericResponse("Thanks, we've sent you an email");
+	}
+	
+	private String getAppUrl(HttpServletRequest request) {
+		return request.getLocalName();
+	}
+	
+	@GetMapping(value = "/user/changePassword")
+	public String showChangePasswordPage(Model model, @RequestParam("key") long id, @RequestParam("token") String token) {
+	    String result = users.validatePasswordResetToken(id, token);
+	    
+	    if (result != null) {
+	    	System.out.println("Got a result of "+result);
+	    	switch (result) {
+	    	case "invalidToken": model.addAttribute("message", "That's an invalid token. Please login to continue");
+	    	break;
+	    	case "expired": model.addAttribute("message", "Sorry, that token has expired.  Please login to continue");
+	    	break;
+	    	default: model.addAttribute("message", "Sorry, something went wrong");
+	    	}
+	    	System.out.println(model.asMap());
+	    	
+//	    	model.addAttribute("message", 
+//	          messages.getMessage("auth.message." + result, null, locale));
+	        return "redirect:/login?message="+model.asMap().get("message");
+	    }
+	    return "redirect:/updatePassword";
+	}
+	
+	@GetMapping("/updatePassword")
+	public String showUpdatePasswordPage() {
+		return "changePassword";
+	}
+	
+	@GetMapping(value = "/user/savePassword")
+	@ResponseBody
+	public GenericResponse savePassword(@Valid PasswordDTO passwordDto, Principal principal) {
+	    User user = getUserFromPrincipal(principal);
+	    users.changeUserPassword(user, passwordDto.getNewPassword());
+	    return new GenericResponse("Your password has been updated");
 	}
 }

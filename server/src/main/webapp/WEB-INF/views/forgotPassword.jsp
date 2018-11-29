@@ -11,7 +11,7 @@
 					</div>
 		         </c:if>
               <div class="form-label-group">
-                <input type="text" id="inputEmail" class="form-control login-form-input col-8" name="username" placeholder="Email address" required autofocus>
+                <input type="text" id="inputEmail" class="form-control login-form-input col-8" name="email" placeholder="Email address" required autofocus>
               </div>
 
               <div class="col-8 mx-auto">

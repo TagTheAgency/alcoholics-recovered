@@ -23,6 +23,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			.authorizeRequests()
 				.antMatchers("/login*").anonymous()
 				.antMatchers("/forgotPassword*").anonymous()
+				.antMatchers("/user/changePassword").anonymous()
+				.antMatchers("/updatePassword*").permitAll()
 				.antMatchers("/join/**").anonymous()  
 				.antMatchers("/css/**").permitAll()  
 				.antMatchers("/img/**").permitAll()  

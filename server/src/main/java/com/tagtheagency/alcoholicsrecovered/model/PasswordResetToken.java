@@ -26,4 +26,38 @@ public class PasswordResetToken {
     private User user;
   
     private Date expiryDate;
+    
+    public Long getId() {
+		return id;
+	}
+
+	public String getToken() {
+		return token;
+	}
+
+	public void setToken(String token) {
+		this.token = token;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	public Date getExpiryDate() {
+		return expiryDate;
+	}
+
+	public void setExpiryDate(Date expiryDate) {
+		this.expiryDate = expiryDate;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+    
+    
 }
