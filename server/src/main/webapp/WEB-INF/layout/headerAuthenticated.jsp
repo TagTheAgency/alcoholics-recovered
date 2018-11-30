@@ -35,7 +35,7 @@
 							<a href="${pageContext.request.contextPath}/public/contact">Contact</a>
 							<form method="post" action="${pageContext.servletContext.contextPath}/logout">
 								<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-								<button type="submit" class="btn btn-prm">Logout</button>
+								<button type="submit" style="font-size: 24px; color:#725FD9">Logout</button>
 							</form>
 						</div>
 					</div>

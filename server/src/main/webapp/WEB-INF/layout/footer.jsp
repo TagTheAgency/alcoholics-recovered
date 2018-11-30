@@ -17,15 +17,6 @@
 
       </div>
       <div class="col-sm-6 footer-menu-container d-flex justify-content-around">
-        <div class="footer-menu-contact">
-          <dl>
-            <dt>CONTACT US</dt>
-              <dd>NEW ZEALAND</dd>
-              <dd>0800 005717</dd>
-              <dd>AUSTRALIA</dd>
-              <dd>1800 95 3029</dd>
-          </dl>
-        </div>
         <div class="footer-menu-links pl-3">
           <dl>
             <dt>LINKS</dt>

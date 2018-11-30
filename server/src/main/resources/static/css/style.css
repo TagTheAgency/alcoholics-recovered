@@ -222,6 +222,11 @@ h1.highlight-text {
   padding-right: 8rem;
   text-align: justify; }
 
+.feature-text-medium .contact {
+  padding: 2rem;
+  text-align: center;
+}
+
 .feature-text-med-quote {
   font-size: 1.6em;
   padding-left: 8rem;
@@ -230,15 +235,25 @@ h1.highlight-text {
   font-weight: 200;
   font-style: italic; }
 
-#homepage-blue-feature {
+#homepage-img-feature {
     background: linear-gradient(
         rgba(20,20,20, .5), 
         rgba(20,20,20, .5)),
-        url("../img/paulius-dragunas.jpg");
-    background-size: 100%;
+        url("https://images.unsplash.com/photo-1522679056866-8dbbc8774a9d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=644951c9a9f2fdaf32192feeb7a33f7b&auto=format&fit=crop&w=1416&q=80");
+        background-size: cover;
+    background-repeat: no-repeat;
 }
 
-#homepage-blue-feature > * {
+#contact-img-feature {
+  background: linear-gradient(
+      rgba(20,20,20, .7), 
+      rgba(20,20,20, .7)),
+      url("https://images.unsplash.com/photo-1443632826930-7e5bc4aa7fa0?ixlib=rb-0.3.5&s=88a74af276be0f1a6786bcaaa490af7b&auto=format&fit=crop&w=1650&q=80");
+      background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#homepage-img-feature > * {
     text-align: center;
     letter-spacing: 0.1em;
 }
@@ -435,14 +450,17 @@ h1.highlight-text {
     font-weight: 800;
     color: #75CEDE; }
   .call-now-container .call-now-numbers {
-    display: flex; }
+    display: block;
+   }
     .call-now-container .call-now-numbers .call-now-nz {
       padding-left: 5px;
       margin-right: 5%;
-      color: #75CEDE; }
+      color: #75CEDE;
+    text-align: center; }
     .call-now-container .call-now-numbers .call-now-aus {
       padding-left: 5px;
-      color: #75CEDE; }
+      color: #75CEDE;
+    text-align: center; }
 
 #footer-container {
   background-color: rgba(117, 206, 222, 0.3); }
@@ -467,7 +485,7 @@ h1.highlight-text {
       margin-bottom: .5rem; }
     #footer-container .footer-menu-container > div dl dd {
       margin-bottom: 0; }
-  #footer-container .footer-socmed .footer-socmed-icon {
+  .footer-socmed .footer-socmed-icon {
     width: 10%;
     min-width: 30px;
     margin: 10px; }
@@ -478,6 +496,31 @@ h1.highlight-text {
 #about-main-text {
   padding-top: 4%;
   padding-bottom: 8%; }
+
+.contact-main-content .page-section {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#contact-form .contact-form-input{
+  width: 80%;
+  margin: auto;
+  margin-bottom: 1.5em;
+  border-color: #725FD9; }
+#contact-form-input-msg {
+  height: 200px; }
+#contact-form input::placeholder {
+  font-size: 20px;
+  color: #725FD9;
+  vertical-align: top; }
+#contact-btn {
+  margin: auto;
+  margin-top: 12px;
+  background-color: #725FD9;
+  padding-left: 20%;
+  padding-right: 20%;
+  color: #fff;
+  font-size: 1.2em; }
 
 #login-container {
   background-color: rgba(69, 155, 159, 0.4);
@@ -614,6 +657,8 @@ h1.highlight-text {
       width: 66%; }
     #footer-container .footer-menu-contact {
       display: flex; }
+    #contact-form .contact-form-input {
+      width: 100%; }
   }
 
   @media (min-width: 950px) {
@@ -629,7 +674,7 @@ h1.highlight-text {
     .content {
       padding: 100px 20px 20px 20px;
     }
-    #sidebar-hamburger-icon {
+    .sidebar-hamburger-icon {
       display: none;
     }
     #sidebar-container {
