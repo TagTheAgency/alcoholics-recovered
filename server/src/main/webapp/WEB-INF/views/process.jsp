@@ -55,6 +55,18 @@
 							<p>Step ${currentStep.stepNumber } of ${stepCount }</p>
 							<hr class="bg-ar-primary"/>
 						</div>
+
+						<div class="slide-nav-container">
+							<span onclick="openSlideNav()">
+								<h4>Slides</h4>
+							</span>
+							<div id="slide-nav-content">
+								<div>Phase 1</div>
+								<div>Phase 2</div>
+								<div>Phase 3</div>
+							</div>
+						</div>
+
 						<ul class="list-group">
 							<c:forEach items="${steps }" var="step">
 								<c:choose>
