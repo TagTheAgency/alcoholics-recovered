@@ -8,6 +8,7 @@ import java.util.UUID;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import javax.websocket.server.PathParam;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -54,7 +55,7 @@ public class LMSController {
 	public String getHomepage() {
 		return "home";
 	}
-	
+/*	
 	@GetMapping("/public/about")
 	public String showAbout() {
 		return "about";
@@ -68,6 +69,11 @@ public class LMSController {
 	@GetMapping("/public/privacy")
 	public String showPrivacyPolicy() {
 		return "privacy";
+	}
+*/
+	@GetMapping("/public/{page}")
+	public String showPublicPage(@PathParam("page") String page) {
+		return "public/" + page;
 	}
 	
 	@GetMapping(path="/test")
