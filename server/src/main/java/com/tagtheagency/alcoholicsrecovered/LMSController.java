@@ -72,7 +72,7 @@ public class LMSController {
 	}
 */
 	@GetMapping("/public/{page}")
-	public String showPublicPage(@PathParam("page") String page) {
+	public String showPublicPage(@PathVariable("page") String page) {
 		return "public/" + page;
 	}
 	
