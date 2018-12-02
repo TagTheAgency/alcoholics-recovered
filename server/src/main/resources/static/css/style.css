@@ -269,7 +269,7 @@ h1.highlight-text {
 #testimonials-homepage {
   background-color: #75CEDE;
   padding: 1em;
-  border-radius: 20px; }
+  border-radius: 8px; }
 .testimonials-container {
   position: relative; }
 .testimonials-container p {
@@ -638,11 +638,16 @@ h1.highlight-text {
     width: 30%;
     font-weight: bold; }
   .process-table-2nd-row {
-    background-color: #C6BEEF
-  }
+    background-color: #C6BEEF; }
   #video-container {
     max-width: 800%; }
-
+  
+  .testimonial-slide {
+    background-image: url("https://unsplash.com/photos/3MtiSMdnoCo");
+  }
+  .testimonial-content {
+    margin: 30px;
+  }
 
 @media (min-width: 768px) {
   #sign-up-btn {
