@@ -15,4 +15,9 @@
 		<put-attribute name="body" value="/WEB-INF/views/{1}.jsp" />
 	</definition>
 
+	<definition name="public/*" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/views/public/{1}.jsp" />
+	</definition>
+	
+
 </tiles-definitions>
