@@ -36,13 +36,11 @@
 	</div>
 	<script>function openTopNav() {
 			document.getElementById("top-nav").style.height = "60%";
-			console.log("topNav open!")
 		}
 		
 		
 		function closeTopNav() {
 			document.getElementById("top-nav").style.height = "0";
-			console.log("topNav closed!")
 		}
 </script>
 </nav>
