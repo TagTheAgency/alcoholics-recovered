@@ -28,6 +28,8 @@ public class ProcessStepDTO {
 	
 	private List<FileLink> files;
 	
+	private String video;
+	
 
 	public int getId() {
 		return id;
@@ -100,6 +102,14 @@ public class ProcessStepDTO {
 	public void setDownload(String download) {
 		this.download = download;
 	}
+	
+	public String getVideo() {
+		return video;
+	}
+	
+	public void setVideo(String video) {
+		this.video = video;
+	}
 
 	public static ProcessStepDTO from(ProcessStep step) {
 		ProcessStepDTO dto = new ProcessStepDTO();
@@ -108,6 +118,7 @@ public class ProcessStepDTO {
 		dto.setNeedsOkay(step.isNeedsOkay());
 		dto.setStepNumber(step.getStepNumber());
 		dto.setTitle(step.getTitle());
+		dto.setVideo(step.getVideo());
 		step.getFiles().forEach(f -> {
 			FileLink file = new FileLink();
 			file.setDisplayName(f.getDisplayName());
@@ -125,6 +136,7 @@ public class ProcessStepDTO {
 		step.setDownload(download);
 		step.setTickBoxText(tickBoxText);
 		step.setStepNumber(stepNumber);
+		step.setVideo(video);
 		if (files != null) {
 			files.forEach(f -> {
 				com.tagtheagency.alcoholicsrecovered.model.FileLink file = new com.tagtheagency.alcoholicsrecovered.model.FileLink();
