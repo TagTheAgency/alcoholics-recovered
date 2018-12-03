@@ -1,5 +1,8 @@
 package com.tagtheagency.alcoholicsrecovered.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -8,6 +11,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -44,6 +48,9 @@ public class ProcessStep {
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "phase_id", nullable = false)
 	private ProcessPhase phase;
+	
+	@OneToMany(fetch=FetchType.LAZY, mappedBy="step")
+	public List<FileLink> files;
 
 	public int getId() {
 		return id;
@@ -116,6 +123,13 @@ public class ProcessStep {
 	public void setVideo(String video) {
 		this.video = video;
 	}
-	
-	
+	public List<FileLink> getFiles() {
+		if (files == null) {
+			files = new ArrayList<>();
+		}
+		return files;
+	}
+	public void setFiles(List<FileLink> files) {
+		this.files = files;
+	}
 }
