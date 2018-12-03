@@ -42,7 +42,7 @@
             <p>I found "The Process" and Paul's video gave me a reason to try, he knew what I was going through. He explained what it was to be an alcoholic, everything I was. I felt relief and hope, I trusted Paul and knew it was my time to make that step. I had to really want to stop and be serious about fixing my problems.             </p>
             <p>'The Process' have made sense of my problems, together I've worked through the many issues in my life. </p>
             <p>I am now sober. I will be forever. </p>
-            <p>Make that call, don't live through hell. Stop hurting yourself and the ones you love, there is a wonderful world to enjoy.          </p>
+            <p>Make that call, don't live through hell. Stop hurting yourself and the ones you love, there is a wonderful world to enjoy.</p>
             <h5>Di - Vistoria, Australia</h5>
         </div>
       </div>

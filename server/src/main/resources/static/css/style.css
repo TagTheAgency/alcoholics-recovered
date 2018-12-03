@@ -236,8 +236,7 @@ h1.highlight-text {
 
 .feature-text-medium {
   font-size: 1.6em;
-  padding-left: 8rem;
-  padding-right: 8rem;
+  padding: 0 2rem;
   text-align: justify; }
 
 .feature-text-medium .contact {
@@ -247,8 +246,7 @@ h1.highlight-text {
 
 .feature-text-med-quote {
   font-size: 1.6em;
-  padding-left: 8rem;
-  padding-right: 8rem;
+  padding: 0 2rem;
   text-align: justify;
   font-weight: 200;
   font-style: italic; }
@@ -284,11 +282,14 @@ h1.highlight-text {
 #testimonials-homepage {
   background-color: #75CEDE;
   padding: 1em;
-  border-radius: 8px; }
+  border-radius: 8px;
+  margin-top: 6em;
+  margin-bottom: 6em;
+color: #fff;  }
 .testimonials-container {
   position: relative; }
 .testimonials-container p {
-  color: #3E3E3E;
+  color: #fff;
   font-size: 18px;
   margin: 0; }  
 .testimonials-container:after {
@@ -344,7 +345,10 @@ h1.highlight-text {
   -webkit-font-smoothing: antialiased; }
 
   .material-icons, #sidenav-overlay ul li.completed:after, #sidebar-container ul li.completed:after  {
-    font-family: 'Material Icons'; }
+    font-family: 'Material Icons';
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: bold; }
 
 .inset {
   padding-left: 40px;
@@ -462,7 +466,15 @@ h1.highlight-text {
   z-index: 1;
   height: 40px;
 }
-
+#dropdownSideMenu {
+  background-color: #C6BEEF;
+  border: #C6BEEF;
+  color: #fff;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 10px;
+}
 
 
 #main-content-container {
@@ -684,6 +696,15 @@ h1.highlight-text {
     border: solid;
     background-color: rgba(255, 255, 255, 0.5);
   }
+  #error {
+    padding-top: 180px;
+    padding-bottom: 25%;
+    background-image: url(../img/error-pg-img.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
 
 @media (min-width: 768px) {
   #sign-up-btn {
@@ -717,6 +738,8 @@ h1.highlight-text {
   .call-now-numbers {
     display: block; } 
   
+    #error {
+      background-size: cover; }
     .footer-spacer {
       display: flex; }
     
@@ -732,6 +755,14 @@ h1.highlight-text {
     }
 
   @media (min-width: 950px) {
+    .content {
+      padding: 100px 20px 20px 20px; }
+    #error h2 {
+      font-size: 2.5rem; }
+    .feature-text-medium {
+      padding: 2rem; }
+    .feature-text-med-quote {
+      padding: 2rem; }
 
     #footer-container .footer-subscribe-container {
             padding-left: 6rem;
@@ -741,9 +772,6 @@ h1.highlight-text {
     #footer-container #subscribe-btn {
                 width: auto; }
                 
-    .content {
-      padding: 100px 20px 20px 20px;
-    }
     #sidebar-hamburger-icon {
       display: none;
     }

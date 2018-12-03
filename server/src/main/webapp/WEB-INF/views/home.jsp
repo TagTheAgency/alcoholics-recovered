@@ -58,7 +58,7 @@
 			</div>
 	</div>
 
-	<div class="page-section mb-5" id="testimonials-homepage">
+	<div class="page-section" id="testimonials-homepage">
 			<div class="testimonials-container">
 				 <div class="testimonials-header d-flex justify-content-between mb-2">
 					 <h3>Testimonials</h3>

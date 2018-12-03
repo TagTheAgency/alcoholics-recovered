@@ -2,15 +2,12 @@
   <div id="footer-container" class="py-5">
     <div class="row footer mv-5">
       <div class="col-sm-6 footer-menu-container d-flex justify-content-around">
-        <div class="footer-menu-links pl-3">
-          <dl>
-            <dt>LINKS</dt>
-              <dd>Testimonials</dd>
-              <dd>About</dd>
-              <dd>Contact</dd>
-              <dd>Returns</dd>
-              <dd>FAQ</dd>
-          </dl>
+        <div class="footer-menu-links pl-3 justify-content-around">
+              <h5>Testimonials</h5>
+              <h5>About</h5>
+              <h5>Contact</h5>
+              <h5>Returns</h5>
+              <h5>FAQ</h5>
         </div>
        
         </div>
