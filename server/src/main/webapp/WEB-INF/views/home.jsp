@@ -18,7 +18,7 @@
 	</div>
 
 
-	<div class="page-section-container">
+	<div class="page-section-container container">
       <div class="row bg-prm mb-5">
         <div class="col-sm-7 section-video-container">
           <!-- insert video -->
@@ -45,7 +45,7 @@
 				</div>
     </div>
 
-	<div class="page-section-container">
+	<div class="page-section-container container">
 		<div class="row bg-prm mb-5" id="homepage-img-feature">
 				<div class="section-text-container-left">
 					<h3 class="small-header">The Process</h3>
