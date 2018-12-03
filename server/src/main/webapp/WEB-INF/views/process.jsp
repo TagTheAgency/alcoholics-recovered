@@ -72,7 +72,7 @@
 						<option value="2" ${helper.viewingStep.phase.phaseNumber == 2 ? "selected=\"selected\"" : "" }>Action</option>
 						</c:if>
 						<c:if test="${helper.currentStep.phase.phaseNumber == 3 }">
-						<option value="3" ${helper.viewingStep.phase.phaseNumber == 3 ? "selected=\"selected\"" : "" }>Amends</option>
+						<option value="3" ${helper.viewingStep.phase.phaseNumber == 3 ? "selected=\"selected\"" : "" }>Continuing to Grow</option>
 						</c:if>
 					</select>
 					<hr class="bg-ar-primary"/>
@@ -112,10 +112,11 @@
 				</div>
 				<hr class="bg-ar-primary"/>
 				<c:if test="${not empty currentStep.files }">
-				<div id="process-step-files">
+				<div id="process-step-files" class="bg-prm container-fluid pt-2 pl-2 pr-2 pb-1 mb-2">
+					<h3>Resources needed for this step</h3>
 					<ul>
 						<c:forEach items="${currentStep.files }" var="file">
-						<li><a href="${pageContext.request.contextPath}/processFile/${file.filename}">${file.displayName }</a></li>
+						<li><i class="material-icons">picture_as_pdf</i><a target="_blank" href="${pageContext.request.contextPath}/resources/${file.filename}">${file.displayName }</a></li>
 						</c:forEach>
 					</ul>
 				</div>
