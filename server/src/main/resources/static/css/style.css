@@ -28,6 +28,31 @@ a {
 
 a :hover {
   color: black; }
+  
+  .overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 200; 
+    left: 0;
+    top: 0;
+    background-color: rgba(242, 239, 243, 0.9);
+    overflow-x: hidden; 
+    transition: 0.5s; }
+
+.slide-nav-container {
+  background-color: pink;
+  position: absolute;
+}
+
+.slide-nav-overlay {
+  height: 0;
+  width: 30%;
+  position: absolute;
+  z-index: 1600;
+  overflow-x: hidden;
+  transition: 0.3s;
+}
 
 nav {
   position: fixed;
@@ -44,16 +69,6 @@ nav {
 .nav-logo-wrapper {
   width: 130px; }
 
-  .overlay {
-    height: 0;
-    width: 100%;
-    position: fixed;
-    z-index: 200; 
-    left: 0;
-    top: 0;
-    background-color: rgba(242, 239, 243, 0.9);
-    overflow-x: hidden; 
-    transition: 0.5s; }
 
 .overlay-content {
     position: relative;
@@ -328,6 +343,9 @@ h1.highlight-text {
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased; }
 
+  .material-icons, #sidenav-overlay ul li.completed:after, #sidebar-container ul li.completed:after  {
+    font-family: 'Material Icons'; }
+
 .inset {
   padding-left: 40px;
   padding-right: 40px; }
@@ -435,7 +453,7 @@ h1.highlight-text {
 
 #sidebar-hamburger-icon {
   display: block;
-  width: 50%;
+  width: 35%;
 }
 #sidebar-hamburger-icon-container {
   margin-left: 1.3rem;
@@ -643,10 +661,28 @@ h1.highlight-text {
     max-width: 800%; }
   
   .testimonial-slide {
-    background-image: url("https://unsplash.com/photos/3MtiSMdnoCo");
+    background-image: url("../img/paul-jarvis-rocky-beach.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 8%;
+    animation: ease-in-out 0.8s;
   }
   .testimonial-content {
-    margin: 30px;
+    padding: 2em;
+    text-align: justify;
+    background-color: #fff;
+  }
+
+  .testimonial-button {
+    border-radius: 5px;
+    margin: 20px;
+    min-width: 45px;
+    height: 50px;
+    font-size: 30px;
+    color: #75CEDE;
+    border: solid;
+    background-color: rgba(255, 255, 255, 0.5);
   }
 
 @media (min-width: 768px) {
@@ -690,7 +726,10 @@ h1.highlight-text {
       display: flex; }
     #contact-form .contact-form-input {
       width: 100%; }
-  }
+   .testimonial-button {
+      color: #fff;
+      border: solid white; }
+    }
 
   @media (min-width: 950px) {
 
@@ -705,10 +744,13 @@ h1.highlight-text {
     .content {
       padding: 100px 20px 20px 20px;
     }
-    .sidebar-hamburger-icon {
+    #sidebar-hamburger-icon {
       display: none;
     }
     #sidebar-container {
       display: block
+    }
+    .sidenav-overlay {
+      display: none;
     }
   }

@@ -55,6 +55,8 @@
 							<p>Step ${currentStep.stepNumber } of ${stepCount }</p>
 							<hr class="bg-ar-primary"/>
 						</div>
+
+					
 						<ul class="list-group">
 							<c:forEach items="${steps }" var="step">
 								<c:choose>
