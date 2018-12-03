@@ -87,6 +87,15 @@
 					</video>
 				</div>
 				<hr class="bg-ar-primary"/>
+				<c:if test="${not empty currentStep.files }">
+				<div id="process-step-files">
+					<ul>
+						<c:forEach items="${currentStep.files }" var="file">
+						<li><a href="${pageContext.request.contextPath}/processFile/${file.filename}">${file.displayName }</a></li>
+						</c:forEach>
+					</ul>
+				</div>
+				</c:if>
 				<div class="process-main-content">
 					${currentStep.html }
 				</div>

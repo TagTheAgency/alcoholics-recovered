@@ -14,11 +14,13 @@ import com.fasterxml.jackson.core.JsonParser.Feature;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.tagtheagency.alcoholicsrecovered.model.FileLink;
 import com.tagtheagency.alcoholicsrecovered.dto.ProcessStepDTO;
 import com.tagtheagency.alcoholicsrecovered.dto.UserDTO;
 import com.tagtheagency.alcoholicsrecovered.model.ProcessPhase;
 import com.tagtheagency.alcoholicsrecovered.model.ProcessStep;
 import com.tagtheagency.alcoholicsrecovered.model.User;
+import com.tagtheagency.alcoholicsrecovered.persistence.FileLinkDAO;
 import com.tagtheagency.alcoholicsrecovered.persistence.ProcessPhaseDAO;
 import com.tagtheagency.alcoholicsrecovered.persistence.ProcessStepDAO;
 import com.tagtheagency.alcoholicsrecovered.service.exception.EmailExistsException;
@@ -31,6 +33,9 @@ public class AdminService {
 	
 	@Autowired
 	private ProcessStepDAO processStepDAO;
+	
+	@Autowired
+	private FileLinkDAO fileLinkDAO;
 	
 	@Autowired 
 	private UserService userService;
@@ -62,6 +67,11 @@ public class AdminService {
 	public ProcessStep createStep(ProcessStep step) {
 		processStepDAO.save(step);
 		return step;
+	}
+	
+	public FileLink createFile(FileLink file) {
+		fileLinkDAO.save(file);
+		return file;
 	}
 	
 	
@@ -96,10 +106,14 @@ public class AdminService {
 	    		createPhase(phase);
 	    	}
 
-	    	ProcessStep dbStep = new ProcessStep();
-	    	dbStep = step.toModel();
+	    	final ProcessStep dbStep = step.toModel();
 	    	dbStep.setPhase(phase);
 	    	createStep(dbStep);
+	    	
+	    	step.getFiles().forEach(e -> {
+	    		FileLink link = com.tagtheagency.alcoholicsrecovered.dto.FileLink.toModel(e, dbStep);
+	    		createFile(link);
+	    	});
 	    	
 	    	if (dbStep.getStepNumber() == 1 && phase.getPhaseNumber() == 1) {
 	    		userService.setStep(user, dbStep, phase);

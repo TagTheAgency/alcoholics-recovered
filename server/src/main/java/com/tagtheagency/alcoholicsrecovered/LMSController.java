@@ -106,6 +106,12 @@ public class LMSController {
 		model.addAttribute("apiKey", apiKey);
 		return "join";
 	}
+
+	@GetMapping(path="/account")
+	public String getAccountPage(Model model) {
+		return "account";
+	}
+
 	
 	@PostMapping(path="/join/process")
 	public String getJoinPage(Model model, @RequestParam String stripeToken, @RequestParam String firstName, @RequestParam String lastName, @RequestParam String email, @RequestParam String password)  {
