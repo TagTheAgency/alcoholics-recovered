@@ -203,7 +203,7 @@ drink; alcohol has always been our fix.  </p>
 		"phaseId" : 2,
 		"stepNumber" : 1,
 		"html" : "<p>*Please print the <u>Resentment and Anger Prompt-sheet-Worksheet 1</u> and my <u>example worksheet 1</u>. You will work through that next. </p>
-		<p>On the example worksheet I have provided 7 examples for you to follow, these are real life examples from people who have worked through â€œThe Processâ€�.</p>
+		<p>On the example worksheet I have provided 7 examples for you to follow, these are real life examples from people who have worked through 'The Process'.</p>
 		<h3>YOUR ACTION</h3>
 		<p>With worksheet 1 in front of you, thoughtfully and honestly - put a &ldquo;tick&rdquo; next to the people, institutions and/or principles - you feel resentment, anger, hate or feel hurt or threatened by.</p>
 		<p><stong>To do without delay: </strong> </p>
@@ -232,20 +232,23 @@ drink; alcohol has always been our fix.  </p>
 		<br/>
 		<h3>YOUR ACTION - Print the <u>Resentment and Anger Sheet - Worksheet 2 </u></h3>
 		<p>Before you take any action, I will be presenting to you, 7 real life examples, demonstrating how to fill in the worksheet. </p>
-		<p><strong>Note:</strong> The people who provided these examples have completed â€œThe Processâ€� and are sober, content and happy today. </p>
+		<p><strong>Note:</strong> The people who provided these examples have completed 'The Process' and are sober, content and happy today. </p>
 		<p>Please just follow my directions, this is crucial.</p>
 		<h3>YOUR ACTION</h3>
 		<p>Transfer the names, institutions and principles from your Worksheet 1 into <u>Column 1 of Worksheet 2</u>.</p>
 		<p>Please follow the example worksheet.</p>",
 		"needsOkay" : true,
-		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
+		"files" : [
+			{"filename": "resentment-and-anger-worksheet.pdf", "displayName": "Resentment and Anger Worksheet 2"}
+		]
 	},
 	{
 		"title" : "Resentment and Anger Part 3",
 		"phaseId" : 2,
 		"stepNumber" : 3,
 		"html" : "<p>I am now going to give a brief review of the following key points.</p>
-		<p><strong>Please understand that our Anger, Resentment and Hates are caused by our basic instincts being out of balance or threatened.</strong> I will explain the importance of this in more detail in phase 3 of â€œThe Processâ€�</p>
+		<p><strong>Please understand that our Anger, Resentment and Hates are caused by our basic instincts being out of balance or threatened.</strong> I will explain the importance of this in more detail in phase 3 of 'The Process'</p>
 		<br/>
 		<p>IT IS CRITICAL TO WATCH AND LISTEN CAREFULLY. </p>
 		<p>Before we start, the following worksheets should be in front of you: </p>
@@ -255,7 +258,12 @@ drink; alcohol has always been our fix.  </p>
 			<li>The Defects of Character. </li>
 		</ol>",
 		"needsOkay" : true,
-		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
+		"files" : [
+			{"filename": "pathway-to-resentment.pdf", "displayName": "Pathway to Resentment"},
+			{"filename": "seven-instincts.pdf", "displayName": "The 7 Basic Instincts"},
+			{"filename": "defects-of-character.pdf", "displayName": "The Defects of Character"}
+		]
 	},
 	{
 		"title" : "Resentment and Anger Part 4",
@@ -1003,7 +1011,7 @@ drink; alcohol has always been our fix.  </p>
 	</ul>
 	<p>A person you totally trust - <strong>Note:</strong> We do not recommend sharing your information with family.</p>
 	<p>Please choose very carefully and we strongly suggest you only go to a person who will treat your information with total and the utmost confidentiality.</p>
-	<p>This is a very critical part of â€œThe Processâ€� and if not carried out quickly or not carried out at all because you have some fear or trepidation, please trust me when I say that YOU are the one who will benefit from this immensely.</p>
+	<p>This is a very critical part of 'The Process' and if not carried out quickly or not carried out at all because you have some fear or trepidation, please trust me when I say that YOU are the one who will benefit from this immensely.</p>
 	<h3>Guidelines for transference</h3>
 	<p>Once you have chosen who your trusted source will be, you go to them and explain that you are working a program that will help you be free from alcohol and that this is a critical, as if we do not do this we may drink again.</p>
 	<p>Explain that this is a life and death task.</p>
@@ -1086,9 +1094,9 @@ drink; alcohol has always been our fix.  </p>
 		<li>We are cleaning our side of the street, not theirs.</li>
 		<li>If we owe money we either pay it back or come to some arrangement.</li>
 	</ol>
-	<p>These guidelines are exactly that and if you are honest and open you will know a new freedom.</p>
-	<p>Once you have finished making your amends you will have completed Phase 2 of â€œThe Processâ€�</p>
-	<p>When you make your first amends you will need to move directly onto Phase 3 of â€œThe Processâ€�</p>
+	<p>These guidelines are exactly that and if you honest and open you will know a new freedom.</p>
+	<p>Once you have finished making you amends you will have completed Phase 2 of 'The Process'</p>
+	<p>When you make your first amends you will need to move directly onto Phase 3 of 'The Process'</p>
 	",
 	"needsOkay" : true,
 	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE"
@@ -1104,7 +1112,7 @@ drink; alcohol has always been our fix.  </p>
 	<p><strong>Anger and resentment </strong>- I can quickly go through â€œThe Processâ€� quickly and see where my basic instincts were out of alignment, what was my part in this (where was I to blame) and what were my defects and I now know what action I need to take. I can then make an amends as quickly as possible.</p>
 	<p><strong>Fear </strong>- Why I had the fear, what part of Self failed me and what basic instincts the fear affected and what were my defects of character and then I can take action to correct this immediately.</p>
 	<p><strong>Harms done to others </strong>- I can see who I hurt and what I did, I can see which of the basic instincts were affected and I can correct my behaviour. Then I can make an amends as quickly as possible.</p>
-	<p>-I can now see my part in each situation very quickly and I can take action quickly, if you follow â€œThe Processâ€� directions you will live a life that is exciting, amazing and be free.</p>
+	<p>-I can now see my part in each situation very quickly and I can take action quickly, if you follow 'The Process' directions you will live a life that is exciting, amazing and be free.</p>
 	<p>-As we practice this way of living it actually becomes so natural and freeing. </p>
 	<p><strong>-BUT WE MUST PRACTICE THIS WAY OF LIVING EACH AND EVERY DAY TO THE BEST OF OUR ABILITY. </strong></p>
 	<p><strong>-DO NOT LET IRRITATION BUILD INTO RESENTMENT.</strong></p>
@@ -1131,7 +1139,7 @@ drink; alcohol has always been our fix.  </p>
 	<h3>CRITICAL</h3>
 	<strong>The 3 reasons someone drinks again are</strong>
 	<ol>
-		<li>You get resentful and hold onto the resentment- In other words you stop practicing â€œThe Processâ€�.</li>
+		<li>You get resentful and hold onto the resentment- In other words you stop practicing 'The Process'.</li>
 		<li>You have held onto something you should have written down and shared. â€œYOUR SECRETâ€�</li>
 		<li>You are either still selfish and self-seeking, dishonest, frightened or inconsiderate and while things have gotten better you still make everything about you and when you are helpful to others you treat it as a notch on your belt and have some expectation that someone owes you something in return.</li>
 	<p><strong>NOTE - These are the only reasons people drink again.</strong></p>
@@ -1153,7 +1161,7 @@ drink; alcohol has always been our fix.  </p>
 
 	<h3>As we are going through the day<h3>
 	<p>As we go through the day we see where we can add value to people&rsquo;s lives in a positive way, we try to be of use and helpful to all those we interact with, we are selfless and interested in other people. </p>
-	<p>When we become annoyed or irritated, or anxious we pause for a while and review which of our basic instincts have been affected and we ask ourselves why this has happened, because you now have worked â€œThe Processâ€� you now know how to address this quickly.</p>
+	<p>When we become annoyed or irritated, or anxious we pause for a while and review which of our basic instincts have been affected and we ask ourselves why this has happened, because you now have worked 'The Process' you now know how to address this quickly.</p>
 	<p>During the day you may find yourself being unsure of what actions to take, our suggestion here is to just stop and take it easy, we relax, and the answers will come.</p>
 	<p>As you practice this on a daily basis you will find yourself at ease with people and the world about you. You will be living life on life&rsquo;s terms. You will be free.</p>
 
@@ -1176,10 +1184,10 @@ drink; alcohol has always been our fix.  </p>
 	"title" : "Summary",
 	"phaseId" : 3,
 	"stepNumber" : 3,
-	"html" : "<h3><strong>We have now completed â€œThe Processâ€�</strong></h3>
+	"html" : "<h3><strong>We have now completed 'The Process'</strong></h3>
 	<p>We have cleaned up our past and we have learnt a new way of living, the desire to drink has most probably been removed and if it has not then it will eventually just leave you.</p>
 	<p>You now have choices in how you want your life to be and you have started an amazing journey that you will not regret. I wish you all the best on your journey of discovery and growth</p>
-	<p>It is important to keep being of service to our fellow people and to keep practicing â€œThe Processâ€� everyday as you have been shown, very quickly it will become integrated into your mind and it will be so natural that you will be amazed at who you have become. You won&rsquo;t forget your past as this has held the key to your future and will allow you to help others, which I will show you very soon.</p>
+	<p>It is important to keep being of service to our fellow people and to keep practicing 'The Process' everyday as you have been shown, very quickly it will become integrated into your mind and it will be so natural that you will be amazed at who you have become. You won&rsquo;t forget your past as this has held the key to your future and will allow you to help others, which I will show you very soon.</p>
 	<p>You now have the tools for a new way of living, and we have created an on-line community that will ensure that we have a support network for us to tap into and also to be able to help others, in the next video I am going to explain how the community works and how it benefits you and your fellow community members.</p>
 	<p><strong>NOTE: REMEMBER THIS IS A LIFELONG PROCESS AND WE NEED SUPPORT FROM PEOPLE WHO HAVE BEEN WHERE WE HAVE BEEN</strong></p>
 	",
@@ -1191,7 +1199,7 @@ drink; alcohol has always been our fix.  </p>
 	"phaseId" : 3,
 	"stepNumber" : 4,
 	"html" : "<h3>An Introduction to the Recovered Community and the Benefits to YOU. </h3>
-	<p>The online <strong>RECOVERED COMMUNITY</strong> is an anonymous community that allows people who have been through â€œThe Processâ€� to be able to seek support, knowledge and friendship in a private online environment without having to go off to meetings, or to councillors, psychologist&rsquo;s but have a place where they can firstly use â€œThe Processâ€� and then if still having problems they can share their problem with the community anonymously and without judgement</p>
+	<p>The online <strong>RECOVERED COMMUNITY</strong> is an anonymous community that allows people who have been through 'The Process' to be able to seek support, knowledge and friendship in a private online environment without having to go off to meetings, or to councillors, psychologist&rsquo;s but have a place where they can firstly use 'The Process' and then if still having problems they can share their problem with the community anonymously and without judgement</p>
 	<strong>Benefits</strong>
 	<ul>
 		<li>A community who understand and have empathy with where we all have been</li>
@@ -1208,7 +1216,7 @@ drink; alcohol has always been our fix.  </p>
 	<ul>
 		<li>No negative talk to others &mdash; We may share a story and it may have negative content- that is ok as this is usual when someone is going through troubling times, we are all here to help and support each other.</li>
 		<br/>
-		<li>We can only bring a story to the community after we have worked through â€œThe Processâ€� and you feel you want to share your experience, or you are looking for more guidance, you also just might want to share it as a positive experience.</li>
+		<li>We can only bring a story to the community after we have worked through 'The Process' and you feel you want to share your experience, or you are looking for more guidance, you also just might want to share it as a positive experience.</li>
 		<br/>
 		<li>When dealing with other people&rsquo;s problems we do not try and become the analyst or councillor, the reason for this is that each person who is in the community has had their experience and each person&rsquo;s experience is special and unique to them and we do not want this to change.</li>
 		<br/>
