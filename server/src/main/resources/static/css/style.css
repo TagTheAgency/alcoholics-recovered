@@ -607,6 +607,9 @@ h1.highlight-text {
   padding-top: 4em; }
   #login-container p, #login-container a {
     color: #fff; }
+  #login-container a.alert-link {
+    color: #491217;
+  } 
   #login-container .login-form input::placeholder {
     color: #fff; }
   #login-container .login-form .login-form-input {

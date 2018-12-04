@@ -103,6 +103,7 @@ public class LMSController {
 	
 	@GetMapping(path="/join/account")
 	public String getJoinPage(Model model) {
+		//TODO - ip locality lookup?? http://api.ipstack.com/116.251.192.193?access_key=abac143383f0171117603e3cc6feaf09&format=1
 		model.addAttribute("apiKey", apiKey);
 		return "join";
 	}
@@ -130,7 +131,7 @@ public class LMSController {
 		}
 		
 		try {
-			Charge charge = stripe.createCharge(49990, "nzd", "test transaction", stripeToken);
+			Charge charge = stripe.createCharge(49700, "aud", "Recovered Group Signup", stripeToken, email);
 			users.addCharge(user, charge);
 			//TODO store the charge against the customer.
 			

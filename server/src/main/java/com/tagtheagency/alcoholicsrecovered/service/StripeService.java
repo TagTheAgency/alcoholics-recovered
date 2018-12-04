@@ -26,14 +26,14 @@ public class StripeService {
 		Stripe.apiKey = secretKey;
 	}
 	
-	public Charge createCharge(int cents, String currency, String description, String token) throws StripeException {
-		System.out.println("Using secret key "+secretKey);
+	public Charge createCharge(int cents, String currency, String description, String token, String email) throws StripeException {
 		Stripe.apiKey = secretKey;
 		Map<String, Object> chargeParams = new HashMap<>();
 		chargeParams.put("amount", cents);
 		chargeParams.put("currency", currency);
 		chargeParams.put("description", description);
 		chargeParams.put("source", token);
+		chargeParams.put("receipt_email", email);
 		// ^ obtained with Stripe.js
 
 		RequestOptions options = RequestOptions
@@ -43,7 +43,6 @@ public class StripeService {
 
 		Charge charge = Charge.create(chargeParams);//, options);
 		return charge;
-//		System.out.println("Charge created, status "+charge.getStatus());
 	}
 	
 }
