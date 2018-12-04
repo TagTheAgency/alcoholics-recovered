@@ -5,10 +5,7 @@
 </div>
 
 <div class="page-section-container mb-5">
-  
-  <button class="testimonial-button testimonial-display-left float-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="testimonial-button testimonial-display-right float-right" onclick="plusDivs(+1)">&#10095;</button>
-  <div class="testimonial-slide">
+  <div class="testimonial-slide" style="background-image: url('../img/test-bg-01.jpeg')">
     <div class="testimonial-content">
       <h3>Tony's Story</h3>
           <p>I've always done okay in life. Did I have a problem? Eventually, I saw that my problem was that I wasn't who I wanted to be. I was drinking every day, damaging my health and not happy. I thought... "F*** it ...I'm better than this!"</p>
@@ -21,7 +18,7 @@
     </div>
   </div>
 
-  <div class="testimonial-slide">
+  <div class="testimonial-slide" style="background-image: url('../img/test-bg-02.jpeg')">
       <div class="testimonial-content">
         <h3>Tracy's Story</h3>
           <p>I had been in AA for nearly 20 years but only managed to stay sober for periods up to 1 to 2 years in that time. During this 20-year period I had numerous sponsors, had been through the steps repeatedly, but always ended up drinking.</p>
@@ -33,7 +30,7 @@
       </div>
     </div>
 
-    <div class="testimonial-slide">
+    <div class="testimonial-slide" style="background-image: url('../img/test-bg-03.jpg')">
         <div class="testimonial-content">
           <h3>Di's Story</h3>
             <p>I was desperate, scared and felt alone.</p>
@@ -47,7 +44,7 @@
         </div>
       </div>
     
-      <div class="testimonial-slide">
+      <div class="testimonial-slide" style="background-image: url('../img/test-bg-07.jpg')">
           <div class="testimonial-content">
             <h3>A Late Awakening</h3>
               <p>At the age of 60 my life had recycled and hit a new low - my third marriage was failing, my professional career was on the brink of collapsing, my children and friends were withdrawing from me and I could see another bout of depression and further suicide attempts were approaching from the shadows. Obese, hypertensive high cholesterol and lipids with poor sleep patterns and aching joints told me my body was yearning for a change - or else!</p>
@@ -68,17 +65,17 @@
           </div>
         </div>
 
-        <div class="testimonial-slide">
+        <div class="testimonial-slide" style="background-image: url('../img/test-bg-06.jpg')">
             <div class="testimonial-content">
               <h3>Dan's Story</h3>
                 <p>I've never met Paul, but we have talked many times on the telephone. Despite having never seen him in person, Paul and "The Process" played the major part in bringing me back from the brink of a life crisis I wasn"t capable of dealing with.</p>
-                <p>A relationship breakup hit me hard, and in the aftermath, my long-dormant addiction came charging back. I had been attending AA meetings for over 4 years. In a short period of time, "The Process's" sensible and powerful formula took me back to feeling accepting and empowered. Not only did it straighten me out – returning me to a place of calm – but I felt I had an improved approach to everything. I have never felt better. It's too simple and effective not to try - it would enhance anyone's life. </p>
+                <p>A relationship breakup hit me hard, and in the aftermath, my long-dormant addiction came charging back. I had been attending AA meetings for over 4 years. In a short period of time, "The Process's" sensible and powerful formula took me back to feeling accepting and empowered. Not only did it straighten me out - returning me to a place of calm - but I felt I had an improved approach to everything. I have never felt better. It's too simple and effective not to try - it would enhance anyone's life. </p>
                 <p>I endorse and encourage anyone who is struggling with alcohol addiction to commit to "The Process", I know it has worked for so many people but more importantly it saved my life.</p>
               <h5>Dan</h5>
             </div>
           </div>
 
-          <div class="testimonial-slide">
+          <div class="testimonial-slide" style="background-image: url('../img/test-bg-05.jpg')">
               <div class="testimonial-content">
                 <h3>Rob's Story</h3>
                   <p>"The Process" had an extremely effective and uncomplicated approach to getting me sober and staying sober. It helped me to let go of past resentments and to recognise my part in holding on to these. To stop blaming others and to take responsibility for my behaviour and for my emotions.</p>
@@ -97,23 +94,4 @@
               </div>
             </div>
 
-<script>
-  var slideIndex = 1;
-  showDivs(slideIndex);
-  
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
-  
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("testimonial-slide");
-    if (n > x.length) {slideIndex = 1} 
-    if (n < 1) {slideIndex = x.length} ;
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none"; 
-    }
-    x[slideIndex-1].style.display = "block"; 
-  }
-</script>
 </div>

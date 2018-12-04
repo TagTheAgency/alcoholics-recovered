@@ -25,16 +25,6 @@
 					<hr class="bg-ar-primary"/>
 					
 				</div>
-				<div class="dropdown">
-						<button class="btn btn-ar-primary dropdown-toggle" type="button" id="dropdownSideMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Phase ${currentPhase.phaseNumber}
-						</button>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							<a class="dropdown-item" href="#">Phase 1</a>
-							<a class="dropdown-item" href="#">Phase 2</a>
-							<a class="dropdown-item" href="#">Phase 3</a>
-						</div>
-					</div>
 				<ul class="list-group">
 					<c:forEach items="${steps }" var="step">
 						<c:choose>
@@ -87,16 +77,6 @@
 					</select>
 					<hr class="bg-ar-primary"/>
 						</div>
-						<div class="dropdown">
-								<button class="btn btn-ar-primary dropdown-toggle" type="button" id="dropdownSideMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Phase ${currentPhase.phaseNumber}
-								</button>
-								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-									<a class="dropdown-item" href="#">Phase 1</a>
-									<a class="dropdown-item" href="#">Phase 2</a>
-									<a class="dropdown-item" href="#">Phase 3</a>
-								</div>
-							</div>
 					
 						<ul class="list-group">
 							<c:forEach items="${steps }" var="step">

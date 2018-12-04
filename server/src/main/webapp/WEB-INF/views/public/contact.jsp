@@ -4,11 +4,13 @@
     </div>
 </div>
 <div class="contact-main-content">
-  <div class="page-section-container">
+  <div class="page-section-container container-fluid">
     <div class="row bg-prm mb-5" id="contact-img-feature">
       <div class="section-text-container-left">
-        <p class="feature-text-medium contact px-0">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p class="feature-text-medium contact px-0 text-center">
+          Got a question about starting The Process? I'm happy to help.<br/>
+          Have some Feedback? I'd love to hear it.<br/>
+          Send me a message below.
         </p>
       </div>
     </div>

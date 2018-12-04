@@ -35,7 +35,7 @@
 		</div>
 	</div>
 	<script>function openTopNav() {
-			document.getElementById("top-nav").style.height = "60%";
+			document.getElementById("top-nav").style.height = "45%";
 		}
 		
 		

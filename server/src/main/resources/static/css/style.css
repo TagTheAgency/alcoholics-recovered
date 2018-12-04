@@ -186,6 +186,7 @@ nav {
 
 .page-section {
   width: 80%;
+  max-width: 900px;
   margin: auto; }
 
 .feature-section-container {
@@ -210,7 +211,6 @@ nav {
 
 .section-video-container {
   width: 100%;
-  height: 450px;
   background-color: rgba(255, 255, 255, 0.38); }
 
 .section-text-container-right {
@@ -274,6 +274,12 @@ h1.highlight-text {
   background-position: center;
 }
 
+#contact-img-feature .section-text-container-left {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
 #homepage-img-feature > * {
     text-align: center;
     letter-spacing: 0.1em;
@@ -286,11 +292,16 @@ h1.highlight-text {
   background-color: #75CEDE;
   padding: 1em;
   border-radius: 8px;
-  margin-top: 6em;
-  margin-bottom: 6em;
-color: #fff;  }
+  margin-top: 10em;
+  margin-bottom: 10em;
+  min-height: 300px; }
+  .testimonials-header {
+    color: #fff; }
 .testimonials-container {
-  position: relative; }
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 300px; }
 .testimonials-container p {
   color: #fff;
   font-size: 18px;
@@ -538,8 +549,8 @@ color: #fff;  }
       padding: 0.3em 1.3em;
     margin-top: 1em;
   width: 100%; }
-  #footer-container .footer-menu-container > div dl {
-    font-size: 0.8em; }
+  #footer-container .footer-menu-container {
+    display: block; }
     #footer-container .footer-menu-container > div dl dt {
       margin-bottom: .5rem; }
     #footer-container .footer-menu-container > div dl dd {
@@ -575,7 +586,7 @@ color: #fff;  }
 #contact-btn {
   margin: auto;
   margin-top: 12px;
-  background-color: #725FD9;
+  background-color: #75CEDE;
   padding-left: 20%;
   padding-right: 20%;
   color: #fff;
@@ -676,29 +687,18 @@ color: #fff;  }
     max-width: 800%; }
   
   .testimonial-slide {
-    background-image: url("../img/paul-jarvis-rocky-beach.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 8%;
-    animation: ease-in-out 0.8s;
-  }
+    margin: 2em; }
   .testimonial-content {
     padding: 2em;
     text-align: justify;
-    background-color: #fff;
-  }
-
-  .testimonial-button {
-    border-radius: 5px;
-    margin: 20px;
-    min-width: 45px;
-    height: 50px;
-    font-size: 30px;
-    color: #75CEDE;
-    border: solid;
-    background-color: rgba(255, 255, 255, 0.5);
-  }
+    background-color:  rgba(255, 255, 255, 0.5);
+    border: solid white;
+    border-radius: 10px;
+    max-width: 900px; }
   #error {
     padding-top: 180px;
     padding-bottom: 25%;
@@ -707,6 +707,12 @@ color: #fff;  }
     background-position: bottom;
     background-repeat: no-repeat;
     text-align: center;
+  }
+
+@media (min-width: 540px) {
+  #footer-container .footer-menu-container {
+    display: flex;
+    justify-content: space-around;
   }
 
 @media (min-width: 768px) {
@@ -724,7 +730,7 @@ color: #fff;  }
     margin: 0; }
     .nav-items li {
       display: inline-block;
-      font-size: 0.7em; }
+      font-size: 0.8em; }
 
   .hero-container {
     height: 450px; }
@@ -784,4 +790,6 @@ color: #fff;  }
     .sidenav-overlay {
       display: none;
     }
+    .section-text-container-left h2 {
+      font-size: 2.5rem; }
   }
