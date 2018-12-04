@@ -367,6 +367,14 @@ h1.highlight-text {
 .inset {
   padding-left: 40px;
   padding-right: 40px; }
+  
+#process-step-files ul li{
+	list-style: none;
+}
+#process-step-files a{
+	color: white;
+}
+
 
 #sidebar-container {
   margin: 30px;
@@ -790,6 +798,7 @@ h1.highlight-text {
     .sidenav-overlay {
       display: none;
     }
+
     .section-text-container-left h2 {
       font-size: 2.5rem; }
-  }
+    }

@@ -94,8 +94,10 @@ public class AdminService {
 	    
 		Map<Integer, ProcessPhase> phaseMap = new HashMap<>();
 		
+		fileLinkDAO.deleteAll();
 		processStepDAO.deleteAll();
 		processPhaseDao.deleteAll();
+		
 		
 	    for (ProcessStepDTO step : steps) {
 	    	ProcessPhase phase = phaseMap.get(step.getPhaseId());
