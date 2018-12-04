@@ -70,7 +70,7 @@ nav {
   height: 80px; }
 
 .nav-logo-wrapper {
-  width: 130px; }
+  width: 160px; }
 
 
 .overlay-content {
@@ -186,6 +186,7 @@ nav {
 
 .page-section {
   width: 80%;
+  max-width: 900px;
   margin: auto; }
 
 .feature-section-container {
@@ -210,7 +211,6 @@ nav {
 
 .section-video-container {
   width: 100%;
-  height: 450px;
   background-color: rgba(255, 255, 255, 0.38); }
 
 .section-text-container-right {
@@ -239,8 +239,7 @@ h1.highlight-text {
 
 .feature-text-medium {
   font-size: 1.6em;
-  padding-left: 8rem;
-  padding-right: 8rem;
+  padding: 0 2rem;
   text-align: justify; }
 
 .feature-text-medium .contact {
@@ -250,8 +249,7 @@ h1.highlight-text {
 
 .feature-text-med-quote {
   font-size: 1.6em;
-  padding-left: 8rem;
-  padding-right: 8rem;
+  padding: 0 2rem;
   text-align: justify;
   font-weight: 200;
   font-style: italic; }
@@ -276,6 +274,12 @@ h1.highlight-text {
   background-position: center;
 }
 
+#contact-img-feature .section-text-container-left {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
 #homepage-img-feature > * {
     text-align: center;
     letter-spacing: 0.1em;
@@ -287,11 +291,19 @@ h1.highlight-text {
 #testimonials-homepage {
   background-color: #75CEDE;
   padding: 1em;
-  border-radius: 8px; }
+  border-radius: 8px;
+  margin-top: 10em;
+  margin-bottom: 10em;
+  min-height: 300px; }
+  .testimonials-header {
+    color: #fff; }
 .testimonials-container {
-  position: relative; }
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 300px; }
 .testimonials-container p {
-  color: #3E3E3E;
+  color: #fff;
   font-size: 18px;
   margin: 0; }  
 .testimonials-container:after {
@@ -347,7 +359,10 @@ h1.highlight-text {
   -webkit-font-smoothing: antialiased; }
 
   .material-icons, #sidenav-overlay ul li.completed:after, #sidebar-container ul li.completed:after  {
-    font-family: 'Material Icons'; }
+    font-family: 'Material Icons';
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: bold; }
 
 .inset {
   padding-left: 40px;
@@ -473,7 +488,15 @@ h1.highlight-text {
   z-index: 1;
   height: 40px;
 }
-
+#dropdownSideMenu {
+  background-color: #C6BEEF;
+  border: #C6BEEF;
+  color: #fff;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 10px;
+}
 
 
 #main-content-container {
@@ -534,8 +557,8 @@ h1.highlight-text {
       padding: 0.3em 1.3em;
     margin-top: 1em;
   width: 100%; }
-  #footer-container .footer-menu-container > div dl {
-    font-size: 0.8em; }
+  #footer-container .footer-menu-container {
+    display: block; }
     #footer-container .footer-menu-container > div dl dt {
       margin-bottom: .5rem; }
     #footer-container .footer-menu-container > div dl dd {
@@ -571,7 +594,7 @@ h1.highlight-text {
 #contact-btn {
   margin: auto;
   margin-top: 12px;
-  background-color: #725FD9;
+  background-color: #75CEDE;
   padding-left: 20%;
   padding-right: 20%;
   color: #fff;
@@ -672,28 +695,32 @@ h1.highlight-text {
     max-width: 800%; }
   
   .testimonial-slide {
-    background-image: url("../img/paul-jarvis-rocky-beach.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 8%;
-    animation: ease-in-out 0.8s;
-  }
+    margin: 2em; }
   .testimonial-content {
     padding: 2em;
     text-align: justify;
-    background-color: #fff;
+    background-color:  rgba(255, 255, 255, 0.5);
+    border: solid white;
+    border-radius: 10px;
+    max-width: 900px; }
+  #error {
+    padding-top: 180px;
+    padding-bottom: 25%;
+    background-image: url(../img/error-pg-img.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    text-align: center;
   }
 
-  .testimonial-button {
-    border-radius: 5px;
-    margin: 20px;
-    min-width: 45px;
-    height: 50px;
-    font-size: 30px;
-    color: #75CEDE;
-    border: solid;
-    background-color: rgba(255, 255, 255, 0.5);
+@media (min-width: 540px) {
+  #footer-container .footer-menu-container {
+    display: flex;
+    justify-content: space-around;
   }
 
 @media (min-width: 768px) {
@@ -711,7 +738,7 @@ h1.highlight-text {
     margin: 0; }
     .nav-items li {
       display: inline-block;
-      font-size: 0.7em; }
+      font-size: 0.8em; }
 
   .hero-container {
     height: 450px; }
@@ -728,6 +755,8 @@ h1.highlight-text {
   .call-now-numbers {
     display: block; } 
   
+    #error {
+      background-size: cover; }
     .footer-spacer {
       display: flex; }
     
@@ -743,6 +772,14 @@ h1.highlight-text {
     }
 
   @media (min-width: 950px) {
+    .content {
+      padding: 100px 20px 20px 20px; }
+    #error h2 {
+      font-size: 2.5rem; }
+    .feature-text-medium {
+      padding: 2rem; }
+    .feature-text-med-quote {
+      padding: 2rem; }
 
     #footer-container .footer-subscribe-container {
             padding-left: 6rem;
@@ -752,9 +789,6 @@ h1.highlight-text {
     #footer-container #subscribe-btn {
                 width: auto; }
                 
-    .content {
-      padding: 100px 20px 20px 20px;
-    }
     #sidebar-hamburger-icon {
       display: none;
     }
@@ -764,5 +798,7 @@ h1.highlight-text {
     .sidenav-overlay {
       display: none;
     }
+    .section-text-container-left h2 {
+      font-size: 2.5rem; 
+    }
   }
-  

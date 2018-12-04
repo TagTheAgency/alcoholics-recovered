@@ -1,7 +1,7 @@
 <nav>
 	<div class="nav-container d-flex justify-content-between align-items-center">
 		<div class="nav-logo-wrapper">
-			<img src="${pageContext.servletContext.contextPath}/img/logo.png" alt="Logo" class="logo">
+			<img src="${pageContext.servletContext.contextPath}/img/RecoveredLogo_V01.png" alt="Logo" class="logo">
 		</div>
 		<div class="nav-items-container d-none d-md-block">
 			<ul class="nav-items">
@@ -35,7 +35,7 @@
 		</div>
 	</div>
 	<script>function openTopNav() {
-			document.getElementById("top-nav").style.height = "60%";
+			document.getElementById("top-nav").style.height = "45%";
 		}
 		
 		

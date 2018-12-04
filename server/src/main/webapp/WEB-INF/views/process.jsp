@@ -77,7 +77,6 @@
 					</select>
 					<hr class="bg-ar-primary"/>
 						</div>
-
 					
 						<ul class="list-group">
 							<c:forEach items="${steps }" var="step">

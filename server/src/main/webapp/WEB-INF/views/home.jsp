@@ -37,7 +37,7 @@
       </div>
     </div>
 
-    <div class="page-section text-section my-5">
+    <div class="page-section text-section" style="margin-top: 8rem; margin-bottom: 8rem;">
       <h4 style="line-height: 1.8;">The Process consists of just three phases and has been achieving amazing results with the people we help. We firmly believe that anyone who suffers from our affliction can get sober 
 			forever if they have the capacity to be honest and take responsibility for their actions, behaviours and their life.</h4>
 			<div class="justify-content-center">
@@ -58,11 +58,11 @@
 			</div>
 	</div>
 
-	<div class="page-section mb-5" id="testimonials-homepage">
+	<div class="page-section" id="testimonials-homepage">
 			<div class="testimonials-container">
 				 <div class="testimonials-header d-flex justify-content-between mb-2">
 					 <h3>Testimonials</h3>
-					 <h5 class="pt-1"><a href="">View all</a></h5>
+					 <h5 class="pt-1">View all</h5>
 				 </div>
 				 <p>"The 'Alcoholics Recovered' site was convincing enough to give me hope. I was wary, but Paul's video quickly gave me a lesson in tough love and playing 'grown-ups'. Then I realized that his style is not only a part of his earthy compassion, kindness and humanity but also because he himself has done the hard yards on the tough side of life. He's come out of it with beautiful values, which he's working hard at sharing. In any case, frankness is a key component in deleting the alcoholic disability from our lives..."
 					 </p>

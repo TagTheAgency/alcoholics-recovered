@@ -7,7 +7,7 @@
 <div class="page-section mb-5">
   <p class=" feature-text-medium">
       Paul Heffernan a recovered alcoholic with over 30 years sobriety
-      founded the Recovered Group. Paul has successfully help people stop
+      founded the Recovered Group. Paul has successfully helped people stop
       drinking. Fuelled by a passion to help more escape the bonds of
       Alcoholism Paul developed the Recovered Group with a focus on using
       Paul's passion for technology and love for people, the Recovered Group
@@ -16,17 +16,17 @@
   </p>
 </div>
 
-<div class="page-section-container">
+<div class="page-section-container container-fluid px-0">
     <div class="row bg-prm mb-5">
-      <div class="col-sm-6 page-section">
+      <div class="col-md-6 page-section">
           <div class="section-text-container-left">
               <h2><strong>ABOUT ME</strong></h2>
               <h2>Hi, I'm Paul Heffernan and I'm a recovered alcoholic with <strong>30 years sobriety</strong></h2>
             </div>
       </div>
-      <div class="col-sm-6 section-img-container">
+      <div class="col-md-6 section-img-container">
         <!-- insert video -->
-        <img class="img-fluid" id="about-main-img" src="./img/paul-about-img.png" alt="image goes here">
+        <img class="img-fluid" id="about-main-img" src="${pageContext.request.contextPath}/img/paul-about-img.png" alt="Paul-Heffernan">
         <!-- insert video -->
       </div>
     </div>
@@ -59,13 +59,14 @@
   </div>
 
 
-  <div class="page-section mb-5" id="testimonials-homepage">
-   <div class="testimonials-container">
+  <div class="page-section" id="testimonials-homepage">
+    <div class="testimonials-container">
       <div class="testimonials-header d-flex justify-content-between mb-2">
         <h3>Testimonials</h3>
-        <h5 class="pt-1"><a href="">View all</a></h5>
+        <h5 class="pt-1">View all</h5>
       </div>
-      <p>"The 'Alcoholics Recovered' site was convincing enough to give me hope. I was wary, but Paul's video quickly gave me a lesson in tough love and playing 'grown-ups'. Then I realized that his style is not only a part of his earthy compassion, kindness and humanity but also because he himself has done the hard yards on the tough side of life. He's come out of it with beautiful values, which he's working hard at sharing. In any case, frankness is a key component in deleting the alcoholic disability from our lives..."
-        </p>
+      <p>"The 'Alcoholics Recovered' site was convincing enough to give me hope. I was wary, but Paul's video quickly gave me a lesson in tough love and playing 'grown-ups'. Then I realized that his style is not only a part of his earthy compassion, kindness and humanity but also because he himself has done the hard yards on the tough side of life. He's come out of it with beautiful values, which he's working hard at sharing. In any case, frankness is a key component in deleting the alcoholic disability from our lives."</p>
+      <p>I now see how we all have our own set of complexities, which is impossible for us to sort for ourselves. Paul has amazingly formulated "The Process" that allows us to methodically lay it bare. It is exhausting and intensive, simple and brilliant. Best of all, I've got awareness mechanisms, an approach to life to maintain sobriety for the rest of my days. Yippee!</p>
+      <p>It's hard for me to comprehend that after completing "The Process" that I'm different. I understand what's been going on in this head of mine that had convinced it stupid self that it didn't have a problem. When I think about how much cash I was spending at the liquor shop, this is the best investment I ever made.</p>
     </div>
   </div>
