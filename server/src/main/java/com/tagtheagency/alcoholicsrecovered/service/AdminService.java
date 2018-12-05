@@ -95,23 +95,35 @@ public class AdminService {
 		Map<Integer, ProcessPhase> phaseMap = new HashMap<>();
 		
 		fileLinkDAO.deleteAll();
-		processStepDAO.deleteAll();
-		processPhaseDao.deleteAll();
+
+		//processStepDAO.deleteAll();
+		//processPhaseDao.deleteAll();
 		
 		
 	    for (ProcessStepDTO step : steps) {
 	    	ProcessPhase phase = phaseMap.get(step.getPhaseId());
 	    	if (phase == null) {
-	    		phase = new ProcessPhase();
-	    		phase.setPhaseNumber(step.getPhaseId());
+	    		List<ProcessPhase> phases = processPhaseDao.findByPhaseNumber(step.getPhaseId());
+	    		if (phases.isEmpty()) {
+	    			phase = new ProcessPhase();
+	    			phase.setPhaseNumber(step.getPhaseId());
+		    		createPhase(phase);
+	    		} else {
+	    			phase = phases.get(0);
+	    		}
 	    		phaseMap.put(step.getPhaseId(), phase);
-	    		createPhase(phase);
 	    	}
 
+	    	List<ProcessStep> existingSteps = processStepDAO.findByStepNumberAndPhase_PhaseNumber(step.getStepNumber(), step.getPhaseId());
 	    	final ProcessStep dbStep = step.toModel();
-	    	dbStep.setPhase(phase);
-	    	createStep(dbStep);
-	    	
+	    	if (existingSteps.isEmpty()) {
+	    		dbStep.setPhase(phase);
+	    		createStep(dbStep);
+	    	} else {
+	    		dbStep.setId(existingSteps.get(0).getId());
+	    		dbStep.setPhase(phase);
+	    		processStepDAO.save(dbStep);
+	    	}
 	    	step.getFiles().forEach(e -> {
 	    		FileLink link = com.tagtheagency.alcoholicsrecovered.dto.FileLink.toModel(e, dbStep);
 	    		createFile(link);
@@ -126,5 +138,7 @@ public class AdminService {
 	    
 		
 	}
+	
+	
 	
 }

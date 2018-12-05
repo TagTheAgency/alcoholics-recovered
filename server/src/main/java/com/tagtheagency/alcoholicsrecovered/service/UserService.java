@@ -4,14 +4,11 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.data.domain.Example;
-import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.mail.MailSender;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -77,6 +74,9 @@ public class UserService implements UserDetailsService {
 	    user.setPassword(passwordEncoder.encode(accountDto.getPassword()));
 	     
 	    user.setEmail(accountDto.getEmail());
+	    ProcessStep step = getFirstStepOfTheProcess();
+	    user.setCurrentStep(step.getId());
+	    user.setCurrentPhase(step.getPhase().getId());
 //	    user.setRole(new Role(Integer.valueOf(1), user));
 	    return userDao.save(user);
 	}

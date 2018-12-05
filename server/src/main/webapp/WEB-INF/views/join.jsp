@@ -3,6 +3,7 @@
 <div class="hero-login-container justify-content-md-center">
  <div class="feature-section-container col-md-6" id="login-container">
    <p class="header-text">Take your first step. Sign up now.</p>
+
    <p>Your credit card will be charged a one-off fee of AUD$497.00</p> 
      <form class="form-inline justify-content-md-center login-form" action="${pageContext.servletContext.contextPath}/join/process" method="post" id="payment-form">
      	<c:if test="${duplicateEmail }">

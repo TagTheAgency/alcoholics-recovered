@@ -362,7 +362,7 @@ h1.highlight-text {
     font-family: 'Material Icons';
     vertical-align: middle;
     font-size: 20px;
-    font-weight: bold; }
+     }
 
 .inset {
   padding-left: 40px;
@@ -607,9 +607,9 @@ h1.highlight-text {
   padding-top: 4em; }
   #login-container p, #login-container a {
     color: #fff; }
-  #login-container a.alert-link {
-    color: #491217;
-  } 
+  #login-container .alert-danger a {
+  	color: #491217;
+  }  
   #login-container .login-form input::placeholder {
     color: #fff; }
   #login-container .login-form .login-form-input {

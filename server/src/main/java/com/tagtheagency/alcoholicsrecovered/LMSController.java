@@ -53,7 +53,7 @@ public class LMSController {
 	
 	@GetMapping("/")
 	public String getHomepage() {
-		return "home";
+		return "redirect:/theProcess";
 	}
 /*	
 	@GetMapping("/public/about")
@@ -133,7 +133,8 @@ public class LMSController {
 		try {
 			Charge charge = stripe.createCharge(49700, "aud", "Recovered Group Signup", stripeToken, email);
 			users.addCharge(user, charge);
-			//TODO store the charge against the customer.
+
+
 			
 		} catch (StripeException e) {
 			e.printStackTrace();
@@ -152,16 +153,16 @@ public class LMSController {
 				  new UsernamePasswordAuthenticationToken(user, null, Collections.emptyList());
 
 		SecurityContextHolder.getContext().setAuthentication(auth);
-		
-		System.out.println("Stripe token: "+stripeToken);
-		
-		return "welcome";
+				
+		return "redirect:/welcome";
 	}
 	
 	@GetMapping(path="/welcome")
 	public String getWelcomePage(Model model, Principal principal) {
 		User user = getUserFromPrincipal(principal);
+		ProcessStep currentStep = users.getCurrentStep(user);
 		model.addAttribute("user", user);
+		model.addAttribute("newUser", currentStep == null || (currentStep.getPhase().getPhaseNumber() == 1 && currentStep.getStepNumber() == 1));
 		return "welcome";
 	}
 	
@@ -170,8 +171,6 @@ public class LMSController {
 		User user = getUserFromPrincipal(principal);
 		
 		ProcessStep currentStep = users.getCurrentStep(user);
-		System.out.println("Getting current step of the process");
-		System.out.println("Found: "+currentStep.getStepNumber());
 		if (currentStep == null) {
 			currentStep = users.getFirstStepOfTheProcess();
 		}
@@ -202,7 +201,6 @@ public class LMSController {
 		User user = getUserFromPrincipal(principal);
 		
 		ProcessStep currentStep = users.getCurrentStep(user);
-		System.out.println("Current step is "+currentStep);
 		ProcessPhase currentPhase = currentStep.getPhase();
 		
 		if (phase > currentPhase.getPhaseNumber()) {
@@ -248,17 +246,12 @@ public class LMSController {
 
 		
 		if (getUniqueOrder(viewStep) == getUniqueOrder(currentStep) && currentStep.isNeedsOkay() && agreeCheck != null) {
-			System.out.println("At last step but not agreeChecked");
 			return getCurrentStepOfTheProcess(model, principal);
 		}
 		
 		ProcessStep requestedStep = users.getNextStep(viewStep);
-		System.out.println("Requested next step is "+requestedStep);
-		System.out.println("Requested next step is "+requestedStep.getStepNumber());
-		
-		
+
 		if (getUniqueOrder(viewStep) == getUniqueOrder(currentStep)) {
-			System.out.println("View is equal to current");
 			users.setStep(user, requestedStep, requestedStep.getPhase());
 			return "redirect:/theProcess";
 		}
@@ -274,6 +267,9 @@ public class LMSController {
 			if (token.getPrincipal() instanceof ARUserDetails) {
 				ARUserDetails user = (ARUserDetails) token.getPrincipal();
 				return users.getUser(user.getUsername());
+			}
+			if (token.getPrincipal() instanceof User) {
+				return (User) token.getPrincipal();
 			}
 		}
 		return null;
@@ -310,7 +306,6 @@ public class LMSController {
 	    String result = users.validatePasswordResetToken(id, token);
 	    
 	    if (result != null) {
-	    	System.out.println("Got a result of "+result);
 	    	switch (result) {
 	    	case "invalidToken": model.addAttribute("message", "That's an invalid token. Please login to continue");
 	    	break;
@@ -318,7 +313,6 @@ public class LMSController {
 	    	break;
 	    	default: model.addAttribute("message", "Sorry, something went wrong");
 	    	}
-	    	System.out.println(model.asMap());
 	    	
 //	    	model.addAttribute("message", 
 //	          messages.getMessage("auth.message." + result, null, locale));
