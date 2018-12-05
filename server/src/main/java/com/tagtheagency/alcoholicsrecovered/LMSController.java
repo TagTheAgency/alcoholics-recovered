@@ -53,7 +53,7 @@ public class LMSController {
 	
 	@GetMapping("/")
 	public String getHomepage() {
-		return "home";
+		return "redirect:/theProcess";
 	}
 /*	
 	@GetMapping("/public/about")
@@ -130,7 +130,7 @@ public class LMSController {
 		}
 		
 		try {
-			Charge charge = stripe.createCharge(49990, "nzd", "test transaction", stripeToken);
+			Charge charge = stripe.createCharge(47900, "aud", "Recovered Group Signup", stripeToken, email);
 			users.addCharge(user, charge);
 			//TODO store the charge against the customer.
 			
@@ -151,16 +151,16 @@ public class LMSController {
 				  new UsernamePasswordAuthenticationToken(user, null, Collections.emptyList());
 
 		SecurityContextHolder.getContext().setAuthentication(auth);
-		
-		System.out.println("Stripe token: "+stripeToken);
-		
+				
 		return "welcome";
 	}
 	
 	@GetMapping(path="/welcome")
 	public String getWelcomePage(Model model, Principal principal) {
 		User user = getUserFromPrincipal(principal);
+		ProcessStep currentStep = users.getCurrentStep(user);
 		model.addAttribute("user", user);
+		model.addAttribute("newUser", currentStep == null || (currentStep.getPhase().getPhaseNumber() == 1 && currentStep.getStepNumber() == 1));
 		return "welcome";
 	}
 	

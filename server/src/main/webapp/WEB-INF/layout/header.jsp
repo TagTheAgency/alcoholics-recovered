@@ -1,13 +1,15 @@
 <nav>
 	<div class="nav-container d-flex justify-content-between align-items-center">
 		<div class="nav-logo-wrapper">
-			<img src="${pageContext.servletContext.contextPath}/img/RecoveredLogo_V01.png" alt="Logo" class="logo">
+			<a href="https://recoveredgroup.com/">
+			<img src="${pageContext.servletContext.contextPath}/img/RecoveredLogo_V03_dark.png" alt="Logo" class="logo">
+			</a>
 		</div>
 		<div class="nav-items-container d-none d-md-block">
 			<ul class="nav-items">
-				<li class="mr-3"><a href="${pageContext.request.contextPath}/">Home</a></li>
-				<li class="mr-3"><a href="${pageContext.request.contextPath}/public/about">About</a></li>
-				<li class="mr-3"><a href="${pageContext.request.contextPath}/public/contact">Contact</a></li>
+				<li class="mr-3"><a href="https://recoveredgroup.com/">Home</a></li>
+				<li class="mr-3"><a href="https://recoveredgroup.com/about">About</a></li>
+				<li class="mr-3"><a href="https://recoveredgroup.com/testimonials">Testimonials</a></li>
 				<li><a href="${pageContext.request.contextPath}/theProcess">Process</a></li>
 			</ul>
 		</div>
@@ -24,10 +26,10 @@
 					<div id="top-nav" class="overlay justify-content-center">
 						<a href="javascript:void(0)" class="closebtn" onclick="closeTopNav()">&times;</a>
 						<div class="overlay-content">
-							<a href="${pageContext.request.contextPath}/">Home</a>
-							<a href="${pageContext.request.contextPath}/public/about">About</a>
+							<a href="https://recoveredgroup.com/">Home</a>
+							<a href="https://recoveredgroup.com/about">About</a>
+							<a href="https://recoveredgroup.com/testimonials">Testimonials</a>>
 							<a href="${pageContext.request.contextPath}/theProcess">Process</a>
-							<a href="${pageContext.request.contextPath}/public/contact">Contact</a>
 							<a href="${pageContext.request.contextPath}/login">Login</a>
 							<a href="${pageContext.request.contextPath}/join/account">Sign Up</a>
 						</div>

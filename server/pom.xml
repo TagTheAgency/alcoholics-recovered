@@ -6,7 +6,7 @@
 	<groupId>com.tagtheagency</groupId>
 	<artifactId>alcoholics-recovered</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>alcoholics-recovered</name>
 	<description>Demo project for Spring Boot</description>
