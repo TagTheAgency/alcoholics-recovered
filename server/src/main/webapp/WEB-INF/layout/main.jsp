@@ -4,6 +4,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-68230113-30"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'UA-68230113-30');
+	</script>
+	  
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,6 +24,9 @@
 	<link rel="stylesheet" href="${pageContext.servletContext.contextPath}/css/style.css">
 	<!-- link rel="stylesheet" href="${pageContext.servletContext.contextPath}/css/register.css" -->
 	<script src="https://js.stripe.com/v3/"></script>
+	<link rel="icon" href="https://recoveredgroup.com/wp-content/uploads/2018/12/RecoveredLogo_V03_dark_icon.png" sizes="32x32" />
+	<link rel="icon" href="https://recoveredgroup.com/wp-content/uploads/2018/12/RecoveredLogo_V03_dark_icon.png" sizes="192x192" />
+	<link rel="apple-touch-icon-precomposed" href="https://recoveredgroup.com/wp-content/uploads/2018/12/RecoveredLogo_V03_dark_icon.png" />
 	<title>Alcoholics Recovered</title>
 </head>
 <body>

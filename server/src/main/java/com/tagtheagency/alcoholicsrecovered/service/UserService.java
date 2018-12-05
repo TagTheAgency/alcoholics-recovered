@@ -100,17 +100,17 @@ public class UserService implements UserDetailsService {
 	}
 	
 	private boolean emailExists(String email) {
-		return userDao.findByEmail(email).size() > 0;
+		return userDao.findByEmailIgnoreCase(email).size() > 0;
 	}
 	
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		User user = userDao.findByEmail(username).stream().findFirst().orElseThrow(() -> new UsernameNotFoundException("No user found with username " + username));
+		User user = userDao.findByEmailIgnoreCase(username).stream().findFirst().orElseThrow(() -> new UsernameNotFoundException("No user found with username " + username));
 		return new ARUserDetails(user);
 	}
 	
 	public User getUser(String email) throws UsernameNotFoundException {
-		return userDao.findByEmail(email).stream().findFirst().orElseThrow(() -> new UsernameNotFoundException("No user found with email " + email));
+		return userDao.findByEmailIgnoreCase(email).stream().findFirst().orElseThrow(() -> new UsernameNotFoundException("No user found with email " + email));
 	}
 	
 	

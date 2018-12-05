@@ -10,7 +10,7 @@ import com.tagtheagency.alcoholicsrecovered.model.User;
 @Repository
 public interface UserDAO extends JpaRepository<User, Long>{
 
-	List<User> findByEmail(String email);
+	List<User> findByEmailIgnoreCase(String email);
 
-	List<User> findByUsername(String username);
+	List<User> findByUsernameIgnoreCase(String username);
 }
