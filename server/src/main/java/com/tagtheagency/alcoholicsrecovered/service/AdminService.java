@@ -120,15 +120,9 @@ public class AdminService {
 	    		dbStep.setPhase(phase);
 	    		createStep(dbStep);
 	    	} else {
-	    		System.out.println("Existing, updating");
 	    		dbStep.setId(existingSteps.get(0).getId());
 	    		dbStep.setPhase(phase);
-	    		if (dbStep.getId() == 129) {
-	    			System.out.println("Updating 129, html is");
-	    			System.out.println(dbStep.getHtml());
-	    			System.out.println("DTO html is ");
-	    			System.out.println(step.getHtml());
-	    		}
+	    		
 	    		processStepDAO.save(dbStep);
 	    	}
 	    	step.getFiles().forEach(e -> {
