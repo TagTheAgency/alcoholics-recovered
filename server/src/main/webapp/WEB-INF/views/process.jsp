@@ -101,9 +101,9 @@
 	    </div>
 	    <div id="main-content-container" class="col">
 				<div id="video-container">
-					<video controls
+					<video id="video-player" controls
 							controlsList="nodownload"
-					       src="/video/Beach.webm"
+					       src="/resources/Beach.webm"
 					       width="100%"
 					       height="100%">
 					    Sorry, your browser doesn't support embedded videos.
@@ -149,6 +149,10 @@ Next slide</button>
 		if ($('#agreeCheck').is(':checked')) {
 			$('#nextButton').removeClass('disabled');
 			$('#nextButton').removeAttr('disabled');
+			gtag('event', 'slide-ticked', {
+				  'event_category': 'Phase ${helper.viewingStep.phase.phaseNumber}',
+				  'event_label': 'Step ${helper.viewingStep.stepNumber}'
+				});
 		} else {
 			$('#nextButton').addClass('disabled');
 			$('#nextButton').attr("disabled", "disabled");
@@ -159,6 +163,31 @@ Next slide</button>
 	$('.phaseSelect').change(function() {
 		location.href="${pageContext.request.contextPath}/theProcess/"+$(this)[0].value+"/1";
 	});
+	
+	var v = document.getElementsByTagName("video")[0];
+	v.addEventListener("play", function() { 
+		gtag('event', 'play-video', {
+			  'event_category': 'Phase ${helper.viewingStep.phase.phaseNumber}',
+			  'event_label': 'Step ${helper.viewingStep.stepNumber}'
+			});
+		
+		
+	}, true);
+	v.addEventListener("pause", function() { 
+		gtag('event', 'pause-video', {
+			  'event_category': 'Phase ${helper.viewingStep.phase.phaseNumber}',
+			  'event_label': 'Step ${helper.viewingStep.stepNumber}',
+			  'value' : v.currentTime
+			});
+	}, true);
+	v.addEventListener("seeked", function() { 
+		gtag('event', 'seeked-video', {
+			  'event_category': 'Phase ${helper.viewingStep.phase.phaseNumber}',
+			  'event_label': 'Step ${helper.viewingStep.stepNumber}',
+			  'value' : v.currentTime
+			});
+	}, true);
+	
 	});
 	</script>
  </div>
