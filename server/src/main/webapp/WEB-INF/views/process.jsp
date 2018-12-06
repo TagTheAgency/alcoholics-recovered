@@ -1,5 +1,5 @@
 <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
-
+	<div class="container-fluid">
 	<div class="row bg-highlight">
 		<div id="sidenav-overlay" class="sidenav-overlay">
 				<span id="sidebar-hamburger-icon-container" onclick="openNav()"><img class="my-3" id="sidebar-hamburger-icon" src="${pageContext.request.contextPath}/img/hamburger-text-menu-blue.png" alt="--MENU--"></span>
@@ -103,7 +103,7 @@
 				<div id="video-container">
 					<video id="video-player" controls
 							controlsList="nodownload"
-					       src="/resources/Beach.webm"
+					       src="https://1943996545.rsc.cdn77.org/private/phase0${currentStep.phase.phaseNumber }/${currentStep.video }"
 					       width="100%"
 					       height="100%">
 					    Sorry, your browser doesn't support embedded videos.
@@ -140,7 +140,7 @@ Next slide</button>
 
 	    </div>
 	</div>
-
+</div>
 	<script>
 	document.addEventListener("DOMContentLoaded", function(event) { 
 

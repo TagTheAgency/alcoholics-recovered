@@ -8,7 +8,7 @@ obsessive abuser of substance or behaviour, <strong>resentment, anger</strong> a
 harmful emotions, the alcoholic&#39;s obsession to drink falls away, and a well-managed, alcohol free life can be
 resumed.</p>",
 		"needsOkay": false,
-		"video" : "348384348743"
+		"video" : "01-welcome.mp4"
 	},
 	{
 		"title":"The foundations",
@@ -61,7 +61,8 @@ We will describe the four emotions that lead to resentment, anger and hate.
 </p><p>
 Once we have covered these off we will have completed Phase 1 and you will be ready to launch into action and complete Phase 2
 </p>",
-		"needsOkay":false
+		"needsOkay":false,
+		"video" : "02-foundations.mp4"
 	},
 	{
 		"title":"Acceptance",
@@ -86,6 +87,7 @@ Once we have covered these off we will have completed Phase 1 and you will be re
 ",
 		"needsOkay":true,
 		"tickBoxText": "Please tick the box after you have read and agreed to the above rules and conditions."
+
 	},
 	{
 		"title":"The Cause",
@@ -105,7 +107,8 @@ We&rsquo;ll have a look at these primary harmful emotions, but first, let&rsquo;
 <li>There are 5-character defects &mdash; understanding and recognising these show us where we need to make a positive adjustment. </li>
 <br/>
 ",
-		"needsOkay" : false
+		"needsOkay" : false,
+		"video" : "04-the-cause.mp4"
 	},
 	{
 		"title":"The 4 Emotions",
@@ -122,7 +125,8 @@ We&rsquo;ll have a look at these primary harmful emotions, but first, let&rsquo;
 <p>
 Together, anger and resentment create most of our problems beginning with the first step; irritation. We may feel justified being angry and resentful because it was someone or something else&rsquo;s fault. We seldom think we are to blame or have played a part in the resulting feeling of resentment. </p>",
 		"needsOkay" : false,
-		"tickBoxText" : "Do you understand how resentment can build?"
+		"tickBoxText" : "Do you understand how resentment can build?",
+		"video" : "05-the-4-emotions.mp4"
 	},
 	{
 		"title":"A Story of Resentment",
@@ -152,7 +156,8 @@ drink; alcohol has always been our fix.  </p>
 <p>This is what The Process does. </p>
 <p>The Process provide the tools with which to work through the underlying issues. </p>",
 		"needsOkay":true,
-		"tickBoxText":"YES! I understand how irritation and annoyance lead to anger and resentment"
+		"tickBoxText":"YES! I understand how irritation and annoyance lead to anger and resentment",
+		"video" : "06-a-story-of-resentment.mp4"
 	},
 	{
 		"title": "Blame",
@@ -162,7 +167,8 @@ drink; alcohol has always been our fix.  </p>
 <p>Please think about and write down on a piece of paper or on your computer all of the people you have blamed in your life and why you have blamed them.</p>
 ",
 		"needsOkay" : true,
-		"tickBoxText" :"PLEASE TICK WHEN COMPLETED"
+		"tickBoxText" :"PLEASE TICK WHEN COMPLETED",
+		"video" : "07-blame.mp4"
 	},
 	{
 		"title" : "The 7 Basic Instincts",
@@ -224,7 +230,8 @@ drink; alcohol has always been our fix.  </p>
 		</ul>
 			",
 			"needsOkay" : true,
-			"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+			"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
+			"video":"10-defects-of-character.mp4"
 	},
 	{
 		"title" : "Review",
@@ -238,7 +245,8 @@ drink; alcohol has always been our fix.  </p>
 		</ol>
 		<p>These are important to understand and memorize, to make easier for practice in everyday life. Only then will awareness of them will become second nature.</p>",
 		"needsOkay" : true,
-		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
+		"video" : "review.mp4"
 	},
 	{
 		"title" : "Into Action",
@@ -249,7 +257,8 @@ drink; alcohol has always been our fix.  </p>
 		<p>While doing the work, we remain focused on key areas - *not our long-winded life story &mdash; (this only builds up resentment, anger and self-pity). </p>
 		<p>*Our long-winded life story holds us back. </p>",
 		"needsOkay" : true,
-		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
+		"video": "12-into-action.mp4"
 	},
 	{
 		"title" : "Resentment and Anger Part 1",
@@ -272,9 +281,10 @@ drink; alcohol has always been our fix.  </p>
 		"needsOkay" : true,
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
 		"files" : [
-			{"filename": "resentment-and-anger-prompt-worksheet.pdf", "displayName": "Resentment and Anger Prompt Worksheet 1"},
-			{"filename": "resentment-and-anger-example.pdf", "displayName": "Example Worksheet"}
-		]
+			{"filename": "worksheetsresentment-and-anger-prompt-worksheet.pdf", "displayName": "Resentment and Anger Prompt Worksheet 1"},
+			{"filename": "example/resentment-and-anger-prompt-examples.pdf", "displayName": "Example Worksheet"}
+		],
+		"video" : "13-resentment-and-anger-part-1.mp4"
 	},
 	{
 		"title" : "Resentment and Anger Part 2",
@@ -293,8 +303,9 @@ drink; alcohol has always been our fix.  </p>
 		"needsOkay" : true,
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
 		"files" : [
-			{"filename": "resentment-and-anger-worksheet.pdf", "displayName": "Resentment and Anger Worksheet 2"}
-		]
+			{"filename": "worksheets/resentment-and-anger-worksheet.pdf", "displayName": "Resentment and Anger Worksheet 2"}
+		],
+		"video" : "14-resentment-and-anger-part-2.mp4"
 	},
 	{
 		"title" : "Resentment and Anger Part 3",
@@ -316,7 +327,8 @@ drink; alcohol has always been our fix.  </p>
 			{"filename": "pathway-to-resentment.pdf", "displayName": "Pathway to Resentment"},
 			{"filename": "seven-instincts.pdf", "displayName": "The 7 Basic Instincts"},
 			{"filename": "defects-of-character.pdf", "displayName": "The Defects of Character"}
-		]
+		],
+		"video" : "15-resentment-and-anger-part-3.mp4"
 	},
 	{
 		"title" : "Resentment and Anger Part 4",
@@ -386,6 +398,7 @@ drink; alcohol has always been our fix.  </p>
 		"title" : "Resentment and Anger Part 6",
 		"phaseId" : 2,
 		"stepNumber" : 6,
+		"video":"18-resentment-and-anger-part-6.mp4",
 		"html" : "<h3>Column 3 &mdash; Which Basic Instincts were affected? </h3>
 		<p>I am now going to present examples for you to study and follow.</p>
 		<p>As I go through my affected Basic Instincts in the example worksheet you will see the reasons why the basic instincts were affected. </p>
@@ -594,7 +607,8 @@ drink; alcohol has always been our fix.  </p>
 		<p>You can write it out like I have and then transfer this to your worksheet in a shortened form. It is imperative and crucial that you understand and acknowledge your part in this.</p>
 		",
 		"needsOkay" : true,
-		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
+		"video" : "19-summary-resentment-and-anger.mp4"
 	},
 	{
 		"title" : "Resentment and Anger Part 8",
