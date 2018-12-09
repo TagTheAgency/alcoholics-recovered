@@ -60,6 +60,11 @@ public class User {
 	@Temporal(TemporalType.DATE)
 	private Date subscriptionPaidTo;
 	
+	@Column
+	private Boolean admin;
+	
+	
+	
 	
 	public long getId() {
 		return id;
@@ -165,6 +170,15 @@ public class User {
 		this.subscriptionPaidTo = subscriptionPaidTo;
 	}
 	
+	public Boolean getAdmin() {
+		return admin;
+	}
+	public Boolean getActive() {
+		return active;
+	}
+	public void setAdmin(Boolean admin) {
+		this.admin = admin;
+	}
 	
 	
 	

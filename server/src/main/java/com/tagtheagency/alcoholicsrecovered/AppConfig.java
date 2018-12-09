@@ -2,6 +2,7 @@ package com.tagtheagency.alcoholicsrecovered;
 
 import java.util.Properties;
 
+import org.ocpsoft.prettytime.PrettyTime;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -51,5 +52,10 @@ public class AppConfig {
 	    props.put("mail.debug", "true");
 	     
 	    return mailSender;
+	}
+	
+	@Bean
+	public PrettyTime getPrettyTime() {
+		return new PrettyTime();
 	}
 }

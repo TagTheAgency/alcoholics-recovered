@@ -8,14 +8,18 @@ import java.util.UUID;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
-import javax.websocket.server.PathParam;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,12 +28,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
 import com.stripe.exception.StripeException;
 import com.stripe.model.Charge;
+import com.stripe.model.Subscription;
 import com.tagtheagency.alcoholicsrecovered.dto.GenericResponse;
 import com.tagtheagency.alcoholicsrecovered.dto.PasswordDTO;
 import com.tagtheagency.alcoholicsrecovered.dto.UserDTO;
+import com.tagtheagency.alcoholicsrecovered.model.ForumThread;
 import com.tagtheagency.alcoholicsrecovered.model.ProcessPhase;
 import com.tagtheagency.alcoholicsrecovered.model.ProcessStep;
 import com.tagtheagency.alcoholicsrecovered.model.User;
@@ -38,6 +45,7 @@ import com.tagtheagency.alcoholicsrecovered.service.StripeService;
 import com.tagtheagency.alcoholicsrecovered.service.UserService;
 import com.tagtheagency.alcoholicsrecovered.service.exception.EmailExistsException;
 import com.tagtheagency.alcoholicsrecovered.service.exception.UserNotFoundException;
+import com.tagtheagency.alcoholicsrecovered.view.CommunityViewHelper;
 import com.tagtheagency.alcoholicsrecovered.view.ProcessViewHelper;
 
 @Controller
@@ -55,22 +63,14 @@ public class LMSController {
 	public String getHomepage() {
 		return "redirect:/theProcess";
 	}
-/*	
-	@GetMapping("/public/about")
-	public String showAbout() {
-		return "about";
+
+	@ResponseStatus(value = HttpStatus.NOT_FOUND)
+	public class ResourceNotFoundException extends RuntimeException {
+
+		private static final long serialVersionUID = 1L;
+
 	}
 	
-	@GetMapping("/public/contact")
-	public String showContact() {
-		return "contact";
-	}
-	
-	@GetMapping("/public/privacy")
-	public String showPrivacyPolicy() {
-		return "privacy";
-	}
-*/
 	@GetMapping("/public/{page}")
 	public String showPublicPage(@PathVariable("page") String page) {
 		return "public/" + page;
@@ -156,6 +156,17 @@ public class LMSController {
 				
 		return "redirect:/welcome";
 	}
+	
+	@PostMapping(path="/community-subscription")
+	public String communitySignup(@RequestParam String stripeEmail, @RequestParam String stripeToken, @RequestParam String subscription, Principal principal) throws StripeException {
+		User user = getUserFromPrincipal(principal);
+		Subscription sub = stripe.addCommunitySubscription(user, stripeEmail, stripeToken, subscription);
+		
+		users.addSubscription(user, sub);
+		
+		return "redirect:/community";
+	}
+	
 	
 	@GetMapping(path="/welcome")
 	public String getWelcomePage(Model model, Principal principal) {
@@ -245,11 +256,18 @@ public class LMSController {
 		ProcessStep viewStep = users.getStepByNumber(step, phase);
 
 		
+		
 		if (getUniqueOrder(viewStep) == getUniqueOrder(currentStep) && currentStep.isNeedsOkay() && agreeCheck != null) {
 			return getCurrentStepOfTheProcess(model, principal);
 		}
 		
 		ProcessStep requestedStep = users.getNextStep(viewStep);
+		
+		if (requestedStep == null) {
+			//finished!
+			users.setFinished(user);
+			return "community";
+		}
 
 		if (getUniqueOrder(viewStep) == getUniqueOrder(currentStep)) {
 			users.setStep(user, requestedStep, requestedStep.getPhase());
@@ -333,4 +351,75 @@ public class LMSController {
 	    users.changeUserPassword(user, passwordDto.getNewPassword());
 	    return new GenericResponse("Your password has been updated");
 	}
+	
+
+	@GetMapping("/community") 
+	public String showCommunityPage(Principal principal, Model model, @RequestParam(required=false, defaultValue="0") int page) {
+
+		Pageable paging = PageRequest.of(page, 10);
+		model.addAttribute("threads", users.getThreads(paging));
+		model.addAttribute("service", users);
+		model.addAttribute("viewHelper", new CommunityViewHelper());
+		return "community";
+	}
+
+	@PreAuthorize("hasRole('ROLE_COMMUNITY')")
+	@GetMapping("/community/{id}") 
+	public String showCommunityThread(Model model, @PathVariable int id) {
+		ForumThread thread = users.getForumThread(id);
+
+		if (thread == null) {
+			throw new ResourceNotFoundException();
+		}
+		
+		model.addAttribute("thread", thread);
+		model.addAttribute("service", users);
+		model.addAttribute("viewHelper", new CommunityViewHelper());
+		
+		
+		return "thread";
+	}
+
+	@PreAuthorize("hasRole('ROLE_COMMUNITY')")
+	@PostMapping("/community") 
+	public String createCommunityThread(Model model, @RequestParam String title, @RequestParam String body, Principal principal) {
+		ForumThread thread = users.createForumThread(title, body, getUserFromPrincipal(principal));
+
+		return "redirect:/community/"+thread.getThreadId();
+	}
+
+	@PreAuthorize("hasRole('ROLE_COMMUNITY')")
+	@PostMapping("/community/{id}") 
+	public String replyToPost(Model model, @PathVariable int id, @RequestParam String body, Principal principal) {
+		ForumThread thread = users.getForumThread(id);
+		if (thread == null) {
+			throw new ResourceNotFoundException();
+		}
+		
+		users.createForumReply(body, thread, getUserFromPrincipal(principal));
+
+		return "redirect:/community/"+thread.getThreadId();
+	}
+
+	
+	
+	
+	protected boolean hasRole(String role) {
+        // get security context from thread local
+        SecurityContext context = SecurityContextHolder.getContext();
+        if (context == null)
+            return false;
+
+        Authentication authentication = context.getAuthentication();
+        if (authentication == null)
+            return false;
+
+        for (GrantedAuthority auth : authentication.getAuthorities()) {
+        	System.out.println("Checking "+ auth.getAuthority());
+            if (role.equals(auth.getAuthority()))
+                return true;
+        }
+
+        return false;
+    }
 }
