@@ -16,6 +16,7 @@ import org.springframework.mail.MailSender;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -382,8 +383,23 @@ public class UserService implements UserDetailsService {
 		internalSubscription.setUser(user);
 		
 		subscriptionDao.save(internalSubscription);
-		user.setSubscriptionPaidTo(new Date(sub.getCurrentPeriodEnd()));
+		System.out.println("Got a current period end of "+sub.getCurrentPeriodEnd());
+		user.setSubscriptionPaidTo(new Date((long)sub.getCurrentPeriodEnd() * 1000));
 		userDao.save(user);
+		
+
+		ARUserDetails currentDetails = new ARUserDetails(user);
+		
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+
+		Authentication newAuth = new UsernamePasswordAuthenticationToken(auth.getPrincipal(), auth.getCredentials(), currentDetails.getAuthorities());
+
+		SecurityContextHolder.getContext().setAuthentication(newAuth);
+	}
+
+	public void updateUser(User user) {
+		userDao.save(user);
+		
 	}
 
 	

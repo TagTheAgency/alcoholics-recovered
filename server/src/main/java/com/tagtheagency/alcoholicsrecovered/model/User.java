@@ -63,6 +63,8 @@ public class User {
 	@Column
 	private Boolean admin;
 	
+	@Column(name="stripe_customer_id")
+	private String stripeCustomerId;
 	
 	
 	
@@ -180,6 +182,13 @@ public class User {
 		this.admin = admin;
 	}
 	
+	public String getStripeCustomerId() {
+		return stripeCustomerId;
+	}
+	
+	public void setStripeCustomerId(String stripeCustomerId) {
+		this.stripeCustomerId = stripeCustomerId;
+	}
 	
 	
 }

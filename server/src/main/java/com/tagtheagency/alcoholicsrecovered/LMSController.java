@@ -158,13 +158,23 @@ public class LMSController {
 	}
 	
 	@PostMapping(path="/community-subscription")
-	public String communitySignup(@RequestParam String stripeEmail, @RequestParam String stripeToken, @RequestParam String subscription, Principal principal) throws StripeException {
+	public String communitySignup(Model model, @RequestParam String stripeEmail, @RequestParam String stripeToken, @RequestParam String subscription, Principal principal) throws StripeException {
 		User user = getUserFromPrincipal(principal);
-		Subscription sub = stripe.addCommunitySubscription(user, stripeEmail, stripeToken, subscription);
-		
-		users.addSubscription(user, sub);
-		
-		return "redirect:/community";
+		try {
+			Subscription sub = stripe.addCommunitySubscription(user, stripeEmail, stripeToken, subscription);
+			
+			users.addSubscription(user, sub);
+			
+			return "redirect:/community";
+		} catch (StripeException e) {
+			e.printStackTrace();
+			model.addAttribute("paymentFailed", true);
+			model.addAttribute("stripeCode", e.getCode());
+			model.addAttribute("stripeStatusCode", e.getMessage());
+
+			model.addAttribute("apiKey", apiKey);
+			return "community";
+		}
 	}
 	
 	
@@ -360,6 +370,8 @@ public class LMSController {
 		model.addAttribute("threads", users.getThreads(paging));
 		model.addAttribute("service", users);
 		model.addAttribute("viewHelper", new CommunityViewHelper());
+		model.addAttribute("apiKey", apiKey);
+
 		return "community";
 	}
 

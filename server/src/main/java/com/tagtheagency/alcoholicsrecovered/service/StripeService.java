@@ -3,6 +3,7 @@ package com.tagtheagency.alcoholicsrecovered.service;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Service;
@@ -34,6 +35,8 @@ public class StripeService {
 	@Value("${stripe.commumity.plan.annual}")
 	private String annualPlan;
 
+	@Autowired
+	private UserService userService;
 	
 	public StripeService() {
 		Stripe.apiKey = secretKey;
@@ -60,18 +63,21 @@ public class StripeService {
 		return charge;
 	}
 
-	public Subscription addCommunitySubscription(User userFromPrincipal, String stripeEmail, String stripeToken, String subscription) throws StripeException {
+	public Subscription addCommunitySubscription(User user, String stripeEmail, String stripeToken, String subscription) throws StripeException {
 		Stripe.apiKey = secretKey;
-		Map<String, Object> customerParams = new HashMap<>();
-		customerParams.put("email", stripeEmail);
-		customerParams.put("source", stripeToken);
-		Customer customer = Customer.create(customerParams);
 		
-		System.out.println("Created a customer "+customer.getId());
+		if (user.getStripeCustomerId() == null) {
+			Map<String, Object> customerParams = new HashMap<>();
+			customerParams.put("email", stripeEmail);
+			customerParams.put("source", stripeToken);
+			Customer customer = Customer.create(customerParams);
+			user.setStripeCustomerId(customer.getId());
+			userService.updateUser(user);
+		}
 		
-		Map<String, Object> subParams = new HashMap<>();
-		subParams.put("customer", customer.getId());
-
+//		Map<String, Object> subParams = new HashMap<>();
+//		subParams.put("customer", user.getStripeCustomerId());
+		System.out.println("Using customer "+user.getStripeCustomerId());
 
 		Map<String, Object> item = new HashMap<String, Object>();
 		switch (subscription) {
@@ -88,7 +94,7 @@ public class StripeService {
 		items.put("0", item);
 
 		Map<String, Object> params = new HashMap<String, Object>();
-		params.put("customer", customer.getId());
+		params.put("customer", user.getStripeCustomerId());
 		params.put("items", items);
 
 		System.out.println("Creating with params "+params);

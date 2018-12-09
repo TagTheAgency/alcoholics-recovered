@@ -11,7 +11,14 @@
 			through 'The Process' to be able to seek support, knowledge and friendship in a private online environment without 
 			having to go off to meetings, or to councillors, psychologists but have a place where they can firstly use 
 			'The Process' and then if still having problems they can share their problem with the community anonymously and without judgement</p>
+			
+			<c:if test="${paymentFailed }">
+            <div class="alert alert-danger" role="alert">
+  				Your payment failed. The error was ${stripeCode } with a status of ${stripeStatusCode }.
 			</div>
+          </c:if>
+			</div>
+			
 	<div class="col-md-4 col-sm-6 col-xs-12">
 		<div class="pt pt-simple">
 			<div class="pt-name">Pay monthly</div>
@@ -101,9 +108,10 @@
 			
 		</sec:authorize>
 		<sec:authorize access="hasRole('ROLE_COMMUNITY')">
+		<div class="col-12">
 		<h1>Recovered Community</h1>
 		<p>Please remember the rules!</p>
-		
+		</div>
 		<table class="table">
   <thead class="thead-light">
     <tr>

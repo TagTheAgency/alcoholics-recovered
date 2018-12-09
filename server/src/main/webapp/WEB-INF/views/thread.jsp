@@ -4,11 +4,12 @@
 <sec:authorize access="hasRole('ROLE_COMMUNITY')">
 	<div class="container content">
 		<div class="row">
-
+		<div class="col-12">
 		<h1>Recovered Community</h1>
 		<p>Please remember the rules!</p>
 		
 		<h2><e:forHtml value="${thread.subject }"/></h2>
+		</div>
 		<c:forEach items="${thread.forumMessages }" var="message">
 		<div class="container forum-row">
 			<div class="row ">
