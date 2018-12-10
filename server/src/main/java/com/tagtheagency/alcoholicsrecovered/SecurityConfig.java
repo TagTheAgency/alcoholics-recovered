@@ -20,14 +20,17 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http
+			.csrf().ignoringAntMatchers("/stripe-webhook/**")
+			.and()
 			.authorizeRequests()
 				.antMatchers("/login*").anonymous()
 				.antMatchers("/forgotPassword*").anonymous()
 				.antMatchers("/user/changePassword").anonymous()
-				.antMatchers("/").permitAll()
+				//.antMatchers("/").permitAll()
 				.antMatchers("/updatePassword*").permitAll()
-				.antMatchers("/public/**").permitAll()  
+				//.antMatchers("/public/**").permitAll()  
 				.antMatchers("/join/**").anonymous()  
+				.antMatchers("/stripe-webhook/**").permitAll()  
 				.antMatchers("/css/**").permitAll()  
 				.antMatchers("/img/**").permitAll()  
 				.antMatchers("/resources/**").permitAll()  
@@ -35,13 +38,17 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				.anyRequest().authenticated()
 			.and()
 				.formLogin()
-					.loginPage("/login")
+					.loginPage("/join/account")
 					.loginProcessingUrl("/perform_login")
 					.defaultSuccessUrl("/welcome")
 					.failureUrl("/login?error=true")
 			.and()
 				.logout()
-					.logoutSuccessUrl("/login");
+					.logoutSuccessUrl("/login")
+					/*.deleteCookies("JSESSIONID")
+		    
+		    .and()
+		    	.rememberMe().key("recoveredGroupRememberSecret")*/;
 	}
 	
 	@Autowired

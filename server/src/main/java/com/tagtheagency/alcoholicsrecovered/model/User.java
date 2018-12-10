@@ -60,6 +60,13 @@ public class User {
 	@Temporal(TemporalType.DATE)
 	private Date subscriptionPaidTo;
 	
+	@Column
+	private Boolean admin;
+	
+	@Column(name="stripe_customer_id")
+	private String stripeCustomerId;
+	
+	
 	
 	public long getId() {
 		return id;
@@ -165,7 +172,23 @@ public class User {
 		this.subscriptionPaidTo = subscriptionPaidTo;
 	}
 	
+	public Boolean getAdmin() {
+		return admin;
+	}
+	public Boolean getActive() {
+		return active;
+	}
+	public void setAdmin(Boolean admin) {
+		this.admin = admin;
+	}
 	
+	public String getStripeCustomerId() {
+		return stripeCustomerId;
+	}
+	
+	public void setStripeCustomerId(String stripeCustomerId) {
+		this.stripeCustomerId = stripeCustomerId;
+	}
 	
 	
 }

@@ -4,18 +4,19 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 import java.util.Optional;
 
+import org.ocpsoft.prettytime.PrettyTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.data.domain.Example;
-import org.springframework.data.domain.ExampleMatcher;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.mail.MailSender;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -26,14 +27,20 @@ import org.springframework.stereotype.Service;
 
 import com.stripe.model.Charge;
 import com.tagtheagency.alcoholicsrecovered.dto.UserDTO;
+import com.tagtheagency.alcoholicsrecovered.model.ForumMessage;
+import com.tagtheagency.alcoholicsrecovered.model.ForumThread;
 import com.tagtheagency.alcoholicsrecovered.model.PasswordResetToken;
 import com.tagtheagency.alcoholicsrecovered.model.ProcessPhase;
 import com.tagtheagency.alcoholicsrecovered.model.ProcessStep;
+import com.tagtheagency.alcoholicsrecovered.model.Subscription;
 import com.tagtheagency.alcoholicsrecovered.model.User;
 import com.tagtheagency.alcoholicsrecovered.persistence.ChargeDAO;
+import com.tagtheagency.alcoholicsrecovered.persistence.ForumMessageDAO;
+import com.tagtheagency.alcoholicsrecovered.persistence.ForumThreadDAO;
 import com.tagtheagency.alcoholicsrecovered.persistence.PasswordResetTokenDAO;
 import com.tagtheagency.alcoholicsrecovered.persistence.ProcessPhaseDAO;
 import com.tagtheagency.alcoholicsrecovered.persistence.ProcessStepDAO;
+import com.tagtheagency.alcoholicsrecovered.persistence.SubscriptionDAO;
 import com.tagtheagency.alcoholicsrecovered.persistence.UserDAO;
 import com.tagtheagency.alcoholicsrecovered.service.exception.EmailExistsException;
 
@@ -46,6 +53,9 @@ public class UserService implements UserDetailsService {
 	
 	@Autowired
 	private ChargeDAO chargeDao;
+
+	@Autowired
+	private SubscriptionDAO subscriptionDao;
 	
 	@Autowired
 	private ProcessStepDAO processStepDao;
@@ -55,12 +65,21 @@ public class UserService implements UserDetailsService {
 
 	@Autowired
 	private PasswordResetTokenDAO passwordResetDao;
+
+	@Autowired
+	private ForumMessageDAO forumMessageDao;
+	
+	@Autowired
+	private ForumThreadDAO forumThreadDao;
 	
 	@Autowired
 	private PasswordEncoder passwordEncoder;
 	
 	@Autowired
 	private MailSender mailSender;
+	
+	@Autowired
+	private PrettyTime prettyTime;
 	
 	@Value("${support.email}")
 	private String serviceEmail;
@@ -77,6 +96,9 @@ public class UserService implements UserDetailsService {
 	    user.setPassword(passwordEncoder.encode(accountDto.getPassword()));
 	     
 	    user.setEmail(accountDto.getEmail());
+	    ProcessStep step = getFirstStepOfTheProcess();
+	    user.setCurrentStep(step.getId());
+	    user.setCurrentPhase(step.getPhase().getId());
 //	    user.setRole(new Role(Integer.valueOf(1), user));
 	    return userDao.save(user);
 	}
@@ -100,17 +122,17 @@ public class UserService implements UserDetailsService {
 	}
 	
 	private boolean emailExists(String email) {
-		return userDao.findByEmail(email).size() > 0;
+		return userDao.findByEmailIgnoreCase(email).size() > 0;
 	}
 	
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		User user = userDao.findByEmail(username).stream().findFirst().orElseThrow(() -> new UsernameNotFoundException("No user found with username " + username));
+		User user = userDao.findByEmailIgnoreCase(username).stream().findFirst().orElseThrow(() -> new UsernameNotFoundException("No user found with username " + username));
 		return new ARUserDetails(user);
 	}
 	
 	public User getUser(String email) throws UsernameNotFoundException {
-		return userDao.findByEmail(email).stream().findFirst().orElseThrow(() -> new UsernameNotFoundException("No user found with email " + email));
+		return userDao.findByEmailIgnoreCase(email).stream().findFirst().orElseThrow(() -> new UsernameNotFoundException("No user found with email " + email));
 	}
 	
 	
@@ -268,6 +290,115 @@ public class UserService implements UserDetailsService {
 
 	public void changeUserPassword(User user, String newPassword) {
 		// TODO Auto-generated method stub
+		
+	}
+
+
+	public String getGravatarImage(User user) {
+		String hex = MD5Util.md5Hex(user.getEmail());
+		return "https://www.gravatar.com/avatar/"+hex+"?f=y&d=identicon";
+	}
+	
+	
+/*	public String getFilteredBody() {
+		ForumMessageFilter filter = new XSSFilter();
+		String text = filter.getFilteredText(getBody());
+		filter = new NewlineFilter();
+		return filter.getFilteredText(text);
+	}*/
+
+
+	/**
+	 * Returns an English sentence which describes the <code>Date</code>
+	 * parameter relative to the current time. For instance, if the passed
+	 * in date was 39 seconds ago, this method returns:<p>
+	 *     "Less than 1 min ago"<p>
+	 * Similiarly, a date 1 ago would be:<p>
+	 *      "Yesterday at 3:53 PM"<p>
+	 *
+	 */
+	public String timeSincePost(ForumMessage message) {
+		return prettyTime.format(message.getCreationDate());
+	}
+
+	public ForumThread getForumThread(int id) {
+		return forumThreadDao.findById(id).orElse(null);
+	}
+
+	public Page<ForumThread> getThreads(Pageable page) {
+		
+		return forumThreadDao.findAll(page);
+	}
+	
+	public ForumThread createForumThread(String title, String body, User user) {
+		ForumThread thread = new ForumThread();
+
+		ForumMessage message = new ForumMessage();
+		message.setAuthor(user);
+		message.setCreationDate(new Date());
+		message.setBody(body);
+		message.setSubject(title);
+		
+//		thread.setRootMessage(message);
+		thread.setStartDate(new Date());
+		thread.setSubject(title);
+		forumThreadDao.save(thread);
+		message.setThread(thread);
+		
+		forumMessageDao.save(message);
+//		thread.setRootMessage(message);
+//		forumThreadDao.save(thread);
+		
+		
+		return thread;
+	}
+
+	public ForumMessage getMessage(int messageId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void createForumReply(String body, ForumThread thread, User userFromPrincipal) {
+		ForumMessage message = new ForumMessage();
+		message.setAuthor(userFromPrincipal);
+		message.setCreationDate(new Date());
+		message.setThread(thread);
+		message.setBody(body);
+		forumMessageDao.save(message);
+		
+	}
+
+	public void setFinished(User user) {
+		if (user.getProcessCompleted() == null) {
+			user.setProcessCompleted(new Date());
+			userDao.save(user);
+		}
+		
+	}
+
+	public void addSubscription(User user, com.stripe.model.Subscription sub) {
+		Subscription internalSubscription = new Subscription();
+		internalSubscription.setStripeId(sub.getId());
+		internalSubscription.setBilling(sub.getBilling());
+		internalSubscription.setUser(user);
+		
+		subscriptionDao.save(internalSubscription);
+		System.out.println("Got a current period end of "+sub.getCurrentPeriodEnd());
+		user.setSubscriptionPaidTo(new Date((long)sub.getCurrentPeriodEnd() * 1000));
+		userDao.save(user);
+		
+
+		ARUserDetails currentDetails = new ARUserDetails(user);
+		
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+
+		Authentication newAuth = new UsernamePasswordAuthenticationToken(auth.getPrincipal(), auth.getCredentials(), currentDetails.getAuthorities());
+
+		SecurityContextHolder.getContext().setAuthentication(newAuth);
+	}
+
+	public void updateUser(User user) {
+		userDao.save(user);
 		
 	}
 

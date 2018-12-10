@@ -8,12 +8,66 @@ obsessive abuser of substance or behaviour, <strong>resentment, anger</strong> a
 harmful emotions, the alcoholic&#39;s obsession to drink falls away, and a well-managed, alcohol free life can be
 resumed.</p>",
 		"needsOkay": false,
-		"video" : "348384348743"
+		"video" : "01-welcome.mp4"
+	},
+	{
+		"title":"The foundations",
+		"phaseId":1,
+		"stepNumber": 2,
+		"html": "
+<p>
+I would like to present to you an overview and explain to you what we well cover in phase 1 of 'The Process'
+</p><p>
+Phase 1 is short, but it is critical for you to follow it very carefully  and concisely.
+</p><p>
+You need and must answer all the questions in this phase as this lays the foundations for the rest of not only 'The Process' but for the rest of your life.
+</p><p>
+In this phase we ask you to
+</p><ol>
+<li>
+Be totally honest with yourself &mdash; understand that this is for you not anybody else.
+</li><li>
+That you accept that your use of alcohol has caused problems for you and the many people who love and respect you.
+</li><li>
+That you commit yourself totally to following 'The Process' instructions and directions and do not go off on tangents, just do the work.
+</li><li>
+Don't let your mind or past knowledge sabotage you completing 'The Process' or slowing you down
+</li></ol>
+<p>By completing all phases of 'The Process' you will realise that you are on the road to freedom from alcohol and that you can lead a happy and contented life, one that you have only dreamt of.
+</p><p>
+We also cover your agreements and commitments and we explain to you that your sobriety is your responsibility &mdash; not ours.
+</p><p>
+We highlight again that this is a program of ACTION and we ask that you 'JUST DO THE WORK'.
+</p><p>
+Also, we ask that you ACCEPT and look deep within yourself that the POWER of ALCOHOL (drugs, anxiety, fear, worry, gambling, food, sex, games etc) is ruining or has ruined your life and that you have no control over alcohol or if you have it is only for short periods of time and that all the ways you have tried before have not worked for you.
+</p><p>
+During this phase we will ask you to commit and we will highlight to you that your sobriety is your responsibility; not ours, not your doctors, not AA, nor your councillor or anybody else. <strong>It is your responsibility</strong>
+</p><p>
+We will cover ACCEPTANCE with you and whiy this is critical to your future sobriety, because if you don't accept deep down within yourself that you are powerless over alcohol then nothing will work.
+</p><p>
+We will talk about self-honesy and again your powerlessness over alconol.
+</p><p>
+<strong><u>REMEMBER ALCOHOL IS BUT A SYMPTOM OF A MORE SERIOUS UNDERLYING ISSUE OR ISSUES</u></strong>, and that until you have had enough of your behaviour nothing will change.
+</p><p>
+As we move through phase 1, I will show you how resentment, anger, fear, worry and anxiousness are the primary drivers of our problem with alcohol.
+</p><p>
+We will show you what our underlying defects are and how we can change these
+</p><p>
+We will present and teach you the seven basic instincts all human beings have and how they impact your life
+</p><p>
+We will talk about blame and how we never want to take responsibility and always blame other people.
+</p><p>
+We will describe the four emotions that lead to resentment, anger and hate.
+</p><p>
+Once we have covered these off we will have completed Phase 1 and you will be ready to launch into action and complete Phase 2
+</p>",
+		"needsOkay":false,
+		"video" : "02-foundations.mp4"
 	},
 	{
 		"title":"Acceptance",
 		"phaseId":1,
-		"stepNumber": 2,
+		"stepNumber": 3,
 		"html": "<h1>PROGRAMME RULES AND CONDITIONS </h1>
 <p>Thank you for your commitment to being sober through The Process. You have chosen a life changing program that will enable you to live a happy and contented life free from the desire for alcohol. </p>
 <p>Here are a few house rules that you need to agree to: </p>
@@ -33,11 +87,12 @@ resumed.</p>",
 ",
 		"needsOkay":true,
 		"tickBoxText": "Please tick the box after you have read and agreed to the above rules and conditions."
+
 	},
 	{
 		"title":"The Cause",
 		"phaseId":1,
-		"stepNumber":3,
+		"stepNumber":4,
 		"html": "<p>Before you start, let&rsquo;s explain and clarify some key points that will help you work through the worksheets. </p>
 <p>We know that resentment, anger, hate and fear are the main cause of all our problems &mdash; we understand that alcohol abuse is a symptom of our problems.  </p>
 <p>Once we clear our past from resentment, anger, hate and fear - and have addressed those we have hurt, we stop being selfish, dishonest, fearful and inconsiderate. Being free from the primary damaging emotions, resentment, anger and fear is life-long work that we will learn to do. (Use Dr. Pete as an example). </p>
@@ -52,12 +107,13 @@ We&rsquo;ll have a look at these primary harmful emotions, but first, let&rsquo;
 <li>There are 5-character defects &mdash; understanding and recognising these show us where we need to make a positive adjustment. </li>
 <br/>
 ",
-		"needsOkay" : false
+		"needsOkay" : false,
+		"video" : "04-the-cause.mp4"
 	},
 	{
 		"title":"The 4 Emotions",
 		"phaseId":1,
-		"stepNumber": 4,
+		"stepNumber": 5,
 		"html": "<p>The pathway to Resentment.  (When you memorise these emotions, you will begin to recognise them throughout your day and will, through The Process, be able to address them before they can build to resentment.) </p>
 <p>Resentment initially starts by us first becoming:</p>
 <ul>
@@ -69,12 +125,13 @@ We&rsquo;ll have a look at these primary harmful emotions, but first, let&rsquo;
 <p>
 Together, anger and resentment create most of our problems beginning with the first step; irritation. We may feel justified being angry and resentful because it was someone or something else&rsquo;s fault. We seldom think we are to blame or have played a part in the resulting feeling of resentment. </p>",
 		"needsOkay" : false,
-		"tickBoxText" : "Do you understand how resentment can build?"
+		"tickBoxText" : "Do you understand how resentment can build?",
+		"video" : "05-the-4-emotions.mp4"
 	},
 	{
 		"title":"A Story of Resentment",
 		"phaseId": 1,
-		"stepNumber" : 5,
+		"stepNumber" : 6,
 		"html" : "
 <p class='process-quote'>It&rsquo;s morning, I&rsquo;m at work and still have not had coffee. Already someone has done something to irritate me &mdash; only a small thing. I can&rsquo;t exactly
 &ldquo;put my finger on why&rsquo;, but now I feel slightly uncomfortable, a discomfort like an itch I cannot scratch, however, I carry on and superficially
@@ -99,22 +156,24 @@ drink; alcohol has always been our fix.  </p>
 <p>This is what The Process does. </p>
 <p>The Process provide the tools with which to work through the underlying issues. </p>",
 		"needsOkay":true,
-		"tickBoxText":"YES! I understand how irritation and annoyance lead to anger and resentment"
+		"tickBoxText":"YES! I understand how irritation and annoyance lead to anger and resentment",
+		"video" : "06-a-story-of-resentment.mp4"
 	},
 	{
 		"title": "Blame",
 		"phaseId": 1,
-		"stepNumber" : 6,
+		"stepNumber" : 7,
 		"html" : "<p>The Process shows &mdash; by using the precisely designed tools of the programme &mdash; how to take responsibility for your life and stop blaming others; nothing will change until then. </p>
 <p>Please think about and write down on a piece of paper or on your computer all of the people you have blamed in your life and why you have blamed them.</p>
 ",
 		"needsOkay" : true,
-		"tickBoxText" :"PLEASE TICK WHEN COMPLETED"
+		"tickBoxText" :"PLEASE TICK WHEN COMPLETED",
+		"video" : "07-blame.mp4"
 	},
 	{
 		"title" : "The 7 Basic Instincts",
 		"phaseId" : 1,
-		"stepNumber" : 7,
+		"stepNumber" : 8,
 		"html" : "<p>All humans have seven basic instincts, that for most, are generally balanced. However, for those with alcoholism, or problems with alcohol, these instincts are not stable.  </p>
 <p>Please memorise these or print them to keep close. You can then review when you feel harmful emotions coming up.  </p>
 <h3>THE SEVEN BASIC INSTINCTS </h3>
@@ -137,7 +196,7 @@ drink; alcohol has always been our fix.  </p>
 	{
 		"title" : "In and Out of Balance",
 		"phaseId" : 1,
-		"stepNumber" : 8,
+		"stepNumber" : 9,
 		"html" : "<p>We will discuss how these seven instincts work in our lives and how we can use them to see when they are out of balance.
 		These instincts are natural (some people say God given). They are part of what makes us human.</p>
 		<p>However, if we have a problem with alcohol, or are alcoholic, these instincts are out of balance.
@@ -148,7 +207,7 @@ drink; alcohol has always been our fix.  </p>
 	{
 		"title" : "Defects of Character",
 		"phaseId" : 1,
-		"stepNumber" : 9,
+		"stepNumber" : 10,
 		"html" : "<p>Everyone has character defects, they are a natural part of being human. There are many types of them, but these (below) are our core defects and when any are combined &mdash; they can produce envy, greed, jealously and many other negative qualities. It&rsquo;s a bit like mixing different combinations of red, yellow, and blue to create many different colours.</p>
 		<h3>Defects of Character</h3>
 		<p>A person acting on the 5 basic character defects would appear to be:</p>
@@ -171,12 +230,13 @@ drink; alcohol has always been our fix.  </p>
 		</ul>
 			",
 			"needsOkay" : true,
-			"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+			"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
+			"video":"10-defects-of-character.mp4"
 	},
 	{
 		"title" : "Review",
 		"phaseId" : 1,
-		"stepNumber" : 10,
+		"stepNumber" : 11,
 		"html" : "<p>Let's review the slides we have covered.</p>
 		<ol>
 			<li>The 4 Emotions leading to resentment</li>
@@ -185,18 +245,20 @@ drink; alcohol has always been our fix.  </p>
 		</ol>
 		<p>These are important to understand and memorize, to make easier for practice in everyday life. Only then will awareness of them will become second nature.</p>",
 		"needsOkay" : true,
-		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
+		"video" : "review.mp4"
 	},
 	{
 		"title" : "Into Action",
 		"phaseId" : 1,
-		"stepNumber" : 11,
+		"stepNumber" : 12,
 		"html" : "<p>We are now moving into the action part of The Process where we act and immerse ourselves in the following work. </p>
 		<p>We work quickly and honestly, and do not hesitate! We move swiftly through to completion. </p>
 		<p>While doing the work, we remain focused on key areas - *not our long-winded life story &mdash; (this only builds up resentment, anger and self-pity). </p>
 		<p>*Our long-winded life story holds us back. </p>",
 		"needsOkay" : true,
-		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
+		"video": "12-into-action.mp4"
 	},
 	{
 		"title" : "Resentment and Anger Part 1",
@@ -219,9 +281,10 @@ drink; alcohol has always been our fix.  </p>
 		"needsOkay" : true,
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
 		"files" : [
-			{"filename": "resentment-and-anger-prompt-worksheet.pdf", "displayName": "Resentment and Anger Prompt Worksheet 1"},
-			{"filename": "resentment-and-anger-example.pdf", "displayName": "Example Worksheet"}
-		]
+			{"filename": "worksheetsresentment-and-anger-prompt-worksheet.pdf", "displayName": "Resentment and Anger Prompt Worksheet 1"},
+			{"filename": "example/resentment-and-anger-prompt-examples.pdf", "displayName": "Example Worksheet"}
+		],
+		"video" : "13-resentment-and-anger-part-1.mp4"
 	},
 	{
 		"title" : "Resentment and Anger Part 2",
@@ -240,8 +303,9 @@ drink; alcohol has always been our fix.  </p>
 		"needsOkay" : true,
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
 		"files" : [
-			{"filename": "resentment-and-anger-worksheet.pdf", "displayName": "Resentment and Anger Worksheet 2"}
-		]
+			{"filename": "worksheets/resentment-and-anger-worksheet.pdf", "displayName": "Resentment and Anger Worksheet 2"}
+		],
+		"video" : "14-resentment-and-anger-part-2.mp4"
 	},
 	{
 		"title" : "Resentment and Anger Part 3",
@@ -263,7 +327,8 @@ drink; alcohol has always been our fix.  </p>
 			{"filename": "pathway-to-resentment.pdf", "displayName": "Pathway to Resentment"},
 			{"filename": "seven-instincts.pdf", "displayName": "The 7 Basic Instincts"},
 			{"filename": "defects-of-character.pdf", "displayName": "The Defects of Character"}
-		]
+		],
+		"video" : "15-resentment-and-anger-part-3.mp4"
 	},
 	{
 		"title" : "Resentment and Anger Part 4",
@@ -273,9 +338,9 @@ drink; alcohol has always been our fix.  </p>
 		<p><strong>Pathway to Resentment</strong></p>
 		<p>We create our resentment, by first becoming: </p>
 		<ul>
-			<li><strong>Irritated </strong>&mdash; Something or someone&rsquo;s actions and/or behaviour start to irritate us. Although these irritants may seem trivial - we become â€¦ </li>
-			<li><strong>Annoyed </strong>&mdash; Something or someone has annoyed us. If we don&rsquo;t recognise it - we bury it a bit deeper and this leads us into becoming â€¦</li>
-			<li><strong>Angry </strong>&mdash; When we get angry we either push it down inside, or we attack people verbally, mentally, emotionally or physically which leads to â€¦  </li>
+			<li><strong>Irritated </strong>&mdash; Something or someone&rsquo;s actions and/or behaviour start to irritate us. Although these irritants may seem trivial - we become &hellip; </li>
+			<li><strong>Annoyed </strong>&mdash; Something or someone has annoyed us. If we don&rsquo;t recognise it - we bury it a bit deeper and this leads us into becoming &hellip;</li>
+			<li><strong>Angry </strong>&mdash; When we get angry we either push it down inside, or we attack people verbally, mentally, emotionally or physically which leads to &hellip;  </li>
 			<li><strong>Resentment and Hate</strong></li>
 		</ul>
 		<strong><p>The 7 Basic Instincts</p>
@@ -333,6 +398,7 @@ drink; alcohol has always been our fix.  </p>
 		"title" : "Resentment and Anger Part 6",
 		"phaseId" : 2,
 		"stepNumber" : 6,
+		"video":"18-resentment-and-anger-part-6.mp4",
 		"html" : "<h3>Column 3 &mdash; Which Basic Instincts were affected? </h3>
 		<p>I am now going to present examples for you to study and follow.</p>
 		<p>As I go through my affected Basic Instincts in the example worksheet you will see the reasons why the basic instincts were affected. </p>
@@ -541,7 +607,8 @@ drink; alcohol has always been our fix.  </p>
 		<p>You can write it out like I have and then transfer this to your worksheet in a shortened form. It is imperative and crucial that you understand and acknowledge your part in this.</p>
 		",
 		"needsOkay" : true,
-		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
+		"video" : "19-summary-resentment-and-anger.mp4"
 	},
 	{
 		"title" : "Resentment and Anger Part 8",
@@ -1067,7 +1134,7 @@ drink; alcohol has always been our fix.  </p>
 		<tr class='process-table-2nd-row'><td class='process-table-column-1'>Financial Advisor Steve (plus) +</td>  <td>	He was doing his job and I made the bad decision and blamed him for my decision.</td></tr>
 		<tr><td class='process-table-column-1'>God +</td> 	<td>This has nothing to do with God, it is not the fault of God</td></tr>
 		<tr class='process-table-2nd-row'><td class='process-table-column-1'>Employer-Mr Talbot (plus) +</td> 	<td>He was a good boss and I was not happy working there and I didn&rsquo;t discuss it with him.</td></tr>
-		<tr><td class='process-table-column-1'>Uncle Selwyn (plus and minus) + -</td> 	<td>I don&rsquo;t owe him an amends at all. He is a very sick man. I am willing to try and forgive him because he is sick, and he suffered a lot of sexual abuse when he was a kid. We may choose to go to him to say we forgive him for his actions, this takes great courage. This is your decision.</td></tr>
+		<tr><td class='process-table-column-1'>Uncle Selwyn (plus and minus) + -</td> 	<td>I don&rsquo;t owe him an amends at all. He is a very sick man. I am willing to try and forgive him because he is sick, and he suffered a lot of sexual abuse when he was a kid.</td></tr>
 		<tr class='process-table-2nd-row'><td class='process-table-column-1'>Friend-Carl (plus) +</td> 	<td>I hurt him physically, I embarrassed and humiliated him in front of others. I hurt his self-esteem, pride, emotional security and personal relationships.</td></tr>
 		<tr><td class='process-table-column-1'>Coca-Cola (plus and minus) + -</td> 	<td>I am willing to make the amends to them, but if I do they may lay charges of theft with the police and I may be charged and lose my current job. If this happens I cannot provide for my family and this would hurt them and maybe split the family up. I will go and pay them or a charity the money I owe them. </td></tr>
 		<tr class='process-table-2nd-row'><td class='process-table-column-1'>Girlfriends (plus and minus) + -</td>  <td>I am willing to make amends to all my ex-girlfriends. I need to be careful as most are now married with children and I could hurt them by going to see them to make my amends. I decide that if they are married with children, I won&rsquo;t go and see them, but I am willing to make amends to them. Those that are not in a relationship I will go and make my amends to them. When I make my amends, I won&rsquo;t tell them I went with other women when I was in the relationship with them because this could hurt them more, so I will make my amends for my behaviour while we were in the relationship and explain that I was selfish, self-seeking and dishonest.</td></tr>
@@ -1088,13 +1155,12 @@ drink; alcohol has always been our fix.  </p>
 		<li>If the amends will hurt anyone, what else can I do to put the situation right?</li>
 		<li>If a person we owe an amends to still feels aggrieved by our actions, we may choose to postpone this action.</li>
 		<li>We will be sincere in our desire to set things right with people a simple sorry is not an amends.</li>
-		<li>As with the Uncle Selwyn resentment- You may choose to go and forgive him in person, this is your choice.</li>
 		<li>When we do go to a person who has harmed us, it takes great courage, but it benefits us greatly.</li>
 		<li>We are only looking at our faults we are not looking at their faults.</li>
 		<li>We are cleaning our side of the street, not theirs.</li>
 		<li>If we owe money we either pay it back or come to some arrangement.</li>
 	</ol>
-	<p>These guidelines are exactly that and if you honest and open you will know a new freedom.</p>
+	<p>These guidelines are exactly that and if you are honest and open you will know a new freedom.</p>
 	<p>Once you have finished making you amends you will have completed Phase 2 of 'The Process'</p>
 	<p>When you make your first amends you will need to move directly onto Phase 3 of 'The Process'</p>
 	",
@@ -1106,10 +1172,10 @@ drink; alcohol has always been our fix.  </p>
 	"phaseId" : 3,
 	"stepNumber" : 1,
 	"html" : "<h3>PHASE 3 - Continuing to grow and understand both ourselves and others </h3>
-	<p>I will now show you how to use â€œThe Processâ€� on a daily basis. Assuming you are making your amends to the people on your list </p>
+	<p>I will now show you how to use 'The Process' on a daily basis. Assuming you are making your amends to the people on your list </p>
 	<p>Now that you are making your amends you will want to continue to grow and flourish with this new way of living, we will need to continue taking our inventory on a daily basis and watch out for selfishness, self-seeking, dishonesty, fear and being inconsiderate. </p>
 	<p>I will provide you an example of how you can quickly analyse yourself immediately on a daily basis and when you become irritated, annoyed, angry, resentful, fearful or I have hurt/harmed someone.</p>
-	<p><strong>Anger and resentment </strong>- I can quickly go through â€œThe Processâ€� quickly and see where my basic instincts were out of alignment, what was my part in this (where was I to blame) and what were my defects and I now know what action I need to take. I can then make an amends as quickly as possible.</p>
+	<p><strong>Anger and resentment </strong>- I can quickly go through 'The Process' quickly and see where my basic instincts were out of alignment, what was my part in this (where was I to blame) and what were my defects and I now know what action I need to take. I can then make an amends as quickly as possible.</p>
 	<p><strong>Fear </strong>- Why I had the fear, what part of Self failed me and what basic instincts the fear affected and what were my defects of character and then I can take action to correct this immediately.</p>
 	<p><strong>Harms done to others </strong>- I can see who I hurt and what I did, I can see which of the basic instincts were affected and I can correct my behaviour. Then I can make an amends as quickly as possible.</p>
 	<p>-I can now see my part in each situation very quickly and I can take action quickly, if you follow 'The Process' directions you will live a life that is exciting, amazing and be free.</p>
@@ -1140,7 +1206,7 @@ drink; alcohol has always been our fix.  </p>
 	<strong>The 3 reasons someone drinks again are</strong>
 	<ol>
 		<li>You get resentful and hold onto the resentment- In other words you stop practicing 'The Process'.</li>
-		<li>You have held onto something you should have written down and shared. â€œYOUR SECRETâ€�</li>
+		<li>You have held onto something you should have written down and shared. YOUR SECRET</li>
 		<li>You are either still selfish and self-seeking, dishonest, frightened or inconsiderate and while things have gotten better you still make everything about you and when you are helpful to others you treat it as a notch on your belt and have some expectation that someone owes you something in return.</li>
 	<p><strong>NOTE - These are the only reasons people drink again.</strong></p>
 	",
@@ -1199,7 +1265,7 @@ drink; alcohol has always been our fix.  </p>
 	"phaseId" : 3,
 	"stepNumber" : 4,
 	"html" : "<h3>An Introduction to the Recovered Community and the Benefits to YOU. </h3>
-	<p>The online <strong>RECOVERED COMMUNITY</strong> is an anonymous community that allows people who have been through 'The Process' to be able to seek support, knowledge and friendship in a private online environment without having to go off to meetings, or to councillors, psychologist&rsquo;s but have a place where they can firstly use 'The Process' and then if still having problems they can share their problem with the community anonymously and without judgement</p>
+	<p>The online <strong>RECOVERED COMMUNITY</strong> is an anonymous community that allows people who have been through 'The Process' to be able to seek support, knowledge and friendship in a private online environment without having to go off to meetings, or to councillors, psychologists but have a place where they can firstly use 'The Process' and then if still having problems they can share their problem with the community anonymously and without judgement</p>
 	<strong>Benefits</strong>
 	<ul>
 		<li>A community who understand and have empathy with where we all have been</li>
@@ -1230,6 +1296,7 @@ drink; alcohol has always been our fix.  </p>
 		<br/>
 		<li>This is a TOTALLY PRIVATE COMMUNITY and is open ONLY TO MEMBERS WHO HAVE BEEN THROUGH THE PROCESS.</li>
 	</ul>
+	
 	"
 }
 

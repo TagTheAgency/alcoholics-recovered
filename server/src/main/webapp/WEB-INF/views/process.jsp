@@ -1,5 +1,5 @@
 <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
-
+	<div class="container-fluid">
 	<div class="row bg-highlight">
 		<div id="sidenav-overlay" class="sidenav-overlay">
 				<span id="sidebar-hamburger-icon-container" onclick="openNav()"><img class="my-3" id="sidebar-hamburger-icon" src="${pageContext.request.contextPath}/img/hamburger-text-menu-blue.png" alt="--MENU--"></span>
@@ -101,9 +101,9 @@
 	    </div>
 	    <div id="main-content-container" class="col">
 				<div id="video-container">
-					<video controls
+					<video id="video-player" controls
 							controlsList="nodownload"
-					       src="/video/Beach.webm"
+					       src="https://1943996545.rsc.cdn77.org/private/phase0${currentStep.phase.phaseNumber }/${currentStep.video }"
 					       width="100%"
 					       height="100%">
 					    Sorry, your browser doesn't support embedded videos.
@@ -140,7 +140,7 @@ Next slide</button>
 
 	    </div>
 	</div>
-
+</div>
 	<script>
 	document.addEventListener("DOMContentLoaded", function(event) { 
 
@@ -149,6 +149,10 @@ Next slide</button>
 		if ($('#agreeCheck').is(':checked')) {
 			$('#nextButton').removeClass('disabled');
 			$('#nextButton').removeAttr('disabled');
+			gtag('event', 'slide-ticked', {
+				  'event_category': 'Phase ${helper.viewingStep.phase.phaseNumber}',
+				  'event_label': 'Step ${helper.viewingStep.stepNumber}'
+				});
 		} else {
 			$('#nextButton').addClass('disabled');
 			$('#nextButton').attr("disabled", "disabled");
@@ -159,6 +163,31 @@ Next slide</button>
 	$('.phaseSelect').change(function() {
 		location.href="${pageContext.request.contextPath}/theProcess/"+$(this)[0].value+"/1";
 	});
+	
+	var v = document.getElementsByTagName("video")[0];
+	v.addEventListener("play", function() { 
+		gtag('event', 'play-video', {
+			  'event_category': 'Phase ${helper.viewingStep.phase.phaseNumber}',
+			  'event_label': 'Step ${helper.viewingStep.stepNumber}'
+			});
+		
+		
+	}, true);
+	v.addEventListener("pause", function() { 
+		gtag('event', 'pause-video', {
+			  'event_category': 'Phase ${helper.viewingStep.phase.phaseNumber}',
+			  'event_label': 'Step ${helper.viewingStep.stepNumber}',
+			  'value' : v.currentTime
+			});
+	}, true);
+	v.addEventListener("seeked", function() { 
+		gtag('event', 'seeked-video', {
+			  'event_category': 'Phase ${helper.viewingStep.phase.phaseNumber}',
+			  'event_label': 'Step ${helper.viewingStep.stepNumber}',
+			  'value' : v.currentTime
+			});
+	}, true);
+	
 	});
 	</script>
  </div>

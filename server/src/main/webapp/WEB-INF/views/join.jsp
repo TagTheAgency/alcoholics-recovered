@@ -3,6 +3,8 @@
 <div class="hero-login-container justify-content-md-center">
  <div class="feature-section-container col-md-6" id="login-container">
    <p class="header-text">Take your first step. Sign up now.</p>
+
+   <p>Your credit card will be charged a one-off fee of AUD$497.00</p> 
      <form class="form-inline justify-content-md-center login-form" action="${pageContext.servletContext.contextPath}/join/process" method="post" id="payment-form">
      	<c:if test="${duplicateEmail }">
             <div class="alert alert-danger" role="alert">
@@ -50,7 +52,7 @@ var elements = stripe.elements();
 // (Note that this demo uses a wider set of styles than the guide below.)
 var style = {
   base: {
-    color: '#32325d',
+    color: '#fff',
     fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
     fontSmoothing: 'antialiased',
     fontSize: '16px',
@@ -60,13 +62,13 @@ var style = {
     }
   },
   invalid: {
-    color: '#fa755a',
-    iconColor: '#fa755a'
+    color: '#491217',
+    iconColor: '#491217'
   }
 };
 
 // Create an instance of the card Element.
-var cardNumber = elements.create('cardNumber', {style: style, placeholder: 'Placeholder'});
+var cardNumber = elements.create('cardNumber', {style: style, placeholder: 'Credit Card Number'});
 cardNumber.mount('#card-number');
 
 var cardExpiry = elements.create('cardExpiry', {style:style});

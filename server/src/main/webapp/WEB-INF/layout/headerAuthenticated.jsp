@@ -1,16 +1,14 @@
 <nav>
 	<div class="nav-container d-flex justify-content-between align-items-center">
 		<div class="nav-logo-wrapper">
-			<img src="${pageContext.servletContext.contextPath}/img/logo.png" alt="Logo" class="logo">
+			<img src="${pageContext.servletContext.contextPath}/img/RecoveredLogo_V03_dark.png" alt="Logo" class="logo">
 		</div>
-		<div class="search-bar-wrapper d-none d-md-block">
-			<input type="text" name="Search" value="">
-		</div>
+
 		<div class="nav-items-container d-none d-md-block">
 			<ul class="nav-items">
 				<li class="mr-3"><a href="${pageContext.request.contextPath}/">Home</a></li>
-				<li class="mr-3"><a href="${pageContext.request.contextPath}/public/about">About</a></li>
-				<li class="mr-3"><a href="${pageContext.request.contextPath}/public/contact">Contact</a></li>
+				<li class="mr-3"><a href="https://recoveredgroup.com/about">About</a></li>
+				<li class="mr-3"><a href="https://recoveredgroup.com/testimonials">Testimonials</a></li>
 				<li><a href="${pageContext.request.contextPath}/theProcess">Process</a></li>
 			</ul>
 		</div>
