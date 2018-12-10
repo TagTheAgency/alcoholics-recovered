@@ -103,48 +103,73 @@
 		
 		
 	}
-  </script>
+	</script>
 </form>
 			
 		</sec:authorize>
 		<sec:authorize access="hasRole('ROLE_COMMUNITY')">
-		<div class="col-12">
-		<h1>Recovered Community</h1>
-		<p>Please remember the rules!</p>
+		<div class="col-8 community-content pt-4">
+			<h1>Recovered Community</h1>
+			<p>Please remember the rules!</p>
+			<table class="table community-table">
+				<thead class="thead-light">
+					<tr>
+						<th scope="col">Subject</th>
+						<th scope="col">Replies</th>
+						<th scope="col">Last reply</th>
+					</tr>
+				</thead>
+				<tbody>
+						<c:forEach items="${threads.content }" var="thread">
+    			<tr>
+      			<th scope="row"><a href="/community/${thread.threadId }"><e:forHtml value="${thread.subject }"/></a></th>
+      			<td>${thread.messageCount - 1}</td>
+      			<td>${users.timeSincePost(viewHelper.getMostRecentMessage(thread).creationDate) } by <strong>${viewHelper.getMostRecentMessage(thread).author.email }</strong></td>
+					</tr>
+						</c:forEach>
+				</tbody>
+			</table>
+			<p>
+				<button class="btn btn-prm">Start a new thread</button>
+			</p>
+				
+			<form method="post" class="new-thread form-inline" action="/community">
+				<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+				<input type="text" name="title" placeholder="Thread title"/>
+				<textarea name="body" placeholder="Thread content (optional)"></textarea>
+				<input class="btn btn-scnd mx-auto w-25" type="submit"/>
+			</form>						
 		</div>
-		<table class="table">
-  <thead class="thead-light">
-    <tr>
-      <th scope="col">Subject</th>
-      <th scope="col">Replies</th>
-      <th scope="col">Last reply</th>
-    </tr>
-  </thead>
-  <tbody>
-  	<c:forEach items="${threads.content }" var="thread">
-    <tr>
-      <th scope="row"><a href="/community/${thread.threadId }"><e:forHtml value="${thread.subject }"/></a></th>
-      <td>${thread.messageCount - 1}</td>
-      <td>${users.timeSincePost(viewHelper.getMostRecentMessage(thread).creationDate) } by <strong>${viewHelper.getMostRecentMessage(thread).author.email }</strong></td>
-    </tr>
-	</c:forEach>
-  </tbody>
-</table>
-<p>
-<button class="btn btn-prm">Start a new thread</button>
-</p>
-	
-<form method="post" action="/community">
-<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-<input type="text" name="title"/>
-<textarea name="body">
-
-</textarea>
-<input type="submit"/>
-</form>		
-
-</sec:authorize>
-
+		<div class="col-4 community-sidebar pt-4">
+			<h2>Guidelines</h2>
+			<p class="community-guideline">
+					No negative talk to others - We may share a story and it may have negative content - that is ok as this is usual when someone is going through troubling times, we are all here to help and support each other.
+			</p>
+			<p class="community-guideline">
+					We can only bring a story to the community after we have worked through 'The Process' and you feel you want to share your experience, or you are looking for more guidance, you also just might want to share it as a positive experience.
+			</p>
+			<p class="community-guideline">
+					When dealing with other people's problems we do not try and become the analyst or councillor, the reason for this is that each person who is in the community has had their experience and each person's experience is special and unique to them and we do not want this to change.
+			</p>
+			<p class="community-guideline">
+					Where we can be of benefit is when we see where they may be stuck - for example, their part in a resentment or they are having trouble with an area within fear, this is where we can help them through this.
+			</p>
+			<p class="community-guideline">
+					We do not bring or discuss any religion or beliefs we may have.
+			</p>
+			<p class="community-guideline">
+					We are all dealing with each other's lives and we need to be loving, understanding and patients.
+			</p>
+			<p class="community-guideline">
+					We must be practicing "The Process" on a daily basis as this is how we grow and when we grow we can share our experience to help and inspire others.
+			</p>
+			<p class="community-guideline">
+					This is a <strong>totally private community</strong> and is open <strong>only to members who have been through the process</strong>.
+			</p>
+			
 		</div>
+		</sec:authorize>
 
- 	</div>
+	</div>
+
+</div>

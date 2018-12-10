@@ -830,6 +830,29 @@ div.thread-author {
 	font-weight: bold;
 }
 
+.community-content {
+  background-color: #F7F7F7; }
+.new-thread {
+  display: grid;
+  width: 80%;
+  margin: auto; }
+.new-thread > * {
+  margin: 0.5em; }
+.community-table .thead-light th {
+  background-color: #75CEDE;
+  border-bottom: none; }
+.community-table .table tr {
+  background-color: aliceblue; }
+
+.community-sidebar {
+  background-color: #F7F7F7;
+  padding-left: 6em;
+  text-align: center; }  
+.community-sidebar p {
+  font-size: 0.8rem;
+  padding-bottom: 16px;
+  border-bottom: #725FD9 solid 3px; }
+
 @media (min-width: 540px) {
   #footer-container .footer-menu-container {
     display: flex;
