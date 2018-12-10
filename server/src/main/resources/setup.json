@@ -299,19 +299,8 @@ drink; alcohol has always been our fix.  </p>
 		<p>Please just follow my directions, this is crucial.</p>
 		<h3>YOUR ACTION</h3>
 		<p>Transfer the names, institutions and principles from your Worksheet 1 into <u>Column 1 of Worksheet 2</u>.</p>
-		<p>Please follow the example worksheet.</p>",
-		"needsOkay" : true,
-		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
-		"files" : [
-			{"filename": "worksheets/resentment-and-anger-worksheet.pdf", "displayName": "Resentment and Anger Worksheet 2"}
-		],
-		"video" : "14-resentment-and-anger-part-2.mp4"
-	},
-	{
-		"title" : "Resentment and Anger Part 3",
-		"phaseId" : 2,
-		"stepNumber" : 3,
-		"html" : "<p>I am now going to give a brief review of the following key points.</p>
+		<p>Please follow the example worksheet.</p>
+		<p>I am now going to give a brief review of the following key points.</p>
 		<p><strong>Please understand that our Anger, Resentment and Hates are caused by our basic instincts being out of balance or threatened.</strong> I will explain the importance of this in more detail in phase 3 of 'The Process'</p>
 		<br/>
 		<p>IT IS CRITICAL TO WATCH AND LISTEN CAREFULLY. </p>
@@ -320,59 +309,23 @@ drink; alcohol has always been our fix.  </p>
 			<li>Pathway to Resentment. </li>
 			<li>The 7 Basic Instincts. </li>
 			<li>The Defects of Character. </li>
-		</ol>",
+		</ol>
+		",
 		"needsOkay" : true,
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
 		"files" : [
+			{"filename": "worksheets/resentment-and-anger-worksheet.pdf", "displayName": "Resentment and Anger Worksheet 2"},
 			{"filename": "pathway-to-resentment.pdf", "displayName": "Pathway to Resentment"},
 			{"filename": "seven-instincts.pdf", "displayName": "The 7 Basic Instincts"},
 			{"filename": "defects-of-character.pdf", "displayName": "The Defects of Character"}
 		],
-		"video" : "15-resentment-and-anger-part-3.mp4"
+		"video" : "14-resentment-and-anger-part-2.mp4"
 	},
 	{
-		"title" : "Resentment and Anger Part 4",
+		"title" : "Resentment and Anger Part 3",
 		"phaseId" : 2,
-		"stepNumber" : 4,
-		"html" : "<h3>Reminder sheets</h3>
-		<p><strong>Pathway to Resentment</strong></p>
-		<p>We create our resentment, by first becoming: </p>
-		<ul>
-			<li><strong>Irritated </strong>&mdash; Something or someone&rsquo;s actions and/or behaviour start to irritate us. Although these irritants may seem trivial - we become &hellip; </li>
-			<li><strong>Annoyed </strong>&mdash; Something or someone has annoyed us. If we don&rsquo;t recognise it - we bury it a bit deeper and this leads us into becoming &hellip;</li>
-			<li><strong>Angry </strong>&mdash; When we get angry we either push it down inside, or we attack people verbally, mentally, emotionally or physically which leads to &hellip;  </li>
-			<li><strong>Resentment and Hate</strong></li>
-		</ul>
-		<strong><p>The 7 Basic Instincts</p>
-		<p>Every human being has these 7 instincts: </p></strong>
-		<ul>
-			<li><strong>Self Esteem </strong>- How I think and feel about myself.  </li>
-			<li><strong>Pride </strong>- What I think other people say or think about me. </li>
-			<li><strong>Emotional Security </strong>&mdash; A general sense of well-being and emotional stability. </li>
-			<li><strong>Financial </strong>- A desire for money, property and possessions. </li>
-			<li><strong>Ambitions </strong>- Personal plans, dreams and goals for the future. </li>
-			<li><strong>Personal Relationships </strong>- Relationships with people. </li>
-			<li><strong>Sex Relations </strong>- A desire for sexual intimacy.</li>
-		</ul>
-		<br/>
-		<strong><p>The 5 Core Defects of Character</p>
-		<p>Defects of Character</p></strong>
-		<p>We are now going to look at the 5 basic defects of character all humans can have, every human being has these to some effect but for those of us who have problems with alcohol or are alcoholic these defects are so strong they are stopping us from being who we really would want to be.</p>
-		<p>These defects are:</p>
-		<ul>
-			<li><strong>Selfish </strong>- lacking consideration for other people; concerned chiefly with one's own personal profit or pleasure.</li>
-			<li><strong>Dishonest </strong>- We have lost the ability to be totally honest with ourselves or others and when we are, we usually hurt             other people or ourselves, usually by opening our mouths.</li>
-			<li><strong>Self-seeking </strong>- concern for oneself before others. It&rsquo;s all about me.</li>
-			<li><strong>Frightened </strong>- afraid or anxious.</li>
-			<li><strong>Inconsiderate </strong>- acting without consideration; thoughtless; rash.</li>
-		</ul>
-		<p>We have many types of character defects and the ones above are our core basic defects. They are like the basic colours red, yellow, blue and when you mix these together you can create an infinite number of colours. This exactly like our defects of character, when we mix the above character defects together we create envy, greed, jealously and many, other character defects. Please understand that everyone has character defects, they are natural.</p>",
-		"needsOkay" : false
-	},
-	{
-		"title" : "Resentment and Anger Part 5",
-		"phaseId" : 2,
-		"stepNumber" : 5,
+		"stepNumber" : 3,
+		"video":"15-resentment-and-anger-part-3.mp4",
 		"html" : "<h3>Column 2 - THE CAUSE </h3>
 		<p>Watch as I write the reasons I feel anger, resentment, hurt and/or am threatened by; and/or feel general ill-will toward them. I will be specific. </p>
 		<p>Remember, long-winded stories block us from our truth; on the other hand, being specific will help us pinpoint and allow us to find precise reasons for our anger, resentment, hate, feeling hurt or threatened by, or feel ill will toward people, institutions and/or principles.  </p>
@@ -395,10 +348,10 @@ drink; alcohol has always been our fix.  </p>
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED"
 	},
 	{
-		"title" : "Resentment and Anger Part 6",
+		"title" : "Resentment and Anger Part 4",
 		"phaseId" : 2,
-		"stepNumber" : 6,
-		"video":"18-resentment-and-anger-part-6.mp4",
+		"stepNumber" : 4,
+		"video":"16-resentment-and-anger-part-4.mp4",
 		"html" : "<h3>Column 3 &mdash; Which Basic Instincts were affected? </h3>
 		<p>I am now going to present examples for you to study and follow.</p>
 		<p>As I go through my affected Basic Instincts in the example worksheet you will see the reasons why the basic instincts were affected. </p>
@@ -552,9 +505,9 @@ drink; alcohol has always been our fix.  </p>
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
 	},
 	{
-		"title" : "Resentment and Anger Part 7",
+		"title" : "Resentment and Anger Part 5",
 		"phaseId" : 2,
-		"stepNumber" : 7,
+		"stepNumber" : 5,
 		"html" : "<h3>Column 4 &mdash; This is the most crucial and freeing column</h3>
 		<strong>My Part:   </strong>
 		<ul>
@@ -608,12 +561,13 @@ drink; alcohol has always been our fix.  </p>
 		",
 		"needsOkay" : true,
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
-		"video" : "19-summary-resentment-and-anger.mp4"
+		"video" : "17-resentment-and-anger-part-5.mp4"
 	},
 	{
-		"title" : "Resentment and Anger Part 8",
+		"title" : "Resentment and Anger Part 6",
 		"phaseId" : 2,
-		"stepNumber" : 8,
+		"stepNumber" : 6,
+		"video" : "18-resentment-and-anger-part-6.mp4",
 		"html" : "<h3>Column 5 - What were my defects? </h3>
 		<p>As discussed in the last slide, you can now understand your default defects relative to each resentment you have held. </p>
 		<p><strong>Read carefully below.</strong>  </p>
@@ -723,7 +677,8 @@ drink; alcohol has always been our fix.  </p>
 	{
 		"title" : "Summary: Resentment and Anger",
 		"phaseId" : 2,
-		"stepNumber" : 9,
+		"stepNumber" : 7,
+		"video" : "19-summary-resentment-and-anger.mp4",
 		"html" : "<strong><p>Please study the following paragraphs carefully.</p>
 		<p>If you are confused at any stage please go back to the examples I have previously given you. </p>
 		<p>When you seem to be stuck just keep moving forward, this is not about perfection it is about momentum and action. </p></strong>
@@ -739,7 +694,8 @@ drink; alcohol has always been our fix.  </p>
 	{
 		"title" : "Working through Fear Part 1",
 		"phaseId" : 2,
-		"stepNumber" : 10,
+		"stepNumber" : 8,
+		"video" : "20-working-through-fear-part-1.mp4",
 		"html" : "<h3>Column 1 - What am I Afraid Of?</h3>
 
 		<p>We all have fears. Some are natural and we need these. Then there are fears that we just don&rsquo;t know where they come from and they can paralyse us into inaction. Fear steals from us and stops us growing into the person we really want to be.</p>
@@ -770,7 +726,8 @@ drink; alcohol has always been our fix.  </p>
 {
 	"title" : "Working through Fear Part 2",
 	"phaseId" : 2,
-	"stepNumber" : 11,
+	"stepNumber" : 9,
+	"video" : "21-working-through-fear-part-2.mp4",
 	"html" : "<h3>Column 2 - Why do I Have the Fear?</h3>
 
 	<p>As in the resentment and Anger prompt sheet I am going to write a small overview as to why I have these fears.</p>
@@ -797,7 +754,8 @@ drink; alcohol has always been our fix.  </p>
 {
 	"title" : "Working through Fear Part 3",
 	"phaseId" : 2,
-	"stepNumber" : 12,
+	"stepNumber" : 10,
+	"video" : "22-working-through-fear-part-3.mp4",
 	"html" : "<h3>Column 3 - Which Part of Self Has Failed Me?</h3>
 	<p><strong>PLEASE STUDY AND UNDERSTAND EACH OF THE  3 SELF&rsquo;S,</strong> this is critically important to understand as you will see and start to understand how you can address your fears, anxiety and nervousness.</p>
 	<p>These are:</p>
@@ -874,7 +832,8 @@ drink; alcohol has always been our fix.  </p>
 {
 	"title" : "Working through Fear Part 4",
 	"phaseId" : 2,
-	"stepNumber" : 13,
+	"stepNumber" : 11,
+	"video" : "23-working-through-fear-part-4.mp4",
 	"html" : "<h3>Column 4 - Which of the Basic Instincts do these Fears affect?</h3>
 	<p>Now, we are going to review which of the Basic Instincts these fears affect.</p>
 	<p>Since you have already gone through this exercise when we worked through Resentments and Anger, we just follow that same process.</p>
@@ -918,9 +877,10 @@ drink; alcohol has always been our fix.  </p>
 	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE"
 },
 {
-	"title" : "Working through Fear Part 5.1",
+	"title" : "Working through Fear Part 5",
 	"phaseId" : 2,
-	"stepNumber" : 14,
+	"stepNumber" : 12,
+	"video" : "24-working-through-fear-part-5.mp4",
 	"html" : "<h3>Column 5 - What are my Defects of Character?</h3>
 	<p>For each fear we search within ourselves to see where we were selfish, dishonest, self-seeking, frightened or inconsiderate. </p>
 	<p>Again, I will write out each fear and write a small reason as to why I was one or more of the above defects. Once you feel you understand then you can start writing yours out.</p>
@@ -958,14 +918,7 @@ drink; alcohol has always been our fix.  </p>
 		<li>Frightened - my parents were poor, I believed I could be to.</li>
 		<li>Inconsiderate - My parents did their best to give us what they could, and they went without.</li>
 	</ul>
-	",
-	"needsOkay" : false
-},
-{
-	"title" : "Working through Fear Part 5.2",
-	"phaseId" : 2,
-	"stepNumber" : 15,
-	"html" : "<h3>Column 5 continued - What are my defects of character?</h3>
+	<h3>Column 5 continued - What are my defects of character?</h3>
 
 	<p><strong>Financial </strong>- I was</p>
 	<ul>
@@ -984,12 +937,6 @@ drink; alcohol has always been our fix.  </p>
 	<p>The analysing of your fears will give you your own understanding of where they have come from and why you are still holding onto them. It is now time to work to let them go and stop them having control over you.</p>
 	<p>Now tick the boxes that have the defect next to them. Just follow my example.</p>
 	<p><strong>NOTE: </strong>There is no right or wrong answers, this is for you to write what you believe what the reasons are for your fears, anxieties. Take action and please think carefully why you have these fears.</p>
-	<br/>
-	<p>Now we are going to move onto our Harms Done to Others and our Sex Behaviour.</p>
-	<p>AGAIN, WE MUST BE ABSOLUTELY HONEST WITH OURSELVES.</p>
-	<p><strong>PLEASE READ</strong></p>
-	<p style='text-align:center; font-size:20px; font-style: italic; font-weight:bold'>â€œTo be free from a problem I have to firstly, Own It, and secondly, once I own it, I then have a choiceâ€�.</p>
-	<p><strong>NOTE: </strong>Remember when we have an emotional problem, it always comes form our instincts being out of alignment. </p>
 	",
 	"needsOkay" : true,
 	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE"
@@ -997,8 +944,15 @@ drink; alcohol has always been our fix.  </p>
 {
 	"title" : "Harms and Hurts to Other People",
 	"phaseId" : 2,
-	"stepNumber" : 16,
+	"stepNumber" : 13,
+	"video" : "25-harms-and-hurts-to-other-people.mp4",
 	"html" : "<h3>Harms and Hurts to other people including our Sex conduct.</h3>
+	<p>Now we are going to move onto our Harms Done to Others and our Sex Behaviour.</p>
+	<p>AGAIN, WE MUST BE ABSOLUTELY HONEST WITH OURSELVES.</p>
+	<p><strong>PLEASE READ</strong></p>
+	<p style='text-align:center; font-size:20px; font-style: italic; font-weight:bold'>'To be free from a problem I have to firstly, Own It, and secondly, once I own it, I then have a choice'.</p>
+	<p><strong>NOTE: </strong>Remember when we have an emotional problem, it always comes form our instincts being out of alignment. </p>
+	
 	<p>Again, I will provide examples of people we have hurt and how to work the worksheet. This is a very straight forward process but needs to be done honestly and again, please do not leave any one off the list who you know you have hurt by your actions. We are not concerned with their behaviour, as this is not our business. We are seeing only who we have hurt.</p>
 	<p><strong>Column 1 - Who did I hurt</strong></p>
 
@@ -1063,7 +1017,7 @@ drink; alcohol has always been our fix.  </p>
 {
 	"title" : "Transference",
 	"phaseId" : 2,
-	"stepNumber" : 17,
+	"stepNumber" : 14,
 	"html" : "<h3>Transference</h3>
 	<p>Transference is critical in us being free from the past. This is the stage where we unburden our minds by sharing with a trusted person or agent.</p>
 	<p>Choosing the right person is critical so here I will make some suggestions.</p>
@@ -1093,12 +1047,13 @@ drink; alcohol has always been our fix.  </p>
 	<p>You may feel that you have had a spiritual awakening, in other words your spirit has been restored.</p>
 	",
 	"needsOkay" : true,
-	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE"
+	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE",
+	"video" : "26-transference.mp4"
 },
 {
 	"title" : "Review",
 	"phaseId" : 2,
-	"stepNumber" : 18,
+	"stepNumber" : 15,
 	"html" : "<h3>Reviewing</h3>
 	<p>Once we have finished sharing our information with our trusted associate we find a quiet and private spot we can sit for an hour to review what we have just accomplished.</p>
 	<p>We go over our worksheets thoroughly and ensure that we have left no information out. If we are honest with ourselves and we know we have left no information out.</p>
@@ -1109,12 +1064,14 @@ drink; alcohol has always been our fix.  </p>
 	<p>This is about being grateful and humble with oneself and also recognising that we are no longer the centre of the universe.</p>
 	",
 	"needsOkay" : true,
-	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE"
+	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE",
+	"video" : "27-review.mp4"
 },
 {
 	"title" : "Making Amends",
 	"phaseId" : 2,
-	"stepNumber" : 19,
+	"stepNumber" : 16,
+	"video" : "28-making-amends.mp4",
 	"html" : "<h3>Amends - compensate or make up for a wrongdoing.</h3>
 	<p><strong>NOTE- We must complete this phase, or we will not be free and there is a high chance we may drink again.</strong></p>
 	<p><strong>Part 1 - Reviewing you lists and choosing who you need to make amends to.</strong></p>
@@ -1211,7 +1168,8 @@ drink; alcohol has always been our fix.  </p>
 	<p><strong>NOTE - These are the only reasons people drink again.</strong></p>
 	",
 	"needsOkay" : true,
-	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE"
+	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE",
+	"video" : "29-continuing-to-grow.mp4"
 },
 {
 	"title" : "Daily Practice",
@@ -1244,7 +1202,8 @@ drink; alcohol has always been our fix.  </p>
 	<p>If the answer is yes then you write it down and attend to it the next day, if you see that you need to make an amends to someone then put their name down on paper and attend to that as soon as possible on the next day.</p>
 	",
 	"needsOkay" : true,
-	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
+	"video" : "30-daily-practice.mp4"
 },
 {
 	"title" : "Summary",
@@ -1258,12 +1217,14 @@ drink; alcohol has always been our fix.  </p>
 	<p><strong>NOTE: REMEMBER THIS IS A LIFELONG PROCESS AND WE NEED SUPPORT FROM PEOPLE WHO HAVE BEEN WHERE WE HAVE BEEN</strong></p>
 	",
 	"needsOkay" : true,
-	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+	"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
+	"video" : "31-summary.mp4"
 },
 {
 	"title" : "Our Anonymous Online Community",
 	"phaseId" : 3,
 	"stepNumber" : 4,
+	"video" : "32-our-anonymous-online-community.mp4",
 	"html" : "<h3>An Introduction to the Recovered Community and the Benefits to YOU. </h3>
 	<p>The online <strong>RECOVERED COMMUNITY</strong> is an anonymous community that allows people who have been through 'The Process' to be able to seek support, knowledge and friendship in a private online environment without having to go off to meetings, or to councillors, psychologists but have a place where they can firstly use 'The Process' and then if still having problems they can share their problem with the community anonymously and without judgement</p>
 	<strong>Benefits</strong>
