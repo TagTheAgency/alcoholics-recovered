@@ -108,7 +108,46 @@
 			
 		</sec:authorize>
 		<sec:authorize access="hasRole('ROLE_COMMUNITY')">
-		<div class="col-8 community-content pt-4">
+			<style>
+			@media (min-width: 992px) {
+  .collapse.dont-collapse-lg {
+    display: block;
+    height: auto !important;
+    visibility: visible;
+  }
+}
+			</style>
+			<div class="col-lg-4 order-lg-last community-sidebar pt-4">
+				<h2>Guidelines</h2>
+				<a href="#guidelines" class="d-lg-none d-xl-none" data-toggle="collapse">show/hide</a>
+				<div class="collapse dont-collapse-lg" id="guidelines">
+				<p class="community-guideline">
+						No negative talk to others - We may share a story and it may have negative content - that is ok as this is usual when someone is going through troubling times, we are all here to help and support each other.
+				</p>
+				<p class="community-guideline">
+						We can only bring a story to the community after we have worked through 'The Process' and you feel you want to share your experience, or you are looking for more guidance, you also just might want to share it as a positive experience.
+				</p>
+				<p class="community-guideline">
+						When dealing with other people's problems we do not try and become the analyst or councillor, the reason for this is that each person who is in the community has had their experience and each person's experience is special and unique to them and we do not want this to change.
+				</p>
+				<p class="community-guideline">
+						Where we can be of benefit is when we see where they may be stuck - for example, their part in a resentment or they are having trouble with an area within fear, this is where we can help them through this.
+				</p>
+				<p class="community-guideline">
+						We do not bring or discuss any religion or beliefs we may have.
+				</p>
+				<p class="community-guideline">
+						We are all dealing with each other's lives and we need to be loving, understanding and patients.
+				</p>
+				<p class="community-guideline">
+						We must be practicing "The Process" on a daily basis as this is how we grow and when we grow we can share our experience to help and inspire others.
+				</p>
+				<p class="community-guideline">
+						This is a <strong>totally private community</strong> and is open <strong>only to members who have been through the process</strong>.
+				</p>
+				</div>
+			</div>
+			<div class="col-lg-8 community-content pt-4">
 			<h1>Recovered Community</h1>
 			<p>Please remember the rules!</p>
 			<table class="table community-table">
@@ -130,7 +169,7 @@
 				</tbody>
 			</table>
 			<p>
-				<button class="btn btn-prm">Start a new thread</button>
+				<button class="btn btn-prm">Ask a new question</button>
 			</p>
 				
 			<form method="post" class="new-thread form-inline" action="/community">
@@ -140,34 +179,7 @@
 				<input class="btn btn-scnd mx-auto w-25" type="submit"/>
 			</form>						
 		</div>
-		<div class="col-4 community-sidebar pt-4">
-			<h2>Guidelines</h2>
-			<p class="community-guideline">
-					No negative talk to others - We may share a story and it may have negative content - that is ok as this is usual when someone is going through troubling times, we are all here to help and support each other.
-			</p>
-			<p class="community-guideline">
-					We can only bring a story to the community after we have worked through 'The Process' and you feel you want to share your experience, or you are looking for more guidance, you also just might want to share it as a positive experience.
-			</p>
-			<p class="community-guideline">
-					When dealing with other people's problems we do not try and become the analyst or councillor, the reason for this is that each person who is in the community has had their experience and each person's experience is special and unique to them and we do not want this to change.
-			</p>
-			<p class="community-guideline">
-					Where we can be of benefit is when we see where they may be stuck - for example, their part in a resentment or they are having trouble with an area within fear, this is where we can help them through this.
-			</p>
-			<p class="community-guideline">
-					We do not bring or discuss any religion or beliefs we may have.
-			</p>
-			<p class="community-guideline">
-					We are all dealing with each other's lives and we need to be loving, understanding and patients.
-			</p>
-			<p class="community-guideline">
-					We must be practicing "The Process" on a daily basis as this is how we grow and when we grow we can share our experience to help and inspire others.
-			</p>
-			<p class="community-guideline">
-					This is a <strong>totally private community</strong> and is open <strong>only to members who have been through the process</strong>.
-			</p>
-			
-		</div>
+		
 		</sec:authorize>
 
 	</div>
