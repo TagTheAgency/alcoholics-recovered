@@ -150,6 +150,27 @@
 			<div class="col-lg-8 community-content pt-4">
 			<h1>Recovered Community</h1>
 			<p>Please remember the rules!</p>
+  <ul class="pagination">
+    <c:if test="${threads.hasPrevious() }">
+      <li class="page-item">
+      <a class="page-link" href="community?page=${threads.number - 1 }" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </li>
+    </c:if>
+    <c:forEach var="counter" begin="${0 }" end="${threads.totalPages - 1}" varStatus="page">
+    <li class="page-item ${page.index == threads.number ? "active" : ""}"><a class="page-link" href="community?page=${page.index}">${page.index + 1} <c:if test="${page.index == threads.number }"><span class="sr-only">(current)</span></c:if></a></li>
+    </c:forEach>
+	<c:if test="${threads.hasNext() }">
+    <li class="page-item">
+      <a class="page-link" href="community?page=${threads.number + 1 }" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+    </c:if>
+  </ul>
 			<table class="table community-table">
 				<thead class="thead-light">
 					<tr>

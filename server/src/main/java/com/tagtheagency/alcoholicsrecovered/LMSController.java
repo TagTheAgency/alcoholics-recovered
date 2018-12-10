@@ -12,6 +12,7 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
@@ -371,7 +372,17 @@ public class LMSController {
 		model.addAttribute("service", users);
 		model.addAttribute("viewHelper", new CommunityViewHelper());
 		model.addAttribute("apiKey", apiKey);
-
+		
+		Page<ForumThread> threads = users.getThreads(paging);
+		
+		System.out.println(threads);
+		System.out.println(threads.getTotalPages());
+		System.out.println(threads.hasNext());
+		System.out.println(threads.hasPrevious());
+		System.out.println(threads.isFirst());
+		System.out.println(threads.isLast());
+		
+		
 		return "community";
 	}
 
