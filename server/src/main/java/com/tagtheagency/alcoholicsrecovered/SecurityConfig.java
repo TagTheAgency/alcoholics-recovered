@@ -20,6 +20,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http
+			.csrf().ignoringAntMatchers("/stripe-webhook/**")
+			.and()
 			.authorizeRequests()
 				.antMatchers("/login*").anonymous()
 				.antMatchers("/forgotPassword*").anonymous()
@@ -28,6 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				.antMatchers("/updatePassword*").permitAll()
 				//.antMatchers("/public/**").permitAll()  
 				.antMatchers("/join/**").anonymous()  
+				.antMatchers("/stripe-webhook/**").permitAll()  
 				.antMatchers("/css/**").permitAll()  
 				.antMatchers("/img/**").permitAll()  
 				.antMatchers("/resources/**").permitAll()  
@@ -43,7 +46,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				.logout()
 					.logoutSuccessUrl("/login")
 					/*.deleteCookies("JSESSIONID")
-		             
+		    
 		    .and()
 		    	.rememberMe().key("recoveredGroupRememberSecret")*/;
 	}
