@@ -11,7 +11,7 @@ resumed.</p>",
 		"video" : "01-welcome.mp4"
 	},
 	{
-		"title":"The foundations",
+		"title":"The Foundations",
 		"phaseId":1,
 		"stepNumber": 2,
 		"html": "
@@ -43,9 +43,9 @@ Also, we ask that you ACCEPT and look deep within yourself that the POWER of ALC
 </p><p>
 During this phase we will ask you to commit and we will highlight to you that your sobriety is your responsibility; not ours, not your doctors, not AA, nor your councillor or anybody else. <strong>It is your responsibility</strong>
 </p><p>
-We will cover ACCEPTANCE with you and whiy this is critical to your future sobriety, because if you don't accept deep down within yourself that you are powerless over alcohol then nothing will work.
+We will cover ACCEPTANCE with you and why this is critical to your future sobriety, because if you don't accept deep down within yourself that you are powerless over alcohol then nothing will work.
 </p><p>
-We will talk about self-honesy and again your powerlessness over alconol.
+We will talk about self-honesty and again your powerlessness over alconol.
 </p><p>
 <strong><u>REMEMBER ALCOHOL IS BUT A SYMPTOM OF A MORE SERIOUS UNDERLYING ISSUE OR ISSUES</u></strong>, and that until you have had enough of your behaviour nothing will change.
 </p><p>
@@ -95,7 +95,7 @@ Once we have covered these off we will have completed Phase 1 and you will be re
 		"stepNumber":4,
 		"html": "<p>Before you start, let&rsquo;s explain and clarify some key points that will help you work through the worksheets. </p>
 <p>We know that resentment, anger, hate and fear are the main cause of all our problems &mdash; we understand that alcohol abuse is a symptom of our problems.  </p>
-<p>Once we clear our past from resentment, anger, hate and fear - and have addressed those we have hurt, we stop being selfish, dishonest, fearful and inconsiderate. Being free from the primary damaging emotions, resentment, anger and fear is life-long work that we will learn to do. (Use Dr. Pete as an example). </p>
+<p>Once we clear our past from resentment, anger, hate and fear - and have addressed those we have hurt, we stop being selfish, dishonest, fearful and inconsiderate. Being free from the primary damaging emotions, resentment, anger and fear is life-long work that we will learn to do. </p>
 <p>
 We&rsquo;ll have a look at these primary harmful emotions, but first, let&rsquo;s explain how we end up with long-held resentments.
 </p>
@@ -104,7 +104,7 @@ We&rsquo;ll have a look at these primary harmful emotions, but first, let&rsquo;
 <li>The pathway to resentment: This overview will show where resentment begins, and the stages it takes until the end   stage, which is havoc. </li>
 <li>Blaming others needs to stop &mdash; I will talk briefly about this. </li>
 <li>There are 7 basic instincts we all have - understanding these will help you understand yourself, and learn how the instincts can become unbalanced.</li>
-<li>There are 5-character defects &mdash; understanding and recognising these show us where we need to make a positive adjustment. </li>
+<li>There are 5-character defects &mdash; understanding and recognising these show us where we need to make positive adjustments. </li>
 <br/>
 ",
 		"needsOkay" : false,
@@ -114,7 +114,7 @@ We&rsquo;ll have a look at these primary harmful emotions, but first, let&rsquo;
 		"title":"The 4 Emotions",
 		"phaseId":1,
 		"stepNumber": 5,
-		"html": "<p>The pathway to Resentment.  (When you memorise these emotions, you will begin to recognise them throughout your day and will, through The Process, be able to address them before they can build to resentment.) </p>
+		"html": "<h3>The pathway to Resentment</h3>  When you memorise these emotions, you will begin to recognise them throughout your day and will, through The Process, be able to address them before they can build to resentment. </p>
 <p>Resentment initially starts by us first becoming:</p>
 <ul>
 <li><strong>Irritated</strong>&mdash; Something or someone&rsquo;s actions and/or behaviour start to irritate us. Although these irritants may seem trivial - we become &hellip;</li>
@@ -163,7 +163,7 @@ drink; alcohol has always been our fix.  </p>
 		"title": "Blame",
 		"phaseId": 1,
 		"stepNumber" : 7,
-		"html" : "<p>The Process shows &mdash; by using the precisely designed tools of the programme &mdash; how to take responsibility for your life and stop blaming others; nothing will change until then. </p>
+		"html" : "<h3>Blame</h3><p>The Process shows &mdash; by using the precisely designed tools of the programme &mdash; how to take responsibility for your life and stop blaming others; nothing will change until then. </p>
 <p>Please think about and write down on a piece of paper or on your computer all of the people you have blamed in your life and why you have blamed them.</p>
 ",
 		"needsOkay" : true,
@@ -175,7 +175,7 @@ drink; alcohol has always been our fix.  </p>
 		"phaseId" : 1,
 		"stepNumber" : 8,
 		"html" : "<p>All humans have seven basic instincts, that for most, are generally balanced. However, for those with alcoholism, or problems with alcohol, these instincts are not stable.  </p>
-<p>Please memorise these or print them to keep close. You can then review when you feel harmful emotions coming up.  </p>
+<p>Please memorise these or print them to keep close by. You can then review them when you feel harmful emotions coming up.  </p>
 <h3>THE SEVEN BASIC INSTINCTS </h3>
 <p>Every human being has these 7 instincts: </p>
 <ul>
