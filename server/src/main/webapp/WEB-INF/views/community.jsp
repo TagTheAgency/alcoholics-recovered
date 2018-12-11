@@ -2,7 +2,7 @@
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <%@taglib prefix="e" uri="https://www.owasp.org/index.php/OWASP_Java_Encoder_Project" %>
 	<div class="container content">
-		<div class="row">
+		<div class="row justify-content-between">
 
 		<sec:authorize access="not(hasRole('ROLE_COMMUNITY'))">
 			<div class="col-12">
@@ -108,9 +108,12 @@
 			
 		</sec:authorize>
 		<sec:authorize access="hasRole('ROLE_COMMUNITY')">
-		<div class="col-8 community-content pt-4">
-			<h1>Recovered Community</h1>
-			<p>Please remember the rules!</p>
+		<div class="col-12 hero-container mb-4" id="community-header">
+				<h1 class="page-title-text">Recovered Community</h1>
+		</div>
+		<div class="col-8 community-content">
+		
+			<h4 class="mb-4">Step forward together</h4>
 			<table class="table community-table">
 				<thead class="thead-light">
 					<tr>
@@ -140,8 +143,8 @@
 				<input class="btn btn-scnd mx-auto w-25" type="submit"/>
 			</form>						
 		</div>
-		<div class="col-4 community-sidebar pt-4">
-			<h2>Guidelines</h2>
+		<div class="col-3 community-sidebar pt-4">
+			<h3>Guidelines</h3>
 			<p class="community-guideline">
 					No negative talk to others - We may share a story and it may have negative content - that is ok as this is usual when someone is going through troubling times, we are all here to help and support each other.
 			</p>

@@ -28,7 +28,7 @@
 						<div class="overlay-content">
 							<a href="https://recoveredgroup.com/">Home</a>
 							<a href="https://recoveredgroup.com/about">About</a>
-							<a href="https://recoveredgroup.com/testimonials">Testimonials</a>>
+							<a href="https://recoveredgroup.com/testimonials">Testimonials</a>
 							<a href="${pageContext.request.contextPath}/theProcess">Process</a>
 							<a href="${pageContext.request.contextPath}/login">Login</a>
 							<a href="${pageContext.request.contextPath}/join/account">Sign Up</a>

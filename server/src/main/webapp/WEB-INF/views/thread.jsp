@@ -4,9 +4,9 @@
 <sec:authorize access="hasRole('ROLE_COMMUNITY')">
 	<div class="container content">
 		<div class="row">
-		<div class="col-12">
-		<h1>Recovered Community</h1>
-		<p>Please remember the rules!</p>
+			<div class="col-12 hero-container mb-4" id="community-header">
+				<h1 class="page-title-text">Recovered Community</h1>
+		</div>
 		
 		<h2><e:forHtml value="${thread.subject }"/></h2>
 		</div>

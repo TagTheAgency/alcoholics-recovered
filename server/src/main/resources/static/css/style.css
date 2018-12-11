@@ -575,7 +575,7 @@ img.gravatar {
 	height: 80px;
 }
 div.thread-author {
-	background-color: rgba(86,61,124,.15);
+  background-color: #C6BEEF;
 }
 .user-content {
 	 -ms-word-break: break-all;
@@ -829,9 +829,16 @@ div.thread-author {
 	text-transform: uppercase;
 	font-weight: bold;
 }
-
+#community-header {
+  background-image: url("../img/AdobeStock_102098685.jpeg");
+  margin-bottom: 50px;
+}
+#community-header h1 {
+  padding-top: 200px;
+  color: white;
+}
 .community-content {
-  background-color: #F7F7F7; }
+ }
 .new-thread {
   display: grid;
   width: 80%;
@@ -841,17 +848,19 @@ div.thread-author {
 .community-table .thead-light th {
   background-color: #75CEDE;
   border-bottom: none; }
-.community-table .table tr {
-  background-color: aliceblue; }
+.community-table tbody tr {
+  background-color: white; }
 
 .community-sidebar {
-  background-color: #F7F7F7;
-  padding-left: 6em;
-  text-align: center; }  
+  border: #C6BEEF solid;
+  border-radius: 20px;
+  text-align: center;
+  display: none; }  
 .community-sidebar p {
   font-size: 0.8rem;
   padding-bottom: 16px;
   border-bottom: #725FD9 solid 3px; }
+
 
 @media (min-width: 540px) {
   #footer-container .footer-menu-container {
@@ -864,6 +873,9 @@ div.thread-author {
     background-color: #fff;
     color: #75CEDE;
     margin-left: 1em; }
+  
+  .community-sidebar {
+    display: block; }
 
   nav .btn {
     padding: 0.3em 1.2em;
