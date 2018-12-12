@@ -190,8 +190,7 @@ drink; alcohol has always been our fix.  </p>
 ",
 		"needsOkay" : true,
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
-		"files" : [{"filename":"sevent-instincts.pdf","displayName":"The seven basic instincts"}]
-
+		"files" : [{"filename":"seven-basic-instincts.pdf","displayName":"The seven basic instincts"}]
 	},
 	{
 		"title" : "In and Out of Balance",
@@ -281,8 +280,8 @@ drink; alcohol has always been our fix.  </p>
 		"needsOkay" : true,
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
 		"files" : [
-			{"filename": "worksheetsresentment-and-anger-prompt-worksheet.pdf", "displayName": "Resentment and Anger Prompt Worksheet 1"},
-			{"filename": "example/resentment-and-anger-prompt-examples.pdf", "displayName": "Example Worksheet"}
+			{"filename": "worksheets/resentment-and-anger-prompt.pdf", "displayName": "Resentment and Anger Prompt Worksheet"},
+			{"filename": "examples/resentment-and-anger-prompt-examples.pdf", "displayName": "Example Worksheet"}
 		],
 		"video" : "13-resentment-and-anger-part-1.mp4"
 	},
@@ -315,9 +314,8 @@ drink; alcohol has always been our fix.  </p>
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
 		"files" : [
 			{"filename": "worksheets/resentment-and-anger-worksheet.pdf", "displayName": "Resentment and Anger Worksheet 2"},
-			{"filename": "pathway-to-resentment.pdf", "displayName": "Pathway to Resentment"},
-			{"filename": "seven-instincts.pdf", "displayName": "The 7 Basic Instincts"},
-			{"filename": "defects-of-character.pdf", "displayName": "The Defects of Character"}
+			{"filename": "examples/resentment-and-anger-example.pdf", "displayName": "Pathway to Resentment"},
+			{"filename": "seven-basic-instincts.pdf", "displayName": "The 7 Basic Instincts"}
 		],
 		"video" : "14-resentment-and-anger-part-2.mp4"
 	},
@@ -721,7 +719,13 @@ drink; alcohol has always been our fix.  </p>
 		</ul>
 		<br/>",
 		"needsOkay" : true,
-		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
+		"files" : [
+			{"filename":"examples/fear-prompts-example.pdf","displayName":"Fear prompt sheet - examples"},
+			{"filename":"worksheets/fear-prompts.pdf","displayName":"Fear prompts worksheet"},
+			{"filename":"examples/fear-example.pdf","displayName":"Fear worksheet examples"},
+			{"filename":"worksheets/fear-worksheet.pdf","displayName":"Fear worksheet"}
+		]
 	},
 {
 	"title" : "Working through Fear Part 2",
@@ -945,6 +949,10 @@ drink; alcohol has always been our fix.  </p>
 	"title" : "Harms and Hurts to Other People",
 	"phaseId" : 2,
 	"stepNumber" : 13,
+	"files" : [
+		{"filename":"examples/harm-and-sexual-conduct-example.pdf","displayName":"Harm and sexual conduct - examples"},
+		{"filename":"worksheets/harm-worksheet.pdf","displayName":"Harm and sexual conduct worksheet"}
+	],
 	"video" : "25-harms-and-hurts-to-other-people.mp4",
 	"html" : "<h3>Harms and Hurts to other people including our Sex conduct.</h3>
 	<p>Now we are going to move onto our Harms Done to Others and our Sex Behaviour.</p>
@@ -952,7 +960,7 @@ drink; alcohol has always been our fix.  </p>
 	<p><strong>PLEASE READ</strong></p>
 	<p style='text-align:center; font-size:20px; font-style: italic; font-weight:bold'>'To be free from a problem I have to firstly, Own It, and secondly, once I own it, I then have a choice'.</p>
 	<p><strong>NOTE: </strong>Remember when we have an emotional problem, it always comes form our instincts being out of alignment. </p>
-	
+
 	<p>Again, I will provide examples of people we have hurt and how to work the worksheet. This is a very straight forward process but needs to be done honestly and again, please do not leave any one off the list who you know you have hurt by your actions. We are not concerned with their behaviour, as this is not our business. We are seeing only who we have hurt.</p>
 	<p><strong>Column 1 - Who did I hurt</strong></p>
 
@@ -1257,7 +1265,7 @@ drink; alcohol has always been our fix.  </p>
 		<br/>
 		<li>This is a TOTALLY PRIVATE COMMUNITY and is open ONLY TO MEMBERS WHO HAVE BEEN THROUGH THE PROCESS.</li>
 	</ul>
-	
+
 	"
 }
 
