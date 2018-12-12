@@ -164,7 +164,7 @@ drink; alcohol has always been our fix.  </p>
 		"phaseId": 1,
 		"stepNumber" : 7,
 		"html" : "<h3>Blame</h3><p>The Process shows &mdash; by using the precisely designed tools of the programme &mdash; how to take responsibility for your life and stop blaming others; nothing will change until then. </p>
-<p>Please think about and write down on a piece of paper or on your computer all of the people you have blamed in your life and why you have blamed them.</p>
+		<h3>YOUR ACTION</h3><p>Please think about and write down on a piece of paper or on your computer all of the people you have blamed in your life and why you have blamed them.</p>
 ",
 		"needsOkay" : true,
 		"tickBoxText" :"PLEASE TICK WHEN COMPLETED",
@@ -243,7 +243,7 @@ drink; alcohol has always been our fix.  </p>
 			<li>The 7 Basic Instincts of all human beings, and</li>
 			<li>Our 5 Defects of Character</li>
 		</ol>
-		<p>These are important to understand and memorize, to make easier for practice in everyday life. Only then will awareness of them will become second nature.</p>",
+		<p>These are important to understand and memorize, to make it easier for practice in everyday life. Only then will awareness of them will become second nature.</p>",
 		"needsOkay" : true,
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
 		"video" : "review.mp4"
@@ -254,7 +254,7 @@ drink; alcohol has always been our fix.  </p>
 		"stepNumber" : 12,
 		"html" : "<p>We are now moving into the action part of The Process where we act and immerse ourselves in the following work. </p>
 		<p>We work quickly and honestly, and do not hesitate! We move swiftly through to completion. </p>
-		<p>While doing the work, we remain focused on key areas - *not our long-winded life story &mdash; (this only builds up resentment, anger and self-pity). </p>
+		<p>While doing the work, we remain focused on key areas - not our long-winded life story* - (this only builds up resentment, anger and self-pity). </p>
 		<p>*Our long-winded life story holds us back. </p>",
 		"needsOkay" : true,
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
@@ -266,18 +266,28 @@ drink; alcohol has always been our fix.  </p>
 		"stepNumber" : 1,
 		"html" : "<p>*Please print the <u>Resentment and Anger Prompt-sheet-Worksheet 1</u> and my <u>example worksheet 1</u>. You will work through that next. </p>
 		<p>On the example worksheet I have provided 7 examples for you to follow, these are real life examples from people who have worked through 'The Process'.</p>
-		<h3>YOUR ACTION</h3>
-		<p>With worksheet 1 in front of you, thoughtfully and honestly - put a &ldquo;tick&rdquo; next to the people, institutions and/or principles - you feel resentment, anger, hate or feel hurt or threatened by.</p>
 		<p><stong>To do without delay: </strong> </p>
 		<p>Check list </p>
 		<ul>
-			<li>Work from your earliest memory</li>
-			<li>No matter how major or minor your resentments are, just tick the boxes.</li>
-			<li>Even those you feel you may have forgiven. </li>
-			<li>Disclose everything.  </li>
-			<li>Remember; You benefit most from the work, so, hold yourself accountable for your truth. </li>
+		<li>Work from your earliest memory</li>
+		<li>No matter how major or minor your resentments are, just tick the boxes.</li>
+		<li>Even those you feel you may have forgiven. </li>
+		<li>Disclose everything.  </li>
+		<li>Remember; You benefit most from the work, so, hold yourself accountable for your truth. </li>
 		</ul>
-		<p>Please leave no information out, no matter how minor or how serious. While some memories may be difficult &mdash; The Process will help you confront, resolve and release them, along with the inherent damaging emotions.  </p>",
+		<p>Please leave no information out, no matter how minor or how serious. While some memories may be difficult &mdash; The Process will help you confront, resolve and release them, along with the inherent damaging emotions that have been sitting within you for all these years.  </p>
+		<p>As you can see with my sheet, I have ticked:</p>
+		<ul>
+			<li>My Father</li>
+			<li>My Mother</li>
+			<li>My Uncle</li>
+			<li>My Employer</li>
+			<li>The Church</li>
+			<li>My Business Advisor</li>
+			<li>God</li>
+		</ul>
+		<h3>YOUR ACTION</h3>
+		<p>With worksheet 1 in front of you, thoughtfully and honestly - put a &ldquo;tick&rdquo; next to the people, institutions and/or principles - you feel resentment, anger, hate or feel hurt or threatened by.</p>",
 		"needsOkay" : true,
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
 		"files" : [
@@ -291,7 +301,14 @@ drink; alcohol has always been our fix.  </p>
 		"phaseId" : 2,
 		"stepNumber" : 2,
 		"html" : "<p><strong>Have you completed the <u>Prompt-sheet Worksheet 1 - Anger and Resentment?</u> </strong> </p>
-		<p>If you are confident every resentment and/or anger is checked on Worksheet 1 &mdash; it is time to begin Worksheet 2! </p>
+		<p>If you are confident every resentment and/or anger is checked on Worksheet 1 - it is time to begin Worksheet 2! </p>
+		<p>Before we start, the following worksheets should be in front of you: </p>
+		<ol>
+			<li>Pathway to Resentment. </li>
+			<li>The 7 Basic Instincts. </li>
+			<li>The 5 Defects of Character. </li>
+		</ol>
+		<p><strong>Please understand that our Anger, Resentment and Hates are caused by our basic instincts being out of balance or threatened.</strong> I will explain the importance of this in more detail in phase 3 of 'The Process'</p>
 		<br/>
 		<h3>YOUR ACTION - Print the <u>Resentment and Anger Sheet - Worksheet 2 </u></h3>
 		<p>Before you take any action, I will be presenting to you, 7 real life examples, demonstrating how to fill in the worksheet. </p>
@@ -300,16 +317,6 @@ drink; alcohol has always been our fix.  </p>
 		<h3>YOUR ACTION</h3>
 		<p>Transfer the names, institutions and principles from your Worksheet 1 into <u>Column 1 of Worksheet 2</u>.</p>
 		<p>Please follow the example worksheet.</p>
-		<p>I am now going to give a brief review of the following key points.</p>
-		<p><strong>Please understand that our Anger, Resentment and Hates are caused by our basic instincts being out of balance or threatened.</strong> I will explain the importance of this in more detail in phase 3 of 'The Process'</p>
-		<br/>
-		<p>IT IS CRITICAL TO WATCH AND LISTEN CAREFULLY. </p>
-		<p>Before we start, the following worksheets should be in front of you: </p>
-		<ol>
-			<li>Pathway to Resentment. </li>
-			<li>The 7 Basic Instincts. </li>
-			<li>The Defects of Character. </li>
-		</ol>
 		",
 		"needsOkay" : true,
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
@@ -354,6 +361,7 @@ drink; alcohol has always been our fix.  </p>
 		"video":"16-resentment-and-anger-part-4.mp4",
 		"html" : "<h3>Column 3 &mdash; Which Basic Instincts were affected? </h3>
 		<p>I am now going to present examples for you to study and follow.</p>
+		<p>You need to get another piece of paper, and lay it out as follows.</p>
 		<p>As I go through my affected Basic Instincts in the example worksheet you will see the reasons why the basic instincts were affected. </p>
 		<p><strong>My father &mdash; Bernard: </strong></p>
 		<ul>
@@ -488,9 +496,7 @@ drink; alcohol has always been our fix.  </p>
 		</ul>
 		<br/>
 		<p><strong>Note:</strong> Physical, Mental, Emotional and Sexual abuse can affect everyone. We cannot change what has happened, but we can hopefully change how we see abuse and how it has stopped us growing into the person we want to be.</p>
-
-
-
+		<p>Please listen as I go over the instructions once more.</p>
 
 		<h3>YOUR ACTION</h3>
 		<ul>
@@ -500,7 +506,7 @@ drink; alcohol has always been our fix.  </p>
 			<li>We tick the instincts we believe were affected by the actions of others.  </li>
 		</ul>
 		<p><strong>Note:</strong> This is not a box ticking exercise. The Process is a lifelong practice (if you choose) &mdash; think carefully and diligently and you will begin to see a clear pattern of your behaviour.</p>
-		<p><strong>IMPORTANT</strong> - When we have anger, resentment, hate etc, towards people we won&rsquo;t be able to be relieved of it until we address which of our basic instincts have been hurt or threatened.</p>",
+		<p><strong>IMPORTANT</strong> - When we have anger, resentment, hate etc, towards people we won&rsquo;t be able to be relieved of it until we address which of our basic instincts have been hurt or threatened. Thnce we start seeing which basic instincts were affected and out of align, we can start addressing that.</p>",
 		"needsOkay" : true,
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
 	},
@@ -508,7 +514,7 @@ drink; alcohol has always been our fix.  </p>
 		"title" : "Resentment and Anger Part 5",
 		"phaseId" : 2,
 		"stepNumber" : 5,
-		"html" : "<h3>Column 4 &mdash; This is the most crucial and freeing column</h3>
+		"html" : "<h3>Column 4 - This is the most crucial and freeing column</h3>
 		<strong>My Part:   </strong>
 		<ul>
 			<li>Where was I to Blame?</li>
@@ -520,12 +526,11 @@ drink; alcohol has always been our fix.  </p>
 		<p><strong>THIS IS WHERE WE GET TO THE ROOT CAUSES</strong></p>
 		<p><strong>CRUCIAL READING</strong></p>
 		<p>Remember, we are willing to go to every length to free ourselves from harmful emotions; it is only then we can release our addictions.  </p>
-		<p>It is not possible to change others, but we can change ourselves, so it is crucial to find the part we played in each held resentment, no matter what. This is agreed to in the &ldquo;rule&rdquo; section: *You accept that your sobriety is your sole responsibility and that, although we deliver The Process to you, it is your responsibility to follow it thoroughly. We investigate ourselves truthfully even when we think we&rsquo;re innocent. This does not take away what people have done to us. </p>
+		<p>It is not possible to change others, but we can change ourselves, so it is crucial to find the part we played in each held resentment, no matter what. This is agreed to in the &ldquo;rule&rdquo; section: *You accept that your sobriety is your sole responsibility and that although we deliver The Process to you, it is your responsibility to follow it thoroughly. We investigate ourselves truthfully even when we think we&rsquo;re innocent. This does not take away what people have done to us. </p>
 		<p>Accept that we have no power over others and what they did to us, but we do have the power over what we do from here and into the future. </p>
 		<p>We have blamed these people &mdash; but like us, they have been spiritually, emotionally and mentally unwell. They will carry this burden by themselves, sometimes to the grave.  </p>
-		<p>I include the character defect - <strong>Inconsiderate</strong> - in the next column to help you define how I considered I was to blame, the part I played, and the exact nature of my wrong. (If we can see we were inconsiderate, then this will set you free from resentment.) </p>
-		<p>Now we&rsquo;ll focus only on our part. The following are examples and descriptions on how to forgive. To forgive is a choice. To forgive is a powerful step in resolving anger and resentment. Moving through the work quickly and thoughtfully. </p>
-		<strong>INSERT EXAMPLE WORKSHEET </strong>
+		<p>I include the character defect - <strong>Inconsiderate</strong> - in the next column to help you define how I considered I was to blame, the part I played, and the exact nature of my wrong. (If we can see where we were inconsiderate, then this will set you free from resentment.) </p>
+		<p>Now we&rsquo;ll focus only on our part. The following are examples and descriptions on how to forgive. To forgive is a choice. To forgive is a powerful step in resolving anger and resentment. Moving through the work quickly and thoughtfully and thoroughly. </p>
 		<p>When you are positive you fully understand and accept/acknowledge your part in each situation, and you honestly look at what your part is, in relation to each of these &mdash; you are on the highway to freedom.  </p>
 		<p>Below again I have provided the examples of MY PART to assist you to find your part.</p>
 
@@ -578,98 +583,102 @@ drink; alcohol has always been our fix.  </p>
 		<p>I&rsquo;ll demonstrate on my worksheet: </p>
 		<strong>Father &mdash; Bernard </strong>
 		<p>My defects: I am</p>
-		<p>INCONSIDERATE &mdash; I didn&rsquo;t recognise alcoholism as an illness and that he was spiritually sick. </p>
-		<p>SELFISH &mdash; I blamed him %100. </p>
-		<p>SELF-SEEKING &mdash; I made it all about me; I didn&rsquo;t care about him.  </p>
+		<p><strong>Inconsiderate</strong> &mdash; I didn&rsquo;t recognise alcoholism as an illness and that he was spiritually sick. </p>
+		<p><strong>Selfish</strong> &mdash; I blamed him %100. </p>
+		<p><strong>Self-Seeking</strong> &mdash; I made it all about me; I didn&rsquo;t care about him.  </p>
 		<p>I tick:  </p>
 		<ul>
-		<li>INCONSIDERATE </li>
-		<li>SELFISH </li>
-		<li>SELF-SEEKING </li>
+		<li><strong>Inconsiderate</strong> </li>
+		<li><strong>Selfish</strong> </li>
+		<li><strong>Self-Seeking</strong> </li>
 		</ul>
 		<br/>
 		<br/>
 		<strong>Mother &mdash; Pauline</strong>
 		<p>My defects: I am</p>
-		<p>SELFISH &mdash; because I knew she didn&rsquo;t want to die. </p>
-		<p>SELF-SEEKING because I made it all about me. </p>
-		<p>FRIGHTENED &mdash; because I knew she was going to die. </p>
+		<p><strong>Selfish</strong> &mdash; because I knew she didn&rsquo;t want to die. </p>
+		<p><strong>Self-Seeking</strong> because I made it all about me. </p>
+		<p><strong>Frightened</strong> &mdash; because I knew she was going to die. </p>
 		<p>I Tick: </p>
 		<ul>
-		<li>SELFISH </li>
-		<li>SELF-SEEKING </li>
-		<li>FRIGHTENED </li>
+		<li><strong>Selfish</strong> </li>
+		<li><strong>Self-Seeking</strong> </li>
+		<li><strong>Frightened</strong> </li>
 		</ul>
 		<br/>
 		<br/>
 		<strong>Friend &mdash; Vernon </strong>
 		<p>My defects: I am</p>
-		<p>INCONSIDERATE &mdash; because he was not well because he was physically abused at home. </p>
-		<p>FRIGHTENED &mdash; I was scared. </p>
-		<p>SELF-SEEKING &mdash; I didn&rsquo;t care about what he was going through. </p>
+		<p><strong>Inconsiderate</strong> &mdash; because he was not well because he was physically abused at home. </p>
+		<p><strong>Frightened</strong> &mdash; I was scared. </p>
+		<p><strong>Self-Seeking</strong> &mdash; I didn&rsquo;t care about what he was going through. </p>
 		<p>I Tick: </p>
 		<ul>
-		<li>INCONSIDERATE </li>
-		<li>FRIGHTENED </li>
-		<li>SELF-SEEKING </li>
+		<li><strong>Inconsiderate</strong> </li>
+		<li><strong>Frightened</strong> </li>
+		<li><strong>Self-Seeking</strong> </li>
 		</ul>
 		<br/>
 		<br/>
 		<strong>Financial Advisor &mdash; Steve</strong>
 		<p>My defects: I am</p>
-		<p>SELFISH &mdash; because I didn&rsquo;t take notice of anyone, my wife or friends.</p>
-		<p>DISHONEST &mdash; I didn&rsquo;t do any research on the company or the people.</p>
-		<p>SELF-SEEKING &mdash; I thought I knew it all, I was a know all. </p>
+		<p><strong>Selfish</strong> &mdash; because I didn&rsquo;t take notice of anyone, my wife or friends.</p>
+		<p><strong>Dishonest</strong> &mdash; I didn&rsquo;t do any research on the company or the people.</p>
+		<p><strong>Self-Seeking</strong> &mdash; I thought I knew it all, I was a know all. </p>
 		<p>I Tick:  </p>
 		<ul>
-			<li>SELFISH</li>
-			<li>DISHONEST</li>
-			<li>SELF-SEEKING</li>
+			<li><strong>Selfish</strong></li>
+			<li><strong>Dishonest</strong></li>
+			<li><strong>Self-Seeking</strong></li>
 		</ul>
 		<br/>
 		<br/>
 		<strong>God</strong>
 		<p>My defects: I am</p>
-		<p>SELFISH &mdash; He didn&rsquo;t take my mother away cancer did. </p>
-		<p>SELF-SEEKING &mdash; I was only thinking about me.</p>
-		<p>FRIGHTENED &mdash; I lost my best friend and mentor. </p>
+		<p><strong>Selfish</strong> &mdash; He didn&rsquo;t take my mother away cancer did. </p>
+		<p><strong>Self-Seeking</strong> &mdash; I was only thinking about me.</p>
+		<p><strong>Frightened</strong> &mdash; I lost my best friend and mentor. </p>
 		<p>I Tick: </p>
 		<ul>
-			<li>SELFISH</li>
-			<li>SELF-SEEKING</li>
-			<li>FRIGHTENED</li>
+			<li><strong>Selfish</strong></li>
+			<li><strong>Self-Seeking</strong></li>
+			<li><strong>Frightened</strong></li>
 		</ul>
 		<br/>
 		<br/>
 
 		<strong>Employer &mdash; Mr Talbot</strong>
 		<p>My defects: I am</p>
-		<p>FRIGHTENED &mdash; I was scared of standing up for myself.</p>
-		<p>DISHONEST &mdash; I didn&rsquo;t want to work there anyway.</p>
+		<p><strong>Frightened</strong> &mdash; I was scared of standing up for myself.</p>
+		<p><strong>Dishonest</strong> &mdash; I didn&rsquo;t want to work there anyway.</p>
 		<p>I Tick:</p>
 		<ul>
-		<li>FRIGHTENED</li>
-		<li>DISHONEST</li>
+		<li><strong>Frightened</strong></li>
+		<li><strong>Dishonest</strong></li>
 		</ul>
 		<br/>
 		<br/>
 		<strong>Uncle &mdash; Selwyn  </strong>
 		<p>My defects: I am</p>
-		<p>SELFISH &mdash; I carried this burden and it hurt me, no one else. </p>
-		<p>DISHONEST &mdash; I never told anyone.</p>
-		<p>FRIGHTENED &mdash; I was scared of what others would think of me. </p>
-		<p>INCONSIDERATE &mdash; I didn&rsquo;t realise how much pain he must have been in from having been sexually abused himself and then sexually abusing me.</p>
+		<p><strong>Selfish</strong> &mdash; I carried this burden and it hurt me, no one else. </p>
+		<p><strong>Dishonest</strong> &mdash; I never told anyone.</p>
+		<p><strong>Frightened</strong> &mdash; I was scared of what others would think of me. </p>
+		<p><strong>Inconsiderate</strong> &mdash; I didn&rsquo;t realise how much pain he must have been in from having been sexually abused himself and then sexually abusing me.</p>
 		<p>I Tick:</p>
 		<ul>
-		<li>SELFISH</li>
-		<li>DISHONEST</li>
-		<li>FRIGHTENED</li>
-		<li>INCONSIDERATE</li>
+		<li><strong>Selfish</strong></li>
+		<li><strong>Dishonest</strong></li>
+		<li><strong>Frightened</strong></li>
+		<li><strong>Inconsiderate</strong></li>
 		</ul>
 		<br/>
 		<h3>YOUR ACTION</h3>
 		<p>Now start completing your <u>Column 5</u> by following the examples</p>
 		<p>Once you have completed this worksheet you know more about yourself than before and you may be feeling a new freedom already, please do not stop here as we have more actions to complete.</p>
+		<strong><p>Please study the following paragraphs carefully.</p>
+		<p>If you are confused at any stage please go back to the examples I have previously given you. </p>
+		<p>When you seem to be stuck just keep moving forward, this is not about perfection it is about momentum and action. </p></strong>
+		<p>Once you have completed your sheets on resentment and anger and are certain that you have covered all people, institutions and principles that you have resented, were angry at, hated, felt hurt or threatened by or felt ill-will toward then you should now see how these resentments have had control over you and your life. </p>
 		",
 		"needsOkay" : true,
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
@@ -679,14 +688,11 @@ drink; alcohol has always been our fix.  </p>
 		"phaseId" : 2,
 		"stepNumber" : 7,
 		"video" : "19-summary-resentment-and-anger.mp4",
-		"html" : "<strong><p>Please study the following paragraphs carefully.</p>
-		<p>If you are confused at any stage please go back to the examples I have previously given you. </p>
-		<p>When you seem to be stuck just keep moving forward, this is not about perfection it is about momentum and action. </p></strong>
-		<p>Once you have completed your sheets on resentment and anger and are certain that you have covered all people, institutions and principles that you have resented, were angry at, hated, felt hurt or threatened by or felt ill-will toward then you should now see how these resentments have had control over you and your life. </p>
+		"html" : "
 		<p>To summarise the resentment and anger sheet. Even when something is not our fault and sometimes it is not. Someone may have done something unprovoked, we still have a way to deal with it. Even when we cannot find where we were at fault, we can find where our <strong>Reaction</strong> was at fault. </p>
 		<p>Maybe we feel we have been offended and this may have caused us to be fearful, but in this program, we have learnt that we have an inner resource that allows us not to react in a fearful way to negative actions that come our way. </p>
 		<p>As we start to see when our basic instincts are out of alignment we are instinctively aware which of the instincts are out of alignment and we can now adjust our reaction and actions, so they do not have control over us. Some of you will pray for guidance, some of you will meditate, others may contemplate, and others may just go and talk with a friend, but we must not think that we are the centre of the universe. </p>
-		<p>Once <u>Sheet 2</u> is completed you will have a process of working through for the rest of your life, yes, we have more work to complete but you have had a good look at yourself and how your anger and resentment has affected you and your life. Now you can start a fresh and this was the beginning. We are now going to address our fears in a similar way as to how we addressed our resentments and anger </p>
+		<p>Once <u>Sheet 2</u> is completed you will have a process of working through for the rest of your life. Yes, we have more work to complete but you have had a good look at yourself and how your anger and resentment has affected you and your life. Now you can start a fresh and this was the beginning. We are now going to address our fears in a similar way as to how we addressed our resentments and anger.</p>
 		",
 		"needsOkay" : true,
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND WHAT YOU HAVE DONE"
@@ -708,8 +714,9 @@ drink; alcohol has always been our fix.  </p>
 		</ol>
 		<br/>
 		<p>Procrastination is another form of fear where we just keep putting things off until they cause us major problems, or we reluctantly address the problem and then wonder why we made it so hard for ourselves.  </p>
-		<p>Many of you will have experienced the above emotions many times in your life and many of us have gone off to the Doctors and we are given some type of pill. Sometimes this is necessary, and it can be helpful, but what I see is many people staying on the prescribed pill and not coming off them. The fear or problem has not been addressed it has been cloaked over, so the fear or anxiety is still there. </p>
-		<p>I will give you an example- I have a friend who has a bad hip and It occasionally causes him much pain. He sometimes takes an off the shelf pain killer and this relieves the pain for a period of time. The pain has been taken away, but the problem is still there waiting to cause him more problems, that is why we address resentment, anger and fear in The Process because you will be able to see where this comes from and how to remedy it, if you choose. </p>
+		<p>Many of you will have experienced the above emotions many times in your life and many of us have gone off to the Doctors and sometimes we are given some type of pill. Sometimes this is necessary, and it can be helpful, but what I see is many people staying on the prescribed pill and not coming off them. The fear or problem has not been addressed it has been cloaked over, so the fear or anxiety is still there. </p>
+		<p><strong>NOTE:</strong> Please make sure you do talk to your doctor before changing any medication you may be taking</p>
+		<p>I will give you an example: I have a friend who has a bad hip and it occasionally causes him much pain. He sometimes takes an off the shelf pain killer and this relieves the pain for a period of time. The pain has been taken away, but the problem is still there waiting to cause him more problems, that is why we address resentment, anger and fear in The Process because you will be able to see where this comes from and how to remedy it, if you choose. </p>
 		<p>Before you start I will again supply examples for you to follow and you can start filling in the fears prompt sheet. </p>
 
 		<h3>YOUR ACTION</h3><p> - Please print the <u>Fears Prompt Sheet: Sheet 3 - Column 1</u></p>
@@ -731,10 +738,10 @@ drink; alcohol has always been our fix.  </p>
 	"html" : "<h3>Column 2 - Why do I Have the Fear?</h3>
 
 	<p>As in the resentment and Anger prompt sheet I am going to write a small overview as to why I have these fears.</p>
-	<p>You saw in the resentment and anger pages that by writing a little paragraph on each topic. This allows you to have a better understanding of the fear and will allow me to be condense this into a few words for the worksheet.</p>
+	<p>You saw in the resentment and anger pages that by writing a little paragraph on each topic. This allows you to have a better understanding of the fear and will allow you to be condense this into a few words for the worksheet.</p>
 	<p>Again the importance is for YOU to understand - nobody else - just you.</p>
 	<p>Let us begin</p>
-	<p><strong>Rejection </strong>- When I was we grew up in a predominately protestant community and we were catholic, and I attended the local catholic school. I wanted to go to a protestant school like my other mates, so I would be accepted. I thought that by going to a catholic school I was scared and felt that I was not like them and they would reject me.</p>
+	<p><strong>Rejection </strong>- When I was growing up in a predominately protestant community and we were catholic, and I attended the local catholic school. I wanted to go to a protestant school like my other mates, so I would be accepted. I thought that by going to a catholic school I was scared and felt that I was not like them and they would reject me.</p>
 	<p><strong>Loneliness </strong>- Again when growing up I wanted for everyone to like me and I wanted to fit in with all the guys. I wanted to have friends. Also, my head told me lots of things.</p>
 	<p><strong>Failure </strong>- Scared of not being good enough, when I was with people I wanted them to think I was smart or clever or good at things and this made me anxious as well.</p>
 	<p><strong>Disapproval </strong>- Not being seen as being able to do things well. Being seen as not reliable or able to do things.</p>
