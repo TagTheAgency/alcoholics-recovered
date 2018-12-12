@@ -190,8 +190,7 @@ drink; alcohol has always been our fix.  </p>
 ",
 		"needsOkay" : true,
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
-		"files" : [{"filename":"sevent-instincts.pdf","displayName":"The seven basic instincts"}]
-
+		"files" : [{"filename":"seven-basic-instincts.pdf","displayName":"The seven basic instincts"}]
 	},
 	{
 		"title" : "In and Out of Balance",
@@ -291,8 +290,8 @@ drink; alcohol has always been our fix.  </p>
 		"needsOkay" : true,
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
 		"files" : [
-			{"filename": "worksheetsresentment-and-anger-prompt-worksheet.pdf", "displayName": "Resentment and Anger Prompt Worksheet 1"},
-			{"filename": "example/resentment-and-anger-prompt-examples.pdf", "displayName": "Example Worksheet"}
+			{"filename": "worksheets/resentment-and-anger-prompt-worksheet.pdf", "displayName": "Resentment and Anger Prompt Worksheet"},
+			{"filename": "examples/resentment-and-anger-prompt-examples.pdf", "displayName": "Example Worksheet"}
 		],
 		"video" : "13-resentment-and-anger-part-1.mp4"
 	},
@@ -321,10 +320,9 @@ drink; alcohol has always been our fix.  </p>
 		"needsOkay" : true,
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
 		"files" : [
-			{"filename": "worksheets/resentment-and-anger-worksheet.pdf", "displayName": "Resentment and Anger Worksheet 2"},
-			{"filename": "pathway-to-resentment.pdf", "displayName": "Pathway to Resentment"},
-			{"filename": "seven-instincts.pdf", "displayName": "The 7 Basic Instincts"},
-			{"filename": "defects-of-character.pdf", "displayName": "The Defects of Character"}
+			{"filename": "worksheets/resentment-and-anger-worksheet.pdf", "displayName": "Resentment and Anger worksheet"},
+			{"filename": "examples/resentment-example-col1.pdf", "displayName": "Resentment and Anger example worksheet - column 1"},
+			{"filename": "seven-basic-instincts.pdf", "displayName": "The 7 Basic Instincts"}
 		],
 		"video" : "14-resentment-and-anger-part-2.mp4"
 	},
@@ -352,12 +350,18 @@ drink; alcohol has always been our fix.  </p>
 		<h3>YOUR ACTION</h3>
 		<p>You now fill in <u>Column 2</u> of your worksheet.</p>",
 		"needsOkay" : true,
-		"tickBoxText" : "PLEASE TICK WHEN COMPLETED"
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED",
+		"files" : [
+			{"filename": "examples/resentment-example-col2.pdf", "displayName": "Column 2 Example"}
+		]
 	},
 	{
 		"title" : "Resentment and Anger Part 4",
 		"phaseId" : 2,
 		"stepNumber" : 4,
+		"files" : [
+			{"filename": "examples/resentment-example-col3.pdf", "displayName": "Column 3 Example"}
+		],
 		"video":"16-resentment-and-anger-part-4.mp4",
 		"html" : "<h3>Column 3 &mdash; Which Basic Instincts were affected? </h3>
 		<p>I am now going to present examples for you to study and follow.</p>
@@ -514,6 +518,9 @@ drink; alcohol has always been our fix.  </p>
 		"title" : "Resentment and Anger Part 5",
 		"phaseId" : 2,
 		"stepNumber" : 5,
+		"files" : [
+			{"filename": "examples/resentment-example-col4.pdf", "displayName": "Column 4 Example"}
+		],
 		"html" : "<h3>Column 4 - This is the most crucial and freeing column</h3>
 		<strong>My Part:   </strong>
 		<ul>
@@ -573,6 +580,9 @@ drink; alcohol has always been our fix.  </p>
 		"phaseId" : 2,
 		"stepNumber" : 6,
 		"video" : "18-resentment-and-anger-part-6.mp4",
+		"files" : [
+			{"filename": "examples/resentment-example-col5.pdf", "displayName": "Column 5 Example"}
+		],
 		"html" : "<h3>Column 5 - What were my defects? </h3>
 		<p>As discussed in the last slide, you can now understand your default defects relative to each resentment you have held. </p>
 		<p><strong>Read carefully below.</strong>  </p>
@@ -728,13 +738,22 @@ drink; alcohol has always been our fix.  </p>
 		</ul>
 		<br/>",
 		"needsOkay" : true,
-		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
+		"files" : [
+			{"filename":"examples/fear-example-prompt-sheet.pdf","displayName":"Fear prompt sheet - examples"},
+			{"filename":"worksheets/fear-prompts.pdf","displayName":"Fear prompts worksheet"},
+			{"filename":"examples/fear-example-col1.pdf","displayName":"Column 1 example"},
+			{"filename":"worksheets/fear-worksheet.pdf","displayName":"Fear worksheet"}
+		]
 	},
 {
 	"title" : "Working through Fear Part 2",
 	"phaseId" : 2,
 	"stepNumber" : 9,
 	"video" : "21-working-through-fear-part-2.mp4",
+	"files" : [
+		{"filename": "examples/fear-example-col2.pdf", "displayName": "Column 2 Example"}
+	],
 	"html" : "<h3>Column 2 - Why do I Have the Fear?</h3>
 
 	<p>As in the resentment and Anger prompt sheet I am going to write a small overview as to why I have these fears.</p>
@@ -762,6 +781,9 @@ drink; alcohol has always been our fix.  </p>
 	"title" : "Working through Fear Part 3",
 	"phaseId" : 2,
 	"stepNumber" : 10,
+	"files" : [
+		{"filename": "examples/fear-example-col3.pdf", "displayName": "Column 3 Example"}
+	],
 	"video" : "22-working-through-fear-part-3.mp4",
 	"html" : "<h3>Column 3 - Which Part of Self Has Failed Me?</h3>
 	<p><strong>PLEASE STUDY AND UNDERSTAND EACH OF THE  3 SELF&rsquo;S,</strong> this is critically important to understand as you will see and start to understand how you can address your fears, anxiety and nervousness.</p>
@@ -841,6 +863,9 @@ drink; alcohol has always been our fix.  </p>
 	"phaseId" : 2,
 	"stepNumber" : 11,
 	"video" : "23-working-through-fear-part-4.mp4",
+	"files" : [
+		{"filename": "examples/fear-example-col4.pdf", "displayName": "Column 4 Example"}
+	],
 	"html" : "<h3>Column 4 - Which of the Basic Instincts do these Fears affect?</h3>
 	<p>Now, we are going to review which of the Basic Instincts these fears affect.</p>
 	<p>Since you have already gone through this exercise when we worked through Resentments and Anger, we just follow that same process.</p>
@@ -888,6 +913,9 @@ drink; alcohol has always been our fix.  </p>
 	"phaseId" : 2,
 	"stepNumber" : 12,
 	"video" : "24-working-through-fear-part-5.mp4",
+	"files" : [
+		{"filename": "examples/fear-example-col5.pdf", "displayName": "Column 5 Example"}
+	],
 	"html" : "<h3>Column 5 - What are my Defects of Character?</h3>
 	<p>For each fear we search within ourselves to see where we were selfish, dishonest, self-seeking, frightened or inconsiderate. </p>
 	<p>Again, I will write out each fear and write a small reason as to why I was one or more of the above defects. Once you feel you understand then you can start writing yours out.</p>
@@ -952,6 +980,13 @@ drink; alcohol has always been our fix.  </p>
 	"title" : "Harms and Hurts to Other People",
 	"phaseId" : 2,
 	"stepNumber" : 13,
+	"files" : [
+		{"filename":"worksheets/harm-worksheet.pdf","displayName":"Harm and sexual conduct worksheet"},
+		{"filename": "examples/harm-example-col2.pdf", "displayName": "Column 1 Example"},
+		{"filename": "examples/harm-example-col3.pdf", "displayName": "Column 2 Example"},
+		{"filename": "examples/harm-example-col4.pdf", "displayName": "Column 3 Example"},
+		{"filename": "examples/harm-example-col5.pdf", "displayName": "Column 4 Example"}
+	],
 	"video" : "25-harms-and-hurts-to-other-people.mp4",
 	"html" : "<h3>Harms and Hurts to other people including our Sex conduct.</h3>
 	<p>Now we are going to move onto our Harms Done to Others and our Sex Behaviour.</p>
@@ -959,7 +994,7 @@ drink; alcohol has always been our fix.  </p>
 	<p><strong>PLEASE READ</strong></p>
 	<p style='text-align:center; font-size:20px; font-style: italic; font-weight:bold'>'To be free from a problem I have to firstly, Own It, and secondly, once I own it, I then have a choice'.</p>
 	<p><strong>NOTE: </strong>Remember when we have an emotional problem, it always comes form our instincts being out of alignment. </p>
-	
+
 	<p>Again, I will provide examples of people we have hurt and how to work the worksheet. This is a very straight forward process but needs to be done honestly and again, please do not leave any one off the list who you know you have hurt by your actions. We are not concerned with their behaviour, as this is not our business. We are seeing only who we have hurt.</p>
 	<p><strong>Column 1 - Who did I hurt</strong></p>
 
@@ -1264,7 +1299,7 @@ drink; alcohol has always been our fix.  </p>
 		<br/>
 		<li>This is a TOTALLY PRIVATE COMMUNITY and is open ONLY TO MEMBERS WHO HAVE BEEN THROUGH THE PROCESS.</li>
 	</ul>
-	
+
 	"
 }
 
