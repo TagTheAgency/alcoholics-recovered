@@ -303,7 +303,7 @@ drink; alcohol has always been our fix.  </p>
 		"stepNumber" : 2,
 		"html" : "<p><strong>Have you completed the <u>Prompt-sheet Worksheet 1 - Anger and Resentment?</u> </strong> </p>
 		<p>If you are confident every resentment and/or anger is checked on Worksheet 1 - it is time to begin Worksheet 2! </p>
-		<p>Before we start, the following worksheets should be in front of you: </p>
+		<p>Before we start, the following crib sheets should be in front of you: </p>
 		<ol>
 			<li>Pathway to Resentment. </li>
 			<li>The 7 Basic Instincts. </li>
@@ -324,7 +324,10 @@ drink; alcohol has always been our fix.  </p>
 		"files" : [
 			{"filename": "worksheets/resentment-and-anger-worksheet.pdf", "displayName": "Resentment and Anger worksheet"},
 			{"filename": "examples/resentment-example-col1.pdf", "displayName": "Resentment and Anger example worksheet - column 1"},
-			{"filename": "seven-basic-instincts.pdf", "displayName": "The 7 Basic Instincts"}
+			{"filename": "seven-basic-instincts.pdf", "displayName": "The 7 Basic Instincts"},
+			{"filename": "defects-of-character.pdf", "displayName": "Defects of Character"},
+			{"filename": "pathway-to-resentment.pdf", "displayName": "Pathway to Resentment"}
+			
 		],
 		"video" : "14-resentment-and-anger-part-2.mp4"
 	},
