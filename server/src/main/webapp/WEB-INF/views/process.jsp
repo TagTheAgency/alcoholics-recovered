@@ -16,10 +16,10 @@
 					<select class="phaseSelect">
 						<option value="1">Introduction</option>
 						<c:if test="${helper.currentStep.phase.phaseNumber >= 2 }">
-						<option value="2">Action</option>
+						<option value="2" ${helper.viewingStep.phase.phaseNumber == 2 ? "selected=\"selected\"" : "" }>Action</option>
 						</c:if>
-						<c:if test="${helper.currentStep.phase.phaseNumber >= 3 }">
-						<option value="3">Amends</option>
+						<c:if test="${helper.currentStep.phase.phaseNumber == 3 }">
+						<option value="3" ${helper.viewingStep.phase.phaseNumber == 3 ? "selected=\"selected\"" : "" }>Continuing to Grow</option>
 						</c:if>
 					</select>
 					<hr class="bg-ar-primary"/>
