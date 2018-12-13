@@ -86,8 +86,8 @@ Once we have covered these off we will have completed Phase 1 and you will be re
 <p>The Process is an inside out program. </p>
 ",
 		"needsOkay":true,
-		"tickBoxText": "Please tick the box after you have read and agreed to the above rules and conditions."
-
+		"tickBoxText": "Please tick the box after you have read and agreed to the above rules and conditions.",
+		"video": "03-Acceptance.mp4"
 	},
 	{
 		"title":"The Cause",
@@ -190,8 +190,8 @@ drink; alcohol has always been our fix.  </p>
 ",
 		"needsOkay" : true,
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
-		"files" : [{"filename":"sevent-instincts.pdf","displayName":"The seven basic instincts"}]
-
+		"files" : [{"filename":"sevent-instincts.pdf","displayName":"The seven basic instincts"}],
+		"video": "08-7-Basic-Instincts.mp4"
 	},
 	{
 		"title" : "In and Out of Balance",
@@ -202,7 +202,8 @@ drink; alcohol has always been our fix.  </p>
 		<p>However, if we have a problem with alcohol, or are alcoholic, these instincts are out of balance.
 		I will demonstrate how. </p>",
 		"needsOkay" : true,
-		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND"
+		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
+		"video": "09-In-and-Out-of-Balance.mp4"
 	},
 	{
 		"title" : "Defects of Character",
@@ -246,7 +247,7 @@ drink; alcohol has always been our fix.  </p>
 		<p>These are important to understand and memorize, to make it easier for practice in everyday life. Only then will awareness of them will become second nature.</p>",
 		"needsOkay" : true,
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
-		"video" : "review.mp4"
+		"video" : "11-review.mp4"
 	},
 	{
 		"title" : "Into Action",
@@ -258,7 +259,7 @@ drink; alcohol has always been our fix.  </p>
 		<p>*Our long-winded life story holds us back. </p>",
 		"needsOkay" : true,
 		"tickBoxText" : "PLEASE TICK WHEN COMPLETED AND YOU FEEL YOU UNDERSTAND",
-		"video": "12-into-action.mp4"
+		"video": "12-Into-Action.mp4"
 	},
 	{
 		"title" : "Resentment and Anger Part 1",
