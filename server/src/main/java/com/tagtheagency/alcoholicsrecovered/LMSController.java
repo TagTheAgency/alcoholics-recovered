@@ -16,20 +16,24 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.stripe.exception.StripeException;
 import com.stripe.model.Charge;
@@ -56,6 +60,8 @@ public class LMSController {
 	@Autowired StripeService stripe;
 	
 	@Autowired UserService users;
+	
+	@Autowired PasswordEncoder encoder;
 	
 	@Value("${stripe.api.key}")
 	private String apiKey;
@@ -111,7 +117,9 @@ public class LMSController {
 
 	@GetMapping(path="/account")
 	public String getAccountPage(Model model) {
-		return "account";
+//		model.addAttribute("error", error);
+//		model.addAttribute("success", success);
+ 		return "account";
 	}
 
 	
@@ -373,15 +381,7 @@ public class LMSController {
 		model.addAttribute("viewHelper", new CommunityViewHelper());
 		model.addAttribute("apiKey", apiKey);
 		
-		Page<ForumThread> threads = users.getThreads(paging);
-		
-		System.out.println(threads);
-		System.out.println(threads.getTotalPages());
-		System.out.println(threads.hasNext());
-		System.out.println(threads.hasPrevious());
-		System.out.println(threads.isFirst());
-		System.out.println(threads.isLast());
-		
+		Page<ForumThread> threads = users.getThreads(paging);		
 		
 		return "community";
 	}
@@ -425,6 +425,20 @@ public class LMSController {
 	}
 
 	
+	@PostMapping("/account/changePassword")
+	public String changePassword(@RequestParam CharSequence current, @RequestParam String newPassword, Principal principal, RedirectAttributes attributes) {
+		User user = getUserFromPrincipal(principal);
+		
+		boolean matches = encoder.matches(current, user.getPassword());
+		if (!matches) {
+			attributes.addFlashAttribute("error", "Your password did not match");
+			return "redirect:/account";
+		}
+		users.changeUserPassword(user, encoder.encode(newPassword));
+		attributes.addFlashAttribute("success", "Your password has been changed");
+		return "redirect:/account";
+		
+	}
 	
 	
 	protected boolean hasRole(String role) {

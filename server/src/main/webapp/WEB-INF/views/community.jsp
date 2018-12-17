@@ -188,7 +188,7 @@
     			<tr>
       			<th scope="row"><a href="/community/${thread.threadId }"><e:forHtml value="${thread.subject }"/></a></th>
       			<td>${thread.messageCount - 1}</td>
-      			<td>${users.timeSincePost(viewHelper.getMostRecentMessage(thread).creationDate) } by <strong>${viewHelper.getMostRecentMessage(thread).author.email }</strong></td>
+      			<td>${users.timeSincePost(viewHelper.getMostRecentMessage(thread).creationDate) } by <strong>${service.getAnonymisedEmailAddress(viewHelper.getMostRecentMessage(thread).author) }</strong></td>
 					</tr>
 						</c:forEach>
 				</tbody>

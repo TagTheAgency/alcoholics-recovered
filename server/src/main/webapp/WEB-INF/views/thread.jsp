@@ -16,9 +16,10 @@
 				<div class="col-md-3 thread-author">
 					<p title="${message.creationDate}">${service.timeSincePost(message) }</p>
 					<img src="${service.getGravatarImage(message.author) }" class="gravatar"/>
+					<p>By ${service.getAnonymisedEmailAddress(message.author) }</p>
 			    </div>
 			    <div class="col-md-9 user-content">
-			    <e:forHtml value="${viewHelper.showBody(message)}"/>
+			    ${viewHelper.showBody(message)}
 			    </div>
 			</div>
 		</div>

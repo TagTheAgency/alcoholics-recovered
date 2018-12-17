@@ -288,8 +288,9 @@ public class UserService implements UserDetailsService {
 	    return null;
 	}
 
-	public void changeUserPassword(User user, String newPassword) {
-		// TODO Auto-generated method stub
+	public void changeUserPassword(User user, String encodedPassword) {
+		user.setPassword(encodedPassword);
+		userDao.save(user);
 		
 	}
 
@@ -402,5 +403,33 @@ public class UserService implements UserDetailsService {
 		
 	}
 
+	public String getAnonymisedEmailAddress(User user) {
+		
+		String email = user.getEmail();
+		int hash = email.hashCode();
+		if (hash < 0) {
+			hash = -hash;
+		}
+		
+		List<String> animals = Arrays.asList("Alligator", "Anteater", "Armadillo", "Auroch", "Axolotl", "Badger",
+				"Bat", "Bear", "Beaver", "Buffalo", "Camel", "Capybara", "Chameleon", "Cheetah", "Chinchilla",
+				"Chipmunk", "Chupacabra", "Cormorant", "Coyote", "Crow", "Dingo", "Dinosaur", "Dog", "Dolphin",
+				"Duck", "Elephant", "Ferret", "Fox", "Frog", "Giraffe", "Gopher", "Grizzly", "Hedgehog",
+				"Hippo", "Hyena", "Ibex", "Ifrit", "Iguana", "Jackal", "Kangaroo", "Koala", "Kraken", "Lemur",
+				"Leopard", "Liger", "Lion", "Llama", "Loris", "Manatee", "Mink", "Monkey", "Moose", "Narwhal", 
+				"Nyan Cat", "Orangutan", "Otter", "Panda", "Penguin", "Platypus", "Pumpkin", "Python", "Quagga", 
+				"Rabbit", "Raccoon", "Rhino", "Sheep", "Shrew", "Skunk", "Squirrel", "Tiger", "Turtle", "Walrus", 
+				"Wolf", "Wolverine", "Wombat");
+		
+		int index = hash % animals.size();
+		long suffix = user.getId();
+		while (suffix > 1000) {
+			suffix = suffix - 1000;
+		}
+		while (suffix > 100) {
+			suffix = suffix - 100;
+		}
+		return "Anonymous "+animals.get(index)+" "+suffix;
+	}
 	
 }

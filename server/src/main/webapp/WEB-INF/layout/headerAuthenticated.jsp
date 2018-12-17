@@ -13,7 +13,9 @@
 			</ul>
 		</div>
 		<div class="nav-acc-items-container d-none d-md-block">
-			<form method="post" action="${pageContext.servletContext.contextPath}/logout">
+			<div style="display:inline-block" id="sign-up-btn" class="btn btn-prm"><a href="/account">Account</a></div>
+							
+			<form style="display:inline-block" method="post" action="${pageContext.servletContext.contextPath}/logout">
 				<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 				<button type="submit" class="btn btn-prm">Logout</button>
 			</form>
