@@ -124,9 +124,9 @@ public class LMSController {
 
 	
 	@PostMapping(path="/join/process")
-	public String getJoinPage(Model model, @RequestParam String stripeToken, @RequestParam String firstName, @RequestParam String lastName, @RequestParam String email, @RequestParam String password)  {
+	public String getJoinPage(Model model, @RequestParam String stripeToken, @RequestParam String firstName, @RequestParam String email, @RequestParam String password)  {
 		
-		UserDTO dto = UserDTO.from(firstName, lastName, email, password);
+		UserDTO dto = UserDTO.from(firstName, email, password);
 		User user;
 		try {
 			user = users.registerNewUserAccount(dto);
@@ -134,13 +134,12 @@ public class LMSController {
 			model.addAttribute("duplicateEmail", true);
 			model.addAttribute("apiKey", apiKey);
 			model.addAttribute("firstName", firstName);
-			model.addAttribute("lastName", lastName);
 			model.addAttribute("email", email);
 			return "join";
 		}
 		
 		try {
-			Charge charge = stripe.createCharge(49700, "aud", "Recovered Group Signup", stripeToken, email);
+			Charge charge = stripe.createCharge(9900, "aud", "Recovered Group Signup", stripeToken, email);
 			users.addCharge(user, charge);
 
 
@@ -152,7 +151,6 @@ public class LMSController {
 			model.addAttribute("stripeStatusCode", e.getStatusCode());
 			model.addAttribute("apiKey", apiKey);
 			model.addAttribute("firstName", firstName);
-			model.addAttribute("lastName", lastName);
 			model.addAttribute("email", email);
 			users.purge(user);
 			return "join";

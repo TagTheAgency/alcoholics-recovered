@@ -4,7 +4,7 @@
  <div class="feature-section-container col-md-6" id="login-container">
    <p class="header-text">Take your first step. Sign up now.</p>
 
-   <p>Your credit card will be charged a one-off fee of AUD$497.00</p> 
+   <p>Your credit card will be charged a one-off fee of AUD$99.00</p> 
      <form class="form-inline justify-content-md-center login-form" action="${pageContext.servletContext.contextPath}/join/process" method="post" id="payment-form">
      	<c:if test="${duplicateEmail }">
             <div class="alert alert-danger" role="alert">
@@ -18,7 +18,6 @@
           </c:if>
        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
        <input type="text" class="form-control login-form-input col-8" placeholder="First name" name="firstName" required autofocus value="${firstName }" autocomplete="false">
-       <input type="text" class="form-control login-form-input col-8" placeholder="Last name" name="lastName" required value="${lastName }" autocomplete="false">
        <input type="email" class="form-control login-form-input col-8" placeholder="Email Address" required name="email" value="${email }" autocomplete="false">
        <input type="password" class="form-control login-form-input col-8" placeholder="Password" name="password">
        

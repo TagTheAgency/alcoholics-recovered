@@ -56,7 +56,7 @@ public class StripeService {
 
 		RequestOptions options = RequestOptions
 		  .builder()
-		  .setIdempotencyKey("XDchK16FSfixIONW")
+		  //.setIdempotencyKey("XDchK16FSfixIONW")
 		  .build();
 
 		Charge charge = Charge.create(chargeParams);//, options);

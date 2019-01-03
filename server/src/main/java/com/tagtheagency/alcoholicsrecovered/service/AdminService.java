@@ -79,7 +79,6 @@ public class AdminService {
 		UserDTO admin = new UserDTO();
 		admin.setEmail("admin@tagtheagency.com");
 		admin.setFirstName("Admin");
-		admin.setLastName("Admin");
 		admin.setPassword("TagTag2018");
 		User user = null;
 		try {

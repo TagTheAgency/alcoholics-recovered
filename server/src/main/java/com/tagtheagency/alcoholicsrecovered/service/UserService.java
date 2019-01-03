@@ -91,7 +91,7 @@ public class UserService implements UserDetailsService {
 	    }
 	    User user = new User();
 	    user.setFirstName(accountDto.getFirstName());
-	    user.setLastName(accountDto.getLastName());
+//	    user.setLastName(accountDto.getLastName());
 	     
 	    user.setPassword(passwordEncoder.encode(accountDto.getPassword()));
 	     

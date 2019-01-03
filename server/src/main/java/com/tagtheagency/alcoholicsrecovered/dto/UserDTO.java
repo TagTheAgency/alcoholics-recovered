@@ -3,7 +3,6 @@ package com.tagtheagency.alcoholicsrecovered.dto;
 public class UserDTO {
 
 	private String firstName;
-	private String lastName;
 	private String email;
 	private String password;
 	
@@ -13,12 +12,7 @@ public class UserDTO {
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
-	public String getLastName() {
-		return lastName;
-	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
+
 	public String getEmail() {
 		return email;
 	}
@@ -31,10 +25,9 @@ public class UserDTO {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public static UserDTO from(String firstName, String lastName, String email, String password) {
+	public static UserDTO from(String firstName, String email, String password) {
 		UserDTO dto = new UserDTO();
 		dto.firstName = firstName;
-		dto.lastName = lastName;
 		dto.email = email;
 		dto.password = password;
 		return dto;
